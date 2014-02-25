@@ -40,5 +40,42 @@
  "Interaktives System": {
      "synonym": [],
      "description": "Kombination von Hardware- und Softwarekomponenten, die Eingaben von einem <a href='#Benutzer'>Benutzer</a> empfangen und Ausgaben zu einem <a href='#Benutzer'>Benutzer</a> übermitteln, um ihn bei der Ausführung einer Aufgabe zu unterstützen"
- }
+ },
+ "Benutzerdokumentation":
+ {"synonym": [], 
+  "description": "Eine Form der Benutzerunterstützung. \n Für Benutzer geschriebene Anleitungen darüber, wie das interaktive System durch Benutzer eingesetzt  werden kann."},
+ "Benutzererlebnis":
+ {"synonym": ["User Experience"],
+ "description" : "Wahrnehmungen und Reaktionen einer Person, die aus der tatsächlichen und/oder erwarteten Benutzung eines interaktiven Systems oder Dienstes resultieren.Bemerkung zum Seminar: Seminarteilnehmer müssen den Unterschied zwischen Usability und Benutzererlebnis kennen."
+},
+ "Benutzerfragebogen":
+ {"synonym": [],
+ "description" : "Ein Satz von Fragen, der eine strukturierte Art und Weise der Befragung einer                  großen Gruppe von Menschen ermöglicht, um diese Menschen, ihre Interessen                            und ihre Präferenzen zu beschreiben.                            Benutzerfragebögen können im Rahmen einer Benutzerbefragung benutzt                            werden, um die Zufriedenstellung von Benutzern eines interaktiven Systems                            und Informationen zum Nutzungskontext zu ermitteln."
+},
+ "Benutzergruppe":
+ {"synonym": [],
+ "description" : "Eine Gruppe von Benutzern mit demselben oder ähnlichen Nutzungskontext                            bezogen auf das interaktive System."
+},
+ "Benutzergruppenprofil":
+ {"synonym": [],
+ "description" : "Eine verallgemeinerte Beschreibung einer Benutzergruppe."
+},
+ "Benutzerunterstützung":
+ {"synonym": [],
+ "description" : "Ein gemeinsamer Ausdruck für Benutzerdokumentation, Onlinehilfe und  Fehlermanagement."
+},
+ "Benutzerzentrierte Evaluierung":
+ {"synonym": ["Usabilitytest"],
+ "description" : "Evaluierung, die repräsentative Benutzer involviert, die bestimmte Aufgaben mit  dem interaktiven System ausführen, um die Identifikation von  Nutzungsproblemen und/oder die Messung von Effizienz, Effektivität                            und/oder Zufriedenstellung zu ermöglichen. "
+},
+ "Benutzerzentrierte Gestaltung":
+ {"synonym": ["Menschzentrierte Gestaltung"],
+ "description" : ""
+},
+ "Benutzungsschnittstelle":
+ {"synonym": [],
+ "description" : "Alle Bestandteile eines interaktiven Systems, die Informationen und               Steuerelemente zur Verfügung stellen, die für den Benutzer notwendig sind, um                            eine bestimmte Aufgabe mit dem interaktiven System zu erledigen."
+}
+
+ 
 }

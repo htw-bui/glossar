@@ -7,11 +7,15 @@ var loadNewDefintition = function () {
 };
 
 function changeDisplay(term){
-    console.log(items);
     var termObject = items[term];
     $("#main").empty();
     $( "<h1>", {html: term}).appendTo("#main");
-    $( "<aside>", {html: termObject.synonym.join(",")}).appendTo("#main");
+    var synonyms = [];
+    $.each(termObject.synonym, function(key, value){
+        synonyms.push("<a href='#" + value + "'>" + value + "</a>");
+    });
+    console.log(synonyms);
+    $( "<aside>", {html: synonyms.join("")}).appendTo("#main");
     $("<p>", {html: termObject.description}).appendTo("#main");
 };
 
@@ -26,8 +30,7 @@ $(document).ready(function () {
         $.each(data, function( key, val ) {
             terms.push("<li><a href='#" + key + "'>" + key + "</a></li>");
         });
-        console.log(terms);
-
+        
         $( "<ul/>", {
             html: terms.join("")
         }).appendTo("nav");
