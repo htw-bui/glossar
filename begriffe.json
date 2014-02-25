@@ -1,0 +1,44 @@
+{ "Affordance": 
+ {	
+     "synonym" : ["Handlungsleitung"],
+     "description" : ""
+ },
+ "Anforderung":
+ {
+     "synonym" : [],
+     "description" : "Bedingung oder Fähigkeit, die ein <a href='#Interaktives System'>interaktives System</a>, eine Komponente eines interaktiven Systems oder eine Dienstleistung erfüllen oder besitzen muss, um einer Vereinbarung, einem Standard, einer Spezifikation oder anderen formal zugrunde gelegten Dokumenten zu genügen."
+ },
+ "Arbeitsmittel":
+ { 
+     "synonym" : [],
+     "description" : "Hardware, Software und Materialien."
+ },
+ "Aufgabe":
+ {
+     "synonym" : ["Task"],
+     "description" : "Aktivitäten die erforderlich sind, um ein Ziel zu erreichen. Bemerkung zum Seminar: Die folgende informale Definition einer Aufgabe mag hilfreich sein: Benutzer haben eine Aufgabe erledigt, wenn sie das Gefühl haben, dass sie Kaffee trinken gehen können ohne dabei ein schlechtes Gewissen zu haben. Diese informale Definition unterscheidet eine Aufgabe von einer Teilaufgabe oder einer Aktivität. Beispiele: - 'Ein Auto mieten' ist eine Aufgabe.\n    - 'Eine Reservierung stornieren' ist eine Aufgabe. \n - 'Sich auf der Webseite einer Autoverleihfirma registrieren' ist keine Aufgabe. \n  - 'Sich einloggen' ist keine Aufgabe.\n - 'Das Startdatum einer Mietperiode auswählen' ist keine Aufgabe."
+ },
+ "Aufgabenmodell":
+ {
+     "synonym" : [],
+     "description" : "Eine Beschreibung der Aktivitäten innerhalb einer Aufgabe die erledigt werden                       müssen, um die vom Benutzer beabsichtigen Ziele zu erreichen.                            Bemerkung zum Seminar: Die Konzepte 'Use case' und 'Essential use case'                            können erwähnt werden, sind aber nicht Teil des Curriculums."
+ },
+ "Barrierefreiheit" :
+ { 
+     "synonym" : ["Accessibility"],
+     "description" : "Die Attribute und Charakteristiken eines interaktiven Systems die Menschen                mit eingeschränkter Sicht, eingeschränktem Hören, eingeschränkter            Geschicklichkeit, eingeschränkter Kognition oder eingeschränkter physikalischer                            Mobilität erlauben effektiv und effizient mit dem interaktiven System zu                            interagieren."
+ },
+ "Befund":
+ {
+     "synonym" : [],
+     "description" : " Ergebnis aus einem Usabilitytest. Ein Befund kann ein Nutzungsproblem oder                            etwas sein, das die Benutzer mochten, also ein positiver Befund."
+ },
+ "Benutzer":{ 
+     "synonym" : [],
+     "description" : "Person, die mit einem interaktiven System arbeitet."
+ },
+ "Interaktives System": {
+     "synonym": [],
+     "description": "Kombination von Hardware- und Softwarekomponenten, die Eingaben von einem <a href='#Benutzer'>Benutzer</a> empfangen und Ausgaben zu einem <a href='#Benutzer'>Benutzer</a> übermitteln, um ihn bei der Ausführung einer Aufgabe zu unterstützen"
+ }
+}
