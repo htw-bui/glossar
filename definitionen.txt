@@ -528,7 +528,7 @@ Nutzungsanforderungen können qualitativ oder quantitativ sein.
 
 Bemerkung zum Seminar: Nutzungsanforderungen werden von Erfordernissen
 abgeleitet.
-
+|
 Benutzer, Aufgaben, Arbeitsmittel (Hardware, Software und Materialien)
 sowie die physikalische und soziale Umgebung in der das interaktive System
 genutzt wird.

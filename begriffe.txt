@@ -171,10 +171,7 @@
   Quantitativ               
 |
   Nutzungs-                 
-  anforderung
-|
-  (Englisch: User
-  requirement)              
+  anforderung          
 |
   Nutzungskontext           
 |
@@ -241,12 +238,13 @@
   Benutzungs-
   schnittstellen
 |
+  Rolle
+|
   Sekundäre                 
   Benutzer                  
 |
   Selbst-                   
   beschreibungs-
-|
   fähigkeit
 |
   Standard                  
@@ -325,7 +323,6 @@
 |
   User                      
   Requirements
-|
   Engineer
 |
   Wireframe                 
