@@ -669,11 +669,10 @@ Siehe Gestaltungsregel.
 |
 Ein Menge zusammenhängender Aspekte wie Verhalten, Rechte, 
 Verpflichtungen und Normen in einer Arbeitssituation. 
-Abhängig	von	der	Komplexität	eines	Projektes	können	mehrere	Menschen	eine	
-Rolle	teilen	oder	mehrere	Rollen	einer	Person	zugewiesen	werden.
-Bemerkung	zum	Seminar:	Arbeitsrollen	sind	“Hüte”,	die	Menschen	aufhaben,	wenn	
-sie	die	entsprechenden	Verantwortlichkeiten	übernehmen	und	die	damit	
-verbundenen	Tätigkeiten	ausüben.
+Abhängig von der Komplexität eines Projektes können mehrere Menschen eine
+Rolle teilen oder mehrere Rollen einer Person zugewiesen werden.
+Bemerkung zum Seminar: Arbeitsrollen sind “Hüte”, die Menschen aufhaben, wenn 
+sie die entsprechenden Verantwortlichkeiten übernehmen und die damit verbundenen Tätigkeiten ausüben.
 |
 Menschen, die keine Benutzer sind, aber auf gewisse Weise vom interaktiven
 System betroffen oder beinflusst sind.
