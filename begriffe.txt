@@ -1,4 +1,4 @@
-  Affordance                
+ï»¿  Affordance                
 |
   Anforderung               
 |
@@ -26,7 +26,7 @@
 |
   Benutzergruppenprofil                 
 |
-  Benutzerunterstützung                 
+  BenutzerunterstÃ¼tzung                 
 |
   Benutzerzentrierte Evaluierung                 
 |
@@ -48,13 +48,13 @@
 |
   Dringlichkeitsstufen (von Befunden)
 |
-  Effektivität              
+  EffektivitÃ¤t              
 |
   Effizienz                 
 |
   Erfordernis               
 |
-  Erwartungskonformität               
+  ErwartungskonformitÃ¤t               
 |
   Evaluierung               
 |
@@ -74,7 +74,7 @@
 |
   Gebrauchstauglichkeit                
 |
-  Geschäftsanforderung                
+  GeschÃ¤ftsanforderung                
 |
   Geschlossene Frage              
 |
@@ -119,7 +119,7 @@
 |
   Interview                 
 |
-  Interview­                
+  InterviewÂ­                
   checkliste                
 |
   Intuitiv                  
@@ -133,14 +133,14 @@
   Kontextuelles             
   Interview                 
 |
-  Lernförderlichkeit        
+  LernfÃ¶rderlichkeit        
 |
   Low-fidelity              
   Prototyp                  
 |                       
   Marktanforderung          
 |
-  Meister-Schüler-          
+  Meister-SchÃ¼ler-          
   Modell                    
 |
   Menschzentrierte          
@@ -163,11 +163,11 @@
   Neutrale Frage            
 |
   Nutzungs-                 
-  anforderung ­             
+  anforderung Â­             
   Qualitativ
 |
   Nutzungs-                 
-  anforderung ­             
+  anforderung Â­             
   Quantitativ               
 |
   Nutzungs-                 
@@ -199,13 +199,13 @@
   Pre-Test-                 
   Interview                 
 |
-  Primäre Benutzer          
+  PrimÃ¤re Benutzer          
 |
   Protokollant            
 |
   Prototyp                  
 |
-  Qualität                  
+  QualitÃ¤t                  
 |
   Qualitative               
   Nutzungs-
@@ -221,7 +221,7 @@
 |
   Rekrutierung              
   (eines                    
-  Teilnehmers für           
+  Teilnehmers fÃ¼r           
   einen                     
   Usabilitytest)
   (Englisch:
@@ -234,18 +234,18 @@
 |
   Review                    
 |
-  Richtlinie für            
+  Richtlinie fÃ¼r            
   Benutzungs-
   schnittstellen
 |
   Rolle
 |
-  Sekundäre                 
+  SekundÃ¤re                 
   Benutzer                  
 |
   Selbst-                   
   beschreibungs-
-  fähigkeit
+  fÃ¤higkeit
 |
   Standard                  
 |
@@ -298,13 +298,13 @@
 |
   Usabilitytest             
 |
-  Usabilitytest ­           
+  Usabilitytest Â­           
   Face-to-face              
 |
-  Usabilitytest ­           
+  Usabilitytest Â­           
   Remote                    
 |
-  Usabilitytest ­           
+  Usabilitytest Â­           
   Unbeaufsichtigt           
 |
   Usability-                
