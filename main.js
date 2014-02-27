@@ -26,7 +26,7 @@ var items = [];
 var terms = [];
 $(document).ready(function () {
     'use strict';
-    $.getJSON("/generierte_begriffe.json", function (data) {
+    $.getJSON("/neu_generierte_begriffe.json", function (data) {
         items = data;
         var navTerms = [];
         $.each(data, function( key, val ) {
@@ -56,6 +56,14 @@ function checkPaginationVisibilty(){
     }
 }
     
+function showNav(){
+    $("nav").addClass("nav-open");
+    $("nav a").bind("click", function() {closeNav()})
+}
+
+function closeNav(){
+    $("nav").removeClass("nav-open");
+}
 
 function getPreviousTerm(){
     var term = window.location.hash.substr(1);
