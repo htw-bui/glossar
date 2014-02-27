@@ -1,18 +1,65 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> KOMET Glossar</title>
         <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
         <style>
+            * {
+                box-sizing: border-box;
+            }
+            
             nav {
                 width: 300px;
                 float:left;
+                height: 100%;
+                overflow-y: scroll;
             }
-            
+
             aside {
                 font-style: italic;
             }
-            
+            .nav-open {
+                display: none;
+            }
+            .hideDesktop{
+                display:none;
+            }
+
+            @media only screen and (max-width: 767px) {
+
+                
+
+                nav {
+                    position:absolute;
+                    left: -200%;
+                    
+                }
+                
+                .hideDesktop {
+                    display:block;
+                }
+
+                .nav-open {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    font-family: Arial, sans-serif;
+                    display: block;
+                    background:white;
+                    width: 90%;
+                }
+
+                nav {
+                    -webkit-transition: all 1s ease-in-out;
+                    -moz-transition: all 1s ease-in-out;
+                    -o-transition: all 1s ease-in-out;
+                    -ms-transition: all 1s ease-in-out;
+                    transition: all 1s ease-in-out;
+                }
+
+            }
+
         </style>
         <script src="main.js"></script>
     </head>
@@ -20,8 +67,11 @@
     <body>
         <h1> Glossar</h1>
 
+        <a class=hideDesktop href="javascript:showNav()">Navigation anzeigen</a>
         <nav>
-            Navigation
+            <a class=hideDesktop href="javascript:closeNav();">Schließen</a>
+            <h2>Navigation</h2> 
+            <input id=filterTerms onkeyup="filterNavigation()" type="search" placeholder="Filter....">
         </nav>
 
         <div id="main"> Begriffe </div>

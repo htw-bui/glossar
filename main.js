@@ -11,7 +11,7 @@ function changeDisplay(term){
     });
     $( "<aside>", {html: synonyms.join("")}).appendTo("#main");
     $("<p>", {html: termObject.description}).appendTo("#main");
-    
+
     checkPaginationVisibilty();
 };
 
@@ -26,19 +26,30 @@ var items = [];
 var terms = [];
 $(document).ready(function () {
     'use strict';
-    $.getJSON("/generierte_begriffe.json", function (data) {
+    $.getJSON("/neu_generierte_begriffe.json", function (data) {
         items = data;
-        var navTerms = [];
         $.each(data, function( key, val ) {
             terms.push(key);
-            navTerms.push("<li><a href='#" + key + "'>" + key + "</a></li>");
         });
-        
-        $( "<ul/>", {
-            html: navTerms.join("")
-        }).appendTo("nav");
+        createNaviagtion(terms);
     }).done(function() {loadNewDefintition();});
 });
+
+function createNaviagtion(data){
+    console.log(data);
+    $(".navItems").remove();
+    var navTerms = [];
+    $.each(data, function(key, val ) {
+        navTerms.push("<li><a href='#" + val + "'>" + val + "</a></li>");
+    });
+
+    $( "<ul/>", {
+        class: "navItems",
+        html: navTerms.join("")
+    }).appendTo("nav");
+    $("nav a").bind("click", function() {closeNav()})
+}
+
 
 function checkPaginationVisibilty(){
     var term = window.location.hash.substr(1);
@@ -55,7 +66,15 @@ function checkPaginationVisibilty(){
         return;
     }
 }
-    
+
+function showNav(){
+    $("nav").addClass("nav-open");
+    $("nav a").bind("click", function() {closeNav()})
+}
+
+function closeNav(){
+    $("nav").removeClass("nav-open");
+}
 
 function getPreviousTerm(){
     var term = window.location.hash.substr(1);
@@ -68,4 +87,23 @@ function getNextTerm(){
     positionOfSelectedTerm = terms.indexOf(term);
     nextTerm = terms[positionOfSelectedTerm +1];
     window.location.hash = nextTerm;
+}
+
+
+function filterNavigation(){
+    filteredItems = jQuery.extend([], terms);
+    filteredItems = filteredItems.filter(filterBySearchTerm);
+    console.log(filteredItems);
+    createNaviagtion(filteredItems);
+}
+
+
+
+function filterBySearchTerm(term){
+    console.log(term);
+    var searchTerm = $("#filterTerms").val();
+    if (term.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1){
+        return true;
+    }
+    return false;
 }
