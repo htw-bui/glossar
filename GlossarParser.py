@@ -18,7 +18,7 @@ for i in range(len(begriffe)):
 #with open("C:/Users/hiwi/Documents/GitHub/glossar/merged.txt", "w", encoding="utf-8") as me:
 #    me.write("---------\n\n\n".join(merged))
 
-with open("C:/Users/hiwi/Documents/GitHub/glossar/merged.txt", "r", encoding="utf-8") as infile:
+with open("C:/Users/hiwi/Documents/GitHub/glossar/merged.html", "r", encoding="utf-8") as infile:
     content = infile.read().split("---------")
 
 
