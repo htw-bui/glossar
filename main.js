@@ -48,6 +48,8 @@ function createNaviagtion(data){
         html: navTerms.join("")
     }).appendTo("nav");
     $("nav a").bind("click", function() {closeNav()})
+    $("#main").bind("click", function() {closeNav()})
+    $("header").bind("click", function() {closeNav()})
 }
 
 

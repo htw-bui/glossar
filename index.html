@@ -8,7 +8,7 @@
             * {
                 box-sizing: border-box;
             }
-            
+
             nav {
                 width: 300px;
                 float:left;
@@ -19,6 +19,11 @@
             aside {
                 font-style: italic;
             }
+
+            #content{
+                height: 100%;
+            }
+
             .nav-open {
                 display: none;
             }
@@ -28,14 +33,14 @@
 
             @media only screen and (max-width: 767px) {
 
-                
+
 
                 nav {
                     position:absolute;
                     left: -200%;
-                    
+
                 }
-                
+
                 .hideDesktop {
                     display:block;
                 }
@@ -65,19 +70,22 @@
     </head>
 
     <body>
-        <h1> Glossar</h1>
-
-        <a class=hideDesktop href="javascript:showNav()">Navigation anzeigen</a>
+        <header>
+            <h1> Glossar</h1>
+            <a class=hideDesktop href="javascript:showNav()">Navigation anzeigen</a>
+        </header>
         <nav>
             <a class=hideDesktop href="javascript:closeNav();">Schließen</a>
             <h2>Navigation</h2> 
             <input id=filterTerms onkeyup="filterNavigation()" type="search" placeholder="Filter....">
         </nav>
 
-        <div id="main"> Begriffe </div>
-        <div id="paging">
-            <a href="javascript:getPreviousTerm()" id="previousTerm">Zurück</a>
-            <a href="javascript:getNextTerm()" id="nextTerm">Nächster</a>
+        <div id="content">
+            <div id="main"> Begriffe </div>
+            <div id="paging">
+                <a href="javascript:getPreviousTerm()" id="previousTerm">Zurück</a>
+                <a href="javascript:getNextTerm()" id="nextTerm">Nächster</a>
+            </div>
         </div>
 
 
