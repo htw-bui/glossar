@@ -27,19 +27,11 @@ for part in content:
     parts = part.split("=========")
     term = parts[0].strip()
     synonyms = parts[1].split(",")
-    description = parts[2].strip().replace("\n", " ").replace('"', '\\"')
+    description = parts[2].strip().replace("\n", " ")
     terms[term] = {"synonyms": synonyms,
                  "description": description
                   }
 od = collections.OrderedDict(sorted(terms.items()))
-
-#for i in range(len(definitionen)):
-#    term = "".join(begriffe[i])
-#    description = definitionen[i].strip().replace("\n", " ").replace('"', '\\"')
-#    terms[term] = {"synonyms": [],
-#                 "description": description
-#                  }
-#od = collections.OrderedDict(sorted(terms.items()))
 
 with open("C:/Users/hiwi/Documents/GitHub/glossar/neu_generierte_begriffe.json", "w") as out:
     out.write(json.dumps(od, indent=2))
