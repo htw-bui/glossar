@@ -22,6 +22,8 @@
     <Content Include="index.html" />
     <Content Include="main.js" />
     <Compile Include="GlossarParser.py" />
+    <Content Include="merged.html" />
+    <Content Include="merged.txt" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
