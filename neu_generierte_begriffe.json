@@ -87,7 +87,7 @@
     "synonyms": [
       "\nUsabilitytest\n"
     ], 
-    "description": "Evaluierung, die repr\u00e4sentative Benutzer involviert, die bestimmte Aufgaben mit  dem <a href=\"#Interaktives System\">interaktiven System</a> ausf\u00fchren, um die Identifikation von  <a href=\"#Nutzungsproblemen\">Nutzungsproblemen</a> und/oder die Messung von <a href=\"#Effizienz\">Effizienz</a>, <a href=\"#Effektivit\u00e4t\">Effektivit\u00e4t</a>  und/oder <a href=\"#Zufriedenstellung\">Zufriedenstellung</a> zu erm\u00f6glichen.  Siehe <a href=\"#Usabilitytest\">Usabilitytest</a>."
+    "description": "Evaluierung, die repr\u00e4sentative Benutzer involviert, die bestimmte Aufgaben mit  dem <a href=\"#Interaktives System\">interaktiven System</a> ausf\u00fchren, um die Identifikation von  <a href=\"#Nutzungsproblem\">Nutzungsproblemen</a> und/oder die Messung von <a href=\"#Effizienz\">Effizienz</a>, <a href=\"#Effektivit\u00e4t\">Effektivit\u00e4t</a>  und/oder <a href=\"#Zufriedenstellung\">Zufriedenstellung</a> zu erm\u00f6glichen.  Siehe <a href=\"#Usabilitytest\">Usabilitytest</a>."
   }, 
   "Benutzerzentrierte Gestaltung": {
     "synonyms": [
@@ -99,13 +99,13 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Alle Bestandteile eines <a href=\"#interaktives System\">interaktiven Systems</a>, die Informationen und  Steuerelemente zur Verf\u00fcgung stellen, die f\u00fcr den Benutzer notwendig sind, um  eine bestimmte <a href=\"#Aufgabe\">Aufgabe</a> mit dem interaktiven System zu erledigen."
+    "description": "Alle Bestandteile eines <a href=\"#Interaktives System\">interaktiven Systems</a>, die Informationen und  Steuerelemente zur Verf\u00fcgung stellen, die f\u00fcr den Benutzer notwendig sind, um  eine bestimmte <a href=\"#Aufgabe\">Aufgabe</a> mit dem interaktiven System zu erledigen."
   }, 
   "Benutzungsschnittstellenstandard": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Eine Sammlung von <a href=\"#Richtlinie\">Richtlinien</a> f\u00fcr die Gestaltung von  <a href=\"#Benutzungsschnittstellen\">Benutzungsschnittstellen</a>."
+    "description": "Eine Sammlung von <a href=\"#Richtlinie f\u00fcr Benutzungsschnittstellen\">Richtlinien</a> f\u00fcr die Gestaltung von  <a href=\"#Benutzungsschnittstelle\">Benutzungsschnittstellen</a>."
   }, 
   "Beobachter": {
     "synonyms": [
@@ -117,7 +117,7 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Eine Technik f\u00fcr das Sammeln von Kontextinformationen bez\u00fcglich  <a href=\"#Erforderniss\">Erfordernissen</a>. W\u00e4hrend einer Beobachtung sieht der <a href=\"#User Requirements Engineer\">User RequirementsEngineer</a> dem  <a href=\"#Benutzer\">Benutzer</a> bei der Ausf\u00fchrung von <a href=\"#Aufgabe\">Aufgaben</a>  am <a href=\"#Interaktives System\">interaktiven System</a> zu. Der User Requirements Engineer greift nicht ein, au\u00dfer es besteht gelegentlich die Notwendigkeit zu einer kl\u00e4renden Frage."
+    "description": "Eine Technik f\u00fcr das Sammeln von Kontextinformationen bez\u00fcglich  <a href=\"#Erfordernis\">Erfordernissen</a>. W\u00e4hrend einer Beobachtung sieht der <a href=\"#User Requirements Engineer\">User RequirementsEngineer</a> dem  <a href=\"#Benutzer\">Benutzer</a> bei der Ausf\u00fchrung von <a href=\"#Aufgabe\">Aufgaben</a>  am <a href=\"#Interaktives System\">interaktiven System</a> zu. Der User Requirements Engineer greift nicht ein, au\u00dfer es besteht gelegentlich die Notwendigkeit zu einer kl\u00e4renden Frage."
   }, 
   "Designmuster": {
     "synonyms": [
@@ -141,7 +141,7 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Ein Ma\u00df f\u00fcr ein <a href=\"#Nutzungsproblem\">Nutzungsproblem</a> aus einem <a href=\"#Usabilitytest\">Usabilitytest</a> das die  Auswirkung des Nutzungsproblems auf das <a href=\"#Benutzererlebnis\">Benutzererlebnis</a> bewertet.    Der <a href=\"#Usabilitytester\">Usabilitytester</a> bewertet die Nutzungsprobleme aus Sicht der  <a href=\"#Testteilnehmer\">Testteilnehmer</a>. Typische Dringlichkeitsstufen sind: niedrig, ernst, kritisch,  lebensbedrohend."
+    "description": "Ein Ma\u00df f\u00fcr ein <a href=\"#Nutzungsproblem\">Nutzungsproblem</a> aus einem <a href=\"#Usabilitytest\">Usabilitytest</a> das die  Auswirkung des Nutzungsproblems auf das <a href=\"#Benutzererlebnis\">Benutzererlebnis</a> bewertet.    Der <a href=\"#Usability Tester\">Usabilitytester</a> bewertet die Nutzungsprobleme aus Sicht der  <a href=\"#Testteilnehmer\">Testteilnehmer</a>. Typische Dringlichkeitsstufen sind: niedrig, ernst, kritisch,  lebensbedrohend."
   }, 
   "Effektivit\u00e4t": {
     "synonyms": [
@@ -179,11 +179,11 @@
     ], 
     "description": "Eine <a href=\"#Inspektion\">Inspektion</a> die von Usabilityexperten oft in Kombination mit Fachexperten  durchgef\u00fchrt wird.  Bemerkung zum Seminar: Ein Expertenreview basiert nur auf dem Wissen und  den Erfahrungen des Experten. <a href=\"#Heuristik\">Heuristiken</a> werden dabei nicht verwendet."
   }, 
-  "Face-to-face Usabilitytest": {
+  "Face-to-Face Usabilitytest": {
     "synonyms": [
-      "\nUsabilitytest \u00ad Face-to-face\n"
+      "\nUsabilitytest - Face-to-face\n"
     ], 
-    "description": "Siehe <a href=\"#Usabilitytest \u00ad Face-to-face\">Usabilitytest \u00ad Face-to-face</a>"
+    "description": "Siehe <a href=\"#Usabilitytest - Face-to-face\">Usabilitytest \u00ad Face-to-face</a>"
   }, 
   "Fehlermanagement": {
     "synonyms": [
@@ -207,7 +207,7 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Eine Art der <a href=\"#Usabilityevaluierung\">Usabilityevaluierung</a> die hilft, das Design f\u00fcr ein <a href=\"#Interaktives System\">interaktives System</a>  oder eine Dienstleistung zu formen. Formative Evaluierungen beziehen  die Evaluierung eines <a href=\"#Interaktives System\">interaktiven Systems</a> oder einer Dienstleistung oft  iterativ w\u00e4hrend der Entwicklung mit dem Ziel mit ein, <a href=\"#Nutzungsproblem\">Nutzungsprobleme</a>  fr\u00fchzeitig zu erkennen und zu eliminieren.  Bemerkung zum Seminar: Vergleiche mit <a href=\"#Summative Evaluation\">Summativer Evaluation</a>."
+    "description": "Eine Art der <a href=\"#Usabilityevaluierung\">Usabilityevaluierung</a> die hilft, das Design f\u00fcr ein <a href=\"#Interaktives System\">interaktives System</a>  oder eine Dienstleistung zu formen. Formative Evaluierungen beziehen  die Evaluierung eines <a href=\"#Interaktives System\">interaktiven Systems</a> oder einer Dienstleistung oft  iterativ w\u00e4hrend der Entwicklung mit dem Ziel mit ein, <a href=\"#Nutzungsproblem\">Nutzungsprobleme</a>  fr\u00fchzeitig zu erkennen und zu eliminieren.  Bemerkung zum Seminar: Vergleiche mit <a href=\"#Summative Evaluierung\">Summativer Evaluation</a>."
   }, 
   "Fragebogen": {
     "synonyms": [
@@ -263,11 +263,11 @@
     ], 
     "description": "Siehe <a href=\"#Heuristische Evaluierung\">Heuristische Evaluierung</a>."
   }, 
-  "High-fidelity Prototyp": {
+  "High-Fidelity Prototyp": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Ein <a href=\"#Prototyp\">Prototyp</a>, der mit Softwarepaketen wie z.B. Visual Basic oder PowerPoint  erstellt wurde,. Ein high-fidelity Prototyp \u00e4hnelt dem fertigen <a href=\"#Interaktives System\">interaktiven System</a>.  Bemerkung zum Seminar: Vergleiche mit <a href=\"#Low-fidelity Prototyp\">low-fidelity Prototyp</a>."
+    "description": "Ein <a href=\"#Prototyp\">Prototyp</a>, der mit Softwarepaketen wie z.B. Visual Basic oder PowerPoint  erstellt wurde,. Ein high-fidelity Prototyp \u00e4hnelt dem fertigen <a href=\"#Interaktives System\">interaktiven System</a>.  Bemerkung zum Seminar: Vergleiche mit <a href=\"#Low-Fidelity Prototyp\">low-fidelity Prototyp</a>."
   }, 
   "ISO9241": {
     "synonyms": [
@@ -285,7 +285,7 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Eine <a href=\"#Rolle\">Rolle</a> im Prozess des <a href=\"#Menschzentriertes Design\">menschzentrierten Designs</a>.    Der Informationsarchitekt kreiert und organisiert die Struktur f\u00fcr das <a href=\"#Effizienz\">effiziente</a>  Auffinden von Information in <a href=\"#Interaktives System\">interaktiven Systemen</a> durch den Nutzer. Er  definiert hierbei die nutzergruppengerechte Aufbereitung von Inhalten und  Navigationsstrukturen. Er ist f\u00fcr die konsistente und erwartungskonforme  Bezeichnung von Wegweisern (z.B. in Men\u00fcs) sowie erforderlicher  Nutzungsobjekte und Werkzeuge f\u00fcr den <a href=\"#Benutzer\">Nutzer</a> zust\u00e4ndig.  Bemerkung zum Seminar: Seminarteilnehmer m\u00fcssen den Unterschied  zwischen Informationsarchitekt, <a href=\"#User Interface Designer\">User Interface Designer</a> und  Interaktionsdesigner nicht wissen. Seminarteilnehmer m\u00fcssen aber den  Unterschied zwischen Informationsarchitekt, <a href=\"#Usability Engineer\">Usability Engineer</a>, <a href=\"#User Requirements Engineer\">User Requirements Engineer</a>  und <a href=\"#Usabilty Tester\">Usabilty Tester</a> kennen."
+    "description": "Eine <a href=\"#Rolle\">Rolle</a> im Prozess des <a href=\"#Menschzentrierte Gestaltung\">menschzentrierten Designs</a>.    Der Informationsarchitekt kreiert und organisiert die Struktur f\u00fcr das <a href=\"#Effizienz\">effiziente</a>  Auffinden von Information in <a href=\"#Interaktives System\">interaktiven Systemen</a> durch den Nutzer. Er  definiert hierbei die nutzergruppengerechte Aufbereitung von Inhalten und  Navigationsstrukturen. Er ist f\u00fcr die konsistente und erwartungskonforme  Bezeichnung von Wegweisern (z.B. in Men\u00fcs) sowie erforderlicher  Nutzungsobjekte und Werkzeuge f\u00fcr den <a href=\"#Benutzer\">Nutzer</a> zust\u00e4ndig.  Bemerkung zum Seminar: Seminarteilnehmer m\u00fcssen den Unterschied  zwischen Informationsarchitekt, <a href=\"#User Interface Designer\">User Interface Designer</a> und  Interaktionsdesigner nicht wissen. Seminarteilnehmer m\u00fcssen aber den  Unterschied zwischen Informationsarchitekt, <a href=\"#Usability Engineer\">Usability Engineer</a>, <a href=\"#User Requirements Engineer\">User Requirements Engineer</a>  und <a href=\"#Usability Tester\">Usability Tester</a> kennen."
   }, 
   "Informationsarchitektur": {
     "synonyms": [
@@ -303,13 +303,13 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Evaluierung die auf der Beurteilung ein oder mehrerer Evaluatoren basiert, die  ein <a href=\"#Interaktives System\">interaktives System</a> pr\u00fcfen oder benutzen, um potentielle  <a href=\"#Nutzungsproblem\">Nutzungsprobleme</a> und/oder Abweichungen von anerkannten Kriterien zu  identifizieren.  Inspektionsbasierte Evaluierung wird von Usability Experten oder Fachexperten  durchgef\u00fchrt, die ihre Urteile auf die fr\u00fchere Erfahrung mit Nutzungsproblemen  und ihr eigenes Wissen \u00fcber <a href=\"#Richtlinie\">Richtlinien</a> und Standards zu <a href=\"#Usability\">Usability</a> gr\u00fcnden.  Inspektionsbasierte Evaluierung ist ein \u00dcberbegriff f\u00fcr <a href=\"#Expertenreview\">Expertenreview</a> und  <a href=\"#Heuristische Evaluierung\">heuristische Evaluierung</a>."
+    "description": "Evaluierung die auf der Beurteilung ein oder mehrerer Evaluatoren basiert, die  ein <a href=\"#Interaktives System\">interaktives System</a> pr\u00fcfen oder benutzen, um potentielle  <a href=\"#Nutzungsproblem\">Nutzungsprobleme</a> und/oder Abweichungen von anerkannten Kriterien zu  identifizieren.  Inspektionsbasierte Evaluierung wird von Usability Experten oder Fachexperten  durchgef\u00fchrt, die ihre Urteile auf die fr\u00fchere Erfahrung mit Nutzungsproblemen  und ihr eigenes Wissen \u00fcber <a href=\"#Richtlinie f\u00fcr Benutzungsschnittstellen\">Richtlinien</a> und Standards zu <a href=\"#Usability\">Usability</a> gr\u00fcnden.  Inspektionsbasierte Evaluierung ist ein \u00dcberbegriff f\u00fcr <a href=\"#Expertenreview\">Expertenreview</a> und  <a href=\"#Heuristische Evaluierung\">heuristische Evaluierung</a>."
   }, 
   "Interaktionsdesigner": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Eine <a href=\"#Rolle\">Rolle</a> im Prozess des <a href=\"#Menschzentriertes Design\">menschzentrierten Designs</a>.    Der Interaktionsdesigner konzipiert und definiert die Interaktion zwischen  Mensch und System auf Basis der <a href=\"#Nutzungsanforderung\">Nutzungsanforderungen</a> und <a href=\"#Aufgabe\">Aufgaben</a> der  <a href=\"#Benutzer\">Nutzer</a>, mit dem Ziel der <a href=\"#Effizienz\">effizienten</a> Aufgabenerledigung am System. Er  generiert hierzu <a href=\"#Nutzungsszenario\">Nutzungsszenarien</a>, die die <a href=\"#Effektivit\u00e4t\">Effektivit\u00e4t</a>, <a href=\"#Effizienz\">Effizienz</a> und  <a href=\"#Zufriedenstellung\">Zufriedenstellung</a> bei der Aufgabenerledigung sicherstellen. Er ber\u00fccksichtigt  hierbei die Nutzungsanforderungen, identifiziert und kl\u00e4rt offene Fragen, die  sich aus der spezifizierten Interaktion ergeben.  Bemerkung zum Seminar: Seminarteilnehmer m\u00fcssen den Unterschied  zwischen <a href=\"#Informationsarchitekt\">Informationsarchitekt</a>, <a href=\"#User Interface Designer\">User Interface Designer</a> und  Interaktionsdesigner nicht kennen."
+    "description": "Eine <a href=\"#Rolle\">Rolle</a> im Prozess des <a href=\"#Menschzentrierte Gestaltung\">menschzentrierten Designs</a>.    Der Interaktionsdesigner konzipiert und definiert die Interaktion zwischen  Mensch und System auf Basis der <a href=\"#Nutzungsanforderung\">Nutzungsanforderungen</a> und <a href=\"#Aufgabe\">Aufgaben</a> der  <a href=\"#Benutzer\">Nutzer</a>, mit dem Ziel der <a href=\"#Effizienz\">effizienten</a> Aufgabenerledigung am System. Er  generiert hierzu <a href=\"#Nutzungsszenario\">Nutzungsszenarien</a>, die die <a href=\"#Effektivit\u00e4t\">Effektivit\u00e4t</a>, <a href=\"#Effizienz\">Effizienz</a> und  <a href=\"#Zufriedenstellung\">Zufriedenstellung</a> bei der Aufgabenerledigung sicherstellen. Er ber\u00fccksichtigt  hierbei die Nutzungsanforderungen, identifiziert und kl\u00e4rt offene Fragen, die  sich aus der spezifizierten Interaktion ergeben.  Bemerkung zum Seminar: Seminarteilnehmer m\u00fcssen den Unterschied  zwischen <a href=\"#Informationsarchitekt\">Informationsarchitekt</a>, <a href=\"#User Interface Designer\">User Interface Designer</a> und  Interaktionsdesigner nicht kennen."
   }, 
   "Interaktives System": {
     "synonyms": [
@@ -351,7 +351,7 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Ein interativer Prozess wiederholt die Schritte des Prozesses des  <a href=\"#Menschzentriertes Design\">menschzentrierten Designs</a> solange, bis eine <a href=\"#Evaluierung\">Evaluierung</a> der  <a href=\"#Benutzungsschnittstelle\">Benutzungsschnittstelle</a> zeigt, dass die <a href=\"#Nutzungsanforderung\">Nutzungsanforderungen</a> erf\u00fcllt sind."
+    "description": "Ein interativer Prozess wiederholt die Schritte des Prozesses des  <a href=\"#Menschzentrierte Gestaltung\">menschzentrierten Designs</a> solange, bis eine <a href=\"#Evaluierung\">Evaluierung</a> der  <a href=\"#Benutzungsschnittstelle\">Benutzungsschnittstelle</a> zeigt, dass die <a href=\"#Nutzungsanforderung\">Nutzungsanforderungen</a> erf\u00fcllt sind."
   }, 
   "Konsistenz": {
     "synonyms": [
@@ -371,11 +371,11 @@
     ], 
     "description": "Ein <a href=\"#Dialogprinzip\">Dialogprinzip</a>.  Ein <a href=\"#Dialog\">Dialog</a> ist lernf\u00f6rderlich, wenn er den <a href=\"#Benutzer\">Benutzer</a> beim Erlernen der Nutzung  des <a href=\"#Interaktives System\">interaktiven Systems</a> unterst\u00fctzt und anleitet.    Empfehlungen zu Befolgung des Dialogprinzips:  - Der Dialog sollte ausreichende R\u00fcckmeldung \u00fcber Zwischen- und  Endergebnisse von Handlungen bereitstellen, damit die Benutzer von  erfolgreich ausgef\u00fchrten Handlungen lernen.  - Falls es zu den <a href=\"#Aufgabe\">Aufgaben</a> und den Lernzielen passt, sollte das interaktive  System dem Benutzer erlauben, Dialogschritte ohne nachteilige Auswirkungen  auszuprobieren.  Beispiel: Wenn Benutzer mit Hilfe eines Hotelzimmerreservierungssystems ein  Zimmer reservieren, erhalten die Benutzer Schritt f\u00fcr Schritt R\u00fcckmeldungen,  um ihre Anfrage zu verfeinern und immer mehr Details \u00fcber den Fortschritt der  erfolgreichen Zimmerreservierung."
   }, 
-  "Lowfidelity Prototyp": {
+  "Low-Fidelity Prototyp": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Ein <a href=\"#Prototyp\">Prototyp</a>, der sich auf die allgemeine Vorstellung und Struktur eines  <a href=\"#Interaktives System\">interaktiven Systems</a> konzentriert. Er besteht oft aus Papierentw\u00fcrfen und  Bildschirmattrappen der <a href=\"#Benutzungsschnittstelle\">Benutzungsschnittstelle</a> eines zu entwickelnden  interaktiven Systems. Ein solcher low-fidelity Prototyp wird \u00fcblicherweise von  einem Menschen und nicht durch einen Computer bet\u00e4tigt. Er sollte so hinterlegt  sein, dass er unmittelbar modifiziert werden kann.  Bemerkung zum Seminar: Ein low-fidelity Prototyp wird h\u00e4ufig mit Hilfe von  Papier, Stiften, Haftzetteln usw. erstellt. Vergleiche mit <a href=\"#High-fidelity Prototyp\">high-fidelity Prototyp</a>."
+    "description": "Ein <a href=\"#Prototyp\">Prototyp</a>, der sich auf die allgemeine Vorstellung und Struktur eines  <a href=\"#Interaktives System\">interaktiven Systems</a> konzentriert. Er besteht oft aus Papierentw\u00fcrfen und  Bildschirmattrappen der <a href=\"#Benutzungsschnittstelle\">Benutzungsschnittstelle</a> eines zu entwickelnden  interaktiven Systems. Ein solcher low-fidelity Prototyp wird \u00fcblicherweise von  einem Menschen und nicht durch einen Computer bet\u00e4tigt. Er sollte so hinterlegt  sein, dass er unmittelbar modifiziert werden kann.  Bemerkung zum Seminar: Ein low-fidelity Prototyp wird h\u00e4ufig mit Hilfe von  Papier, Stiften, Haftzetteln usw. erstellt. Vergleiche mit <a href=\"#High-Fidelity Prototyp\">high-fidelity Prototyp</a>."
   }, 
   "Marktanforderung": {
     "synonyms": [
@@ -417,7 +417,7 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Eine Rolle in einem <a href=\"#Usabilitytest\">Usabilitytest</a> oder in einer <a href=\"#Fokusgruppe\">Fokusgruppe</a>. Der Moderator  leitet die Usabilitytestsitzung oder die Fokusgruppe.  In einem Usabilitytest begr\u00fc\u00dft der Moderator die <a href=\"#Testteillehmer\">Testteillehmer</a>, f\u00fchrt die  <a href=\"#Vorabinterviews\">Vorabinterviews</a> durch, beobachtet die Testteilnehmer w\u00e4hrend der  Erledigung der Aufgaben und macht das <a href=\"#Post-Test-Interview\">Interview nach dem Test</a>."
+    "description": "Eine Rolle in einem <a href=\"#Usabilitytest\">Usabilitytest</a> oder in einer <a href=\"#Fokusgruppe\">Fokusgruppe</a>. Der Moderator  leitet die Usabilitytestsitzung oder die Fokusgruppe.  In einem Usabilitytest begr\u00fc\u00dft der Moderator die <a href=\"#Testteilnehmer\">Testteilnehmer</a>, f\u00fchrt die  <a href=\"#Pre-Test-Interview\">Vorabinterviews</a> durch, beobachtet die Testteilnehmer w\u00e4hrend der  Erledigung der Aufgaben und macht das <a href=\"#Post-Test-Interview\">Interview nach dem Test</a>."
   }, 
   "Nachbesprechung": {
     "synonyms": [
@@ -441,7 +441,7 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Was ein <a href=\"#Interaktives System\">interaktives System</a> aus Sicht des <a href=\"#Benutzers\">Benutzers</a> erm\u00f6glichen soll.    Nutzungsanforderungen k\u00f6nnen <a href=\"#Qualitativ\">qualitativ</a> oder <a href=\"#Quantitativ\">quantitativ</a> sein.    Bemerkung zum Seminar: Nutzungsanforderungen werden von <a href=\"#Erfordernis\">Erfordernissen</a>  abgeleitet."
+    "description": "Was ein <a href=\"#Interaktives System\">interaktives System</a> aus Sicht des <a href=\"#Benutzer\">Benutzers</a> erm\u00f6glichen soll.    Nutzungsanforderungen k\u00f6nnen <a href=\"#Qualit\u00e4t\">qualitativ</a> oder <a href=\"#Quantit\u00e4t\">quantitativ</a> sein.    Bemerkung zum Seminar: Nutzungsanforderungen werden von <a href=\"#Erfordernis\">Erfordernissen</a>  abgeleitet."
   }, 
   "Nutzungsanforderung - Qualitativ": {
     "synonyms": [
@@ -465,7 +465,7 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Die wichtigsten Informationseinheiten auf oberster Ebene oder Daten mit denen  <a href=\"#Benutzer\">Benutzer</a> interagieren, um ihre <a href=\"#Aufgaben\">Aufgaben</a> durchzuf\u00fchren.  Beispiele: Ein Brief, eine Liste unbezahlter Rechnungen, eine Bestellung von  einem Kunden."
+    "description": "Die wichtigsten Informationseinheiten auf oberster Ebene oder Daten mit denen  <a href=\"#Benutzer\">Benutzer</a> interagieren, um ihre <a href=\"#Aufgabe\">Aufgaben</a> durchzuf\u00fchren.  Beispiele: Ein Brief, eine Liste unbezahlter Rechnungen, eine Bestellung von  einem Kunden."
   }, 
   "Nutzungsproblem": {
     "synonyms": [
@@ -491,7 +491,7 @@
     ], 
     "description": "Eine Form der <a href=\"#Benutzerunterst\u00fctzung\">Benutzerunterst\u00fctzung</a>.  Onlinehilfe ist durch eine Computersoftware bereitgestellte themenorientierte  oder prozedurale Information oder ein Verweis auf solche Information. Meist ist  die Onlinehilfe dazu ausgelegt, Unterst\u00fctzung f\u00fcr die <a href=\"#Benutzung\">Benutzung</a> eines  <a href=\"#Interaktives System\">interaktiven Systems</a> zu geben; sie kann aber auch Informationen zu  weitergehenden Themenbereichen bieten. Wenn die Onlinehilfe unmittelbar auf  die gegenw\u00e4rtige T\u00e4tigkeit des <a href=\"#Benutzer\">Benutzers</a> bezogen ist, dann spricht man von  kontextsensitiver Hilfe."
   }, 
-  "Organisatiorische Anforderung": {
+  "Organisatorische Anforderung": {
     "synonyms": [
       "\n"
     ], 
@@ -537,27 +537,27 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Eine Repr\u00e4sentation von Teilen oder des gesamten <a href=\"#Interaktives System\">interaktiven Systems</a>, die  in einem bestimmten Ma\u00df f\u00fcr Analyse, Design und Evaluierung benutzt werden  kann.  Bemerkung zum Seminar: Seminarteilnehmer m\u00fcssen auch mit den Begriffen  <a href=\"#high-fidelity Prototyp\">high-fidelity Prototyp</a> und <a href=\"#low-fidelity Prototyp\">low-fidelity Prototyp</a> vertraut sein."
+    "description": "Eine Repr\u00e4sentation von Teilen oder des gesamten <a href=\"#Interaktives System\">interaktiven Systems</a>, die  in einem bestimmten Ma\u00df f\u00fcr Analyse, Design und Evaluierung benutzt werden  kann.  Bemerkung zum Seminar: Seminarteilnehmer m\u00fcssen auch mit den Begriffen  <a href=\"#High-Fidelity Prototyp\">high-fidelity Prototyp</a> und <a href=\"#Low-Fidelity Prototyp\">low-fidelity Prototyp</a> vertraut sein."
   }, 
   "Qualitative Nutzungsanforderung": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Siehe Nutzungsanforderung \u00ad <a href=\"#Qualitativ\">qualitativ</a>"
+    "description": "Siehe Nutzungsanforderung \u00ad <a href=\"#Qualit\u00e4t\">qualitativ</a>"
   }, 
   "Qualit\u00e4t": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Grad der Erf\u00fcllung von <a href=\"#Anforderungen\">Anforderungen</a> durch ein <a href=\"#Interaktives System\">interaktives System</a>.  Bemerkung zum Seminar: Beispiele f\u00fcr Qualit\u00e4tsmerkmale neben Usability sind  Korrektheit, Verl\u00e4sslichkeit und Sicherheit."
+    "description": "Grad der Erf\u00fcllung von <a href=\"#Anforderung\">Anforderungen</a> durch ein <a href=\"#Interaktives System\">interaktives System</a>.  Bemerkung zum Seminar: Beispiele f\u00fcr Qualit\u00e4tsmerkmale neben Usability sind  Korrektheit, Verl\u00e4sslichkeit und Sicherheit."
   }, 
   "Quantitative Nutzungsanforderung": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Siehe Nutzungsanforderung \u00ad <a href=\"#Quantitativ\">quantitativ</a>"
+    "description": "Siehe Nutzungsanforderung \u00ad <a href=\"#Quantit\u00e4t\">quantitativ</a>"
   }, 
-  "Rekrutierung(eines Teilnehmers f\u00fcr einen Usabilitytest)": {
+  "Rekrutierung (eines Teilnehmers f\u00fcr einen Usabilitytest)": {
     "synonyms": [
       "\n"
     ], 
@@ -567,13 +567,13 @@
     "synonyms": [
       "\nScreener\n"
     ], 
-    "description": "Eine Reihe von Fragen f\u00fcr potenzielle <a href=\"#Testteilnehmer\">Testteilnehmer</a> hinsichtlich ihres  Hintergrundes und Wissens. Ein Rekrutierungsfragebogen wird w\u00e4hrend der  <a href=\"#Rekrutierung\">Rekrutierung</a> von Testteilnehmern benutzt, um festzustellen ob Kandidaten  \u00fcber die erforderlichen Qualifikationen zur Teilnahme an dem <a href=\"#Usabilitytest\">Usabilitytest</a>  verf\u00fcgen.  Ein Rekrutierungsfragebogen kann auch benutzt werden, um passende  Teilnehmer f\u00fcr Nutzungskontextanalysen auszuw\u00e4hlen \u00ad z.B. f\u00fcr <a href=\"#Kontextuelles Interview\">kontextuelle Interviews</a>."
+    "description": "Eine Reihe von Fragen f\u00fcr potenzielle <a href=\"#Testteilnehmer\">Testteilnehmer</a> hinsichtlich ihres  Hintergrundes und Wissens. Ein Rekrutierungsfragebogen wird w\u00e4hrend der  <a href=\"#Rekrutierung (eines Teilnehmers f\u00fcr einen Usabilitytest)\">Rekrutierung</a> von Testteilnehmern benutzt, um festzustellen ob Kandidaten  \u00fcber die erforderlichen Qualifikationen zur Teilnahme an dem <a href=\"#Usabilitytest\">Usabilitytest</a>  verf\u00fcgen.  Ein Rekrutierungsfragebogen kann auch benutzt werden, um passende  Teilnehmer f\u00fcr Nutzungskontextanalysen auszuw\u00e4hlen \u00ad z.B. f\u00fcr <a href=\"#Kontextuelles Interview\">kontextuelle Interviews</a>."
   }, 
   "Remote Usabilitytest": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Siehe <a href=\"#Usabilitytest \u00ad- Remote.\">Usabilitytest \u00ad- Remote.</a>"
+    "description": "Siehe <a href=\"#Usabilitytest\u00ad- Remote\">Usabilitytest \u00ad- Remote.</a>"
   }, 
   "Ressourcen": {
     "synonyms": [
@@ -645,7 +645,7 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Eine Frage in einem <a href=\"#Interview\">Interview</a>, die Annahmen oder einen Rahmen voraussetzt,  der eine Pr\u00e4ferenz f\u00fcr bestimmte Antwortm\u00f6glichkeiten vorgibt oder versucht,  die Antwort in eine bestimmte Richtung zu lenken. Vergleiche mit <a href=\"#neutraler Frage\">neutraler Frage</a>."
+    "description": "Eine Frage in einem <a href=\"#Interview\">Interview</a>, die Annahmen oder einen Rahmen voraussetzt,  der eine Pr\u00e4ferenz f\u00fcr bestimmte Antwortm\u00f6glichkeiten vorgibt oder versucht,  die Antwort in eine bestimmte Richtung zu lenken. Vergleiche mit <a href=\"#Neutrale Frage\">neutraler Frage</a>."
   }, 
   "Summative Evaluierung": {
     "synonyms": [
@@ -699,13 +699,13 @@
     "synonyms": [
       "\nUsabilitytest -\u00ad Unbeaufsichtigt\n"
     ], 
-    "description": "Siehe <a href=\"#Usabilitytest \u00ad- Unbeaufsichtigt\">Usabilitytest -\u00ad Unbeaufsichtigt</a>."
+    "description": "Siehe <a href=\"#Usabilitytest\u00ad- Unbeaufsichtigt\">Usabilitytest -\u00ad Unbeaufsichtigt</a>."
   }, 
   "Usability": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Ausma\u00df, in dem ein <a href=\"#Interaktives System\">interaktives System</a> oder ein Dienst durch bestimmte  Benutzer in einem bestimmten <a href=\"#Nutzungskontext\">Nutzungskontext</a> genutzt werden kann, um  festgelegte <a href=\"#Ziele\">Ziele</a> <a href=\"#Effektivit\u00e4t\">effektiv</a>, <a href=\"#Effizienz\">effizient</a> und <a href=\"#Zufriedenstellung\">zufriedenstellend</a> zu erreichen.  Bemerkung zum Seminar: Stellen Sie in der Definition die Wichtigkeit und die  Implikationen von \"bestimmten <a href=\"#Benutzer\">Benutzern</a>\", \"festgelegten <a href=\"#Zielen\">Zielen</a>\" und  \"bestimmtem Nutzungskontext\" heraus."
+    "description": "Ausma\u00df, in dem ein <a href=\"#Interaktives System\">interaktives System</a> oder ein Dienst durch bestimmte  Benutzer in einem bestimmten <a href=\"#Nutzungskontext\">Nutzungskontext</a> genutzt werden kann, um  festgelegte <a href=\"#Ziel\">Ziele</a> <a href=\"#Effektivit\u00e4t\">effektiv</a>, <a href=\"#Effizienz\">effizient</a> und <a href=\"#Zufriedenstellung\">zufriedenstellend</a> zu erreichen.  Bemerkung zum Seminar: Stellen Sie in der Definition die Wichtigkeit und die  Implikationen von \"bestimmten <a href=\"#Benutzer\">Benutzern</a>\", \"festgelegten <a href=\"#Ziel\">Zielen</a>\" und  \"bestimmtem Nutzungskontext\" heraus."
   }, 
   "Usability Engineer": {
     "synonyms": [
@@ -717,25 +717,25 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Eine Person, die qualifiziert und methodisch die Anforderungen an die <a href=\"#Usability\">Usability</a>  (Gebrauchstauglichkeit) <a href=\"#Interaktives System\">interaktiver Systeme</a> (Hardware und Software)  herleitet, umsetzt oder deren Umsetzung \u00fcberpr\u00fcft.  Der Usability Professional ist typischerweise in einem oder mehrerer der  folgenden Arbeitsschwerpunkte spezialisiert:  Analyse - Erheben von <a href=\"#Nutzungskontext\">Nutzungskontexten</a>, Herleiten von  <a href=\"#Nutzungsanforderungen\">Nutzungsanforderungen</a>  Gestaltung - Konzipieren der Interaktion zwischen Mensch und interaktives  System, strukturieren und darstellen handlungsleitender Informationen.  <a href=\"#Evaluierung\">Evaluierung</a> - Durchf\u00fchren von <a href=\"#Inspektionbasierte Evaluierung\">inspektionbasierten Evaluierungen</a> (ohne  Nutzer) und <a href=\"#Usabilitytest\">Usabilitytests</a> (mit <a href=\"#Benutzer\">Nutzern</a>)  Prozessgestaltung und Methodeneinsatz - Festlegen, Einf\u00fchren und Betreiben  eines <a href=\"#Menschzentrierte Gestaltung\">menschzentrierten Gestaltungsprozesses</a>.  Die Grundlage der T\u00e4tigkeiten eines Usability Professionals sind die  internationalen Normen zur Usability interaktiver Systeme und deren  Gestaltungsprozess (ISO 9241) sowie aktuelles, publiziertes Fachwissen.  Usability Professionals arbeiten in Projekten zu Herstellung von interaktiven  Systemen und mit ihnen verbundener Dienstleistungen und Prozesse f\u00fcr den  Einsatz in zahlreichen Projektkontexten (z.B. interaktive Systeme f\u00fcr den  gewerblichen Einsatz, Haushaltsger\u00e4te, interaktive Spiele, mobile Endger\u00e4te)."
+    "description": "Eine Person, die qualifiziert und methodisch die Anforderungen an die <a href=\"#Usability\">Usability</a>  (Gebrauchstauglichkeit) <a href=\"#Interaktives System\">interaktiver Systeme</a> (Hardware und Software)  herleitet, umsetzt oder deren Umsetzung \u00fcberpr\u00fcft.  Der Usability Professional ist typischerweise in einem oder mehrerer der  folgenden Arbeitsschwerpunkte spezialisiert:  Analyse - Erheben von <a href=\"#Nutzungskontext\">Nutzungskontexten</a>, Herleiten von  <a href=\"#Nutzungsanforderung\">Nutzungsanforderungen</a>  Gestaltung - Konzipieren der Interaktion zwischen Mensch und interaktives  System, strukturieren und darstellen handlungsleitender Informationen.  <a href=\"#Evaluierung\">Evaluierung</a> - Durchf\u00fchren von <a href=\"#Inspektionsbasierte Evaluierung\">inspektionbasierten Evaluierungen</a> (ohne  Nutzer) und <a href=\"#Usabilitytest\">Usabilitytests</a> (mit <a href=\"#Benutzer\">Nutzern</a>)  Prozessgestaltung und Methodeneinsatz - Festlegen, Einf\u00fchren und Betreiben  eines <a href=\"#Menschzentrierte Gestaltung\">menschzentrierten Gestaltungsprozesses</a>.  Die Grundlage der T\u00e4tigkeiten eines Usability Professionals sind die  internationalen Normen zur Usability interaktiver Systeme und deren  Gestaltungsprozess (ISO 9241) sowie aktuelles, publiziertes Fachwissen.  Usability Professionals arbeiten in Projekten zu Herstellung von interaktiven  Systemen und mit ihnen verbundener Dienstleistungen und Prozesse f\u00fcr den  Einsatz in zahlreichen Projektkontexten (z.B. interaktive Systeme f\u00fcr den  gewerblichen Einsatz, Haushaltsger\u00e4te, interaktive Spiele, mobile Endger\u00e4te)."
   }, 
   "Usability Tester": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Eine <a href=\"#Rolle\">Rolle</a> im Prozess der <a href=\"#Menschzentrierte Gestaltung\">menschzentrierten Gestaltung</a>.  Der Usability Tester evaluiert <a href=\"#Benutzungsschnittstellen\">Benutzungsschnittstellen</a> in verschiedenen  Stadien der Realisierung. Er definiert in Abstimmung der Prozessbeteiligten den  Aufbau der Evaluierungen und verantwortet die valide Ausf\u00fchrung der  Evaluierungen.  Der Usability Tester erstellt entwicklungsbegleitende <a href=\"#Usabilitytestbericht\">Usabilitytestberichte</a> mit  dem Ziel der Produktverbesserung sowie den Usabilitytestbericht \u00fcber die  abschlie\u00dfende <a href=\"#Summative Evaluierung\">summative Evaluierung</a>. Er kommuniziert diese Ergebnisse an  die Interessenvertreter (Projektbeteiligten) oder betreut deren Kommunikation  verantwortlich. Dies kann bspw. im Rahmen eines Abnahmetests in  Zusammenarbeit mit dem <a href=\"#User Requirements Engineer\">User Requirements Engineer</a> erfolgen."
+    "description": "Eine <a href=\"#Rolle\">Rolle</a> im Prozess der <a href=\"#Menschzentrierte Gestaltung\">menschzentrierten Gestaltung</a>.  Der Usability Tester evaluiert <a href=\"#Benutzungsschnittstelle\">Benutzungsschnittstellen</a> in verschiedenen  Stadien der Realisierung. Er definiert in Abstimmung der Prozessbeteiligten den  Aufbau der Evaluierungen und verantwortet die valide Ausf\u00fchrung der  Evaluierungen.  Der Usability Tester erstellt entwicklungsbegleitende <a href=\"#Usabilitytestbericht\">Usabilitytestberichte</a> mit  dem Ziel der Produktverbesserung sowie den Usabilitytestbericht \u00fcber die  abschlie\u00dfende <a href=\"#Summative Evaluierung\">summative Evaluierung</a>. Er kommuniziert diese Ergebnisse an  die Interessenvertreter (Projektbeteiligten) oder betreut deren Kommunikation  verantwortlich. Dies kann bspw. im Rahmen eines Abnahmetests in  Zusammenarbeit mit dem <a href=\"#User Requirements Engineer\">User Requirements Engineer</a> erfolgen."
   }, 
   "Usabilityevaluierung": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Ein \u00fcblicher Ausdruck f\u00fcr <a href=\"#Evaluierung \u00ad- inspektionsbasiert\">Evaluierung \u00ad inspektionsbasiert</a> und  <a href=\"#Evaluierung -\u00ad benutzerbasiert\">Evaluierung -\u00ad benutzerbasiert</a>."
+    "description": "Ein \u00fcblicher Ausdruck f\u00fcr <a href=\"#Inspektionsbasierte Evaluierung\">Evaluierung \u00ad inspektionsbasiert</a> und  <a href=\"#Benutzerzentrierte Evaluierung\">Evaluierung -\u00ad benutzerbasiert</a>."
   }, 
   "Usabilitylabor": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Zwei oder mehrere R\u00e4ume, die speziell f\u00fcr die Durchf\u00fchrung von <a href=\"#Usabiltytest\">Usabiltytests</a>  oder <a href=\"#Fokusgruppe\">Fokusgruppen</a> ausgestattet sind. Ein Usabilitylabor besteht of aus einem  Testraum, wo die <a href=\"#Testteilnehmer\">Testteilnehmer</a> sitzen, und einem Beobachtungsraum, wo  <a href=\"#Interessenvertreter\">Interessenvertreter</a> die Testteilnehmer beobachten k\u00f6nnen, w\u00e4hrend die  Testteilnehmer <a href=\"#Aufgabe\">Aufgaben</a> l\u00f6sen. Oft sind diese zwei Zimmer durch eine  Spiegelwand getrennt, was den Beobachtern erlaubt, den Testteilnehmern  zuzuschauen, nicht aber umgekehrt."
+    "description": "Zwei oder mehrere R\u00e4ume, die speziell f\u00fcr die Durchf\u00fchrung von <a href=\"#Usabilitytest\">Usabilitytests</a>  oder <a href=\"#Fokusgruppe\">Fokusgruppen</a> ausgestattet sind. Ein Usabilitylabor besteht of aus einem  Testraum, wo die <a href=\"#Testteilnehmer\">Testteilnehmer</a> sitzen, und einem Beobachtungsraum, wo  <a href=\"#Interessenvertreter\">Interessenvertreter</a> die Testteilnehmer beobachten k\u00f6nnen, w\u00e4hrend die  Testteilnehmer <a href=\"#Aufgabe\">Aufgaben</a> l\u00f6sen. Oft sind diese zwei Zimmer durch eine  Spiegelwand getrennt, was den Beobachtern erlaubt, den Testteilnehmern  zuzuschauen, nicht aber umgekehrt."
   }, 
   "Usabilityproblem": {
     "synonyms": [
@@ -747,25 +747,7 @@
     "synonyms": [
       "\n"
     ], 
-    "description": "Der Validierungsprozess zur Feststellung dass ein <a href=\"#Interaktives System\">interaktives System</a> alle  vorher festgelegten <a href=\"#Nutzungsanforderung\">Nutzungsanforderungen</a> erf\u00fcllt. Ein Usabilitytest kann die  Umsetzung der vorliegenden <a href=\"#Quantitativ\">quantitativen</a> und <a href=\"#Qualitativ\">qualitativen</a>  Nutzungsanforderungen einschlie\u00dflich Aufgabenvervollst\u00e4ndigung,  Aufgabendauer, Fehlerraten und <a href=\"#Zufriedenstellung\">Benutzerzufriedenstellung</a> validieren.  Ein Usabilitytest umfasst eine Reihe von <a href=\"#Usabilitytestsitzung\">Usabilitytestsitzungen</a>. In jeder  Sitzung versucht ein <a href=\"#Testteilnehmer\">Testteilnehmer</a> unter <a href=\"#Benutzung\">Benutzung</a> des interaktiven  Systems oder eines <a href=\"#Prototyp\">Prototypen</a> eines <a href=\"#Interaktives System\">interaktiven Systems</a> repr\u00e4sentative  Aufgaben zu l\u00f6sen. \u00dcblicherweise werden Testsitzungen von einem <a href=\"#Moderator\">Moderator</a>  moderiert und von einer Anzahl von Interessenvertretern beobachtet. Ein  <a href=\"#Protokollant\">Protokollant</a> zeichnet wichtige <a href=\"#Befund\">Befunde</a> auf.  Testen kann formal oder informal sein. Das Testen kann face-to-face (mit einem  physisch anwesenden Moderator am gleichen Platz wie die Testteilnehmer)  oder remote stattfinden und qualitative oder quantitative Daten ergeben. Das  Testen kann zu jedem Zeitpunkt w\u00e4hrend der Entwicklungsphase geschehen \u00ad  von der fr\u00fchen Analysephase bis hin zur Lieferung des interaktiven Systems  und dar\u00fcberhinaus. Die Tests k\u00f6nnen sowohl an Papierentw\u00fcrfen oder <a href=\"#Primitive Attrappe\">primitive Attrappen</a> als auch an in Entwicklung befindlichen oder bereits fertiggestellten  interaktiven Systemen durchgef\u00fchrt werden."
-  }, 
-  "Usabilitytest \u00ad- Face-to-face": {
-    "synonyms": [
-      "\n"
-    ], 
-    "description": "Ein Usabilitytest, bei dem sich die Testteilnehmer und der Moderator am selben  physischen Ort befinden.  Bemerkung zum Seminar: Vergleiche mit <a href=\"#Usabilitytest -\u00ad Remote\">Usabilitytest -\u00ad Remote</a> und  <a href=\"#Usabilitytest \u00ad- Unbeaufsichtigt\">Usabilitytest \u00ad- Unbeaufsichtigt</a>."
-  }, 
-  "Usabilitytest \u00ad- Remote": {
-    "synonyms": [
-      "\n"
-    ], 
-    "description": "Ein <a href=\"#Usabilitytest\">Usabilitytest</a> bei dem sich die <a href=\"#Testteilnehmer\">Testteilnehmer</a> und der <a href=\"#Moderator\">Moderator</a> an  unterschiedlichen Orten befinden. Der Moderator beobachtet die  Testteilnehmer \u00fcber eine Internetverbindung. Der Moderator kommuniziert mit  den Testteilnehmern \u00fcber Telefon oder Internetverbindung.  Bemerkung zum Seminar: Vergleiche mit <a href=\"#Usabilitytest -\u00ad Face-to-face\">Usabilitytest \u00ad- Face-to-face</a> und  <a href=\"#Usabilitytest \u00ad- Unbeaufsichtigt\">Usabilitytest \u00ad- Unbeaufsichtigt</a>."
-  }, 
-  "Usabilitytest \u00ad- Unbeaufsichtigt": {
-    "synonyms": [
-      "\n"
-    ], 
-    "description": "Ein <a href=\"#Usabilitytest\">Usabilitytest</a> bei dem <a href=\"#Testteilnehmer\">Testteilnehmer</a> <a href=\"#Testaufgaben\">Testaufgaben</a> l\u00f6sen ohne dabei  beobachtet zu werden. Handlungen werden auf Video zur sp\u00e4teren Analyse  aufgezeichnet.  Bemerkung zum Seminar: Vergleiche mit <a href=\"#Usabilitytest \u00ad- Face-to-face\">Usabilitytest \u00ad- Face-to-face</a> und  <a href=\"#Usabilitytest \u00ad- Remote\">Usabilitytest \u00ad- Remote</a>."
+    "description": "Der Validierungsprozess zur Feststellung dass ein <a href=\"#Interaktives System\">interaktives System</a> alle  vorher festgelegten <a href=\"#Nutzungsanforderung\">Nutzungsanforderungen</a> erf\u00fcllt. Ein Usabilitytest kann die  Umsetzung der vorliegenden <a href=\"#Quantit\u00e4t\">quantitativen</a> und <a href=\"#Qualit\u00e4t\">qualitativen</a>  Nutzungsanforderungen einschlie\u00dflich Aufgabenvervollst\u00e4ndigung,  Aufgabendauer, Fehlerraten und <a href=\"#Zufriedenstellung\">Benutzerzufriedenstellung</a> validieren.  Ein Usabilitytest umfasst eine Reihe von <a href=\"#Usabilitytestsitzung\">Usabilitytestsitzungen</a>. In jeder  Sitzung versucht ein <a href=\"#Testteilnehmer\">Testteilnehmer</a> unter <a href=\"#Benutzung\">Benutzung</a> des interaktiven  Systems oder eines <a href=\"#Prototyp\">Prototypen</a> eines <a href=\"#Interaktives System\">interaktiven Systems</a> repr\u00e4sentative  Aufgaben zu l\u00f6sen. \u00dcblicherweise werden Testsitzungen von einem <a href=\"#Moderator\">Moderator</a>  moderiert und von einer Anzahl von Interessenvertretern beobachtet. Ein  <a href=\"#Protokollant\">Protokollant</a> zeichnet wichtige <a href=\"#Befund\">Befunde</a> auf.  Testen kann formal oder informal sein. Das Testen kann face-to-face (mit einem  physisch anwesenden Moderator am gleichen Platz wie die Testteilnehmer)  oder remote stattfinden und qualitative oder quantitative Daten ergeben. Das  Testen kann zu jedem Zeitpunkt w\u00e4hrend der Entwicklungsphase geschehen \u00ad  von der fr\u00fchen Analysephase bis hin zur Lieferung des interaktiven Systems  und dar\u00fcberhinaus. Die Tests k\u00f6nnen sowohl an Papierentw\u00fcrfen oder <a href=\"#Primitive Attrappe\">primitive Attrappen</a> als auch an in Entwicklung befindlichen oder bereits fertiggestellten  interaktiven Systemen durchgef\u00fchrt werden."
   }, 
   "Usabilitytestbericht": {
     "synonyms": [
@@ -791,17 +773,35 @@
     ], 
     "description": "Der Teil eines <a href=\"#Usabilitytest\">Usabilitytests</a>, bei dem ein bestimmter <a href=\"#Testteilnehmer\">Testteilnehmer</a>  repr\u00e4sentative <a href=\"#Aufgabe\">Aufgaben</a> unter Benutzung des <a href=\"#Interaktives System\">interaktiven Systems</a> oder des  <a href=\"#Prototyp\">Prototypen</a> eines <a href=\"#Interaktives System\">interaktiven Systems</a> l\u00f6st.  Bemerkung zum Seminar: Vergleiche mit <a href=\"#Usabilitytest\">Usabilitytest</a>."
   }, 
+  "Usabilitytest\u00ad- Face-to-Face": {
+    "synonyms": [
+      "\n"
+    ], 
+    "description": "Ein Usabilitytest, bei dem sich die Testteilnehmer und der Moderator am selben  physischen Ort befinden.  Bemerkung zum Seminar: Vergleiche mit <a href=\"#Usabilitytest - Remote\">Usabilitytest -\u00ad Remote</a> und  <a href=\"#Usabilitytest\u00ad- Unbeaufsichtigt\">Usabilitytest \u00ad- Unbeaufsichtigt</a>."
+  }, 
+  "Usabilitytest\u00ad- Remote": {
+    "synonyms": [
+      "\n"
+    ], 
+    "description": "Ein <a href=\"#Usabilitytest\">Usabilitytest</a> bei dem sich die <a href=\"#Testteilnehmer\">Testteilnehmer</a> und der <a href=\"#Moderator\">Moderator</a> an  unterschiedlichen Orten befinden. Der Moderator beobachtet die  Testteilnehmer \u00fcber eine Internetverbindung. Der Moderator kommuniziert mit  den Testteilnehmern \u00fcber Telefon oder Internetverbindung.  Bemerkung zum Seminar: Vergleiche mit <a href=\"#Face-to-Face Usabilitytest\">Usabilitytest \u00ad- Face-to-face</a> und  <a href=\"#Usabilitytest\u00ad- Unbeaufsichtigt\">Usabilitytest \u00ad- Unbeaufsichtigt</a>."
+  }, 
+  "Usabilitytest\u00ad- Unbeaufsichtigt": {
+    "synonyms": [
+      "\n"
+    ], 
+    "description": "Ein <a href=\"#Usabilitytest\">Usabilitytest</a> bei dem <a href=\"#Testteilnehmer\">Testteilnehmer</a> <a href=\"#Testaufgabe\">Testaufgaben</a> l\u00f6sen ohne dabei  beobachtet zu werden. Handlungen werden auf Video zur sp\u00e4teren Analyse  aufgezeichnet.  Bemerkung zum Seminar: Vergleiche mit <a href=\"#Usabilitytest - Face-to-face\">Usabilitytest \u00ad- Face-to-face</a> und  <a href=\"#Usabilitytest\u00ad- Remote\">Usabilitytest \u00ad- Remote</a>."
+  }, 
   "User Interface Designer": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Eine <a href=\"#Rolle\">Rolle</a> im Prozess des <a href=\"#Menschzentriertens Design\">menschzentrierten Designs</a>.    Ein User Interface Designer implementiert das <a href=\"#Benutzererlebnis\">Benutzererlebnis</a> basierend auf  dem Design und den <a href=\"#Nutzungsszenario\">Nutzungsszenarios</a>, des <a href=\"#Interaktionsdesigner\">Interaktionsdesigners</a>.  Der User Interface Designer erzeugt interaktive Prototypen.  Bemerkung zum Seminar: Es ist nicht erforderlich, dass Seminarteilnehmer den  Unterschied zwischen <a href=\"#Informationsarchitekt\">Informationsarchitekt</a>, User Interface Designer und  <a href=\"#Interaktionsdesigner\">Interaktionsdesigner</a> kennen."
+    "description": "Eine <a href=\"#Rolle\">Rolle</a> im Prozess des <a href=\"#Menschzentrierte Gestaltung\">menschzentrierten Designs</a>.    Ein User Interface Designer implementiert das <a href=\"#Benutzererlebnis\">Benutzererlebnis</a> basierend auf  dem Design und den <a href=\"#Nutzungsszenario\">Nutzungsszenarios</a>, des <a href=\"#Interaktionsdesigner\">Interaktionsdesigners</a>.  Der User Interface Designer erzeugt interaktive Prototypen.  Bemerkung zum Seminar: Es ist nicht erforderlich, dass Seminarteilnehmer den  Unterschied zwischen <a href=\"#Informationsarchitekt\">Informationsarchitekt</a>, User Interface Designer und  <a href=\"#Interaktionsdesigner\">Interaktionsdesigner</a> kennen."
   }, 
   "User Requirements Engineer": {
     "synonyms": [
       "\n"
     ], 
-    "description": "Eine <a href=\"#Rolle\">Rolle</a> im Prozess des <a href=\"#Menschzentriertens Design\">menschzentrierten Designs</a>.    Der User Requirements Engineer identifiziert und beschreibt den tats\u00e4chlichen  <a href=\"#Nutzungskontext\">Nutzungskontext</a> von <a href=\"#Benutzer\">Benutzern</a>. Daraus leitet der User Requirements  Engineer die <a href=\"#Nutzungsanforderung\">Nutzungsanforderungen</a> und damit verbundene  <a href=\"#Organisatorische Anforderung\">Organisatorische Anforderungen</a> ab, die f\u00fcr ein bestimmtes Projekt umgesetzt  werden m\u00fcssen. Der User Requirements Engineer priorisiert die Anforderungen  um sicherzustellen, dass die grunds\u00e4tzlichen Erfordernisse des Benutzers  erf\u00fcllt werden."
+    "description": "Eine <a href=\"#Rolle\">Rolle</a> im Prozess des <a href=\"#Menschzentrierte Gestaltung\">menschzentrierten Designs</a>.    Der User Requirements Engineer identifiziert und beschreibt den tats\u00e4chlichen  <a href=\"#Nutzungskontext\">Nutzungskontext</a> von <a href=\"#Benutzer\">Benutzern</a>. Daraus leitet der User Requirements  Engineer die <a href=\"#Nutzungsanforderung\">Nutzungsanforderungen</a> und damit verbundene  <a href=\"#Organisatorische Anforderung\">Organisatorische Anforderungen</a> ab, die f\u00fcr ein bestimmtes Projekt umgesetzt  werden m\u00fcssen. Der User Requirements Engineer priorisiert die Anforderungen  um sicherzustellen, dass die grunds\u00e4tzlichen Erfordernisse des Benutzers  erf\u00fcllt werden."
   }, 
   "Wireframe": {
     "synonyms": [
