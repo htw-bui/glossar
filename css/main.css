@@ -33,6 +33,20 @@ header h1 {
 nav ul {
   overflow-y: scroll;
   height: 100%;
+  list-style-type: none;
+}
+
+nav li {
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 0.4em;
+}
+nav a {
+  color: black;
+}
+
+.active-item {
+  font-weight: bold;
 }
 
 aside {
