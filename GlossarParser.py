@@ -2,12 +2,12 @@ import json
 import codecs
 import collections
 
-with codecs.open("C:/Users/hiwi/Documents/GitHub/glossar/begriffe.txt", "r", "utf8" ) as infileBegriffe:
+with codecs.open("./begriffe.txt", "r", "utf8" ) as infileBegriffe:
     begriffe = infileBegriffe.read().split("|")
 begriffe = [begriff.split() for begriff in begriffe]
 
 
-with codecs.open("C:/Users/hiwi/Documents/GitHub/glossar/definitionen.txt", "r", "utf8") as infileDefinitionen:
+with codecs.open("./definitionen.txt", "r", "utf8") as infileDefinitionen:
     definitionen = infileDefinitionen.read().split("|")
 
 merged = []
@@ -18,7 +18,7 @@ for i in range(len(begriffe)):
 #with open("C:/Users/hiwi/Documents/GitHub/glossar/merged.txt", "w", encoding="utf-8") as me:
 #    me.write("---------\n\n\n".join(merged))
 
-with open("C:/Users/hiwi/Documents/GitHub/glossar/merged.html", "r", encoding="utf-8") as infile:
+with open("./merged.html", "r", encoding="utf-8") as infile:
     content = infile.read().split("---------")
 
 
@@ -33,7 +33,7 @@ for part in content:
                   }
 od = collections.OrderedDict(sorted(terms.items()))
 
-with open("C:/Users/hiwi/Documents/GitHub/glossar/neu_generierte_begriffe.json", "w") as out:
+with open("./neu_generierte_begriffe.json", "w") as out:
     out.write(json.dumps(od, indent=2))
 
 
