@@ -1,0 +1,85 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+nav {
+  width: 30%;
+  float: left;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  float: left;
+}
+header h1 {
+  float: left;
+}
+
+nav ul {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+aside {
+  font-style: italic;
+}
+
+#content {
+  height: 100%;
+  float: left;
+  width: 70%;
+}
+
+.nav-open, .hideDesktop {
+  display: none;
+}
+
+#container {
+  float: left;
+  height: 80%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  nav {
+    position: absolute;
+    left: -200%;
+  }
+
+  .hideDesktop {
+    display: block;
+  }
+
+  .nav-open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: white;
+    width: 90%;
+    height: 80%;
+  }
+
+  nav {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+}
