@@ -17,6 +17,10 @@ function changeDisplay(term){
 
 var loadNewDefintition = function () {
     var term = window.location.hash.substr(1);
+    if (term === ""){
+        window.location.hash = "#" + terms[0]
+        term = window.location.hash.substr(1);
+     }
     changeDisplay(term);
 };
 
