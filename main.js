@@ -1,21 +1,11 @@
 /*jslint browser: true*/
 /*global $, jQuery, console*/
 
-function changeDisplay(term){
-	var termObject = items[term];
-	$("#main").empty();
-	$( "<h1>", {html: term}).appendTo("#main");
-
-	var synonyms = [];
-	$.each(termObject.synonyms, function(key, value){
-		synonyms.push("<a href='#" + value + "'>" + value + "</a>");
-	});
-	$( "<aside>", {html: synonyms.join("")}).appendTo("#main");
-	$("<p>", {html: termObject.description}).appendTo("#main");
-
-	setActiveItemInNavigation(term);
+function changeTo(term){
+	window.location.hash = term;
 	checkPaginationVisibilty();
-};
+	setActiveItemInNavigation(term);
+}
 
 function setActiveItemInNavigation(term){
 	var position = terms.indexOf(term);
@@ -23,17 +13,21 @@ function setActiveItemInNavigation(term){
 		$(this).removeClass("active-item");
 	});
 	$("nav ul a").eq(position).addClass("active-item");
-	}
+}
 
 
 var loadNewDefintition = function () {
 	var term = window.location.hash.substr(1);
-	if (term === ""){
+	if (term === "" || terms.indexOf(term)===-1) {
 		window.location.hash = "#" + terms[0]
 		term = window.location.hash.substr(1);
 	}
-	changeDisplay(term);
+	window.mySwipe.slide(terms.indexOf(term));
 };
+
+function swipeTo(term){
+	window.mySwipe.slide(terms.indexOf(term));
+}
 
 window.addEventListener("hashchange", loadNewDefintition, false);
 
@@ -44,11 +38,35 @@ $(document).ready(function () {
 	$.getJSON("/neu_generierte_begriffe.json", function (data) {
 		items = data;
 		$.each(data, function( key, val ) {
+
+
+			var newSlide = $("<div>");
+			var termObject = val;
+			var synonyms = [];
+			$( "<h1>", {html: key}).appendTo(newSlide);
+			$.each(termObject.synonyms, function(key, value){
+				synonyms.push("<a href='#" + value + "'>" + value + "</a>");
+			});
+			$( "<aside>", {html: synonyms.join("")}).appendTo(newSlide);
+			$("<p>", {html: termObject.description}).appendTo(newSlide);
+			newSlide.appendTo(".swipe-wrap");
+
 			terms.push(key);
 		});
 		createNaviagtion(terms);
-	}).done(function() {loadNewDefintition();});
+	}).done(function() {
+		window.mySwipe = Swipe(document.getElementById('content'), {
+			continous: false,
+			callback: function(index, element){
+				changeTo(terms[index]);
+			}
+		});
+		loadNewDefintition();
+
+	});
+
 });
+
 
 function createNaviagtion(data){
 	$(".navItems").remove();
@@ -71,14 +89,14 @@ function checkPaginationVisibilty(){
 	var term = window.location.hash.substr(1);
 	positionOfSelectedTerm = terms.indexOf(term);
 	numberOfTerms = terms.length;
-	$("#nextTerm").show();
-	$("#previousTerm").show();
+	$("#nextTerm").prop("disabled", false);
+	$("#previousTerm").prop("disbaled", false);
 	if (positionOfSelectedTerm === 0){
-		$("#previousTerm").hide();
+		$("#previousTerm").prop("disabled", false);
 		return;
 	}
 	if (positionOfSelectedTerm === (numberOfTerms - 1) ){
-		$("#nextTerm").hide();
+		$("#nextTerm").prop("disabled", false);
 		return;
 	}
 }
@@ -93,16 +111,10 @@ function closeNav(){
 }
 
 function getPreviousTerm(){
-	var term = window.location.hash.substr(1);
-	positionOfSelectedTerm = terms.indexOf(term);
-	previousTerm = terms[positionOfSelectedTerm - 1];
-	window.location.hash = previousTerm;
+	window.mySwipe.prev()
 }
 function getNextTerm(){
-	var term = window.location.hash.substr(1);
-	positionOfSelectedTerm = terms.indexOf(term);
-	nextTerm = terms[positionOfSelectedTerm +1];
-	window.location.hash = nextTerm;
+	window.mySwipe.next()
 }
 
 
