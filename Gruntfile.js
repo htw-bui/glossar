@@ -10,7 +10,10 @@ module.exports = function(grunt) {
 			stylesheets: {
 				files: ["sass/*"],
 				tasks: ["sass"]
-			}
+			},
+			html: {
+			 files:["*.html"]
+			 }
 		},
 		sass: {
 			dev: {
