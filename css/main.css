@@ -10,7 +10,7 @@
 }
 
 html, body {
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   border: 0;
@@ -65,8 +65,8 @@ aside {
 
 #container {
   float: left;
-  height: 80%;
   width: 100%;
+  height: 80vh;
 }
 
 @media only screen and (max-width: 767px) {
@@ -87,6 +87,7 @@ aside {
     background: white;
     width: 90%;
     height: 80%;
+    z-index: 3000;
   }
 
   nav {
@@ -95,5 +96,22 @@ aside {
     -o-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+  }
+
+  .swipe-wrap {
+    height: 90%;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+  }
+  .swipe-wrap div {
+    height: 100%;
+  }
+  .swipe-wrap p {
+    overflow-y: scroll;
+    height: 60%;
+  }
+
+  #content {
+    width: 100%;
   }
 }
