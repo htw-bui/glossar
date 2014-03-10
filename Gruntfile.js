@@ -66,8 +66,15 @@ module.exports = function(grunt) {
 		},
 		copy: {
 			dist: {
-				src:"neu_generierte_begriffe.json", 
-				dest:"dist/neu_generierte_begriffe.json"
+				files: [ {
+					src:"neu_generierte_begriffe.json", 
+					dest:"dist/neu_generierte_begriffe.json"
+				},
+				{
+					src:"js/hyphenate.js", 
+					dest:"dist/js/hyphenate.js"
+				}
+				]
 			}
 		},
 		uglify: {

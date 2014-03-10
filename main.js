@@ -7,7 +7,7 @@ function changeDisplay(term){
 	document.title = "KOMET Glossar | " + term;
 
 	$("#main").empty();
-	$( "<h1>", {html: term}).appendTo("#main");
+	$( "<h1>", {html: term, class:"hyphenate"}).appendTo("#main");
 
 	var synonyms = [];
 	$.each(termObject.synonyms, function(key, value){
@@ -15,6 +15,7 @@ function changeDisplay(term){
 	});
 	$( "<aside>", {html: synonyms.join("")}).appendTo("#main");
 	$("<p>", {html: termObject.description}).appendTo("#main");
+	Hyphenator.run();
 
 	setActiveItemInNavigation(term);
 	checkPaginationVisibilty();
