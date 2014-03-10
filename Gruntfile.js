@@ -13,6 +13,10 @@ module.exports = function(grunt) {
 			},
 			html: {
 				files:["*.html"]
+			},
+			css: {
+				files:["css/*"],
+				tasks: ["autoprefixer"]
 			}
 		},
 		sass: {
@@ -24,11 +28,22 @@ module.exports = function(grunt) {
 					"css/main.css" : "sass/main.sass"
 				}
 			}
+		},
+		autoprefixer: {
+
+			maincss: {
+				options: {
+					diff: true
+					},
+					src: "css/main.css",
+					dest: "dist/css/main.css"
+			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass'); 
+	grunt.loadNpmTasks('grunt-autoprefixer'); 
 
 	// Default task(s).
 	grunt.registerTask('default', ['sass', 'watch']);

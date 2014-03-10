@@ -1,0 +1,27 @@
+Index: dist/css/main.css
+===================================================================
+--- dist/css/main.css
++++ dist/css/main.css
+@@ -1,8 +1,12 @@
+ * {
++  -webkit-box-sizing: border-box;
++  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ *:before, *:after {
++  -webkit-box-sizing: border-box;
++  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ 
+ html, body {
+@@ -86,8 +90,9 @@
+     height: 80%;
+   }
+ 
+   nav {
++    -webkit-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
+   }
+ 
+   #content {
