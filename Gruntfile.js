@@ -12,8 +12,8 @@ module.exports = function(grunt) {
 				tasks: ["sass"]
 			},
 			html: {
-			 files:["*.html"]
-			 }
+				files:["*.html"]
+			}
 		},
 		sass: {
 			dev: {
