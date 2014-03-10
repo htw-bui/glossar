@@ -3,6 +3,9 @@
 
 function changeDisplay(term){
 	var termObject = items[term];
+
+	document.title = "KOMET Glossar | " + term;
+
 	$("#main").empty();
 	$( "<h1>", {html: term}).appendTo("#main");
 
@@ -23,7 +26,7 @@ function setActiveItemInNavigation(term){
 		$(this).removeClass("active-item");
 	});
 	$("nav ul a").eq(position).addClass("active-item");
-	}
+}
 
 
 var loadNewDefintition = function () {
