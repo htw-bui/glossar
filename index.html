@@ -1,54 +1,38 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title> KOMET Glossar</title>
 		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 		<link rel="stylesheet" href="/css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
-		<script src="js/swipe.js" type="text/javascript" charset="utf-8"></script>
-		<script src="main.js"></script>
 		<style>
-			.swipe {
-				overflow: hidden;
-				visibility: hidden;
-				position: relative;
-			}
-			.swipe-wrap {
-				overflow: hidden;
-				position: relative;
-			}
-			.swipe-wrap > div {
-				float:left;
-				width:100%;
-				position: relative;
-				}</style>
-		</head>
 
-		<body>
-			<header>
-			<h1> Glossar</h1>
-			<a class=hideDesktop href="javascript:showNav()">Navigation anzeigen</a>
-			</header>
-			<div id="container">
-				<nav>
-				<a class=hideDesktop href="javascript:closeNav();">Schließen</a>
-				<h2>Navigation</h2> 
-				<input id=filterTerms onkeyup="filterNavigation()" type="search" placeholder="Filter....">
-				</nav>
 
-				<div id="content" class="swipe"> 
-					<div class="swipe-wrap">
-					</div>
-					<div id="paging">
-						<a href="javascript:getPreviousTerm()" id="previousTerm" class="pagination-button">Zurück</a>
-						<a href="javascript:getNextTerm()" id="nextTerm" class="pagination-button">Nächster</a>
-					</div>
+		</style>
+		<script src="main.js"></script>
+	</head>
+
+	<body>
+		<header>
+		<h1> Glossar</h1>
+		<a class=hideDesktop href="javascript:showNav()">Navigation anzeigen</a>
+		</header>
+		<div id="container">
+		<nav>
+			<a class=hideDesktop href="javascript:closeNav();">Schließen</a>
+			<h2>Navigation</h2> 
+			<input id=filterTerms onsearch="filterNavigation()" onkeydown="filterNavigation()" type="search" placeholder="Filter....">
+			</nav>
+
+			<div id="content">
+				<div id="main"> Begriffe </div>
+				<div id="paging">
+					<a href="javascript:getPreviousTerm()" id="previousTerm">Zurück</a>
+					<a href="javascript:getNextTerm()" id="nextTerm">Nächster</a>
 				</div>
 			</div>
-			<script>
-			</script>
+		</div>
 
 
-		</body>
-	</html>
+	</body>
+</html>

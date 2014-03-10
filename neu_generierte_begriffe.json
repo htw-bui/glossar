@@ -1,4 +1,10 @@
 {
+  "Affordance": {
+    "synonyms": [
+      "\nHandlungsleitung\n"
+    ], 
+    "description": "\ufeffSiehe Handlungsleitung"
+  }, 
   "Anforderung": {
     "synonyms": [
       "\n"
@@ -820,11 +826,5 @@
       "\n"
     ], 
     "description": "Freiheit von Beeintr\u00e4chtigungen und positive Einstellungen gegen\u00fcber der  Nutzung des <a href=\"#Interaktives System\">interaktiven Systems</a>.  Bemerkung zum Seminar: Die Zufriedenstellung wird durch eine  <a href=\"#Benutzerfragebogen\">Benutzerfragebogen</a> ermittelt."
-  }, 
-  "\ufeffAffordance": {
-    "synonyms": [
-      "\nHandlungsleitung\n"
-    ], 
-    "description": "\ufeffSiehe Handlungsleitung"
   }
 }
