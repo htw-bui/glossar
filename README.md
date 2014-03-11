@@ -12,7 +12,7 @@ Use Grunt to watch for changes. This gives you autoreload, sass compilation etc.
 ``` grunt ```
 
 Create a build
-``` grunt build ```
+``` grunt build ```. This compiles, and shortens the files and moves them to the ```dist``` folder that can be uploaded and will just work.
 
 
 Errata: The python script that creates the .json files does not work right now due to changed pathes but could be easily fixed.
