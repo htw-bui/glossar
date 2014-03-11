@@ -83,7 +83,7 @@ module.exports = function(grunt) {
 					mangle: true
 				},
 				files: {
-					"dist/main.js": "main.js"
+					"dist/js/main.js": "js/main.js"
 				}
 			}
 		}
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
 
 
 
-	grunt.registerTask('default', ['sass', 'watch']);
+	grunt.registerTask('default', ['sass:maincss', 'watch']);
 	grunt.registerTask('build', ['sass:dist', "autoprefixer:dist", "htmlmin:dist", "copy:dist", "uglify:dist"]);
 
 };
