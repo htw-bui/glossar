@@ -9,14 +9,14 @@ module.exports = function(grunt) {
 			},
 			stylesheets: {
 				files: ["sass/*"],
-				tasks: ["sass"]
+				tasks: ["sass:dev"]
 			},
 			html: {
 				files:["*.html"]
 			},
 			css: {
 				files:["css/*"],
-				tasks: ["autoprefixer"]
+				tasks: ["autoprefixer:maincss"]
 			}
 		},
 		sass: {
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
 
 
 
-	grunt.registerTask('default', ['sass:maincss', 'watch']);
+	grunt.registerTask('default', ['sass:dev', 'watch']);
 	grunt.registerTask('build', ['sass:dist', "autoprefixer:dist", "htmlmin:dist", "copy:dist", "uglify:dist"]);
 
 };
