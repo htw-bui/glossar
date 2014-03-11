@@ -66,6 +66,8 @@ function newTerms(items){
         this.selectedIndex = position;
         setActiveItemInNavigation(term);
         checkPaginationVisibilty();
+        $("#nextTerm").attr("href", "#" +this.nextTerm());
+        $("#previousTerm").attr("href", "#" +this.prevTerm());
         return this.items[term];
         };
 
@@ -120,14 +122,6 @@ function closeNav(){
 function showNav(){
     $("nav").addClass("nav-open");
     $("nav a").bind("click", function() {closeNav();});
-}
-
-
-function getPreviousTerm(){
-    window.location.hash = n.prevTerm();
-}
-function getNextTerm(){
-    window.location.hash = n.nextTerm();
 }
 
 function filterBySearchTerm(term){
