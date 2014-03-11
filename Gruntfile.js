@@ -9,14 +9,14 @@ module.exports = function(grunt) {
 			},
 			stylesheets: {
 				files: ["sass/*"],
-				tasks: ["sass"]
+				tasks: ["sass:dev"]
 			},
 			html: {
 				files:["*.html"]
 			},
 			css: {
 				files:["css/*"],
-				tasks: ["autoprefixer"]
+				tasks: ["autoprefixer:maincss"]
 			}
 		},
 		sass: {
