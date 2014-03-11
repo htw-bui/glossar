@@ -29,7 +29,7 @@ function setActiveItemInNavigation(){
 
 
 var loadNewDefintition = function () {
-    var term = window.location.hash.substr(1);
+    var term = decodeURI(window.location.hash.substr(1));
     if (term === ""){
         term = window.location.hash = n.keys[0]
     }
