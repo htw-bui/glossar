@@ -100,7 +100,7 @@ module.exports = function(grunt) {
 
 
 
-	grunt.registerTask('default', ['sass:maincss', 'watch']);
+	grunt.registerTask('default', ['sass:dev', 'watch']);
 	grunt.registerTask('build', ['sass:dist', "autoprefixer:dist", "htmlmin:dist", "copy:dist", "uglify:dist"]);
 
 };
