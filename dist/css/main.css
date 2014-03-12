@@ -115,6 +115,7 @@ aside {
   }
   #main p {
     float: left;
+    width: 100%;
   }
 
   #paging a {
