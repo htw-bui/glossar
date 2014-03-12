@@ -2,3 +2,38 @@ Index: dist/css/main.css
 ===================================================================
 --- dist/css/main.css
 +++ dist/css/main.css
+@@ -1,8 +1,12 @@
+ * {
++  -webkit-box-sizing: border-box;
++  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ *:before, *:after {
++  -webkit-box-sizing: border-box;
++  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ 
+ html, body {
+@@ -95,8 +99,9 @@
+     border-right: 1px solid black;
+   }
+ 
+   nav {
++    -webkit-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
+   }
+   nav ul {
+     float: left;
+@@ -108,8 +113,11 @@
+   }
+ 
+   #main h1 {
+     margin-bottom: 0;
++    -webkit-hyphens: auto;
++    -moz-hyphens: auto;
++    -ms-hyphens: auto;
+     hyphens: auto;
+   }
+   #main p {
+     float: left;
