@@ -41,15 +41,23 @@ window.addEventListener("hashchange", loadNewDefintition, false);
 
 function progressCounter(numberOfTerms){
   this.numberOfTerms = numberOfTerms;
-  var readTerms = [];
+  var readTerms = JSON.parse(localStorage.getItem("progressCounter.readTerms"));
+  if (readTerms === null){
+    readTerms = [];
+  }
   this.registerTerm = function(term){
     if (readTerms.indexOf(term) === -1){
       readTerms.push(term);
     }
+    localStorage.setItem("progressCounter.readTerms", JSON.stringify(readTerms));
     $("#progress").text(this.numberOfTermsRead() + "|" + this.numberOfTerms);
   };
   this.numberOfTermsRead = function() {
     return readTerms.length;
+  };
+  this.clear = function() {
+    localStorage.removeItem("progressCounter.readTerms");
+    readTerms = [];
   };
 }
 
