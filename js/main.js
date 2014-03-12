@@ -1,6 +1,6 @@
 /*jslint browser: true*/
 /*global $, jQuery, console*/
-
+require(["hyphenate", "ProgressCounter"], function(hyphenate, progressCounter){
 function changeDisplay(term){
   var termObject =  n.getDefinition(term);
   p.registerTerm(term);
@@ -38,28 +38,6 @@ var loadNewDefintition = function () {
 };
 
 window.addEventListener("hashchange", loadNewDefintition, false);
-
-function progressCounter(numberOfTerms){
-  this.numberOfTerms = numberOfTerms;
-  var readTerms = JSON.parse(localStorage.getItem("progressCounter.readTerms"));
-  if (readTerms === null){
-    readTerms = [];
-  }
-  this.registerTerm = function(term){
-    if (readTerms.indexOf(term) === -1){
-      readTerms.push(term);
-    }
-    localStorage.setItem("progressCounter.readTerms", JSON.stringify(readTerms));
-    $("#progress").text(this.numberOfTermsRead() + "|" + this.numberOfTerms);
-  };
-  this.numberOfTermsRead = function() {
-    return readTerms.length;
-  };
-  this.clear = function() {
-    localStorage.removeItem("progressCounter.readTerms");
-    readTerms = [];
-  };
-}
 
 
 function newTerms(items){
@@ -104,6 +82,9 @@ $(document).ready(function () {
   $.getJSON("/neu_generierte_begriffe.json", function (data) {
     n = new newTerms(data);
     p = new progressCounter(n.keys.length);
+    p.onChange = function () {
+      $("#progress").text(this.numberOfTermsRead() + "|" + this.numberOfTerms);
+    }
     createNaviagtion(n.keys);
   }).done(function() {
     loadNewDefintition();
@@ -164,7 +145,4 @@ function filterNavigation(){
   filteredItems = filteredItems.filter(filterBySearchTerm);
   createNaviagtion(filteredItems);
 }
-
-
-
-
+});
