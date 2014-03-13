@@ -78,7 +78,7 @@ define([
                     var clock;
                     clock = sinon.useFakeTimers();
                     timer.start();
-                    clock.tick(300000);
+                    clock.tick(300001);
                     expect(timer.formatedTime()).to.equal("5:00");
                     clock.restore();
                 });
