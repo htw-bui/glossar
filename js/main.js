@@ -103,10 +103,9 @@ require(["hyphenate", "ProgressCounter", 'jquery'], function(hyphenate, progress
         }).done(function() {
             loadNewDefintition();
         });
-        $('#showNav').on('click', showNav);/*function(e){
-            showNav();
-        });
-        */
+        $('#showNav').on('click', showNav);
+        $('#filterTerms').on('keyup', filterNavigation);
+        document.getElementById('filterTerms').onsearch = filterNavigation;
     });
 
     function createNaviagtion(data){
@@ -160,8 +159,10 @@ require(["hyphenate", "ProgressCounter", 'jquery'], function(hyphenate, progress
     }
 
     function filterNavigation(){
+     console.log('l');
         var filteredItems = jQuery.extend([], n.keys);
         filteredItems = filteredItems.filter(filterBySearchTerm);
         createNaviagtion(filteredItems);
+        return false;
     }
 });
