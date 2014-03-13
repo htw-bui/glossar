@@ -1,8 +1,10 @@
 define([
     'intern!bdd',
     'intern/chai!expect',
-    'js/ProgressCounter'
-    ], function (bdd, expect, progressCounter) {
+    'js/ProgressCounter',
+    'js/stopwatch',
+    'test/sinon'
+    ], function (bdd, expect, progressCounter, stopwatch, sinon) {
         with (bdd){
             describe('demo', function(){ 
                 var p;
@@ -42,6 +44,46 @@ define([
                     p.clear();
                     expect(p.numberOfTermsRead()).to.equal(0);
                 });
+            });
+
+            describe('timer', function(){
+                var timer;
+                beforeEach(function(){
+                    timer = new stopwatch();
+                });
+
+                it('should be startable', function() {
+                    timer.start();
+                });
+                
+                it('should count the time', function(){
+                    var clock;
+                    clock = sinon.useFakeTimers();
+                    timer.start();
+                    clock.tick(5000);
+                    expect(timer.ellapsed()).to.equal(5000);
+                    clock.restore();
+                });
+
+                it('should display ellapsed time in seconds', function(){
+                    var clock;
+                    clock = sinon.useFakeTimers();
+                    timer.start();
+                    clock.tick(5000);
+                    expect(timer.seconds()).to.equal(5);
+                    clock.restore();
+                });
+
+                it('should display ellapsed time formated', function(){
+                    var clock;
+                    clock = sinon.useFakeTimers();
+                    timer.start();
+                    clock.tick(300000);
+                    expect(timer.formatedTime()).to.equal("5:00");
+                    clock.restore();
+                });
+
+
             });
         }
     });
