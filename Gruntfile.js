@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ["css/*"],
-        tasks: ["autoprefixer:maincss"]
+        tasks: ["autoprefixer"]
       }
     },
     sass: {
@@ -45,16 +45,10 @@ module.exports = function(grunt) {
 
     },
     autoprefixer: {
-      maincss: {
-        options: {
-          diff: true
-        },
-        src: "css/main.css",
-        dest: "dist/css/main.css"
-      },
       dist: {
-        src: "dist/css/main.css",
-        dest : "css/main.css"
+        expand: true,
+        src : "css/*.css",
+        dest: "dist/"
       }
     },
     htmlmin: {
@@ -66,20 +60,21 @@ module.exports = function(grunt) {
           collapseBooleanAttribute: true
         },
         files: {
-          'dist/index.html': 'index.html'
+          'dist/index.html': 'index.html',
+          'dist/quiz.html': 'quiz.html'
         }
       }
     },
     copy: {
       dist: {
-        files: [ {
-          src:"neu_generierte_begriffe.json", 
-          dest:"dist/neu_generierte_begriffe.json"
-        },
-        {
-          src:"js/*", 
-          dest:"dist/"
-        }
+        files: [ 
+          {
+            src:"js/*", 
+            dest:"dist/"
+          },
+          { src:"*.json",
+            dest:'dist/'
+          }
         ]
       }
     },
@@ -89,7 +84,8 @@ module.exports = function(grunt) {
           mangle: true
         },
         files: {
-          "dist/js/main.js": "js/main.js"
+          "dist/js/main.js": "js/main.js",
+          "dist/js/game.js": "js/game.js"
         }
       }
     }
@@ -107,6 +103,6 @@ module.exports = function(grunt) {
 
 
   grunt.registerTask('default', ['sass:dev', 'watch']);
-  grunt.registerTask('build', ['sass:dist', "autoprefixer:dist", "htmlmin:dist", "copy:dist", "uglify:dist"]);
+  grunt.registerTask('build', ['sass:dist', "autoprefixer", "htmlmin:dist", "copy:dist", "uglify:dist"]);
 
 };
