@@ -2,7 +2,7 @@ define(function(){
     return function(){
         var self = this;
         var startTime;
-        var timeFromtLastRun = JSON.parse(localStorage.getItem('timer.ellapsed'));
+        var timeFromtLastRun = JSON.parse(localStorage.getItem(window.location.path  + 'timer.ellapsed'));
         if (timeFromtLastRun === null) {
             timeFromtLastRun = 0;
         }
@@ -40,11 +40,11 @@ define(function(){
 
         this.t = function(){
             self.execute();
-            localStorage.setItem('timer.ellapsed', self.ellapsed());
+            localStorage.setItem(window.location.path  + 'timer.ellapsed', self.ellapsed());
         };
 
         this.clear = function  () {
-            localStorage.removeItem('timer.ellapsed');
+            localStorage.removeItem(window.location.path  + 'timer.ellapsed');
             timeFromtLastRun = 0;
             startTime = Date.now();
         };
