@@ -28,7 +28,8 @@ module.exports = function(grunt) {
           style: "expanded"
         },
         files: {
-          "css/main.css" : "sass/main.sass"
+          "css/main.css" : "sass/main.sass",
+          "css/game.css" : "sass/game.sass"
         }
       },
       dist: {
@@ -36,7 +37,9 @@ module.exports = function(grunt) {
           style: "compressed"
         },
         files: {
-          "css/main.css" : "sass/main.sass"
+          "css/main.css" : "sass/main.sass",
+          "css/game.css" : "sass/game.sass"
+
         }
       }
 

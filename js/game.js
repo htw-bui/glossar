@@ -26,6 +26,8 @@ define(['jquery'], function($){
   });
 
   function setUp(){
+    $('#choices').empty();
+    $('#definiton').empty();
     var term = keys.randomElement();
     var choices = [];
     createDefinition(data[term].description);
@@ -55,6 +57,7 @@ define(['jquery'], function($){
           var clicked = event.target.innerText;
           if ($('#definiton div').text() === data[clicked].description){
             alert('Richtig');
+            setUp();
           }
           else{
             alert('Leider Falsch');

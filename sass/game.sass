@@ -1,0 +1,48 @@
+*
+  box-sizing: border-box
+  &:before, &:after
+    box-sizing: border-box
+
+.clearfix:before,
+.clearfix:after 
+  content: " "
+  display: table
+
+ 
+.clearfix:after 
+  clear: both
+
+ 
+//.clearfix 
+  //*zoom: 1;
+
+
+
+.container
+  margin: 0 auto
+  width: 90%
+
+.column
+  .half
+    width: 50%
+
+
+#choices
+  float: left
+  width: 100%
+
+
+.choice
+  display: block
+  padding: 20px
+  background: gray
+  margin: 5%
+  width: 40%
+  float: left
+  text-align: center
+
+
+@media only screen and (max-width: 767px)
+  .choice
+    width: 100%
+    margin: 0
