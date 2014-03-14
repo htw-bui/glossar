@@ -48,41 +48,48 @@ define([
 
             describe('timer', function(){
                 var timer;
+                var clock;
                 beforeEach(function(){
                     timer = new stopwatch();
+                    clock = sinon.useFakeTimers();
                 });
+
+                afterEach(function(){
+                    clock.restore();
+                    });
 
                 it('should be startable', function() {
                     timer.start();
                 });
                 
                 it('should count the time', function(){
-                    var clock;
-                    clock = sinon.useFakeTimers();
                     timer.start();
                     clock.tick(5000);
                     expect(timer.ellapsed()).to.equal(5000);
-                    clock.restore();
+                    timer.clear();
                 });
 
                 it('should display ellapsed time in seconds', function(){
-                    var clock;
-                    clock = sinon.useFakeTimers();
                     timer.start();
                     clock.tick(5000);
                     expect(timer.seconds()).to.equal(5);
-                    clock.restore();
+                    timer.clear();
                 });
 
                 it('should display ellapsed time formated', function(){
-                    var clock;
-                    clock = sinon.useFakeTimers();
                     timer.start();
                     clock.tick(300001);
                     expect(timer.formatedTime()).to.equal("5:00");
-                    clock.restore();
+                    // dont't clear here for next test
                 });
 
+                it('should save the time', function(){
+                    timer.start();
+                    // this is supposed to be 300000 since we only save every seconds
+                    // that is why we do not get the 300001 from above
+                    expect(timer.ellapsed()).to.equal(300000);
+                    timer.clear();
+                });
 
             });
         }

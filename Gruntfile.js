@@ -74,8 +74,8 @@ module.exports = function(grunt) {
           dest:"dist/neu_generierte_begriffe.json"
         },
         {
-          src:"js/hyphenate.js", 
-          dest:"dist/js/hyphenate.js"
+          src:"js/*", 
+          dest:"dist/"
         }
         ]
       }

@@ -1,7 +1,11 @@
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -96,6 +100,7 @@ aside {
   }
 
   nav {
+    -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
   }
   nav ul {
@@ -109,6 +114,9 @@ aside {
 
   #main h1 {
     margin-bottom: 0;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
     hyphens: auto;
   }
   #main p {
