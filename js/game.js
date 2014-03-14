@@ -15,7 +15,7 @@ define(['jquery'], function($){
 
   $(document).ready(function () {
     'use strict';
-    $.getJSON("/neu_generierte_begriffe.json", function (json_data) {
+    $.getJSON("/terms.json", function (json_data) {
       data = json_data;
       for(var key in data){
         keys.push(key);
