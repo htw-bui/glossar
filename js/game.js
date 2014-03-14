@@ -9,9 +9,11 @@ requirejs.config({
 });
 
 
-define(['jquery'], function($){
+define(['jquery', 'ProgressCounter', 'stopwatch'], function($, ProgressCounter, Stopwatch){
   var keys = [];
   var data;
+  var progressCounter;
+  var timer;
 
   $(document).ready(function () {
     'use strict';
@@ -21,8 +23,15 @@ define(['jquery'], function($){
         keys.push(key);
       }
       setUp();
-    }).done(function() {
+    }).done(function() { 
+      progressCounter = new ProgressCounter(keys.length);
+      timer = new Stopwatch();
+      timer.clear();
+      progressCounter.clear();
+      timer.start();
     });
+
+
   });
 
   function setUp(){
@@ -44,7 +53,7 @@ define(['jquery'], function($){
 
 
   function createDefinition(definition){
-    var definitionBlock = $("<div />", {text: definition});
+    var definitionBlock = $("<div />", {html: definition});
     definitionBlock.appendTo('#definiton');
   }
 
@@ -58,9 +67,17 @@ define(['jquery'], function($){
           if ($('#definiton div').text() === data[clicked].description){
             alert('Richtig');
             setUp();
+            progressCounter.registerTerm(clicked);
           }
           else{
-            alert('Leider Falsch');
+            var message = "Sie haben " + 
+              progressCounter.numberOfTermsRead() +
+              ' von ' +
+              progressCounter.numberOfTerms +
+              ' in ' +
+              timer.formatedTime() + 
+              ' Minuten geschafft!';
+            alert(message);
           }
           return false;
         }
