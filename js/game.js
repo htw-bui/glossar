@@ -9,11 +9,12 @@ requirejs.config({
 });
 
 
-define(['jquery', 'ProgressCounter', 'stopwatch'], function($, ProgressCounter, Stopwatch){
+define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, ProgressCounter, Stopwatch){
   var keys = [];
   var data;
   var progressCounter;
   var timer;
+  var unusedTerms = [];
 
   $(document).ready(function () {
     'use strict';
@@ -22,12 +23,17 @@ define(['jquery', 'ProgressCounter', 'stopwatch'], function($, ProgressCounter, 
       for(var key in data){
         keys.push(key);
       }
+      unusedTerms = keys;
       setUp();
     }).done(function() { 
       progressCounter = new ProgressCounter(keys.length);
+      progressCounter.onChange = function(){
+        $('#topright').text(this.numberOfTermsRead() + '|' + this.numberOfTerms);
+      };
+      // we are only calling this here in order for the progress
+      // to display in the html from the very beginning on
+      progressCounter.onChange();
       timer = new Stopwatch();
-      timer.clear();
-      progressCounter.clear();
       timer.start();
     });
 
@@ -37,14 +43,14 @@ define(['jquery', 'ProgressCounter', 'stopwatch'], function($, ProgressCounter, 
   function setUp(){
     $('#choices').empty();
     $('#definiton').empty();
-    var term = keys.randomElement();
+    var term = unusedTerms.popRandomElement();
     var choices = [];
     createDefinition(data[term].description);
     choices.push(term);
     for (var j=0; j < 3; j++) {
       choices.push(keys.randomElement());
     }
-    choices = shuffle(choices);
+    choices.shuffle();
     for (var i = choices.length - 1; i >= 0; i--){
       createButton(choices[i]);
     }
@@ -78,6 +84,8 @@ define(['jquery', 'ProgressCounter', 'stopwatch'], function($, ProgressCounter, 
               timer.formatedTime() + 
               ' Minuten geschafft!';
             alert(message);
+            timer.clear();
+            progressCounter.clear();
           }
           return false;
         }
@@ -86,29 +94,5 @@ define(['jquery', 'ProgressCounter', 'stopwatch'], function($, ProgressCounter, 
     button.appendTo('#choices');
   }
 
-  Array.prototype.randomElement = function () {
-    return this[Math.floor(Math.random() * this.length)];
-  };
 
-  function shuffle(array) {
-    var currentIndex = array.length
-    , temporaryValue
-    , randomIndex
-    ;
-
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-
-      // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
-
-      // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-
-    return array;
-  }
 });
