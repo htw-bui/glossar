@@ -45,6 +45,8 @@ define(function(){
 
         this.clear = function  () {
             localStorage.removeItem('timer.ellapsed');
+            timeFromtLastRun = 0;
+            startTime = Date.now();
         };
 
     };

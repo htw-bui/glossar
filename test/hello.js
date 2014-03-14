@@ -49,6 +49,11 @@ define([
             describe('timer', function(){
                 var timer;
                 var clock;
+
+                before(function(){
+                    localStorage.removeItem('timer.ellapsed');
+                });
+
                 beforeEach(function(){
                     timer = new stopwatch();
                     clock = sinon.useFakeTimers();
@@ -56,12 +61,12 @@ define([
 
                 afterEach(function(){
                     clock.restore();
-                    });
+                });
 
                 it('should be startable', function() {
                     timer.start();
                 });
-                
+
                 it('should count the time', function(){
                     timer.start();
                     clock.tick(5000);

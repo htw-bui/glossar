@@ -112,7 +112,14 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
     $('#showNav').on('click', showNav);
     $('#filterTerms').on('keyup', filterNavigation);
     document.getElementById('filterTerms').onsearch = filterNavigation;
+    $('#reset').on('click', reset);
   });
+
+  function reset(){
+    timer.clear();
+    p.clear();
+    return false;
+  }
 
   function createNaviagtion(data){
     $(".navItems").remove();
