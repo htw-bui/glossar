@@ -28,7 +28,11 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     }).done(function() { 
       progressCounter = new ProgressCounter(keys.length);
       progressCounter.onChange = function(){
-        $('#topright').text(this.numberOfTermsRead() + '|' + this.numberOfTerms);
+        var progress = $("<div>", {
+          text: this.numberOfTermsRead() + '|' + this.numberOfTerms
+        });
+        $('#topright').empty();
+        progress.appendTo('#topright').addClass("animated pulse");
       };
       // we are only calling this here in order for the progress
       // to display in the html from the very beginning on
@@ -71,7 +75,6 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
         click: function(event){
           var clicked = event.target.innerText;
           if ($('#definiton div').text() === data[clicked].description){
-            alert('Richtig');
             setUp();
             progressCounter.registerTerm(clicked);
           }
