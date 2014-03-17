@@ -52,7 +52,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     $('#definiton').empty();
     var term = unusedTerms.popRandomElement();
     var choices = [];
-    createDefinition(data[term].description);
+    createDefinitionFor(term);
     choices.push(term);
     for (var j=0; j < 3; j++) {
       choices.push(keys.randomElement());
@@ -65,9 +65,15 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   }
 
 
-  function createDefinition(definition){
+  function createDefinitionFor(term){
+    var definition = censorOutTerm(term, data[term].description);
     var definitionBlock = $("<div />", {html: definition});
     definitionBlock.appendTo('#definiton');
+  }
+
+  function censorOutTerm(term, definition){
+    var findallRegex = new RegExp(term, "g");
+    return definition.replace(findallRegex, "xxxx");
   }
 
   function createButton (term) {
@@ -77,7 +83,8 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       on: {
         click: function(event){
           var clicked = event.target.innerHTML;
-          if ($('#definiton div').text() === data[clicked].description){
+          var censored = censorOutTerm(clicked, data[clicked].description);
+          if ($('#definiton div').text() === censored){
             setUp();
             progressCounter.registerTerm(clicked);
           }
