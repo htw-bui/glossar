@@ -72,7 +72,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   }
 
   function censorOutTerm(term, definition){
-    var findallRegex = new RegExp(term, "g");
+    var findallRegex = new RegExp("[a-zA-Z]*" + term + "[a-zA-Z]*", "gi");
     return definition.replace(findallRegex, "xxxx");
   }
 
