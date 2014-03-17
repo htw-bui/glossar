@@ -1,6 +1,6 @@
 {
   "Affordance": {
-    "description": "\ufeffSiehe Handlungsleitung", 
+    "description": "Siehe Handlungsleitung", 
     "synonyms": [
       "\nHandlungsleitung\n"
     ]
@@ -18,13 +18,13 @@
     ]
   }, 
   "Aufgabe": {
-    "description": "Aktivit\u00e4ten die erforderlich sind, um ein <a href=\"#Ziel\">Ziel</a> zu erreichen.    Bemerkung zum Seminar: Die folgende informale Definition einer Aufgabe mag  hilfreich sein: Benutzer haben eine Aufgabe erledigt, wenn sie das Gef\u00fchl  haben, dass sie Kaffee trinken gehen k\u00f6nnen ohne dabei ein schlechtes  Gewissen zu haben. Diese informale Definition unterscheidet eine Aufgabe von  einer Teilaufgabe oder einer Aktivit\u00e4t.  Beispiele:  - ,,Ein Auto mieten\" ist eine Aufgabe.  - ,,Eine Reservierung stornieren\" ist eine Aufgabe.  - ,,Sich auf der Webseite einer Autoverleihfirma registrieren\" ist keine Aufgabe.  - ,,Sich einloggen\" ist keine Aufgabe.  - ,,Das Startdatum einer Mietperiode ausw\u00e4hlen\" ist keine Aufgabe.", 
+    "description": "Aktivit\u00e4ten die erforderlich sind, um ein <a href=\"#Ziel\">Ziel</a> zu erreichen.    Bemerkung zum Seminar: Die folgende informale Definition einer Aufgabe mag  hilfreich sein: Benutzer haben eine Aufgabe erledigt, wenn sie das Gef\u00fchl  haben, dass sie Kaffee trinken gehen k\u00f6nnen ohne dabei ein schlechtes  Gewissen zu haben. Diese informale Definition unterscheidet eine Aufgabe von  einer Teilaufgabe oder einer Aktivit\u00e4t.  Beispiele: <ul>   <li> ,,Ein Auto mieten\" ist eine Aufgabe.    <li> ,,Eine Reservierung stornieren\" ist eine Aufgabe.    <li> ,,Sich auf der Webseite einer Autoverleihfirma registrieren\" ist keine Aufgabe.    <li> ,,Sich einloggen\" ist keine Aufgabe.    <li> ,,Das Startdatum einer Mietperiode ausw\u00e4hlen\" ist keine Aufgabe. </ul>", 
     "synonyms": [
       "\n"
     ]
   }, 
   "Aufgabenangemessenheit": {
-    "description": "Ein <a href=\"#Dialogprinzip\">Dialogprinzip</a>.    Ein <a href='#Interaktives System'>interaktives System</a> ist aufgabenangemessen, wenn es den <a href=\"#Benutzer\">Benutzer</a>   auf den charakteristischen Eigenschaften der Aufgabe basieren, anstatt auf der  zur Aufgabenerledigung eingesetzten Technologie.    Empfehlungen zu Befolgung des Dialogprinzips:  - Der Dialog sollte dem Benutzer solche Informationen anzeigen, die im  Zusammenhang mit der erfolgreichen Erledigung der Aufgabe stehen..  - Der Dialog sollte dem Benutzer keine Informationen anzeigen, die nicht f\u00fcr die  erfolgreiche Erledigung relevanter Aufgaben ben\u00f6tigt werden..  - Die Form der Eingabe und Ausgabe sollte der Aufgabe angepasst sein. Wenn  f\u00fcr eine Aufgabe ganz bestimmte Eingabewerte typisch sind, sollten diese  Werte dem Benutzer automatisch als voreingestellte Werte verf\u00fcgbar sein.  - Die vom interaktiven System verlangten Dialogschritte sollten zum  Arbeitsablauf passen, d. h., notwendige Dialogschritte sollten enthalten sein und  unn\u00f6tige Dialogschritte sollten vermieden werden.", 
+    "description": "Ein <a href=\"#Dialogprinzip\">Dialogprinzip</a>.    Ein <a href='#Interaktives System'>interaktives System</a> ist aufgabenangemessen, wenn es den <a href=\"#Benutzer\">Benutzer</a>  unterst\u00fctzt, seine Aufgabe zu erledigen, d. h., wenn Funktionalit\u00e4t und Dialog  auf den charakteristischen Eigenschaften der Aufgabe basieren, anstatt auf der  zur Aufgabenerledigung eingesetzten Technologie.    Empfehlungen zu Befolgung des Dialogprinzips: <ul> <li> Der Dialog sollte dem Benutzer solche Informationen anzeigen, die im  Zusammenhang mit der erfolgreichen Erledigung der Aufgabe stehen..  <li>Der Dialog sollte dem Benutzer keine Informationen anzeigen, die nicht f\u00fcr die  erfolgreiche Erledigung relevanter Aufgaben ben\u00f6tigt werden..  <li>Die Form der Eingabe und Ausgabe sollte der Aufgabe angepasst sein. Wenn  f\u00fcr eine Aufgabe ganz bestimmte Eingabewerte typisch sind, sollten diese  Werte dem Benutzer automatisch als voreingestellte Werte verf\u00fcgbar sein.  <li>Die vom interaktiven System verlangten Dialogschritte sollten zum  Arbeitsablauf passen, d. h., notwendige Dialogschritte sollten enthalten sein und  unn\u00f6tige Dialogschritte sollten vermieden werden.", 
     "synonyms": [
       "\n"
     ]
@@ -138,7 +138,7 @@
     ]
   }, 
   "Dialogprinzip": {
-    "description": "Allgemeines <a href=\"#Ziel\">Ziel</a> f\u00fcr die Gestaltung von <a href=\"#Dialog\">Dialogen</a>.  Dialogprinzipien sind aus der Erfahrung abgeleitete, abstrakte Richtlinien f\u00fcr das  Dialogdesign auf oberster Ebene. Aufgrund ihrer Allgemeing\u00fcltigkeit kann es  schwierig sein, sie im konkreten Kontext umzusetzen.  Die DIN EN ISO 9241-110 f\u00fchrt folgende sieben Dialogprinzipien auf:  - Aufgabenangemessenheit;  - Selbstbeschreibungsf\u00e4higkeit;  - Erwartungskonformit\u00e4t;  - Lernf\u00f6rderlichkeit;  - Steuerbarkeit;  - Fehlertoleranz;  - Individualisierbarkeit.  Bemerkung zum Seminar: Die oben aufgef\u00fchrten sieben Dialogprinzipien sind  nicht vollst\u00e4ndig. Andere g\u00fcltige Listen von Dialogprinzipien existieren, zum  Beispiel Nielsens 10 Heuristiken.  Dialogprinzipien werden manchlmal als Designprinzipien bezeichnet. Vergleiche  Dialogprinzipien mit Gestaltungsregeln.", 
+    "description": "Allgemeines <a href=\"#Ziel\">Ziel</a> f\u00fcr die Gestaltung von <a href=\"#Dialog\">Dialogen</a>.  Dialogprinzipien sind aus der Erfahrung abgeleitete, abstrakte Richtlinien f\u00fcr das  Dialogdesign auf oberster Ebene. Aufgrund ihrer Allgemeing\u00fcltigkeit kann es  schwierig sein, sie im konkreten Kontext umzusetzen.  Die DIN EN ISO 9241-110 f\u00fchrt folgende sieben Dialogprinzipien auf: <ul> <li>Aufgabenangemessenheit;  <li>Selbstbeschreibungsf\u00e4higkeit;  <li>Erwartungskonformit\u00e4t;  <li>Lernf\u00f6rderlichkeit;  <li>Steuerbarkeit;  <li>Fehlertoleranz;  <li>Individualisierbarkeit. </ul> Bemerkung zum Seminar: Die oben aufgef\u00fchrten sieben Dialogprinzipien sind  nicht vollst\u00e4ndig. Andere g\u00fcltige Listen von Dialogprinzipien existieren, zum  Beispiel Nielsens 10 Heuristiken.  Dialogprinzipien werden manchlmal als Designprinzipien bezeichnet. Vergleiche  Dialogprinzipien mit Gestaltungsregeln.", 
     "synonyms": [
       "\n"
     ]
@@ -198,7 +198,7 @@
     ]
   }, 
   "Fehlertoleranz": {
-    "description": "Ein <a href=\"#Dialogprinzip\">Dialogprinzip</a>.  Ein <a href=\"#Dialog\">Dialog</a> ist fehlertolerant, wenn das beabsichtigte Arbeitsergebnis trotz  erkennbar fehlerhafter Eingaben entweder mit keinem oder mit minimalem  Korrekturaufwand seitens des <a href=\"#Benutzer\">Benutzers</a> erreicht werden kann.  - Wenn ein Fehler auftritt, sollte das <a href=\"#Interaktives System\">interaktive System</a> eine konstruktive,  genaue und verst\u00e4ndliche Erkl\u00e4rung anbieten.  - Wenn aus einer Benutzeraktion schwerwiegende Folgen entstehen k\u00f6nnen,  dann sollte das interaktive System eine Erkl\u00e4rung anbieten und eine  Best\u00e4tigung vor der Durchf\u00fchrung der Aktion geben.", 
+    "description": "Ein <a href=\"#Dialogprinzip\">Dialogprinzip</a>.  Ein <a href=\"#Dialog\">Dialog</a> ist fehlertolerant, wenn das beabsichtigte Arbeitsergebnis trotz  erkennbar fehlerhafter Eingaben entweder mit keinem oder mit minimalem  Korrekturaufwand seitens des <a href=\"#Benutzer\">Benutzers</a> erreicht werden kann. <ul> <li>Wenn ein Fehler auftritt, sollte das <a href=\"#Interaktives System\">interaktive System</a> eine konstruktive,  genaue und verst\u00e4ndliche Erkl\u00e4rung anbieten.  <li>Wenn aus einer Benutzeraktion schwerwiegende Folgen entstehen k\u00f6nnen,  dann sollte das interaktive System eine Erkl\u00e4rung anbieten und eine  Best\u00e4tigung vor der Durchf\u00fchrung der Aktion geben. </ul>", 
     "synonyms": [
       "\n"
     ]
@@ -216,7 +216,7 @@
     ]
   }, 
   "Fragebogen": {
-    "description": "Ein Satz von Testfragen zum <a href=\"#Benutzererlebnis\">Benutzererlebnis</a>. Ein Fragebogen ist das  tragende Instrument zur Messung der <a href=\"#Zufriedenstellung\">Zufriedenstellung</a> eines <a href=\"#Benutzer\">Benutzers</a> mit  einem <a href=\"#Interaktives System\">interaktiven System</a> bei allen Arten der <a href=\"#Evaluierung\">Evaluierung</a> einer  <a href=\"#Benutzungsschnittstelle\">Benutzungsschnittstelle</a>.  Bemerkung zum Seminar: Frageb\u00f6gen m\u00fcssen benutzbar sein. Sie m\u00fcssen den  Dialogprinzipien folgen, z.B.  - Fragen m\u00fcssen relevant sein;  - Fragen m\u00fcssen leicht zu verstehen sein;  - Der Fragebogen muss die Benutzer hinsichlich ihres Fortschritts in der  Beantwortung der Fragen auf dem Laufenden halten;  - Der Fragebogen muss anhand eines Usabilitytests optimiert worden sein.", 
+    "description": "Ein Satz von Testfragen zum <a href=\"#Benutzererlebnis\">Benutzererlebnis</a>. Ein Fragebogen ist das  tragende Instrument zur Messung der <a href=\"#Zufriedenstellung\">Zufriedenstellung</a> eines <a href=\"#Benutzer\">Benutzers</a> mit  einem <a href=\"#Interaktives System\">interaktiven System</a> bei allen Arten der <a href=\"#Evaluierung\">Evaluierung</a> einer  <a href=\"#Benutzungsschnittstelle\">Benutzungsschnittstelle</a>.  Bemerkung zum Seminar: Frageb\u00f6gen m\u00fcssen benutzbar sein. Sie m\u00fcssen den  Dialogprinzipien folgen, z.B. <ul> <li>Fragen m\u00fcssen relevant sein;  <li>Fragen m\u00fcssen leicht zu verstehen sein;  <li>Der Fragebogen muss die Benutzer hinsichlich ihres Fortschritts in der  Beantwortung der Fragen auf dem Laufenden halten;  <li>Der Fragebogen muss anhand eines Usabilitytests optimiert worden sein. </ul>", 
     "synonyms": [
       "\n"
     ]
@@ -240,13 +240,13 @@
     ]
   }, 
   "Gestaltungsregel": {
-    "description": "Konkrete, spezifische Instruktionen, denen ein Designer mit minimalem  Interpretationsaufwand folgen kann.  Gestaltungsregel ist ein allgemeiner Ausdruck f\u00fcr die Inhalte folgender  Dokumententypen:  - Gestaltungsrichtlinie / Benutzungsschnittstellenrichtlinie  - Styleguide  - Standard / Benutzungsschnittstellenstandard  - Designmuster  Bemerkung zum Seminar: Gestaltungsregeln werden manchmal als  Designregeln oder Richtlinien bezeichnet. Vergleiche Gestaltungsregeln mit  Dialogprinzipien.", 
+    "description": "Konkrete, spezifische Instruktionen, denen ein Designer mit minimalem  Interpretationsaufwand folgen kann.  Gestaltungsregel ist ein allgemeiner Ausdruck f\u00fcr die Inhalte folgender  Dokumententypen: <ul> <li>Gestaltungsrichtlinie / Benutzungsschnittstellenrichtlinie  <li>Styleguide  <li>Standard / Benutzungsschnittstellenstandard  <li>Designmuster </ul> Bemerkung zum Seminar: Gestaltungsregeln werden manchmal als  Designregeln oder Richtlinien bezeichnet. Vergleiche Gestaltungsregeln mit  Dialogprinzipien.", 
     "synonyms": [
       "\n"
     ]
   }, 
   "Handlungsleitung": {
-    "description": "Aspekte eines Objektes, die klar machen, wie das Objekt benutzt werden kann.    Beispiele:  - Ein Henkel einer Teetasse stellt eine offensichtliche Handlungsleitung dar, sie  zu halten.  - Ein Button auf einer Webseite bietet die Handlungsleitung, auf ihn zu klicken.  - Ein Firmenemblem in der oberen linken Ecke einer Webseite bietet  eingeschr\u00e4nkte Handlungsleitung, darauf zu klicken.", 
+    "description": "Aspekte eines Objektes, die klar machen, wie das Objekt benutzt werden kann.    Beispiele: <ul> <li>Ein Henkel einer Teetasse stellt eine offensichtliche Handlungsleitung dar, sie  zu halten.  <li>Ein Button auf einer Webseite bietet die Handlungsleitung, auf ihn zu klicken.  <li>Ein Firmenemblem in der oberen linken Ecke einer Webseite bietet  eingeschr\u00e4nkte Handlungsleitung, darauf zu klicken. </ul>", 
     "synonyms": [
       "\n"
     ]
@@ -372,7 +372,7 @@
     ]
   }, 
   "Lernf\u00f6rderlichkeit": {
-    "description": "Ein <a href=\"#Dialogprinzip\">Dialogprinzip</a>.  Ein <a href=\"#Dialog\">Dialog</a> ist lernf\u00f6rderlich, wenn er den <a href=\"#Benutzer\">Benutzer</a> beim Erlernen der Nutzung  des <a href=\"#Interaktives System\">interaktiven Systems</a> unterst\u00fctzt und anleitet.    Empfehlungen zu Befolgung des Dialogprinzips:  - Der Dialog sollte ausreichende R\u00fcckmeldung \u00fcber Zwischen- und  Endergebnisse von Handlungen bereitstellen, damit die Benutzer von  erfolgreich ausgef\u00fchrten Handlungen lernen.  - Falls es zu den <a href=\"#Aufgabe\">Aufgaben</a> und den Lernzielen passt, sollte das interaktive  System dem Benutzer erlauben, Dialogschritte ohne nachteilige Auswirkungen  auszuprobieren.  Beispiel: Wenn Benutzer mit Hilfe eines Hotelzimmerreservierungssystems ein  Zimmer reservieren, erhalten die Benutzer Schritt f\u00fcr Schritt R\u00fcckmeldungen,  um ihre Anfrage zu verfeinern und immer mehr Details \u00fcber den Fortschritt der  erfolgreichen Zimmerreservierung.", 
+    "description": "Ein <a href=\"#Dialogprinzip\">Dialogprinzip</a>.  Ein <a href=\"#Dialog\">Dialog</a> ist lernf\u00f6rderlich, wenn er den <a href=\"#Benutzer\">Benutzer</a> beim Erlernen der Nutzung  des <a href=\"#Interaktives System\">interaktiven Systems</a> unterst\u00fctzt und anleitet.    Empfehlungen zu Befolgung des Dialogprinzips: <ul> <li>Der Dialog sollte ausreichende R\u00fcckmeldung \u00fcber Zwischen- und  Endergebnisse von Handlungen bereitstellen, damit die Benutzer von  erfolgreich ausgef\u00fchrten Handlungen lernen.  <li>Falls es zu den <a href=\"#Aufgabe\">Aufgaben</a> und den Lernzielen passt, sollte das interaktive  System dem Benutzer erlauben, Dialogschritte ohne nachteilige Auswirkungen  auszuprobieren. </ul> Beispiel: Wenn Benutzer mit Hilfe eines Hotelzimmerreservierungssystems ein  Zimmer reservieren, erhalten die Benutzer Schritt f\u00fcr Schritt R\u00fcckmeldungen,  um ihre Anfrage zu verfeinern und immer mehr Details \u00fcber den Fortschritt der  erfolgreichen Zimmerreservierung.", 
     "synonyms": [
       "\n"
     ]
@@ -462,7 +462,7 @@
     ]
   }, 
   "Nutzungskontext": {
-    "description": "<a href=\"#Benutzer\">Benutzer</a>, <a href=\"#Aufgabe\">Aufgaben</a>, <a href=\"#Arbeitsmittel\">Arbeitsmittel</a> (Hardware, Software und Materialien)  sowie die physikalische und soziale <a href=\"#Umgebung\">Umgebung</a> in der das <a href=\"#Interaktives System\">interaktive System</a>  genutzt wird.  Bemerkung zum Seminar: G\u00e4ngige Abk\u00fcrzung: PACT =  People (Benutzer),  Activities (Aufgaben),  Contexts (Umgebung),  Technologies (Arbeitsmittel)  Beispiele:  - Jugendliche verwenden Handys, um ihren Freunden Textmitteilungen zu  senden w\u00e4hrend sie in einem Bus sitzen.  - Sekret\u00e4rinnen benutzen Microsoft Word, um Dokumente in einer  Rechtskanzlei zu schreiben.", 
+    "description": "<a href=\"#Benutzer\">Benutzer</a>, <a href=\"#Aufgabe\">Aufgaben</a>, <a href=\"#Arbeitsmittel\">Arbeitsmittel</a> (Hardware, Software und Materialien)  sowie die physikalische und soziale <a href=\"#Umgebung\">Umgebung</a> in der das <a href=\"#Interaktives System\">interaktive System</a>  genutzt wird.  Bemerkung zum Seminar: G\u00e4ngige Abk\u00fcrzung: PACT =  People (Benutzer),  Activities (Aufgaben),  Contexts (Umgebung),  Technologies (Arbeitsmittel)  Beispiele: <ul> <li>Jugendliche verwenden Handys, um ihren Freunden Textmitteilungen zu  senden w\u00e4hrend sie in einem Bus sitzen.  <li>Sekret\u00e4rinnen benutzen Microsoft Word, um Dokumente in einer  Rechtskanzlei zu schreiben. </ul>", 
     "synonyms": [
       "\n"
     ]
@@ -504,7 +504,7 @@
     ]
   }, 
   "Persona": {
-    "description": "Eine beispielhafte Beschreibung eines Benutzers und was dieser bei der  <a href=\"#Benutzung\">Benutzung</a> eines <a href=\"#Interaktives System\">interaktiven Systems</a> tun m\u00f6chte. Personas sind nicht  Beschreibungen existierender Personen, sondern repr\u00e4sentieren erfundene  Beispiele eines realen Benutzers auf der Basis empirisch ermittelter Daten.  Personas verf\u00fcgen typischerweise \u00fcber einen Namen, Alter, einige  Hintergrundinformationen, Ziele und W\u00fcnsche.  Beispiel: Vier Personas f\u00fcr eine Webseite, die Autos in New York vermietet, sind  - George - datengetriebener, zeitbewu\u00dfter Amerikaner aus Washington, DC.  - Susan - agile D\u00e4nin, die pers\u00f6nlichen Kontakt mit der zust\u00e4ndigen Person f\u00fcr  Reservierungen vermeiden m\u00f6chte.  - Jules - unerfahrener franz\u00f6sischer Benutzer, der ein gutes Gesch\u00e4ft f\u00fcr das  Wochenende sucht.  - J\u00fcrgen - ein kostenbewu\u00dfter Deutscher, der die Ferien plant.", 
+    "description": "Eine beispielhafte Beschreibung eines Benutzers und was dieser bei der  <a href=\"#Benutzung\">Benutzung</a> eines <a href=\"#Interaktives System\">interaktiven Systems</a> tun m\u00f6chte. Personas sind nicht  Beschreibungen existierender Personen, sondern repr\u00e4sentieren erfundene  Beispiele eines realen Benutzers auf der Basis empirisch ermittelter Daten.  Personas verf\u00fcgen typischerweise \u00fcber einen Namen, Alter, einige  Hintergrundinformationen, Ziele und W\u00fcnsche.  Beispiel: Vier Personas f\u00fcr eine Webseite, die Autos in New York vermietet, sind <ul> <li>George - datengetriebener, zeitbewu\u00dfter Amerikaner aus Washington, DC.  <li>Susan - agile D\u00e4nin, die pers\u00f6nlichen Kontakt mit der zust\u00e4ndigen Person f\u00fcr  Reservierungen vermeiden m\u00f6chte.  <li>Jules - unerfahrener franz\u00f6sischer Benutzer, der ein gutes Gesch\u00e4ft f\u00fcr das  Wochenende sucht.  <li>J\u00fcrgen - ein kostenbewu\u00dfter Deutscher, der die Ferien plant. </ul>", 
     "synonyms": [
       "\n"
     ]
