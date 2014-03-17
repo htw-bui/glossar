@@ -73,7 +73,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       text: term, href: '#',
       on: {
         click: function(event){
-          var clicked = event.target.innerText;
+          var clicked = event.target.innerHTML;
           if ($('#definiton div').text() === data[clicked].description){
             setUp();
             progressCounter.registerTerm(clicked);
