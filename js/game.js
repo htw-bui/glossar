@@ -16,7 +16,9 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   var timer;
   var unusedTerms = [];
 
-  $(document).ready(function () {
+  $(document).ready(initPage);
+
+  function initPage(){
     'use strict';
     $.getJSON("/terms.json", function (json_data) {
       data = json_data;
@@ -25,24 +27,25 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       }
       unusedTerms = keys;
       setUp();
-    }).done(function() { 
-      progressCounter = new ProgressCounter(keys.length);
-      progressCounter.onChange = function(){
-        var progress = $("<div>", {
-          text: this.numberOfTermsRead() + '|' + this.numberOfTerms
-        });
-        $('#topright').empty();
-        progress.appendTo('#topright').addClass("animated pulse");
-      };
-      // we are only calling this here in order for the progress
-      // to display in the html from the very beginning on
-      progressCounter.onChange();
-      timer = new Stopwatch();
-      timer.start();
-    });
+    }).done(initializeObjects);
+  }
 
 
-  });
+  function initializeObjects() { 
+    progressCounter = new ProgressCounter(keys.length);
+    progressCounter.onChange = function(){
+      var progress = $("<div>", {
+        text: this.numberOfTermsRead() + '|' + this.numberOfTerms
+      });
+      $('#topright').empty();
+      progress.appendTo('#topright').addClass("animated pulse");
+    };
+    // we are only calling this here in order for the progress
+    // to display in the html from the very beginning on
+    progressCounter.onChange();
+    timer = new Stopwatch();
+    timer.start();
+  }
 
   function setUp(){
     $('#choices').empty();
