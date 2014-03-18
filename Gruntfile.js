@@ -59,7 +59,8 @@ module.exports = function(grunt) {
         },
         files: {
           'dist/index.html': 'index.html',
-          'dist/quiz.html': 'quiz.html'
+          'dist/quiz.html': 'quiz.html',
+          'dist/highscore.html': 'highscore.html'
         }
       }
     },
@@ -83,7 +84,8 @@ module.exports = function(grunt) {
         },
         files: {
           "dist/js/main.js": "js/main.js",
-          "dist/js/game.js": "js/game.js"
+          "dist/js/game.js": "js/game.js",
+          "dist/js/highscore.js": "js/highscore.js"
         }
       }
     }

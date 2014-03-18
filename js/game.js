@@ -61,7 +61,6 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     for (var i = choices.length - 1; i >= 0; i--){
       createButton(choices[i]);
     }
-
   }
 
 
@@ -76,33 +75,52 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     return definition.replace(findallRegex, "xxxx");
   }
 
+  function checkIfInTopTen(callback){
+    callback = JSON.parse(callback);
+    if (callback.highscore){
+      alert("Sie sind in den Top 10!");
+      window.location = window.location.origin + "/highscore.html";
+    }
+    else {
+      alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
+      location.reload();
+    }
+  }
+
+  function checkAnswer(event){
+    var clicked = event.target.innerHTML;
+    var censored = censorOutTerm(clicked, data[clicked].description);
+    if ($('#definiton div').text() === censored){
+      setUp();
+      progressCounter.registerTerm(clicked);
+    }
+    else{
+      var message = "Sie haben " + 
+        progressCounter.numberOfTermsRead() +
+        ' von ' +
+        progressCounter.numberOfTerms +
+        ' in ' +
+        timer.formatedTime() + 
+        ' Minuten geschafft!\n Geben Sie Ihren Namen für den Highscore ein.';
+      var highscoreName = prompt(message);
+      if (highscoreName){
+        $.post("http://highscore.k-nut.eu/highscore",
+            {name: highscoreName,
+              score: progressCounter.numberOfTermsRead(),
+              time: timer.ellapsed()
+            }).done(checkIfInTopTen); 
+            timer.clear();
+            progressCounter.clear();
+      }
+    }
+    return false;
+  }
+
   function createButton (term) {
     var button = $("<a/>", {
       "class": "choice",
       text: term, href: '#',
-      on: {
-        click: function(event){
-          var clicked = event.target.innerHTML;
-          var censored = censorOutTerm(clicked, data[clicked].description);
-          if ($('#definiton div').text() === censored){
-            setUp();
-            progressCounter.registerTerm(clicked);
-          }
-          else{
-            var message = "Sie haben " + 
-              progressCounter.numberOfTermsRead() +
-              ' von ' +
-              progressCounter.numberOfTerms +
-              ' in ' +
-              timer.formatedTime() + 
-              ' Minuten geschafft!';
-            alert(message);
-            timer.clear();
-            progressCounter.clear();
-          }
-          return false;
-        }
-      }
+      on: {click: checkAnswer}
     });
     button.appendTo('#choices');
   }
