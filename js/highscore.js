@@ -16,15 +16,15 @@ require(["jquery"], function($){
   var scores = [];
   $.getJSON("http://highscore.k-nut.eu/highscore", function(data){
     $.each(data, function(key, value){
-      scores.push("<tr> <td>" + value.score + "</td><td>" + formatedTime(value.time) + "</td><td>" + value.name + "</td></tr>");
+    var place = parseInt(key, 10) + 1;
+      scores.push("<tr> <td>"+ place + "</td><td>" + value.score + "</td><td>" + convertMillisecondsToFormatedTime(value.time) + "</td><td>" + value.name + "</td></tr>");
     });
   }).done(function() {
     $("tbody").html(scores.join(""));
-    console.log(scores);
   });
 
 
-  function formatedTime(milliseconds){
+  function convertMillisecondsToFormatedTime(milliseconds){
     var total = milliseconds / 1000;
     var minutes = Math.floor(total/60);
     var seconds = parseInt(total - minutes*60, 10);
@@ -34,6 +34,5 @@ require(["jquery"], function($){
     }
     return minutes + ":" + stringSeconds;
   }
-
 
 });
