@@ -95,8 +95,9 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
               progressCounter.numberOfTerms +
               ' in ' +
               timer.formatedTime() + 
-              ' Minuten geschafft!';
-            alert(message);
+              ' Minuten geschafft!\n Geben Sie Ihren Namen für den Highscore ein.';
+            var highscoreName = prompt(message);
+            $.post("http://highscore.k-nut.eu/highscore", {name: highscoreName, score: progressCounter.numberOfTermsRead(), time: timer.ellapsed()}); 
             timer.clear();
             progressCounter.clear();
           }
