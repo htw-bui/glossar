@@ -102,15 +102,20 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
         ' in ' +
         timer.formatedTime() + 
         ' Minuten geschafft!\n Geben Sie Ihren Namen für den Highscore ein.';
+
+      timer.clear();
+      progressCounter.clear();
+
       var highscoreName = prompt(message);
       if (highscoreName){
         $.post("http://highscore.k-nut.eu/highscore",
-            {name: highscoreName,
-              score: progressCounter.numberOfTermsRead(),
-              time: timer.ellapsed()
-            }).done(checkIfInTopTen); 
-            timer.clear();
-            progressCounter.clear();
+          {name: highscoreName,
+            score: progressCounter.numberOfTermsRead(),
+            time: timer.ellapsed()
+          }).done(checkIfInTopTen); 
+      }
+      else{
+        location.reload();
       }
     }
     return false;
