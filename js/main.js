@@ -16,6 +16,13 @@ requirejs.config({
 
 
 require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphenate, progressCounter, $, stopwatch){
+  var n;
+  var p;
+  var timer;
+
+  $(document).ready(initPage);
+
+
   function changeDisplay(term){
     var termObject =  n.getDefinition(term);
     p.registerTerm(term);
@@ -39,7 +46,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
     $("nav ul a").each( function () {
       $(this).removeClass("active-item");
     });
-    $("nav ul a").eq(position).addClass("active-item");
+    $("#navigation" + position).addClass("active-item");
   }
 
 
@@ -88,11 +95,6 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
 
   }
 
-  var n;
-  var p;
-  var timer;
-
-  $(document).ready(initPage);
 
   function initPage() {
     'use strict';
@@ -126,7 +128,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
     $(".navItems").remove();
     var navTerms = [];
     $.each(data, function(key, val ) {
-      navTerms.push("<li><a href='#" + val + "'>" + val + "</a></li>");
+      navTerms.push("<li><a href='#" + val + "'" + " id='navigation" + n.keys.indexOf(val) + "'>" + val + "</a></li>");
     });
 
     $( "<ul/>", {
