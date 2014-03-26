@@ -1,6 +1,7 @@
 import json
 import codecs
 import collections
+import os
 
 
 def merge():
@@ -21,12 +22,13 @@ def merge():
 
 
 def generate_from_merged(withlinks=True):
+    fullpath = os.path.dirname(os.path.abspath(__file__)) + "/"
     if withlinks:
-        path = '../data/merged.html'
-        outpath = '../neu_generierte_begriffe.json'
+        path = fullpath  + '../data/merged.html'
+        outpath = fullpath  + '../neu_generierte_begriffe.json'
     else:
-        path = '../data/merged-nolinks.html'
-        outpath = '../terms.json'
+        path = fullpath  + '../data/merged-nolinks.html'
+        outpath = fullpath  + '../terms.json'
 
     with open(path, "r", encoding="utf-8") as infile:
         content = infile.read().split("---------")
@@ -48,3 +50,4 @@ def generate_from_merged(withlinks=True):
 if __name__ == '__main__':
     generate_from_merged()
     generate_from_merged(withlinks=False)
+
