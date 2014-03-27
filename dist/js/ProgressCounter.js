@@ -1,10 +1,11 @@
-/*global localStorage: false, define: false */
+/*jslint browser: true*/
+/*global define: false */
 
 define(function (){
     return function(numberOfTerms){
         this.numberOfTerms = numberOfTerms;
 
-        var readTerms = JSON.parse(localStorage.getItem("progressCounter.readTerms"));
+        var readTerms = JSON.parse(localStorage.getItem(window.location.path  + "progressCounter.readTerms"));
         if (readTerms === null){
             readTerms = [];
         }
@@ -13,7 +14,7 @@ define(function (){
             if (readTerms.indexOf(term) === -1){
                 readTerms.push(term);
             }
-            localStorage.setItem("progressCounter.readTerms", JSON.stringify(readTerms));
+            localStorage.setItem(window.location.path  + "progressCounter.readTerms", JSON.stringify(readTerms));
             this.onChange();
         };
 
@@ -22,7 +23,7 @@ define(function (){
         };
 
         this.clear = function() {
-            localStorage.removeItem("progressCounter.readTerms");
+            localStorage.removeItem(window.location.path  + "progressCounter.readTerms");
             readTerms = [];
             this.onChange();
         };

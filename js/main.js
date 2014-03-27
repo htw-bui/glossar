@@ -16,6 +16,13 @@ requirejs.config({
 
 
 require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphenate, progressCounter, $, stopwatch){
+  var n;
+  var p;
+  var timer;
+
+  $(document).ready(initPage);
+
+
   function changeDisplay(term){
     var termObject =  n.getDefinition(term);
     p.registerTerm(term);
@@ -39,7 +46,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
     $("nav ul a").each( function () {
       $(this).removeClass("active-item");
     });
-    $("nav ul a").eq(position).addClass("active-item");
+    $("#navigation" + position).addClass("active-item");
   }
 
 
@@ -88,13 +95,10 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
 
   }
 
-  var n;
-  var p;
-  var timer;
 
-  $(document).ready(function () {
+  function initPage() {
     'use strict';
-    $.getJSON("/neu_generierte_begriffe.json", function (data) {
+    $.getJSON("./neu_generierte_begriffe.json", function (data) {
       n = new newTerms(data);
       p = new progressCounter(n.keys.length);
       p.onChange = function () {
@@ -106,14 +110,13 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
       };
       timer.start();
       createNaviagtion(n.keys);
-    }).done(function() {
-      loadNewDefintition();
-    });
+    }).done(loadNewDefintition);
+
     $('#showNav').on('click', showNav);
     $('#filterTerms').on('keyup', filterNavigation);
     document.getElementById('filterTerms').onsearch = filterNavigation;
     $('#reset').on('click', reset);
-  });
+  }
 
   function reset(){
     timer.clear();
@@ -125,16 +128,16 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
     $(".navItems").remove();
     var navTerms = [];
     $.each(data, function(key, val ) {
-      navTerms.push("<li><a href='#" + val + "'>" + val + "</a></li>");
+      navTerms.push("<li><a href='#" + val + "'" + " id='navigation" + n.keys.indexOf(val) + "'>" + val + "</a></li>");
     });
 
     $( "<ul/>", {
       class: "navItems",
       html: navTerms.join("")
     }).appendTo("nav");
-    $("nav a").bind("click", function() {closeNav();});
-    $("#main").bind("click", function() {closeNav();});
-    $("header").bind("click", function() {closeNav();});
+    $("nav a").bind("click", closeNav);
+    $("#main").bind("click", closeNav);
+    $("header").bind("click", closeNav);
   }
 
 
@@ -159,7 +162,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
 
   function showNav(){
     $("nav").addClass("nav-open");
-    $("nav a").bind("click", function() {closeNav();});
+    $("nav a").bind("click", closeNav);
     return false;
   }
 
@@ -172,7 +175,6 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
   }
 
   function filterNavigation(){
-    console.log('l');
     var filteredItems = jQuery.extend([], n.keys);
     filteredItems = filteredItems.filter(filterBySearchTerm);
     createNaviagtion(filteredItems);

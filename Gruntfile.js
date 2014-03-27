@@ -9,17 +9,13 @@ module.exports = function(grunt) {
       },
       stylesheets: {
         files: ["sass/*"],
-        tasks: ["sass:dev"]
+        tasks: ["sass:dev", "autoprefixer:dev"]
       },
       html: {
         files:["*.html"]
       },
       js: {
         files: ["js/*"]
-      },
-      css: {
-        files: ["css/*"],
-        tasks: ["autoprefixer"]
       }
     },
     sass: {
@@ -37,18 +33,20 @@ module.exports = function(grunt) {
           style: "compressed"
         },
         files: {
-          "css/main.css" : "sass/main.sass",
-          "css/game.css" : "sass/game.sass"
-
+          "dist/css/main.css" : "sass/main.sass",
+          "dist/css/game.css" : "sass/game.sass"
         }
       }
 
     },
     autoprefixer: {
-      dist: {
+      dev: {
         expand: true,
         src : "css/*.css",
-        dest: "dist/"
+      },
+      dist: {
+        expand: true,
+        src : "dist/css/*.css",
       }
     },
     htmlmin: {
@@ -61,7 +59,8 @@ module.exports = function(grunt) {
         },
         files: {
           'dist/index.html': 'index.html',
-          'dist/quiz.html': 'quiz.html'
+          'dist/quiz.html': 'quiz.html',
+          'dist/highscore.html': 'highscore.html'
         }
       }
     },
@@ -85,7 +84,8 @@ module.exports = function(grunt) {
         },
         files: {
           "dist/js/main.js": "js/main.js",
-          "dist/js/game.js": "js/game.js"
+          "dist/js/game.js": "js/game.js",
+          "dist/js/highscore.js": "js/highscore.js"
         }
       }
     }
@@ -102,7 +102,7 @@ module.exports = function(grunt) {
 
 
 
-  grunt.registerTask('default', ['sass:dev', 'watch']);
-  grunt.registerTask('build', ['sass:dist', "autoprefixer", "htmlmin:dist", "copy:dist", "uglify:dist"]);
+  grunt.registerTask('default', ['sass:dev', 'autoprefixer:dev', 'watch']);
+  grunt.registerTask('build', ['sass:dist', "autoprefixer:dist", "htmlmin:dist", "copy:dist", "uglify:dist"]);
 
 };

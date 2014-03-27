@@ -1,4 +1,5 @@
-/*global localStorage: false, define: false */
+/*jslint browser: true*/
+/*global define: false */
 
 define(function (){
     return function(numberOfTerms){
