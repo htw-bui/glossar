@@ -1,5 +1,5 @@
 /*jslint browser: true*/
-/*global $, jQuery, console*/
+/*global $, jQuery, console, requirejs*/
 
 
 requirejs.config({
@@ -15,7 +15,7 @@ requirejs.config({
 
 
 
-require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphenate, progressCounter, $, stopwatch){
+require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphenate, ProgressCounter, $, Stopwatch){
   var n;
   var p;
   var timer;
@@ -61,7 +61,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
   window.addEventListener("hashchange", loadNewDefintition, false);
 
 
-  function newTerms(items){
+  function NewTerms(items){
     'use strict';
     var key;
     this.items = items;
@@ -99,12 +99,12 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
   function initPage() {
     'use strict';
     $.getJSON("./neu_generierte_begriffe.json", function (data) {
-      n = new newTerms(data);
-      p = new progressCounter(n.keys.length);
+      n = new NewTerms(data);
+      p = new ProgressCounter(n.keys.length);
       p.onChange = function () {
         $("#progress").text(this.numberOfTermsRead() + "|" + this.numberOfTerms);
       };
-      timer = new stopwatch();
+      timer = new Stopwatch();
       timer.execute = function() {
         $('#time').text(this.formatedTime());
       };
@@ -126,15 +126,23 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
 
   function createNaviagtion(data){
     $(".navItems").remove();
-    var navTerms = [];
-    $.each(data, function(key, val ) {
-      navTerms.push("<li><a href='#" + val + "'" + " id='navigation" + n.keys.indexOf(val) + "'>" + val + "</a></li>");
+
+    var navList = $( "<ul/>", {
+      class: "navItems"
+    }).appendTo("nav");
+
+    $.each(data, function(key, term ) {
+      var link = $('<a />', 
+        {href: '#' + term,
+          id: "navigation" + n.keys.indexOf(term),
+          text: term
+        }
+      );
+      var listItem = $('<li>');
+      link.appendTo(listItem);
+      listItem.appendTo(navList);
     });
 
-    $( "<ul/>", {
-      class: "navItems",
-      html: navTerms.join("")
-    }).appendTo("nav");
     $("nav a").bind("click", closeNav);
     $("#main").bind("click", closeNav);
     $("header").bind("click", closeNav);
