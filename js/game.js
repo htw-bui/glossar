@@ -95,6 +95,9 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       progressCounter.registerTerm(clicked);
     }
     else{
+      var time = timer.ellapsed();
+      var score = progressCounter.numberOfTermsRead();
+
       var message = "Sie haben " + 
         progressCounter.numberOfTermsRead() +
         ' von ' +
@@ -110,8 +113,8 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       if (highscoreName){
         $.post("http://highscore.k-nut.eu/highscore",
           {name: highscoreName,
-            score: progressCounter.numberOfTermsRead(),
-            time: timer.ellapsed()
+            score: score,
+            time: time
           }).done(checkIfInTopTen); 
       }
       else{
