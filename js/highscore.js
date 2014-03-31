@@ -12,7 +12,8 @@ requirejs.config({
   }
 });
 
-require(["jquery"], function($){
+require(["jquery", "timeutils"], function($, timeutils){
+console.log(timeutils);
   var scores = [];
   var $table = $("tbody");
   $.getJSON("http://highscore.k-nut.eu/highscore", function(data){
@@ -21,7 +22,7 @@ require(["jquery"], function($){
       var row = $("<tr />");
       row.append($('<td>').text(place))
          .append($('<td>').text(value.score))
-         .append($('<td>').text(convertMillisecondsToFormatedTime(value.time)))
+         .append($('<td>').text(timeutils.convertMillisecondsToFormatedTime(value.time)))
          .append($('<td>').text(value.name));
 
       row.appendTo($table);
@@ -30,13 +31,3 @@ require(["jquery"], function($){
 });
 
 
-function convertMillisecondsToFormatedTime(milliseconds){
-  var total = milliseconds / 1000;
-  var minutes = Math.floor(total/60);
-  var seconds = parseInt(total - minutes*60, 10);
-  var stringSeconds = seconds.toString();
-  if (stringSeconds.length === 1){
-    stringSeconds = '0' + stringSeconds;
-  }
-  return minutes + ":" + stringSeconds;
-}
