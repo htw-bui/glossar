@@ -125,9 +125,9 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   }
 
   function createButton (term) {
-    var button = $("<a/>", {
-      "class": "choice",
-      text: term, href: '#',
+    var button = $("<button/>", {
+      "class": "btn btn-info",
+      text: term,
       on: {click: checkAnswer}
     });
     button.appendTo('#choices');

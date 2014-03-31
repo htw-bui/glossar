@@ -25,6 +25,19 @@
   top: 0;
 }
 
+.btn {
+  width: 46%;
+  margin-top: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .container {
   margin: 0 auto;
   width: 90%;
