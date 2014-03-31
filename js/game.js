@@ -87,41 +87,56 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     }
   }
 
+  function handleCorrectAnswer(button){
+    progressCounter.registerTerm(button.innerHTML);
+    button.className = ("btn btn-success");
+    setTimeout(setUp, 250);
+  }
+
+
+  function handleIncorrectAnswer(button){
+    button.className = "btn btn-danger";
+    setTimeout(promptUserForHighscore, 250);
+  }
+
+  function promptUserForHighscore(){
+    var time = timer.ellapsed();
+    var score = progressCounter.numberOfTermsRead();
+
+    var message = "Sie haben " + 
+      progressCounter.numberOfTermsRead() +
+      ' von ' +
+      progressCounter.numberOfTerms +
+      ' in ' +
+      timer.formatedTime() + 
+      ' Minuten geschafft!\n Geben Sie Ihren Namen für den Highscore ein.';
+
+    timer.clear();
+    progressCounter.clear();
+
+    var highscoreName = prompt(message);
+    if (highscoreName){
+      $.post("http://highscore.k-nut.eu/highscore",
+        {name: highscoreName,
+          score: score,
+          time: time
+        }).done(checkIfInTopTen); 
+    }
+    else{
+      location.reload();
+    }
+    return false;
+  }
+
   function checkAnswer(event){
     var clicked = event.target.innerHTML;
     var censored = censorOutTerm(clicked, data[clicked].description);
     if ($('#definiton div').text() === censored){
-      setUp();
-      progressCounter.registerTerm(clicked);
+      handleCorrectAnswer(event.target);
     }
     else{
-      var time = timer.ellapsed();
-      var score = progressCounter.numberOfTermsRead();
-
-      var message = "Sie haben " + 
-        progressCounter.numberOfTermsRead() +
-        ' von ' +
-        progressCounter.numberOfTerms +
-        ' in ' +
-        timer.formatedTime() + 
-        ' Minuten geschafft!\n Geben Sie Ihren Namen für den Highscore ein.';
-
-      timer.clear();
-      progressCounter.clear();
-
-      var highscoreName = prompt(message);
-      if (highscoreName){
-        $.post("http://highscore.k-nut.eu/highscore",
-          {name: highscoreName,
-            score: score,
-            time: time
-          }).done(checkIfInTopTen); 
-      }
-      else{
-        location.reload();
-      }
+      handleIncorrectAnswer(event.target);
     }
-    return false;
   }
 
   function createButton (term) {
