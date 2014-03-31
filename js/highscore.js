@@ -14,25 +14,29 @@ requirejs.config({
 
 require(["jquery"], function($){
   var scores = [];
+  var $table = $("tbody");
   $.getJSON("http://highscore.k-nut.eu/highscore", function(data){
     $.each(data, function(key, value){
-    var place = parseInt(key, 10) + 1;
-      scores.push("<tr> <td>"+ place + "</td><td>" + value.score + "</td><td>" + convertMillisecondsToFormatedTime(value.time) + "</td><td>" + value.name + "</td></tr>");
+      var place = parseInt(key, 10) + 1;
+      var row = $("<tr />");
+      row.append($('<td>').text(place))
+         .append($('<td>').text(value.score))
+         .append($('<td>').text(convertMillisecondsToFormatedTime(value.time)))
+         .append($('<td>').text(value.name));
+
+      row.appendTo($table);
     });
-  }).done(function() {
-    $("tbody").html(scores.join(""));
   });
-
-
-  function convertMillisecondsToFormatedTime(milliseconds){
-    var total = milliseconds / 1000;
-    var minutes = Math.floor(total/60);
-    var seconds = parseInt(total - minutes*60, 10);
-    var stringSeconds = seconds.toString();
-    if (stringSeconds.length === 1){
-      stringSeconds = '0' + stringSeconds;
-    }
-    return minutes + ":" + stringSeconds;
-  }
-
 });
+
+
+function convertMillisecondsToFormatedTime(milliseconds){
+  var total = milliseconds / 1000;
+  var minutes = Math.floor(total/60);
+  var seconds = parseInt(total - minutes*60, 10);
+  var stringSeconds = seconds.toString();
+  if (stringSeconds.length === 1){
+    stringSeconds = '0' + stringSeconds;
+  }
+  return minutes + ":" + stringSeconds;
+}
