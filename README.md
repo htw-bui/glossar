@@ -10,15 +10,19 @@ Then run
 cinst nodejs
 cinst ruby
 cinst rubygems
+cinst python
 ```
 close your shell, open it again and run 
-```
-gem install sass 
-```
 
+
+General
+-------
 
 Clone the repo. Then change to it and run
-``` npm install ```
+```
+gem install sass 
+npm install
+```
 in order to install the node dependencies
 Your of course need to have node installed for that.
 
