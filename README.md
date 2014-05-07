@@ -12,7 +12,6 @@ cinst ruby
 cinst rubygems
 cinst python
 ```
-close your shell, open it again and run 
 
 
 General
