@@ -43,7 +43,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
 
   function setActiveItemInNavigation(){
     var position = n.selectedIndex;
-    $("nav ul a").each( function () {
+    $("nav.termnav ul a").each( function () {
       $(this).removeClass("active-item");
     });
     $("#navigation" + position).addClass("active-item");
@@ -129,7 +129,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
 
     var navList = $( "<ul/>", {
       class: "navItems"
-    }).appendTo("nav");
+    }).appendTo("nav.termnav");
 
     $.each(data, function(key, term ) {
       var link = $('<a />', 
@@ -165,12 +165,14 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
   }
 
   function closeNav(){
-    $("nav").removeClass("nav-open");
+    $(".nav-open").addClass("termnav");
+    $(".nav-open").removeClass("nav-open");
   }
 
   function showNav(){
-    $("nav").addClass("nav-open");
-    $("nav a").bind("click", closeNav);
+    $("nav.termnav").addClass("nav-open");
+    $("nav.termnav").removeClass("termnav");
+    $(".nav-open a").bind("click", closeNav);
     return false;
   }
 

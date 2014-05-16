@@ -9,7 +9,7 @@ html, body
   padding: 0
   border: 0
 
-nav
+nav.termnav
   width: 30%
   float: left
   height: 100%
@@ -20,12 +20,12 @@ header
   width: 100%
   float: left
 
-nav ul
+nav.termnav ul
   overflow-y: scroll
   height: 100%
   list-style-type: none
 
-nav
+nav.termnav
   li
     margin-left: 0
     padding-left: 0
@@ -60,9 +60,14 @@ aside
   right: 0
 
 @media only screen and (max-width: 767px)
-  nav
+  nav 
+    transition: all 1s ease-in-out
+  nav.termnav
     position: absolute
     left: -200%
+    ul
+      float: left
+      height: 70%
   .hideDesktop
     display: block
   .nav-open
@@ -76,11 +81,6 @@ aside
     height: 100%
     float: left
     border-right: 1px solid black
-  nav
-    transition: all 1s ease-in-out
-    ul
-      float: left
-      height: 70%
   #content
     width: 100%
   #main
