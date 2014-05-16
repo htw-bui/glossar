@@ -37,7 +37,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
       synonyms.push("<a href='#" + value + "'>" + value + "</a>");
     });
     $( "<aside>", {html: synonyms.join("")}).appendTo("#main");
-    $("<p>", {html: termObject.description}).appendTo("#main");
+    $("<p>", {html: termObject.description, class:'hyphenate'}).appendTo("#main");
     Hyphenator.run();
   }
 
