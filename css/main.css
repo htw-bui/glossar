@@ -135,10 +135,8 @@ aside {
 
   #paging a {
     text-align: center;
-    border: 1px solid black;
     display: block;
     width: 50%;
-    background: grey;
     float: left;
     padding-top: 10px;
     padding-bottom: 10px;
