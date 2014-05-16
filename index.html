@@ -1,38 +1,64 @@
+<!doctype html>
 <html lang=de>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> KOMET Glossar</title>
-    <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen" >
     <script data-main="js/main" src="js/require.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="js/hyphenate.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 
   <body>
-    <header>
-    <h1> Glossar</h1>
+    <nav class='navbar navbar-default' role=navigation>
+    <div class='container-fluid'>
+      <div class='navbar-header'>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sitenav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <button id='showNav' type="button" class="navbar-toggle">
+          Navigation zeigen 
+        </button>
+        <a class='navbar-brand' href='#'>KOMET</a>
+      </div>
+      <div class='collapse navbar-collapse' id='sitenav'>
+        <ul class='nav navbar-nav'>
+          <li class=active><a href='/index.html'>Glossar</a></li>
+          <li><a href='/quiz.html'>Quiz</a></li>
+          <li><a href='/highscore.html'>Hall of Fame</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
 
     <div id=topright>
-      <div id="time">
-      </div>
-      <div id="progress">
-      </div>
-      <a href='#' id='reset'> Zurücksetzten </a>
     </div>
-
-    <a class=hideDesktop id='showNav' href='#'>Navigation anzeigen</a>
-    </header>
     <div id="container">
-      <nav>
-      <a class=hideDesktop>Schließen</a>
-      <h2>Navigation</h2> 
-      <input id=filterTerms type="search" placeholder="Filter....">
+      <nav class=termnav>
+      <h2 style='float: left'>Navigation</h2> 
+      <a style='float: right; font-size: 2em; color: black; margin-right: 20px' class=hideDesktop>×</a>
+      <input id=filterTerms type="search" class='form-control' placeholder="Filter....">
       </nav>
 
       <div id="content">
+        <div id='stats'>
+          <span id="time"> </span>
+          <span id="progress"> </span>
+          <a href='#' id='reset'><i class="fa fa-history"></i></a>
+        </div>
         <div id="main"> Begriffe </div>
         <div id="paging">
-          <a id="previousTerm">Zurück</a>
-          <a id="nextTerm" style="float: right">Nächster</a>
+          <a type=button class='btn btn-default' id="previousTerm">Zurück</a>
+          <a type=button class='btn btn-default'id="nextTerm" style="float: right">Nächster</a>
         </div>
       </div>
     </div>

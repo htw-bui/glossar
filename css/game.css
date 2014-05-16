@@ -19,23 +19,11 @@
   clear: both;
 }
 
-#topright {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 .btn {
   width: 46%;
   margin-top: 10px;
   margin-left: 2%;
   margin-right: 2%;
-}
-
-#topright {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .container {
@@ -45,6 +33,10 @@
 
 .column .half {
   width: 50%;
+}
+
+#topright {
+  float: right;
 }
 
 #choices {
