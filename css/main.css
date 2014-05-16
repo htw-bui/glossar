@@ -16,6 +16,10 @@ html, body {
   border: 0;
 }
 
+#filterTerms {
+  width: 90%;
+}
+
 nav.termnav {
   width: 30%;
   float: left;
