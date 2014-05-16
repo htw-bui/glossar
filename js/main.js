@@ -129,7 +129,9 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
 
     var navList = $( "<ul/>", {
       class: "navItems"
-    }).appendTo("nav.termnav");
+    });
+    navList.appendTo("nav.termnav");
+    navList.appendTo(".nav-open");
 
     $.each(data, function(key, term ) {
       var link = $('<a />', 
