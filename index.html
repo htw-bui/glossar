@@ -11,6 +11,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="http://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -22,6 +23,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
+        </button>
+        <button id='showNav' type="button" class="navbar-toggle">
+          Navigation zeigen 
         </button>
         <a class='navbar-brand' href='#'>KOMET</a>
       </div>
@@ -36,13 +40,7 @@
     </nav>
 
     <div id=topright>
-      <div id="time">
-      </div>
-      <div id="progress">
-      </div>
-      <a href='#' id='reset'> Zurücksetzten </a>
     </div>
-    <a class=hideDesktop id='showNav' href='#'>Navigation anzeigen</a>
     <div id="container">
       <nav class=termnav>
       <a class=hideDesktop>Schließen</a>
@@ -51,6 +49,11 @@
       </nav>
 
       <div id="content">
+        <div id='stats'>
+          <span id="time"> </span>
+          <span id="progress"> </span>
+          <a href='#' id='reset'><i class="fa fa-repeat"></i></a>
+        </div>
         <div id="main"> Begriffe </div>
         <div id="paging">
           <a type=button class='btn btn-default' id="previousTerm">Zurück</a>
