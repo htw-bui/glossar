@@ -110,7 +110,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
       };
       timer.start();
       createNaviagtion(n.keys);
-    }).done(loadNewDefintition);
+    }).done(function(){loadNewDefintition();});
 
     $('#showNav').on('click', showNav);
     $('#filterTerms').on('keyup', filterNavigation);
