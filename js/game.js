@@ -75,18 +75,6 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     return definition.replace(findallRegex, "xxxx");
   }
 
-  function checkIfInTopTen(callback){
-    callback = JSON.parse(callback);
-    if (callback.highscore){
-      alert("Sie sind in den Top 10!");
-      window.location = window.location.origin + "/highscore.html";
-    }
-    else {
-      alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
-      location.reload();
-    }
-  }
-
   function handleCorrectAnswer(button){
     progressCounter.registerTerm(button.innerHTML);
     button.className = ("btn btn-success");
@@ -96,7 +84,33 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
 
   function handleIncorrectAnswer(button){
     button.className = "btn btn-danger";
-    setTimeout(promptUserForHighscore, 250);
+    setTimeout(checkIfScoreIsHighEnough, 250);
+  }
+
+  function checkIfScoreIsHighEnough(){
+    var time = timer.ellapsed();
+    var score = progressCounter.numberOfTermsRead();
+    $.post("http://highscore.k-nut.eu/highscore/check",
+      {
+        score: score,
+        time: time
+      }).done(checkIfInTopTen); 
+  }
+
+  function checkIfInTopTen(callback){
+    callback = JSON.parse(callback);
+    if (callback.top10){
+    promptUserForHighscore();
+    }
+    else {
+      alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
+      location.reload();
+    }
+  }
+
+
+  function sendUserToHallOfFame(){
+    window.location = window.location.origin + "/highscore.html";
   }
 
   function promptUserForHighscore(){
@@ -120,7 +134,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
         {name: highscoreName,
           score: score,
           time: time
-        }).done(checkIfInTopTen); 
+        }).done(sendUserToHallOfFame); 
     }
     else{
       location.reload();
