@@ -32,7 +32,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
 
 
   function initializeObjects() { 
-    progressCounter = new ProgressCounter(keys.length);
+    progressCounter = new ProgressCounter(keys.length+1);
     progressCounter.onChange = function(){
       var progress = $("<div>", {
         text: this.numberOfTermsRead() + '|' + this.numberOfTerms
