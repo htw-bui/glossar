@@ -108,6 +108,8 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       promptUserForHighscore();
     }
     else {
+      timer.clear();
+      progressCounter.clear();
       alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
       location.reload();
     }
