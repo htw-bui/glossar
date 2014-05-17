@@ -49,7 +49,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
 
   function setUp(){
     if (unusedTerms.length === 0){
-      promptUserForHighscore();
+      checkIfScoreIsHighEnough();
     }
     else {
       $('#choices').empty();
@@ -99,10 +99,10 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       {
         score: score,
         time: time
-      }).done(checkIfInTopTen); 
+      }).done(handleTopTenResponse); 
   }
 
-  function checkIfInTopTen(callback){
+  function handleTopTenResponse(callback){
     callback = JSON.parse(callback);
     if (callback.top10){
       promptUserForHighscore();
