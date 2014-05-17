@@ -22,5 +22,9 @@
   "6": {
     "synonyms": [ ], 
     "description": "6"
+  },
+  "with html": {
+    "synonyms": [ ], 
+    "description": "this is a long <ul> <li> list </li> </ul> that contains html"
   }
 }

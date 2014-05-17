@@ -152,7 +152,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   function checkAnswer(event){
     var clicked = event.target.innerHTML;
     var censored = censorOutTerm(clicked, data[clicked].description);
-    if ($('#definiton div').text() === censored){
+    if ($('#definiton div').html() === censored){
       handleCorrectAnswer(event.target);
     }
     else{
