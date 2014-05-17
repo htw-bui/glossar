@@ -24,8 +24,8 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       data = json_data;
       for(var key in data){
         keys.push(key);
+        unusedTerms.push(key);
       }
-      unusedTerms = keys;
       setUp();
     }).done(initializeObjects);
   }
@@ -48,18 +48,23 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   }
 
   function setUp(){
-    $('#choices').empty();
-    $('#definiton').empty();
-    var term = unusedTerms.popRandomElement();
-    var choices = [];
-    createDefinitionFor(term);
-    choices.push(term);
-    for (var j=0; j < 3; j++) {
-      choices.push(keys.randomElement());
+    if (unusedTerms.length === 0){
+      promptUserForHighscore();
     }
-    choices.shuffle();
-    for (var i = choices.length - 1; i >= 0; i--){
-      createButton(choices[i]);
+    else {
+      $('#choices').empty();
+      $('#definiton').empty();
+      var term = unusedTerms.popRandomElement();
+      var choices = [];
+      createDefinitionFor(term);
+      choices.push(term);
+      for (var j=0; j < 3; j++) {
+        choices.push(keys.randomElement());
+      }
+      choices.shuffle();
+      for (var i = choices.length - 1; i >= 0; i--){
+        createButton(choices[i]);
+      }
     }
   }
 
@@ -100,7 +105,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   function checkIfInTopTen(callback){
     callback = JSON.parse(callback);
     if (callback.top10){
-    promptUserForHighscore();
+      promptUserForHighscore();
     }
     else {
       alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
