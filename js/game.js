@@ -52,24 +52,33 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       checkIfScoreIsHighEnough();
     }
     else {
-      $('#choices').empty();
-      $('#definiton').empty();
       var term = unusedTerms.popRandomElement();
-      var choices = [];
       createDefinitionFor(term);
-      choices.push(term);
-      for (var j=0; j < 3; j++) {
-        choices.push(keys.randomElement());
+      createAllChoiceButtons(term);
+    }
+  }
+
+  function createAllChoiceButtons(term){
+    $('#choices').empty();
+    var choices = [];
+    choices.push(term);
+
+    while(choices.length <4){
+      var randomChoice = keys.randomElement();
+      if (choices.indexOf(randomChoice) === -1){
+        choices.push(randomChoice);
       }
-      choices.shuffle();
-      for (var i = choices.length - 1; i >= 0; i--){
-        createButton(choices[i]);
-      }
+    }
+
+    choices.shuffle();
+    for (var i = choices.length - 1; i >= 0; i--){
+      createButton(choices[i]);
     }
   }
 
 
   function createDefinitionFor(term){
+    $('#definiton').empty();
     var definition = censorOutTerm(term, data[term].description);
     var definitionBlock = $("<div />", {html: definition});
     definitionBlock.appendTo('#definiton');
@@ -168,6 +177,4 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     });
     button.appendTo('#choices');
   }
-
-
 });
