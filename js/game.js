@@ -24,8 +24,8 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       data = json_data;
       for(var key in data){
         keys.push(key);
+        unusedTerms.push(key);
       }
-      unusedTerms = keys;
       setUp();
     }).done(initializeObjects);
   }
@@ -48,18 +48,23 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   }
 
   function setUp(){
-    $('#choices').empty();
-    $('#definiton').empty();
-    var term = unusedTerms.popRandomElement();
-    var choices = [];
-    createDefinitionFor(term);
-    choices.push(term);
-    for (var j=0; j < 3; j++) {
-      choices.push(keys.randomElement());
+    if (unusedTerms.length === 0){
+      checkIfScoreIsHighEnough();
     }
-    choices.shuffle();
-    for (var i = choices.length - 1; i >= 0; i--){
-      createButton(choices[i]);
+    else {
+      $('#choices').empty();
+      $('#definiton').empty();
+      var term = unusedTerms.popRandomElement();
+      var choices = [];
+      createDefinitionFor(term);
+      choices.push(term);
+      for (var j=0; j < 3; j++) {
+        choices.push(keys.randomElement());
+      }
+      choices.shuffle();
+      for (var i = choices.length - 1; i >= 0; i--){
+        createButton(choices[i]);
+      }
     }
   }
 
@@ -75,18 +80,6 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     return definition.replace(findallRegex, "xxxx");
   }
 
-  function checkIfInTopTen(callback){
-    callback = JSON.parse(callback);
-    if (callback.highscore){
-      alert("Sie sind in den Top 10!");
-      window.location = window.location.origin + "/highscore.html";
-    }
-    else {
-      alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
-      location.reload();
-    }
-  }
-
   function handleCorrectAnswer(button){
     progressCounter.registerTerm(button.innerHTML);
     button.className = ("btn btn-success");
@@ -96,7 +89,35 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
 
   function handleIncorrectAnswer(button){
     button.className = "btn btn-danger";
-    setTimeout(promptUserForHighscore, 250);
+    setTimeout(checkIfScoreIsHighEnough, 250);
+  }
+
+  function checkIfScoreIsHighEnough(){
+    var time = timer.ellapsed();
+    var score = progressCounter.numberOfTermsRead();
+    $.post("http://highscore.k-nut.eu/highscore/check",
+      {
+        score: score,
+        time: time
+      }).done(handleTopTenResponse); 
+  }
+
+  function handleTopTenResponse(callback){
+    callback = JSON.parse(callback);
+    if (callback.top10){
+      promptUserForHighscore();
+    }
+    else {
+      timer.clear();
+      progressCounter.clear();
+      alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
+      location.reload();
+    }
+  }
+
+
+  function sendUserToHallOfFame(){
+    window.location = window.location.origin + "/highscore.html";
   }
 
   function promptUserForHighscore(){
@@ -120,7 +141,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
         {name: highscoreName,
           score: score,
           time: time
-        }).done(checkIfInTopTen); 
+        }).done(sendUserToHallOfFame); 
     }
     else{
       location.reload();
@@ -131,7 +152,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   function checkAnswer(event){
     var clicked = event.target.innerHTML;
     var censored = censorOutTerm(clicked, data[clicked].description);
-    if ($('#definiton div').text() === censored){
+    if ($('#definiton div').html() === censored){
       handleCorrectAnswer(event.target);
     }
     else{
