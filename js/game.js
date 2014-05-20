@@ -15,6 +15,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   var progressCounter;
   var timer;
   var unusedTerms = [];
+  var correctAnswer;
 
   $(document).ready(initPage);
 
@@ -71,8 +72,9 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     }
 
     choices.shuffle();
-    for (var i = choices.length - 1; i >= 0; i--){
-      createButton(choices[i]);
+    correctAnswer = choices.indexOf(term);
+    for (var i = 0; i < choices.length; i++){
+      createButton(choices[i], i);
     }
   }
 
@@ -98,7 +100,10 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
 
   function handleIncorrectAnswer(button){
     button.className = "btn btn-danger";
-    setTimeout(checkIfScoreIsHighEnough, 250);
+    var $correctAnswer = $("#choices").children().eq(correctAnswer);
+    $correctAnswer.removeClass("btn-info");
+    $correctAnswer.addClass("btn-success");
+    setTimeout(checkIfScoreIsHighEnough, 1000);
   }
 
   function checkIfScoreIsHighEnough(){
@@ -159,9 +164,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   }
 
   function checkAnswer(event){
-    var clicked = event.target.innerHTML;
-    var censored = censorOutTerm(clicked, data[clicked].description);
-    if ($('#definiton div').html() === censored){
+    if ($(this).data("position") == correctAnswer){
       handleCorrectAnswer(event.target);
     }
     else{
@@ -169,11 +172,12 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     }
   }
 
-  function createButton (term) {
+  function createButton (term, position) {
     var button = $("<button/>", {
       "class": "btn btn-info",
       text: term,
-      on: {click: checkAnswer}
+      on: {click: checkAnswer},
+      data: {"position": position}
     });
     button.appendTo('#choices');
   }
