@@ -75,6 +75,7 @@ aside {
   height: 100%;
   float: left;
   width: 70%;
+  height: 100%;
 }
 
 .nav-open, .hideDesktop {
@@ -117,7 +118,7 @@ aside {
     display: block;
     background: white;
     width: 90%;
-    height: 100%;
+    height: 120%;
     float: left;
     border-right: 1px solid black;
   }
@@ -130,8 +131,14 @@ aside {
     overflow-y: auto;
   }
 
+  #container {
+    height: 100%;
+  }
+
   #content {
+    float: left;
     width: 100%;
+    height: 100%;
   }
 
   #main {
@@ -153,6 +160,7 @@ aside {
   #paging {
     float: left;
     width: 100%;
+    margin-bottom: 10px;
   }
   #paging a {
     text-align: center;
