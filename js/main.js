@@ -148,6 +148,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
     $("nav a").bind("click", closeNav);
     $("#main").bind("click", closeNav);
     $("header").bind("click", closeNav);
+    $(".navbar").bind("click", closeNav);
   }
 
 
