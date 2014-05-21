@@ -126,12 +126,18 @@ aside {
     list-style-type: none;
     float: left;
     height: 70%;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   #content {
     width: 100%;
   }
 
+  #main {
+    float: left;
+    width: 100%;
+  }
   #main h1 {
     margin-bottom: 0;
     -webkit-hyphens: auto;
@@ -144,6 +150,10 @@ aside {
     width: 100%;
   }
 
+  #paging {
+    float: left;
+    width: 100%;
+  }
   #paging a {
     text-align: center;
     display: block;
