@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> KOMET Glossar</title>
-    <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen" >
     <script data-main="js/main" src="js/require.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -13,6 +12,7 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="js/hyphenate.js"></script>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen" >
   </head>
 
   <body>
@@ -21,12 +21,11 @@
       <div class='navbar-header'>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sitenav">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <i class="fa fa-bars"></i>
         </button>
         <button id='showNav' type="button" class="navbar-toggle">
-          Navigation zeigen 
+          <!--Inhalt -->
+          <i class="fa fa-book"></i>
         </button>
         <a class='navbar-brand' href='#'>KOMET</a>
       </div>
@@ -42,7 +41,7 @@
 
     <div id="container">
       <nav class=termnav>
-      <h2 style='float: left'>Navigation</h2> 
+      <h2 style='float: left'>Inhalt</h2> 
       <a style='float: right; font-size: 2em; color: black; margin-right: 20px' class=hideDesktop>×</a>
       <input id=filterTerms type="search" class='form-control' placeholder="Filter....">
       </nav>
