@@ -31,15 +31,17 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     }).done(initializeObjects);
   }
 
+  function restartPulseAnimation(){
+    $('#pc').removeClass().addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass();
+    });
+  }
 
   function initializeObjects() { 
     progressCounter = new ProgressCounter(keys.length);
     progressCounter.onChange = function(){
-      var progress = $("<div>", {
-        text: this.numberOfTermsRead() + '|' + this.numberOfTerms
-      });
-      $('#progressCounter').empty();
-      progress.appendTo('#progressCounter').addClass("animated pulse");
+      $("#progressCounter").text(this.numberOfTermsRead() + '|' + this.numberOfTerms)
+      restartPulseAnimation();
     };
     // we are only calling this here in order for the progress
     // to display in the html from the very beginning on
