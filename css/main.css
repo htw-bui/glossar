@@ -142,6 +142,9 @@ aside {
     overflow-x: hidden;
     overflow-y: auto;
   }
+  .nav-open ul li {
+    padding-top: 20px;
+  }
 
   #container {
     height: 100%;
