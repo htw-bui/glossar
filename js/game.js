@@ -38,13 +38,17 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       var progress = $("<div>", {
         text: this.numberOfTermsRead() + '|' + this.numberOfTerms
       });
-      $('#topright').empty();
-      progress.appendTo('#topright').addClass("animated pulse");
+      $('#progressCounter').empty();
+      progress.appendTo('#progressCounter').addClass("animated pulse");
     };
     // we are only calling this here in order for the progress
     // to display in the html from the very beginning on
     progressCounter.onChange();
     timer = new Stopwatch();
+    timer.execute = function(){
+      $("#timer").text(this.formatedTime());
+    };
+
     timer.start();
   }
 
