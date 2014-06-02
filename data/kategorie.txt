@@ -248,7 +248,7 @@ Eine verallgemeinerte Beschreibung einer Benutzergruppe.
 ---------
 
 
-Benutzerunterstützung: Plaung, Gestaltung, System
+Benutzerunterstützung: Planung, Gestaltung, System
 =========
 User assistance
 =========
@@ -1014,7 +1014,7 @@ Interaktionsdesigner nicht kennen.
 ---------
 
 
-Interaktives System; System, Anforderungen, 
+Interaktives System: System, Anforderungen, 
 =========
 interactive system
 =========
@@ -2130,7 +2130,7 @@ Siehe Usabilitytestbericht.
 ---------
 
 
-Testskript; Test, Evaluierung
+Testskript: Test, Evaluierung
 =========
 Usability Checkliste, Test script, Usability 
 =========
@@ -2412,7 +2412,7 @@ interaktiven Systemen durchgeführt werden.
 ---------
 
 
-Usabilitytest ­ Face-to-face: Evaluierung, Test. 
+Usabilitytest ­ Face-to-face: Evaluierung, Test
 =========
 =========
 
@@ -2585,7 +2585,7 @@ visuelle Design und das exakte Layout ignoriert. Auf Deutsch auch
 ---------
 
 
-Ziel: Anforderung, Prinzipien 
+Ziel: Anforderungen, Prinzipien 
 =========
 Goal
 =========
