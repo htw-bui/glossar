@@ -28,7 +28,7 @@ def generate_from_merged(withlinks=True):
         path = fullpath  + '../data/merged.html'
         outpath = fullpath  + '../neu_generierte_begriffe.json'
     else:
-        path = fullpath  + '../data/merged-nolinks.html'
+        path = fullpath  + '../data/categories-censored.html'
         outpath = fullpath  + '../terms.json'
 
     with open(path, "r", encoding="utf-8") as infile:
@@ -37,14 +37,22 @@ def generate_from_merged(withlinks=True):
     terms = {}
     for part in content:
         parts = part.split("=========")
-        term = parts[0].strip()
-        synonyms = parts[1].split(",")
+        term, categories = parts[0].split(":")
+        term = term.strip()
+        categories = [c.strip() for c in categories.split(",")]
+        if "" in categories:
+            categories.remove("")
+
+        synonyms = [s.strip() for s in parts[1].split(",")]
+
         description = parts[2].strip().replace("\n", " ")
         terms[term] = {"synonyms": synonyms,
-                       "description": description
+                       "description": description,
+                       "categories": categories
                        }
     od = collections.OrderedDict(sorted(terms.items()))
 
+    print(len(od))
     with open(outpath, "w") as out:
         out.write(json.dumps(od, indent=2))
 
@@ -52,8 +60,8 @@ def generate_from_merged(withlinks=True):
 def censor():
     fullpath = os.path.dirname(os.path.abspath(__file__)) + "/"
 
-    path = fullpath + '../data/merged-nolinks.html'
-    outpath = fullpath + '../data/censored.html'
+    path = fullpath + '../data/kategorie.txt'
+    outpath = fullpath + '../data/categories-censored.html'
 
     with open(path, "r", encoding="utf-8") as infile:
         content = infile.read().split("---------")
@@ -72,6 +80,7 @@ def censor():
 
 if __name__ == '__main__':
     #generate_from_merged()
-    #generate_from_merged(withlinks=False)
     censor()
+    generate_from_merged(withlinks=False)
+    #censor()
 
