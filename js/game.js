@@ -119,7 +119,13 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       {
         score: score,
         time: time
-      }).done(handleTopTenResponse); 
+      }).done(handleTopTenResponse)
+      .error(handleHighscoreIfNoConnection); 
+  }
+
+  function handleHighscoreIfNoConnection(){
+    alert("Es konnte keine Verbindung zum Server hergestellt werden.");
+    resetAndReload();
   }
 
   function handleTopTenResponse(callback){
@@ -128,11 +134,15 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       promptUserForHighscore();
     }
     else {
-      timer.clear();
-      progressCounter.clear();
       alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
-      location.reload();
+      resetAndReload();
     }
+  }
+
+  function resetAndReload(){
+    timer.clear();
+    progressCounter.clear();
+    location.reload();
   }
 
 
@@ -161,7 +171,8 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
         {name: highscoreName,
           score: score,
           time: time
-        }).done(sendUserToHallOfFame); 
+        }).done(sendUserToHallOfFame)
+          .error(handleHighscoreIfNoConnection); 
     }
     else{
       location.reload();
