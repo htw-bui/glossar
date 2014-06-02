@@ -172,7 +172,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
           score: score,
           time: time
         }).done(sendUserToHallOfFame)
-          .error(handleHighscoreIfNoConnection); 
+        .error(handleHighscoreIfNoConnection); 
     }
     else{
       location.reload();
