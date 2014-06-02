@@ -1,0 +1,2611 @@
+﻿category: Anforderungen, Prinzipien, Rollen, Planung, Gestaltung, Test, Implementierung, Evaluierung, System  
+
+Affordance: Gestaltung, Prinzipien
+=========
+Handlungsleitung, Selbstbeschreibungsfähigkeit
+=========
+﻿Siehe Handlungsleitung
+
+---------
+
+
+Anforderung: Planung, Gestaltung, Anforderungen
+=========
+=========
+
+Bedingung oder Fähigkeit, die ein <a href='#interaktives System'>interaktives System</a>, eine Komponente
+
+eines interaktiven Systems oder eine Dienstleistung erfüllen oder besitzen
+
+muss, um einer Vereinbarung, einem Standard, einer Spezifikation oder anderen
+
+formal zugrunde gelegten Dokumenten zu genügen.
+
+Bemerkung zum Seminar: Dieses Glossar definiert die folgenden Arten von
+
+Anforderungen:
+<ul>
+<li>Interessenvertreteranforderung</li>
+<li>Marktanforderung</li>
+<li>Organisatorische Anforderung</li>
+<li>Nutzungsanforderung</li>
+</ul>
+
+---------
+
+
+Arbeitsmittel: Anforderungen, Planung
+=========
+=========
+
+Hardware, Software und Materialien.
+
+---------
+
+
+Aufgabe: Anforderungen, Prinzipien, Gestaltung,
+=========
+=========
+
+Aktivitäten die erforderlich sind, um ein Ziel zu erreichen.
+
+
+
+Bemerkung zum Seminar: Die folgende informale Definition einer Aufgabe mag
+
+hilfreich sein: Benutzer haben eine Aufgabe erledigt, wenn sie das Gefühl
+
+haben, dass sie Kaffee trinken gehen können ohne dabei ein schlechtes
+
+Gewissen zu haben. Diese informale Definition unterscheidet eine Aufgabe von
+
+einer Teilaufgabe oder einer Aktivität.
+
+Beispiele:
+
+- ,,Ein Auto mieten" ist eine Aufgabe.
+
+- ,,Eine Reservierung stornieren" ist eine Aufgabe.
+
+- ,,Sich auf der Webseite einer Autoverleihfirma registrieren" ist keine Aufgabe.
+
+- ,,Sich einloggen" ist keine Aufgabe.
+
+- ,,Das Startdatum einer Mietperiode auswählen" ist keine Aufgabe.
+
+---------
+
+
+Aufgabenangemessenheit: Prinzipien, Evaluierung, 
+=========
+=========
+
+Ein Dialogprinzip.
+
+
+
+Ein interaktives System ist aufgabenangemessen, wenn es den Benutzer
+
+unterstützt, seine Aufgabe zu erledigen, d. h., wenn Funktionalität und Dialog
+
+auf den charakteristischen Eigenschaften der Aufgabe basieren, anstatt auf der
+
+zur Aufgabenerledigung eingesetzten Technologie.
+
+
+
+Empfehlungen zu Befolgung des Dialogprinzips:
+
+- Der Dialog sollte dem Benutzer solche Informationen anzeigen, die im
+
+Zusammenhang mit der erfolgreichen Erledigung der Aufgabe stehen..
+
+- Der Dialog sollte dem Benutzer keine Informationen anzeigen, die nicht für die
+
+erfolgreiche Erledigung relevanter Aufgaben benötigt werden..
+
+- Die Form der Eingabe und Ausgabe sollte der Aufgabe angepasst sein. Wenn
+
+für eine Aufgabe ganz bestimmte Eingabewerte typisch sind, sollten diese
+
+Werte dem Benutzer automatisch als voreingestellte Werte verfügbar sein.
+
+- Die vom interaktiven System verlangten Dialogschritte sollten zum
+
+Arbeitsablauf passen, d. h., notwendige Dialogschritte sollten enthalten sein und
+
+unnötige Dialogschritte sollten vermieden werden.
+
+---------
+
+
+Aufgabenmodell: Implementierung,  
+=========
+Task model
+=========
+
+Eine Beschreibung der Aktivitäten innerhalb einer Aufgabe die erledigt werden
+
+müssen, um die vom Benutzer beabsichtigen Ziele zu erreichen.
+
+Bemerkung zum Seminar: Die Konzepte "Use case" und "Essential use case"
+
+können erwähnt werden, sind aber nicht Teil des Curriculums.
+
+---------
+
+
+Barrierefreiheit: Prinzipien
+=========
+Accessibility
+=========
+
+Die Attribute und Charakteristiken eines interaktiven Systems die Menschen
+
+mit eingeschränkter Sicht, eingeschränktem Hören, eingeschränkter
+
+Geschicklichkeit, eingeschränkter Kognition oder eingeschränkter physikalischer
+
+Mobilität erlauben effektiv und effizient mit dem interaktiven System zu
+
+interagieren.
+
+---------
+
+
+Befund: Test, Evaluierung
+=========
+Testergebnis, Usability finding, Usability-Befund
+=========
+
+Ergebnis aus einem Usabilitytest. Ein Befund kann ein Nutzungsproblem oder
+
+etwas sein, das die Benutzer mochten, also ein positiver Befund.
+
+---------
+
+
+Benutzer: Rollen, Anforderungen
+=========
+User, 
+=========
+
+Person, die mit einem interaktiven System arbeitet.
+
+---------
+
+
+Benutzerdokumentation: Planung, Gestaltung, System 
+=========
+User documentation, 
+=========
+
+Eine Form der Benutzerunterstützung.
+
+
+
+Für Benutzer geschriebene Anleitungen darüber, wie das interaktive System
+
+durch Benutzer eingesetzt werden kann.
+
+---------
+
+
+Benutzererlebnis: Planung, Evaluierung
+=========
+User experience,
+=========
+
+Wahrnehmungen und Reaktionen einer Person, die aus der tatsächlichen
+
+und/oder erwarteten Benutzung eines interaktiven Systems oder Dienstes
+
+resultieren.
+
+Bemerkung zum Seminar: Seminarteilnehmer müssen den Unterschied
+
+zwischen Usability und Benutzererlebnis kennen.
+
+---------
+
+
+Benutzerfragebogen: Evaluierung, 
+=========
+=========
+
+Ein Satz von Fragen, der eine strukturierte Art und Weise der Befragung einer
+
+großen Gruppe von Menschen ermöglicht, um diese Menschen, ihre Interessen
+
+und ihre Präferenzen zu beschreiben.
+
+Benutzerfragebögen können im Rahmen einer Benutzerbefragung benutzt
+
+werden, um die Zufriedenstellung von Benutzern eines interaktiven Systems
+
+und Informationen zum Nutzungskontext zu ermitteln.
+
+---------
+
+
+Benutzergruppe: Rollen, Planung, Gestaltung, Evaluierung,
+=========
+User group,
+=========
+
+Eine Gruppe von Benutzern mit demselben oder ähnlichen Nutzungskontext
+
+bezogen auf das interaktive System.
+
+---------
+
+
+Benutzergruppenprofil: Rollen, Evaluierung, 
+=========
+User group profile
+=========
+
+Eine verallgemeinerte Beschreibung einer Benutzergruppe.
+
+---------
+
+
+Benutzerunterstützung: Plaung, Gestaltung, System
+=========
+User assistance
+=========
+
+Ein gemeinsamer Ausdruck für Benutzerdokumentation, Onlinehilfe und
+
+Fehlermanagement.
+
+---------
+
+
+Benutzerzentrierte Evaluierung: Planung, Test, Evaluierung,
+=========
+Menschzentrierte Evaluierung, User-centred 
+=========
+
+Evaluierung, die repräsentative Benutzer involviert, die bestimmte Aufgaben mit
+
+dem interaktiven System ausführen, um die Identifikation von
+
+Nutzungsproblemen und/oder die Messung von Effizienz, Effektivität
+
+und/oder Zufriedenstellung zu ermöglichen.
+
+Siehe Usabilitytest.
+
+---------
+
+
+Benutzerzentrierte Gestaltung: Gestaltung, 
+=========
+User-centred design, Menschzentrierte Gestaltung
+=========
+
+Siehe Menschzentrierte Gestaltung.
+
+---------
+
+
+Benutzungsschnittstelle: System, Gestaltung, Implementierung, 
+=========
+User interface
+=========
+
+Alle Bestandteile eines interaktiven Systems, die Informationen und
+
+Steuerelemente zur Verfügung stellen, die für den Benutzer notwendig sind, um
+
+eine bestimmte Aufgabe mit dem interaktiven System zu erledigen.
+
+---------
+
+
+Benutzungsschnittstellenstandard: System, Implementierung, Prinzipien
+=========
+
+=========
+
+Eine Sammlung von Richtlinien für die Gestaltung von
+
+Benutzungsschnittstellen.
+
+---------
+
+
+Beobachter: Rollen, System
+=========
+Observer, 
+=========
+
+Eine Rolle in einem Usabilitytest. Beobachter sind Interessenvertreter, die
+
+schauen, was während eines Usabilitytests geschieht. Durch das Beobachten
+
+einer Usabilitytestsitzung erlangen die Beobachter Eindrücke von den
+
+Nutzungsproblemen und Erfolgen der Testteilnehmer aus erster Hand.
+
+---------
+
+
+Beobachtung: Prinzipien, Anforderungen,
+=========
+Observation
+=========
+
+Eine Technik für das Sammeln von Kontextinformationen bezüglich
+
+Erfordernissen. Während einer Beobachtung sieht der User Requirements
+
+Engineer dem Benutzer bei der Ausführung von Aufgaben am interaktiven
+
+System zu. Der User Requirements Engineer greift nicht ein, außer es
+
+besteht gelegentlich die Notwendigkeit zu einer klärenden Frage.
+
+---------
+
+
+Designmuster: Gestaltung, Test, Evaluierung,
+=========
+Design pattern, Entwurfsmuster, 
+=========
+
+Eine wiederverwendbare Lösung für ein Designproblem innerhalb eines
+
+Kontexts. Ein Designmuster beschreibt ein Designproblem, eine Lösung und wo
+
+sich diese Lösung als funktionierend herausgestellt hat.
+
+---------
+
+
+Dialog: Gestaltung, System, Prinzipien, 
+=========
+Dialogue
+=========
+
+Interaktion zwischen einem Benutzer und einem interaktiven System in Form
+
+einer Folge von Handlungen des Benutzers (Eingaben) und Antworten des
+
+interaktiven Systems (Ausgaben), um ein Ziel zu erreichen.
+
+---------
+
+
+Dialogprinzip: Prinzipien, Gestaltung, 
+=========
+Dialogue principles,  
+=========
+
+Allgemeines Ziel für die Gestaltung von Dialogen.
+
+Dialogprinzipien sind aus der Erfahrung abgeleitete, abstrakte Richtlinien für das
+
+Dialogdesign auf oberster Ebene. Aufgrund ihrer Allgemeingültigkeit kann es
+
+schwierig sein, sie im konkreten Kontext umzusetzen.
+
+Die DIN EN ISO 9241-110 führt folgende sieben Dialogprinzipien auf:
+
+- Aufgabenangemessenheit;
+
+- Selbstbeschreibungsfähigkeit;
+
+- Erwartungskonformität;
+
+- Lernförderlichkeit;
+
+- Steuerbarkeit;
+
+- Fehlertoleranz;
+
+- Individualisierbarkeit.
+
+Bemerkung zum Seminar: Die oben aufgeführten sieben Dialogprinzipien sind
+
+nicht vollständig. Andere gültige Listen von Dialogprinzipien existieren, zum
+
+Beispiel Nielsens 10 Heuristiken.
+
+Dialogprinzipien werden manchlmal als Designprinzipien bezeichnet. Vergleiche
+
+Dialogprinzipien mit Gestaltungsregeln.
+
+---------
+
+
+Dringlichkeitsstufen (von Befunden): Test, 
+=========
+Severity rating
+=========
+
+Ein Maß für ein Nutzungsproblem aus einem Usabilitytest das die
+
+Auswirkung des Nutzungsproblems auf das Benutzererlebnis bewertet.
+
+
+
+Der Usabilitytester bewertet die Nutzungsprobleme aus Sicht der
+
+Testteilnehmer. Typische Dringlichkeitsstufen sind: niedrig, ernst, kritisch,
+
+lebensbedrohend.
+
+---------
+
+
+Effektivität: Prinzipien, Evaluierung,
+=========
+Effectiveness, 
+=========
+
+Genauigkeit und Vollständigkeit mit der Benutzer ein bestimmtes Ziel erreichen.
+
+Bemerkung zum Seminar: Seminarteilnehmer müssen den Unterschied
+
+zwischen Effektivität und Effizienz kennen.
+
+---------
+
+
+Effizienz: Prinzipien, Evaluierung,
+=========
+Efficiency
+=========
+
+Im Verhältnis zur Genauigkeit und Vollständigkeit eingesetzte Ressourcen, mit
+
+dem Benutzer ein bestimmtes Ziel erreichen.
+
+Bemerkung zum Seminar: Seminarteilnehmer müssen den Unterschied
+
+zwischen Effektivität und Effizienz kennen
+
+---------
+
+
+Erfordernis: Anforderungen, Gestaltung,
+=========
+User need, 
+=========
+
+Eine für einen Benutzer oder eine Benutzergruppe als notwendig identifizierte
+
+Voraussetzung, um ein Ziel innerhalb eines bestimmten Nutzungskontextes zu
+
+erreichen.
+
+Beispiele:
+
+- Ein Vortragender (Benutzer) muss wissen, wieviel Zeit er noch hat
+
+(Voraussetzung), um den Vortrag während einer Präsentation mit einer
+
+festgelegten Zeitbeschränkung (Nutzungskontext) abschliessen zu können
+
+(Ziel).
+
+- Ein Finanzbuchhalter (Benutzer) muss die Anzahl der erhaltenen Rechnungen
+
+und ihre Beträge kennen (Voraussetzung) um die tägliche Rechnungsstellung
+
+(Ziel) als Teil der Cashflow-Kontrolle (Nutzungskontext) fertigstellen zu
+
+können.
+
+Bemerkungen zum Seminar:
+
+1. Ein Erfordernis ist unabhängig von jeglicher vorgeschlagenen Lösung für
+
+dieses Erfordernis.
+
+2. Erfordernisse werden aufgrund verschiedener Ansätze identifiziert, unter
+
+anderem Interviews mit Benutzern, Beobachtungen, Befragungen,
+
+Evaluierungen, Expertenreviews usw..
+
+3. Erfordernisse repräsentieren oftmals Lücken (oder Diskrepanzen) zwischen
+
+dem was ist und dem was sein soll.
+
+4. Erfordernisse werden transformiert in Nutzungsanforderungen, die den
+
+Nutzungskontext, Benutzerprioritäten sowie das Wechselspiel mit anderen
+
+Anforderungen und -Einschränkungen mit berücksichtigen.
+
+---------
+
+
+Erwartungskonformität: Prinzipien, Evaluierung, 
+=========
+Konsistenz, Conformity with user expectations, 
+=========
+
+Ein Dialogprinzip.
+
+
+
+Ein Dialog ist erwartungskonform, d.h. im Einklang mit den
+
+Benutzererwartungen, wenn er den aus dem Nutzungskontext heraus
+
+vorhersehbaren Benutzerbelangen sowie allgemein anerkannten Konventionen
+
+entspricht.
+
+Konsistenz ist ein Aspekt der Erwartungskonformität.
+
+Bemerkung zum Seminar: Das Zitat von Jakob Nielsen "Benutzer verbringen
+
+den größten Teil ihrer Zeit mit anderen Produkten" stellt einen gängigen Weg
+
+dar, die Bedürfnisse für die Konformität mit Benutzererwartungen und
+
+Konsistenz zu erklären.
+
+---------
+
+
+Evaluierung: Test, Evaluierung, Prinzipien, 
+=========
+Inspektion, Usability Evaluierung, Evaluation, User-Evaluation 
+=========
+
+Ein Prozess der Informationen über die Gebrauchstauglichkeit eines
+
+interaktiven Systems sammelt um das interaktive System zu verbessern
+
+(formative Evaluierung) oder um eine fertiggestellte Benutzungsschnittstelle zu
+
+bewerten (summative Evaluierung).
+
+Evaluierung ist ein gemeinsamer Ausdruck für inspektionsbasierte und
+
+benutzerzentrierte Evaluierung.
+---------
+
+
+Expertenreview: Test, Evaluierung, Prinzipien
+=========
+Usability proffesionals review, 
+=========
+
+Eine Inspektion die von Usabilityexperten oft in Kombination mit Fachexperten
+
+durchgeführt wird.
+
+Bemerkung zum Seminar: Ein Expertenreview basiert nur auf dem Wissen und
+
+den Erfahrungen des Experten. Heuristiken werden dabei nicht verwendet.
+
+---------
+
+
+Face-to-face Usabilitytest: Test, Evaluierung, 
+=========
+
+=========
+
+Siehe Usabilitytest ­ Face-to-face
+
+---------
+
+
+Fehlermanagement: Gestaltung, Test, Evaluierung, 
+=========
+
+=========
+
+Ein Teil der Benutzerunterstützung.
+
+
+
+Merkmale der Benutzungsschnittstelle die Benutzern helfen, Fehler zu
+
+erkennen und den Einfluß von Fehlern zu minimieren.
+
+Bemerkung zum Seminar: Vergleiche mit Fehlertoleranz.
+
+---------
+
+
+Fehlertoleranz: Anforderungen, Evaluierung, 
+=========
+Error tolerance, 
+=========
+
+Ein Dialogprinzip.
+
+Ein Dialog ist fehlertolerant, wenn das beabsichtigte Arbeitsergebnis trotz
+
+erkennbar fehlerhafter Eingaben entweder mit keinem oder mit minimalem
+
+Korrekturaufwand seitens des Benutzers erreicht werden kann.
+
+- Wenn ein Fehler auftritt, sollte das interaktive System eine konstruktive,
+
+genaue und verständliche Erklärung anbieten.
+
+- Wenn aus einer Benutzeraktion schwerwiegende Folgen entstehen können,
+
+dann sollte das interaktive System eine Erklärung anbieten und eine
+
+Bestätigung vor der Durchführung der Aktion geben.
+
+---------
+
+
+Fokusgruppe: Anforderungen, Gestaltung, Rollen, 
+=========
+Focus group, 
+=========
+
+Eine gezielte Diskussion, bei der ein Moderator eine Gruppe von Teilnehmern
+
+durch eine Menge von Fragen zu einem bestimmten Thema führt.
+
+Bemerkung zum Seminar: Die Durchführung von Fokusgruppen ist kein Ersatz
+
+für eine Usabilityevaluierung.
+
+---------
+
+
+Formative Evaluierung: Evaluierung, Test, Prinzipien
+=========
+Usability Evaluierung, formative usability evaluation
+=========
+
+Eine Art der Usabilityevaluierung die hilft, das Design für ein interaktives
+
+System oder eine Dienstleistung zu formen. Formative Evaluierungen beziehen
+
+die Evaluierung eines interaktiven Systems oder einer Dienstleistung oft
+
+iterativ während der Entwicklung mit dem Ziel mit ein, Nutzungsprobleme
+
+frühzeitig zu erkennen und zu eliminieren.
+
+Bemerkung zum Seminar: Vergleiche mit Summativer Evaluation.
+
+---------
+
+
+Fragebogen: Evaluierung, Test, 
+=========
+Questionnaire, 
+=========
+
+Ein Satz von Testfragen zum Benutzererlebnis. Ein Fragebogen ist das
+
+tragende Instrument zur Messung der Zufriedenstellung eines Benutzers mit
+
+einem interaktiven System bei allen Arten der Evaluierung einer
+
+Benutzungsschnittstelle.
+
+Bemerkung zum Seminar: Fragebögen müssen benutzbar sein. Sie müssen den
+
+Dialogprinzipien folgen, z.B.
+
+- Fragen müssen relevant sein;
+
+- Fragen müssen leicht zu verstehen sein;
+
+- Der Fragebogen muss die Benutzer hinsichlich ihres Fortschritts in der
+
+Beantwortung der Fragen auf dem Laufenden halten;
+
+- Der Fragebogen muss anhand eines Usabilitytests optimiert worden sein.
+
+---------
+
+
+Gebrauchstauglichkeit: Test, Anforderungen, Prinzipien, 
+=========
+Usability, 
+=========
+
+Siehe Usability
+
+---------
+
+
+Geschäftsanforderung: Anforderungen, Gestaltung, 
+=========
+Organizational requirement, 
+=========
+
+Siehe Organisatorische Anforderung.
+
+---------
+
+
+Geschlossene Frage: Evaluierung, Test
+=========
+Closed question, 
+=========
+
+Eine Interviewfrage die eine Antwort aus einem vordefinierten Satz von
+
+Alternativen fordert, oft einfach ,,ja" oder ,,nein".
+
+Bemerkung zum Seminar: Vermeide mehrere geschlossene Fragen
+
+hintereinander. Sie unterbrechen den Redefluss des Benutzers weil sie sich wie
+
+ein Polizeiverhör anhören. Vergleiche mit offener Frage.
+
+Beispiel: "Denken Sie, dass die Autovermietungswebseite auf der Homepage
+
+einen "Reservierung stornieren"-Button haben sollte?"
+
+---------
+
+
+Gestaltungsregel: Prinzipien, Gestaltung, 
+=========
+Richtlinie, User interface guideline, Styleguide, 
+=========
+
+Konkrete, spezifische Instruktionen, denen ein Designer mit minimalem
+
+Interpretationsaufwand folgen kann.
+
+Gestaltungsregel ist ein allgemeiner Ausdruck für die Inhalte folgender
+
+Dokumententypen:
+
+- Gestaltungsrichtlinie / Benutzungsschnittstellenrichtlinie
+
+- Styleguide
+
+- Standard / Benutzungsschnittstellenstandard
+
+- Designmuster
+
+Bemerkung zum Seminar: Gestaltungsregeln werden manchmal als
+
+Designregeln oder Richtlinien bezeichnet. Vergleiche Gestaltungsregeln mit
+
+Dialogprinzipien.
+
+---------
+
+
+Handlungsleitung: Gestaltung, Prinzipien, 
+=========
+Affordance, Selbsbeschreibungsfähigkeit, Self-discriptiveness,
+=========
+
+Aspekte eines Objektes, die klar machen, wie das Objekt benutzt werden kann.
+
+
+
+Beispiele:
+
+- Ein Henkel einer Teetasse stellt eine offensichtliche Handlungsleitung dar, sie
+
+zu halten.
+
+- Ein Button auf einer Webseite bietet die Handlungsleitung, auf ihn zu klicken.
+
+- Ein Firmenemblem in der oberen linken Ecke einer Webseite bietet
+
+eingeschränkte Handlungsleitung, darauf zu klicken.
+
+---------
+
+
+Heuristik: Prinzipien, Evaluierung, 
+=========
+Heuristic, Inprektion, 
+=========
+
+Ein allgemein anerkanntes Dialogprinzip zur Evaluierung einer
+
+Benutzungsschnittstelle, das benutzt werden kann, um Designprobleme zu
+
+erkennen oder zu verhindern.
+
+Bemerkung zum Seminar: Die aufgeführten Dialogprinzipien in diesem Glossar
+
+sind Beispiele für Heuristiken.
+
+---------
+
+
+Heuristische Evaluierung: Evaluierung, Prinzipien, 
+=========
+Heuristic evaluation, Heuristische Inspektion, 
+=========
+
+Eine Methode der Usabilityevaluierung bei der ein oder mehrere Reviewer ­
+
+vorzugsweise Experten ­ ein interaktives System mit einer Liste von
+
+Dialogprinzipien (auch als Heuristiken bezeichnet) vergleichen und feststellen
+
+wo das interaktive System diesen Dialogprinzipien nicht folgt.
+
+Bemerkung zum Seminar: Auch bekannt als heuristische Inspektion.
+
+Bemerkung zum Seminar: Die aufgeführten Dialogprinzipien in diesem Glossar
+
+können als Heuristiken in einer heuristischen Evaluierung benutzt werden.
+
+Bemerkung zum Seminar: Die Liste der Dialogprinzipien muss handhabbar
+
+sein. Üblicherweise werden etwa 10 Dialogprinzipien benutzt.
+
+---------
+
+
+Heuristische Inspektion: Evaluierung, Prinzipien, 
+=========
+Heurischtische Evaluierung, heuristic evaluation, 
+=========
+
+Siehe Heuristische Evaluierung.
+
+---------
+
+
+High-fidelity Prototyp: Test, System
+=========
+Prototyp
+=========
+
+Ein Prototyp, der mit Softwarepaketen wie z.B. Visual Basic oder PowerPoint
+
+erstellt wurde,. Ein high-fidelity Prototyp ähnelt dem fertigen interaktiven
+
+System.
+
+Bemerkung zum Seminar: Vergleiche mit low-fidelity Prototyp.
+
+---------
+
+
+Indiviualisierbarkeit: Gestaltung, Prinzipien, 
+=========
+Suitability for individualization, 
+=========
+
+Ein Dialogprinzip.
+
+
+
+Ein Dialog ist individualisierbar wenn Benutzer die Mensch-System-Interaktion
+
+und Darstellung von Informationen an ihre individuellen Fähigkeiten und
+
+Bedürfnisse anpassen können.
+
+Bemerkung zum Seminar: Individualisierbarkeit kann für erfahrene Benutzer
+
+hilfreich sein, unerfahrene Benutzer hingegen verwirren.
+
+---------
+
+
+Informationsarchitekt: Rollen, Gestaltung
+=========
+Usability Professional, Information architect, 
+=========
+
+Eine Rolle im Prozess des menschzentrierten Designs.
+
+
+
+Der Informationsarchitekt kreiert und organisiert die Struktur für das effiziente
+
+Auffinden von Information in interaktiven Systemen durch den Nutzer. Er
+
+definiert hierbei die nutzergruppengerechte Aufbereitung von Inhalten und
+
+Navigationsstrukturen. Er ist für die konsistente und erwartungskonforme
+
+Bezeichnung von Wegweisern (z.B. in Menüs) sowie erforderlicher
+
+Nutzungsobjekte und Werkzeuge für den Nutzer zuständig.
+
+Bemerkung zum Seminar: Seminarteilnehmer müssen den Unterschied
+
+zwischen Informationsarchitekt, User Interface Designer und
+
+Interaktionsdesigner nicht wissen. Seminarteilnehmer müssen aber den
+
+Unterschied zwischen Informationsarchitekt, Usability Engineer, User
+
+Requirements Engineer und Usabilty Tester kennen.
+
+---------
+
+
+Informationsarchitektur: Gestaltung, Anforderungen
+=========
+Information architecture, 
+=========
+
+Die Klassifikation und Organisation von Information in einem interaktiven
+
+System.
+
+Bemerkung zum Seminar: Die Informationsarchitektur ist für Benutzer nicht
+
+sichtbar. Sie dient hauptsächlich als Basis der Navigationsstruktur für das
+
+Entwicklungsteam.
+
+---------
+
+
+Inspektion: Evaluierung, Test
+=========
+Evaluierung, evaluation, Inspektionsbasierte Usability Evaluierung, Inspection based Usability evaluation
+=========
+
+Siehe inspektionsbasierte Evaluierung
+
+---------
+
+
+Inspektionsbasierte Evaluierung: Evaluierung, Test, 
+=========
+Evaluierung, evaluation, Inspection based Usability evaluation
+=========
+
+Evaluierung die auf der Beurteilung ein oder mehrerer Evaluatoren basiert, die
+
+ein interaktives System prüfen oder benutzen, um potentielle
+
+Nutzungsprobleme und/oder Abweichungen von anerkannten Kriterien zu
+
+identifizieren.
+
+Inspektionsbasierte Evaluierung wird von Usability Experten oder Fachexperten
+
+durchgeführt, die ihre Urteile auf die frühere Erfahrung mit Nutzungsproblemen
+
+und ihr eigenes Wissen über Richtlinien und Standards zu Usability gründen.
+
+Inspektionsbasierte Evaluierung ist ein Überbegriff für Expertenreview und
+
+heuristische Evaluierung.
+
+---------
+
+
+Interaktionsdesigner: Rollen, 
+=========
+Usability Proffesional, Interaction designer
+=========
+
+Eine Rolle im Prozess des menschzentrierten Designs.
+
+
+Der Interaktionsdesigner konzipiert und definiert die Interaktion zwischen
+
+Mensch und System auf Basis der Nutzungsanforderungen und Aufgaben der
+
+Nutzer, mit dem Ziel der effizienten Aufgabenerledigung am System. Er
+
+generiert hierzu Nutzungsszenarien, die die Effektivität, Effizienz und
+
+Zufriedenstellung bei der Aufgabenerledigung sicherstellen. Er berücksichtigt
+
+hierbei die Nutzungsanforderungen, identifiziert und klärt offene Fragen, die
+
+sich aus der spezifizierten Interaktion ergeben.
+
+Bemerkung zum Seminar: Seminarteilnehmer müssen den Unterschied
+
+zwischen Informationsarchitekt, User Interface Designer und
+
+Interaktionsdesigner nicht kennen.
+
+---------
+
+
+Interaktives System; System, Anforderungen, 
+=========
+interactive system
+=========
+
+Kombination von Hardware- und Softwarekomponenten, die Eingaben von
+
+einem Benutzer empfangen und Ausgaben zu einem Benutzer übermitteln, um
+
+ihn bei der Ausführung einer Aufgabe zu unterstützen.
+
+---------
+
+
+Interessenvertreter: Rollen, 
+=========
+Stakeholder, 
+=========
+
+Einzelperson oder Organisation, die ein Anrecht, einen Anteil, einen Anspruch
+
+oder ein Interesse auf ein interaktives System oder an dessen Merkmalen hat,
+
+die ihren Erfordernissen und Erwartungen entsprechen.
+
+
+
+Bemerkung zum Seminar: Interessenvertreter = alle Benutzer und alle
+
+sekundäre Benutzer eines interaktiven Systems.
+
+---------
+
+
+Interessenvertreteranforderung: Anforderungen, Gestaltung,  
+=========
+Stakeholder requirement
+=========
+
+Was das interaktive System aus Sicht des Interessenvertreters leisten muss.
+
+---------
+
+
+Interview: Evaluierung, 
+=========
+Briefing, Pre-Session Interview, Debriefing, Post-Session Interview, Contextual inquiry
+=========
+
+Siehe Kontextuelles Interview.
+
+---------
+
+
+Interviewcheckliste: Evaluierung, 
+=========
+
+=========
+
+Eine schriftliche Liste passender Fragen und Hinweise, die während eines
+
+Interviews verwendet wird, um sicherzustellen, dass alle relevanten Themen
+
+berücksichtigt werden.
+
+---------
+
+
+Intuitiv: Anforderungen, Planung, 
+=========
+Selbstbeschreibungsfähig, intuitive
+=========
+
+Die Benutzung des interaktiven Systems ist unmittelbar zu verstehen ­
+
+unabhängig von der Erfahrung, des Wissens, der Sprachkenntnisse oder des
+
+momentanen Konzentrationsgrades des Benutzers.
+
+---------
+
+
+ISO9241: Anforderungen, Prinzipien,  
+=========
+
+=========
+
+Eine Familie von Standards bestehend aus zwei Hauptgruppen. Gruppe 1
+
+besteht aus Standards unter dem allgemeinen Titel "Ergonomische
+
+Anforderungen für die Büroarbeit mit Monitoren." Gruppe 2 besteht aus
+
+Standards unter dem allgemeinen Titel "Ergonomie der Mensch-Maschine
+
+Interaktion".
+
+---------
+
+
+Iterativ: Planung, Evaluierung, 
+=========
+Wiederholend, iterative
+=========
+
+Ein interativer Prozess wiederholt die Schritte des Prozesses des
+
+menschzentrierten Designs solange, bis eine Evaluierung der
+
+Benutzungsschnittstelle zeigt, dass die Nutzungsanforderungen erfüllt sind.
+
+---------
+
+
+Konsistenz: Prinzipien, Evaluierung
+=========
+Erwartungskonformität, 
+=========
+
+Die gleiche Information wird in gleicher Weise innerhalb des gesamten
+
+interaktiven Systems entsprechend der Benutzererwartung dargestellt.
+
+Konsistenz ist eine Komponente der Erwartungskonformität.
+
+Bemerkung zum Seminar: Konsistenz ist auf verschiedenen Ebenen relevant
+
+wie zum Beispiel innerhalb einer Bildschirmanzeige, zwischen den
+
+Bildschirmanzeigen desselben interaktiven Systems, zwischen interaktiven
+
+System desselben Herstellers und zwischen ähnlichen interaktiven Systemen
+
+unterschiedlicher Hersteller.
+
+---------
+
+
+Kontextuelles Interview: Evaluierung, 
+=========
+Briefing, Pre-Session, Debriefing, Post-Session, Contextual inquiry
+=========
+
+Eine Technik zur Sammlung von Informationen über den Nutzungskontext und
+
+Erfordernisse. Der Interviewer (der User Requirements Engineer) stellt dem
+
+Benutzer Fragen über gegenwärtige Abläufe im Lichte des geplanten
+
+interaktiven Systems. Das Interview findet dort statt wo die Interaktion des
+
+Benutzers mit dem interaktiven System üblicherweise stattfindet, z.B. am
+
+Arbeitsplatz des Benutzers.
+
+Das kontextuelle Interview wird auf Englisch oft als "Contextual inquiry"
+
+bezeichnet.
+
+Bemerkung zum Seminar: Die Seminarteilnehmer müssen mit dem Meister-
+
+Schüler-Modell für erfolgreiche Interviews vertraut sein.
+
+---------
+
+
+Lernförderlichkeit: Prinzipien, Gestaltung, 
+=========
+Suitablity for learning, 
+=========
+
+Ein Dialogprinzip.
+
+Ein Dialog ist lernförderlich, wenn er den Benutzer beim Erlernen der Nutzung
+
+des interaktiven Systems unterstützt und anleitet.
+
+
+
+Empfehlungen zu Befolgung des Dialogprinzips:
+
+- Der Dialog sollte ausreichende Rückmeldung über Zwischen- und
+
+Endergebnisse von Handlungen bereitstellen, damit die Benutzer von
+
+erfolgreich ausgeführten Handlungen lernen.
+
+- Falls es zu den Aufgaben und den Lernzielen passt, sollte das interaktive
+
+System dem Benutzer erlauben, Dialogschritte ohne nachteilige Auswirkungen
+
+auszuprobieren.
+
+Beispiel: Wenn Benutzer mit Hilfe eines Hotelzimmerreservierungssystems ein
+
+Zimmer reservieren, erhalten die Benutzer Schritt für Schritt Rückmeldungen,
+
+um ihre Anfrage zu verfeinern und immer mehr Details über den Fortschritt der
+
+erfolgreichen Zimmerreservierung.
+
+---------
+
+
+Lowfidelity Prototyp: Test, System
+=========
+Prototyp, 
+=========
+
+Ein Prototyp, der sich auf die allgemeine Vorstellung und Struktur eines
+
+interaktiven Systems konzentriert. Er besteht oft aus Papierentwürfen und
+
+Bildschirmattrappen der Benutzungsschnittstelle eines zu entwickelnden
+
+interaktiven Systems. Ein solcher low-fidelity Prototyp wird üblicherweise von
+
+einem Menschen und nicht durch einen Computer betätigt. Er sollte so hinterlegt
+
+sein, dass er unmittelbar modifiziert werden kann.
+
+Bemerkung zum Seminar: Ein low-fidelity Prototyp wird häufig mit Hilfe von
+
+Papier, Stiften, Haftzetteln usw. erstellt. Vergleiche mit high-fidelity Prototyp.
+
+---------
+
+
+Marktanforderung: Anforderungen, Gestaltung, 
+=========
+Kundenanforderungen, 
+=========
+
+Eine Anforderung an ein interaktives System, die die Kaufentscheidung
+
+innerhalb einer anvisierten Benutzergruppe positiv beeinflusst. Soweit das
+
+interaktive System kostenlos ist, fördert die Marktanforderung die
+
+Entscheidung, das interaktive System zu benutzen.
+
+Beispiel: "Die Webseite muss mindestens so benutzbar sein wie jene der zwei
+
+stärksten Wettbewerber."
+
+---------
+
+
+Meister-Schüler-Modell: Evaluierung, Prinzipien
+=========
+Master-apprentice model 
+=========
+
+Ein Verhaltensprinzip für ein erfolgreiches Interview: Der Interviewer behandelt
+
+den Benutzer als den Meister während der Interviewer selbst der Schüler ist.
+
+Der Interviewer demonstriert nicht sein Wissen, sondern stellt seine Fragen mit
+
+dem Ziel etwas zu lernen.
+
+---------
+
+
+Menschzentrierte Gestaltung: Planung, Gestaltung
+=========
+Benutzerzentrierte Gestaltung, User-centred design
+=========
+
+Herangehensweise bei der Gestaltung und Entwicklung von interaktiven
+
+Systemen, die darauf abzielt, diese gebrauchtauglicher zu machen indem sie
+
+sich auf die Verwendung des interaktiven Systems konzentriert und
+
+Kenntnisse und Techniken aus den Bereichen der
+
+Arbeitswissenschaft/Ergonomie und der Gebrauchstauglichkeit anwendet.
+
+---------
+
+
+Mentales Modell: Planung, 
+=========
+Mental model, 
+=========
+
+Das Modell, das Menschen von sich, anderen, der Umgebung und den Dingen
+
+haben, mit denen sie interagieren. Menschen generieren mentale Modelle
+
+aufgrund von Erfahrung, Schulung und Anweisung. Das mentale Modell
+
+bezüglich eines interaktiven Systems wird größtenteils durch die Interpretation
+
+von wahrgenommenen Aktionen und sichtbaren Strukturen gebildet.
+
+Bemerkung zum Seminar: Alternative bekannte Definition: Der Denkprozess
+
+einer Person darüber, wie etwas in der realen Welt funktioniert.
+
+Bemerkung zum Seminar: Wenn ein mentales Modell eines Benutzers von
+
+einem interaktiven System unvollständig oder widersprüchlich ist, dann kann
+
+der Benutzer das interaktive System nicht hindernisfrei benutzen.
+
+---------
+
+
+Modell: System, Gestaltung, 
+=========
+model
+=========
+
+Im allgemeinsten Sinn ist ein Modell etwas, das irgendwie benutzt wird, um
+
+irgendetwas anderes zu repräsentieren. Zum Beispiel ist eine Zeichnung eines
+
+Zapfhahns ein Modell eines Zapfhahns. Eine Persona ist ein Modell eines
+
+Benutzers.
+
+Bemerkung zum Seminar: Vergleiche mit mentalem Modell und
+
+Aufgabenmodell.
+
+---------
+
+
+Moderation: Rollen, Planung, Test, 
+=========
+
+=========
+
+Die durch einen Moderator während eines Usabilitytests ausgeübte Tätigkeit.
+
+---------
+
+
+Moderator: Rollen, 
+=========
+=========
+
+Eine Rolle in einem Usabilitytest oder in einer Fokusgruppe. Der Moderator
+
+leitet die Usabilitytestsitzung oder die Fokusgruppe.
+
+In einem Usabilitytest begrüßt der Moderator die Testteillehmer, führt die
+
+Vorabinterviews durch, beobachtet die Testteilnehmer während der
+
+Erledigung der Aufgaben und macht das Interview nach dem Test.
+
+---------
+
+
+Nachbesprechung: Evaluierung, 
+=========
+Debrifing, Post-Session Interview, 
+=========
+
+Siehe Post-Test-Interview.
+
+---------
+
+
+Navigationsstruktur: System, Planung, 
+=========
+Navigation structure, 
+=========
+
+Die logische Organisation der angezeigten Informationseinheiten der
+
+Benutzungsschnittstelle.
+
+Bemerkung zum Seminar: In der Praxis sind die "Einheiten angezeigter
+
+Informationen" oft Bildschirminhalte, Seiten oder Fenster.
+
+Beispiele: Funktionen, die den Benutzer das Durchqueren der
+
+Navigationsstruktur erlauben, sind z.B. hierarchische Menüs, Menübalken,
+
+Navigationspunkte, Navigationsspuren und der Zurück-Button.
+
+---------
+
+
+Neutrale Frage: Evaluierung, Test
+=========
+offene Interviewfrage, Neutral question 
+=========
+
+Eine Frage in einem Interview, die keine impliziten Annahmen beinhaltet und
+
+auch keinen Ansatz bietet, einen Aspekt auszuschliessen oder die Antwort in
+
+eine bestimmte Richtung zu lenken. Vergleiche mit Suggestionsfrage.
+
+---------
+
+
+Nutzungsanforderung - Qualitativ: Anforderungen, Gestaltung
+=========
+Qualitative user requirement, 
+=========
+
+Eine Beschreibung, was Benutzer während der Durchführung einer Aufgabe
+
+mit dem interaktiven System erkennen, auswählen oder eingeben müssen.
+
+
+
+Bemerkung zum Seminar: Qualitative Nutzungsanforderungen sind keine
+
+Funktionen, sondern stellen die Basis für Funktionen dar.
+
+Beispiele für sinnvolle qualitative Nutzungsanforderungen:
+
+,,Der Benutzer muss die unterschiedlichen Fahrzeuge, die für einen bestimmten
+
+Preisbereich auf der Autovermietungswebseite verfügbar sind,vergleichen
+
+können."
+
+,,Der Benutzer muss ein Fahrzeug mit automatischer Übertragung auf der
+
+Autovermietungswebseite auswählen können."
+
+,,Der Benutzer muss die Öffnungszeiten einer bestimmten
+
+Autovermietungsstelle sehen können."
+
+Beispiele falsch formulierter Nutzungsanforderungen:
+
+,,Die Benutzungschnittstelle muss gebrauchstauglich sein und alle
+
+Benutzeraufgaben unterstützen." (zu allgemein)
+
+,,Die Benutzungsschnittstelle muss einen großen roten Button ,,Auto mieten"-
+
+haben" (zu detailliert)
+
+---------
+
+
+Nutzungsanforderung ­ Quantitativ: Anforderungen, Gestaltung
+=========
+Quantitative user requirement  
+ 
+=========
+
+Geforderte Leistung, die die Basis für Design und die Evaluierung eines
+
+interaktiven Systems darstellt, mit dem Ziel, identifizierte Erfordernisse zu
+
+befriedigen.
+
+Bemerkung zum Seminar: Quantitative Nutzungsanforderungen stellen
+
+Akzeptanzkriterien für die Implementierung einer Benutzungsschnittstelle dar.
+
+Bemerkung zum Seminar: Quantitative Nutzungsanforderungen erlauben, ein
+
+Design zu evaluieren, mit dem Ziel festzustellen, ob Nutzungsanforderungen
+
+effizient erfüllt wurden.
+
+Beispiel: ,,80% der Benutzer, die die Autovermietungswebseite zumindest
+
+zweimal benutzt haben, müssen in der Lage sein, innerhalb von 5 Minuten einen
+
+Kleinwagen ab Flughafen Frankfurt (Deutschland) für zwei Tage beginnend ab
+
+morgen 09:00 Uhr zu mieten".
+
+---------
+
+
+Nutzungsanforderung: Anforderungen, Gestaltung
+=========
+User requirements, 
+=========
+
+Was ein interaktives System aus Sicht des Benutzers ermöglichen soll.
+
+
+
+Nutzungsanforderungen können qualitativ oder quantitativ sein.
+
+
+
+Bemerkung zum Seminar: Nutzungsanforderungen werden von Erfordernissen
+
+abgeleitet.
+
+---------
+
+
+Nutzungskontext: System, Planung, 
+=========
+Context of use
+=========
+
+Benutzer, Aufgaben, Arbeitsmittel (Hardware, Software und Materialien)
+
+sowie die physikalische und soziale Umgebung in der das interaktive System
+
+genutzt wird.
+
+Bemerkung zum Seminar: Gängige Abkürzung: PACT =
+
+People (Benutzer),
+
+Activities (Aufgaben),
+
+Contexts (Umgebung),
+
+Technologies (Arbeitsmittel)
+
+Beispiele:
+
+- Jugendliche verwenden Handys, um ihren Freunden Textmitteilungen zu
+
+senden während sie in einem Bus sitzen.
+
+- Sekretärinnen benutzen Microsoft Word, um Dokumente in einer
+
+Rechtskanzlei zu schreiben.
+
+---------
+
+
+Nutzungsobjekt: System, Planung, 
+=========
+Task object
+=========
+
+Die wichtigsten Informationseinheiten auf oberster Ebene oder Daten mit denen
+
+Benutzer interagieren, um ihre Aufgaben durchzuführen.
+
+Beispiele: Ein Brief, eine Liste unbezahlter Rechnungen, eine Bestellung von
+
+einem Kunden.
+
+---------
+
+
+Nutzungsproblem: Gestaltung, Evaluierung, 
+=========
+Usability-Problem, Problem, 
+=========
+
+Ein Problem in der Benutzung der Benutzungsschnittstelle, das sich auf die
+
+Zufriedenstellung des Benutzers sowie die Effektivität und Effizienz des
+
+interaktiven Systems auswirkt. Nutzungsprobleme können zu Irritationen,
+
+Fehlern oder Verzögerungen führen oder sogar die Fertigstellung einer Aufgabe
+
+des Benutzers verhindern und machen die Benutzungsschnittstelle und damit
+
+das interaktive System weniger benutzbar für ihre Zielbenutzer.
+
+---------
+
+
+Nutzungsszenario: Test, Planung, 
+=========
+User scenario, Szenario, 
+=========
+
+Eine narrative Beschreibung einer oder mehrerer Aufgaben und wie ihre
+
+Erledigung durch das interaktive System unterstützt wird. Das
+
+Nutzungsszenario beschreibt Schritt für Schritt das Vorgehen eines Benutzers,
+
+um die Aufgaben mit Hilfe des voraussichtlichen, sich noch in Entwicklung
+
+befindlichen interaktiven Systems zu erledigen.
+
+Bemerkungen zum Seminar:
+
+1. Der Benutzer im Nutzungsszenario kann durch eine Persona repräsentiert
+
+werden.
+
+2. Ein Nutzungsszenario darf nicht auf spezifische Umsetzungen von Objekten
+
+der Benutzungsschnittstelle referenzieren (z.B. auf einen Button). Z.B. ist der
+
+folgende Text zu spezifisch: ,,John sieht auf das ,,Gesamtpreis"-Feld und
+
+entscheidet, dass der Preis für das Ausleihen des Autos in Ordnung ist. Dann
+
+klickt er den Button ,,Auto buchen". Eine bessere Umschreibung wäre ,,John
+
+beschließt, dass der Preis für das Ausleihen des Autos in Ordnung ist und mietet
+
+das Auto".
+
+---------
+
+
+Offene Frage: Evaluierung, Test 
+=========
+Neutrale Interviewfrage, offene Interviewfrage, Neutrale Frage, neutral question, open question
+=========
+
+Eine Frage in einem Interview, die keine besondere Erwartungen bezüglich
+
+Form oder Inhalt der Antwort beinhaltet.
+
+Bemerkung zum Seminar: Offene Fragen sind in Interviews zu bevorzugen, weil
+
+sie Benutzer zur freien Rede animieren und ausführliche Antworten auf die
+
+Frage zulassen. Vergleiche mit geschlossener Frage.
+
+Beispiel: "Was alles würden Sie auf der Homepage einer Autovermietungsfirma
+
+erwarten?".
+
+---------
+
+
+Onlinehilfe: System, Gestaltung, 
+=========
+Online help, 
+=========
+
+Eine Form der Benutzerunterstützung.
+
+Onlinehilfe ist durch eine Computersoftware bereitgestellte themenorientierte
+
+oder prozedurale Information oder ein Verweis auf solche Information. Meist ist
+
+die Onlinehilfe dazu ausgelegt, Unterstützung für die Benutzung eines
+
+interaktiven Systems zu geben; sie kann aber auch Informationen zu
+
+weitergehenden Themenbereichen bieten. Wenn die Onlinehilfe unmittelbar auf
+
+die gegenwärtige Tätigkeit des Benutzers bezogen ist, dann spricht man von
+
+kontextsensitiver Hilfe.
+
+---------
+
+
+Organisatiorische Anforderung: Anforderungen, Gestaltung, Planung,
+=========
+Organizational requirement, 
+=========
+
+Anforderung an den Benutzer aus der Perspektive der Organisation.
+
+
+
+Beispiel: Ein Verkäufer muss Angebote über 100.000 Euro vom Geschäftsführer
+
+unterschreiben lassen.
+
+---------
+
+
+Persona: Rollen, Planung, 
+=========
+Benutzer repräsentation, 
+=========
+
+Eine beispielhafte Beschreibung eines Benutzers und was dieser bei der
+
+Benutzung eines interaktiven Systems tun möchte. Personas sind nicht
+
+Beschreibungen existierender Personen, sondern repräsentieren erfundene
+
+Beispiele eines realen Benutzers auf der Basis empirisch ermittelter Daten.
+
+Personas verfügen typischerweise über einen Namen, Alter, einige
+
+Hintergrundinformationen, Ziele und Wünsche.
+
+Beispiel: Vier Personas für eine Webseite, die Autos in New York vermietet, sind
+
+- George - datengetriebener, zeitbewußter Amerikaner aus Washington, DC.
+
+- Susan - agile Dänin, die persönlichen Kontakt mit der zuständigen Person für
+
+Reservierungen vermeiden möchte.
+
+- Jules - unerfahrener französischer Benutzer, der ein gutes Geschäft für das
+
+Wochenende sucht.
+
+- Jürgen - ein kostenbewußter Deutscher, der die Ferien plant.
+
+---------
+
+
+Positiver Befund: Test, Evaluierung
+=========
+positives Usability-Testergebnis, 
+=========
+
+Siehe Befund.
+
+---------
+
+
+Post-Test-Interview: Evaluierung, 
+=========
+Debriefing, Post-Session Interview, Nachbesprechung, 
+=========
+
+Eine Aktivität in einem Usabilitytest, bei der Testteilnehmer Fragen bezüglich
+
+ihres allgemeinen Eindrucks hinsichtlich der Gebrauchstauglichkeit des
+
+interaktiven Systems beantworten. Das Post-Test-Interview findet statt,
+
+nachdem der Testteilnehmer soviele der vorgehsehenen Aufgaben wie möglich
+
+in der vorgegeben Zeit erledigt hat. Manchmal als ,,Debriefing" bezeichnet.
+
+---------
+
+
+Pre-Test-Interview: Evaluierung, 
+=========
+Pre-Session Interview, Briefing, 
+=========
+
+Eine Tätigkeit bei einem Usabilitytest, bei der Testteilnehmer Fragen
+
+bezüglich ihres Hintergrundes und vorheriger Erfahrung mit dem interaktiven
+
+System oder ähnlichen interaktiven Systemen beantworten. Das Pre-Test-
+
+Interview findet statt, bevor der Testteilnehmer beginnt, die Testaufgaben
+
+abzuarbeiten.
+
+---------
+
+
+PrimäreBenutzer: Rollen, Planung, 
+=========
+Primary user, 
+=========
+
+Siehe Benutzer
+
+---------
+
+
+Protokollant: Rollen, Test
+=========
+Note-taker
+=========
+
+Eine Rolle in einem Usabilitytest. Der Protokollant ist ein Usabilityspezialist, der
+
+wichtigte Befunde während eines Usabilitytests notiert. Der Einsatz eines
+
+Protokollants erlaubt dem Moderator, sich voll auf den Testteilnehmer zu
+
+konzentrieren.
+
+---------
+
+
+Prototyp: Test, System
+=========
+
+=========
+
+Eine Repräsentation von Teilen oder des gesamten interaktiven Systems, die
+
+in einem bestimmten Maß für Analyse, Design und Evaluierung benutzt werden
+
+kann.
+
+Bemerkung zum Seminar: Seminarteilnehmer müssen auch mit den Begriffen
+
+high-fidelity Prototyp und low-fidelity Prototyp vertraut sein.
+
+---------
+
+
+Qualität: Planung, Anforderungen, Evaluierung 
+=========
+Quality, 
+=========
+
+Grad der Erfüllung von Anforderungen durch ein interaktives System.
+
+Bemerkung zum Seminar: Beispiele für Qualitätsmerkmale neben Usability sind
+
+Korrektheit, Verlässlichkeit und Sicherheit.
+
+---------
+
+
+Qualitative Nutzungsanforderung: Anforderungen, Gestaltung, 
+=========
+Qualitative user requirement 
+=========
+
+Siehe Nutzungsanforderung ­ qualitativ
+
+---------
+
+
+QuantitativeNutzungsanforderung: Anforderungen, Gestaltung,
+=========
+Quantitative user requirement  
+=========
+
+Siehe Nutzungsanforderung ­ quantitativ
+
+---------
+
+
+Rekrutierungsfragebogen: Evaluierung, Test
+=========
+Recruitment screener 
+=========
+
+Eine Reihe von Fragen für potenzielle Testteilnehmer hinsichtlich ihres
+
+Hintergrundes und Wissens. Ein Rekrutierungsfragebogen wird während der
+
+Rekrutierung von Testteilnehmern benutzt, um festzustellen ob Kandidaten
+
+über die erforderlichen Qualifikationen zur Teilnahme an dem Usabilitytest
+
+verfügen.
+
+Ein Rekrutierungsfragebogen kann auch benutzt werden, um passende
+
+Teilnehmer für Nutzungskontextanalysen auszuwählen ­ z.B. für kontextuelle
+
+Interviews.
+
+---------
+
+
+Rekrutierung(eines Teilnehmers für einen Usabilitytest): Planung, Test
+=========
+Recruiting 
+=========
+
+Anwerben von Benutzern, die die erforderliche Qualifikation haben, an einem
+
+Usabilitytest teilzunehmen. Oft wird ein Rekrutierungsfragebogen (Screener)
+
+eingesetzt, mit dem geprüft werden kann, ob Kandidaten über die erforderlichen
+
+Qualifikationen zur Teilnahme an einem Usbilitytest verfügen.
+
+---------
+
+
+Remote Usabilitytest: Test, Evaluierung
+=========
+=========
+
+Siehe Usabilitytest ­ Remote.
+
+---------
+
+
+Ressourcen: System, 
+=========
+Ressources
+=========
+
+Alle nötigen Mittel zur Verwendung eines interaktiven Systems oder Dienstes.
+
+Typische Beispiele sind Zeit sowie motorische und mentale Anstrengung.
+
+---------
+
+
+Review: Evaluierung
+=========
+=========
+
+Eine von Laien, d.h. von Menschen mit begrenzter Usabilityerfahrung,
+
+durchgeführte Inspektion.
+
+Bemerkung zum Seminar: Vergleiche mit Expertenreview.
+
+---------
+
+
+Richtlinie für Benutzungsschnittstellen: Prinzipien, Gestaltung
+=========
+Gestaltungsregel, User interface guideline, 
+=========
+
+Siehe Gestaltungsregel.
+
+---------
+
+
+Rolle: Anforderungen, Rollen
+=========
+Role
+=========
+
+Ein Menge zusammenhängender Aspekte wie Verhalten, Rechte, 
+
+Verpflichtungen und Normen in einer Arbeitssituation. 
+
+Abhängig von der Komplexität eines Projektes können mehrere Menschen eine
+
+Rolle teilen oder mehrere Rollen einer Person zugewiesen werden.
+
+Bemerkung zum Seminar: Arbeitsrollen sind “Hüte”, die Menschen aufhaben, wenn 
+
+sie die entsprechenden Verantwortlichkeiten übernehmen und die damit verbundenen Tätigkeiten ausüben.
+
+---------
+
+
+Sekundäre Benutzer: Rollen, Planung
+=========
+secondary user
+=========
+
+Menschen, die keine Benutzer sind, aber auf gewisse Weise vom interaktiven
+
+System betroffen oder beinflusst sind.
+
+Beispiele: Sekundäre Benutzer sind u.a. Führungskräfte von Benutzern,
+
+Vertriebspersonal und Vertreter, Projektmanager, Anwendungsentwickler,
+
+Trainer und das Kundenbetreuungsteam. Ist das interaktive System für die
+
+Benutzung zuhause gedacht, können sekundäre Benutzer auch Freunde oder
+
+Verwandte und Besucher des Benutzers sein.
+
+Bemerkung zum Seminar: Interessenvertreter = Alle Benutzer und alle
+
+sekundäre Benutzer eines interaktiven Systems.
+
+---------
+
+
+Selbstbeschreibungsfähigkeit: Gestaltung, Prinzipien
+=========
+Usability, Affordance, Self-discriptiveness,
+=========
+
+Ein Dialogprinzip.
+
+
+
+Ein Dialog ist selbstbeschreibungsfähig in dem Ausmaß, in dem es zu jeder Zeit
+
+
+
+dem Benutzer offensichtlich ist, in welchem Dialog er sich gerade wo befindet
+
+und welche Aktionen wie durchgeführt werden können.
+
+---------
+
+
+Standard: Prinzipien
+=========
+=========
+
+Siehe Benutzungsschnittstellenstandard.
+
+---------
+
+
+Steuerbarkeit: Gestaltung, Prinzipien
+=========
+Controllability
+=========
+
+Ein Dialogprinzip.
+
+Ein Dialog ist steuerbar, wenn der Benutzer in der Lage ist, den Dialogablauf zu
+
+starten sowie seine Richtung und Geschwindigkeit zu beeinflussen, bis das Ziel
+
+erreicht ist.
+
+---------
+
+
+Storyboard: Planung, 
+=========
+=========
+
+Eine Folge visueller Bildschirminhalte, die das Zusammenspiel zwischen einem
+
+Benutzer und einem vorgestellten interaktiven System darstellt. Ein
+
+Storyboard ähnelt oft einem Zeichtrickfilm.
+
+---------
+
+
+Styleguide: Gestaltung, Prinzipien, 
+=========
+Gstaltungsregel, UX Guides, Richtlinie
+=========
+
+Eine Sammlung von Dialogprinzipien und Gestaltungsregeln die verwendet
+
+wird, um die grundsätzliche Erscheinung der Benutzungsschnittstelle auf
+
+jeglicher Software einer Organisation festzulegen.
+
+---------
+
+
+Suche: Prinzipien, System
+=========
+Quest, Search
+=========
+
+Eine Komponente der Benutzungsschnittstelle, die zum (Wieder)Auffinden von
+
+Nutzungsobjekten auf Basis fragmentaler Informationen zu diesem Objekt
+
+herangezogen wird.
+
+---------
+
+
+Suggestivfrage: Evaluierung, Test
+=========
+Leading question
+=========
+
+Eine Frage in einem Interview, die Annahmen oder einen Rahmen voraussetzt,
+
+der eine Präferenz für bestimmte Antwortmöglichkeiten vorgibt oder versucht,
+
+die Antwort in eine bestimmte Richtung zu lenken. Vergleiche mit neutraler
+
+Frage.
+
+---------
+
+
+Summative Evaluierung: Evaluierung, 
+=========
+Summative usability evaluation
+=========
+
+Eine Usabilityevaluierung zur Feststellung, ob ein interaktives System die
+
+Nutzungsanforderungen erfüllt. Summative Evaluierungen werden auch
+
+benutzt um den Grad der erreichten Gebrauchstauglichkeit eines interaktiven
+
+Systems zu bestimmten. Summative Evaluierungen finden in der Regel dann
+
+statt, wenn ein interaktives System oder wesentliche Teile davon fertig
+
+entwickelt sind.
+
+Bemerkung zum Seminar: Vergleiche mit Formativer Evaluierung.
+
+---------
+
+
+Szenario: Planung, Test, 
+=========
+Nutzungs-Szenario, Use scenario, Scenario, 
+=========
+
+Siehe Nutzungsszenario oder Testaufgabe.
+
+---------
+
+
+Testaufgabe: Planung, Test, 
+=========
+Usability-Testaufgabe, Usability test task, 
+=========
+
+Eine Beschreibung einer typischen Aufgabe, die ein Moderator einem
+
+Testteilnehmer während eines Usabilitytests stellt. Manchmal als
+
+Testszenario bezeichnet.
+
+---------
+
+
+Testbericht: Test, Evaluierung
+=========
+Usability Testbericht, Evaluierungsbericht, Test report
+=========
+
+Siehe Usabilitytestbericht.
+
+---------
+
+
+Testskript; Test, Evaluierung
+=========
+Usability Checkliste, Test script, Usability 
+=========
+
+Eine von einem Moderator in einem Usabilitytest verwendete Checkliste, um
+
+den Überblick über die Fragen des Pre-Test-Interviews, die Testaufgaben und
+
+die Fragen des Post-Test-Interviews zu behalten.
+
+---------
+
+
+Testszenario: Test, Planung
+=========
+Szenario, Testaufgabe, 
+=========
+
+Siehe Testaufgabe.
+
+---------
+
+
+Testteilnehmer: Rollen, 
+=========
+Benutzer, Test participant,  
+=========
+
+Repräsentativer Benutzer, der typische Aufgaben in einem Usabilitytest löst.
+
+---------
+
+
+Umgebung: Planung, System, 
+=========
+Context, Environment, Nutzungskontext
+=========
+
+Die Gesamtheit der gegebenen Umstände oder Bedingungen, in denen ein
+
+Benutzer arbeitet. Diese umfassen die physische und die soziale Umgebung.
+
+Bemerkung zum Seminar: Die soziale Umgebung schließt die organisatorische
+
+Umgebung mit en.
+
+---------
+
+
+Unbeaufsichtigter Usabilitytest: Test, Evaluierung
+=========
+=========
+
+Siehe Usabilitytest ­ Unbeaufsichtigt.
+
+---------
+
+
+Usability: Test, Anforderungen, Prinzipien
+=========
+Gebrauchstauglichkeit, 
+=========
+
+Ausmaß, in dem ein interaktives System oder ein Dienst durch bestimmte
+
+Benutzer in einem bestimmten Nutzungskontext genutzt werden kann, um
+
+festgelegte Ziele effektiv, effizient und zufriedenstellend zu erreichen.
+
+Bemerkung zum Seminar: Stellen Sie in der Definition die Wichtigkeit und die
+
+Implikationen von "bestimmten Benutzern", "festgelegten Zielen" und
+
+"bestimmtem Nutzungskontext" heraus.
+
+---------
+
+
+Usability Engineer: Rollen
+=========
+=========
+
+Eine Rolle im Prozess der menschzentrierten Gestaltung.
+
+
+
+Der Usability Engineer betreut in einer Querschnittsfunktion verantwortlich den
+
+menschzentrierten Gestaltungsprozess. Er ist kompetent und erfahren in den
+
+Prozessschritten, verfügbaren Methoden der menschzentrierten Gestaltung
+
+und Gestaltungsregel für Benutzererlebnis, sodass er die
+
+Entwicklungsprojekte unter dem Aspekt menschzentrierter Gestaltung planen
+
+und die Qualität der Ausführung von menschzentrierter
+
+Gestaltungsbezogenen Aktivitäten sicherstellen kann.
+
+Dies beinhaltet die Integration der menschzentrierten Gestaltung in den
+
+Produktentwicklungsprozess des Unternehmens, die Definition von
+
+Erfolgskriterien für solche Projekte sowie das Training von beteiligten
+
+Projektteams. Er ist in der Lage, die für das jeweilige Projekt relevanten
+
+Arbeitsergebnisse, hierfür geeignete Vorgehensweisen sowie Arbeitshilfen und
+
+Festlegungen (z.B. Dialogprinzipien und Gestaltungsregel) für den
+
+menschzentrierten Gestaltungsprozess zu identifizieren und für ein Projekt
+
+festzulegen.
+
+---------
+
+
+Usability Professional: Rollen,
+=========
+=========
+
+Eine Person, die qualifiziert und methodisch die Anforderungen an die Usability
+
+(Gebrauchstauglichkeit) interaktiver Systeme (Hardware und Software)
+
+herleitet, umsetzt oder deren Umsetzung überprüft.
+
+Der Usability Professional ist typischerweise in einem oder mehrerer der
+
+folgenden Arbeitsschwerpunkte spezialisiert:
+
+Analyse - Erheben von Nutzungskontexten, Herleiten von
+
+Nutzungsanforderungen
+
+Gestaltung - Konzipieren der Interaktion zwischen Mensch und interaktives
+
+System, strukturieren und darstellen handlungsleitender Informationen.
+
+Evaluierung - Durchführen von inspektionbasierten Evaluierungen (ohne
+
+Nutzer) und Usabilitytests (mit Nutzern)
+
+Prozessgestaltung und Methodeneinsatz - Festlegen, Einführen und Betreiben
+
+eines menschzentrierten Gestaltungsprozesses.
+
+Die Grundlage der Tätigkeiten eines Usability Professionals sind die
+
+internationalen Normen zur Usability interaktiver Systeme und deren
+
+Gestaltungsprozess (ISO 9241) sowie aktuelles, publiziertes Fachwissen.
+
+Usability Professionals arbeiten in Projekten zu Herstellung von interaktiven
+
+Systemen und mit ihnen verbundener Dienstleistungen und Prozesse für den
+
+Einsatz in zahlreichen Projektkontexten (z.B. interaktive Systeme für den
+
+gewerblichen Einsatz, Haushaltsgeräte, interaktive Spiele, mobile Endgeräte).
+
+---------
+
+
+Usability Tester: Rollen, 
+=========
+Benutzer
+=========
+
+Eine Rolle im Prozess der menschzentrierten Gestaltung.
+
+Der Usability Tester evaluiert Benutzungsschnittstellen in verschiedenen
+
+Stadien der Realisierung. Er definiert in Abstimmung der Prozessbeteiligten den
+
+Aufbau der Evaluierungen und verantwortet die valide Ausführung der
+
+Evaluierungen.
+
+Der Usability Tester erstellt entwicklungsbegleitende Usabilitytestberichte mit
+
+dem Ziel der Produktverbesserung sowie den Usabilitytestbericht über die
+
+abschließende summative Evaluierung. Er kommuniziert diese Ergebnisse an
+
+die Interessenvertreter (Projektbeteiligten) oder betreut deren Kommunikation
+
+verantwortlich. Dies kann bspw. im Rahmen eines Abnahmetests in
+
+Zusammenarbeit mit dem User Requirements Engineer erfolgen.
+---------
+
+
+Usabilityevaluierung: Evaluierung, 
+=========
+=========
+
+Ein üblicher Ausdruck für Evaluierung ­ inspektionsbasiert und Evaluierung
+
+­ benutzerbasiert.
+
+---------
+
+
+Usabilitylabor: System, Planung, 
+=========
+=========
+
+Zwei oder mehrere Räume, die speziell für die Durchführung von Usabiltytests
+
+oder Fokusgruppen ausgestattet sind. Ein Usabilitylabor besteht of aus einem
+
+Testraum, wo die Testteilnehmer sitzen, und einem Beobachtungsraum, wo
+
+Interessenvertreter die Testteilnehmer beobachten können, während die
+
+Testteilnehmer Aufgaben lösen. Oft sind diese zwei Zimmer durch eine
+
+Spiegelwand getrennt, was den Beobachtern erlaubt, den Testteilnehmern
+
+zuzuschauen, nicht aber umgekehrt.
+
+---------
+
+
+Usabilityproblem: Gestaltung, Evaluierung
+=========
+=========
+
+Siehe Nutzungsproblem
+
+---------
+
+
+Usabilitytest: Test, Evaluierung
+=========
+=========
+
+Der Validierungsprozess zur Feststellung dass ein interaktives System alle
+
+vorher festgelegten Nutzungsanforderungen erfüllt. Ein Usabilitytest kann die
+
+Umsetzung der vorliegenden quantitativen und qualitativen
+
+Nutzungsanforderungen einschließlich Aufgabenvervollständigung,
+
+Aufgabendauer, Fehlerraten und Benutzerzufriedenstellung validieren.
+
+Ein Usabilitytest umfasst eine Reihe von Usabilitytestsitzungen. In jeder
+
+Sitzung versucht ein Testteilnehmer unter Benutzung des interaktiven
+
+Systems oder eines Prototypen eines interaktiven Systems repräsentative
+
+Aufgaben zu lösen. Üblicherweise werden Testsitzungen von einem Moderator
+
+moderiert und von einer Anzahl von Interessenvertretern beobachtet. Ein
+
+Protokollant zeichnet wichtige Befunde auf.
+
+Testen kann formal oder informal sein. Das Testen kann face-to-face (mit einem
+
+physisch anwesenden Moderator am gleichen Platz wie die Testteilnehmer)
+
+oder remote stattfinden und qualitative oder quantitative Daten ergeben. Das
+
+Testen kann zu jedem Zeitpunkt während der Entwicklungsphase geschehen ­
+
+von der frühen Analysephase bis hin zur Lieferung des interaktiven Systems
+
+und darüberhinaus. Die Tests können sowohl an Papierentwürfen oder primitive
+
+Attrappen als auch an in Entwicklung befindlichen oder bereits fertiggestellten
+
+interaktiven Systemen durchgeführt werden.
+
+---------
+
+
+Usabilitytest ­ Face-to-face: Evaluierung, Test. 
+=========
+=========
+
+Ein Usabilitytest, bei dem sich die Testteilnehmer und der Moderator am selben
+
+physischen Ort befinden.
+
+Bemerkung zum Seminar: Vergleiche mit Usabilitytest ­ Remote und
+
+Usabilitytest ­ Unbeaufsichtigt.
+
+---------
+
+
+Usabilitytest ­ Remote: Test, Evaluierung
+=========
+=========
+
+Ein Usabilitytest bei dem sich die Testteilnehmer und der Moderator an
+
+unterschiedlichen Orten befinden. Der Moderator beobachtet die
+
+Testteilnehmer über eine Internetverbindung. Der Moderator kommuniziert mit
+	
+den Testteilnehmern über Telefon oder Internetverbindung.
+
+Bemerkung zum Seminar: Vergleiche mit Usabilitytest ­ Face-to-face und
+
+Usabilitytest ­ Unbeaufsichtigt.
+
+---------
+
+
+Usabilitytest ­ Unbeaufsichtigt: Test, 
+=========
+=========
+
+Ein Usabilitytest bei dem Testteilnehmer Testaufgaben lösen ohne dabei
+
+beobachtet zu werden. Handlungen werden auf Video zur späteren Analyse
+
+aufgezeichnet.
+
+Bemerkung zum Seminar: Vergleiche mit Usabilitytest ­ Face-to-face und
+
+Usabilitytest ­ Remote.
+
+---------
+
+
+Usabilitytestbericht: Test, Evaluierung
+=========
+Testbericht, Evaluierungsbericht, Test report
+=========
+
+Ein Dokument, das die Ergebnisse eines Usabilitytests beschreibt. Ein
+
+Usabilitytestbericht beinhaltet eine Kurzdarstellung, 5-50 Befunde und das
+
+Testskript für den Usabilitytest. Oft umfasst der Usabilitytestbericht auch
+
+relevante Screenshots oder Bilder des getesteten interaktiven Systems.
+
+Manchmal auch als Testbericht bezeichnet.
+
+---------
+
+
+Usabilitytestergebnis: Test, Evaluierung 
+=========
+Usability-Befund, Usability finding, Usability-Befund
+=========
+
+Siehe Befund.
+
+---------
+
+
+Usabilitytestplan: Planung, Evaluierung, 
+=========
+=========
+
+Eine kurze Beschreibung des Zwecks und Umfangs eines Usabilitytests. Der
+
+Plan beinhaltet die Anzahl geplanter Testteilnehmer, die ungefähre Länge jeder
+
+Testsitzung, den Namen des Moderators, einen Zeitplan und eine
+
+Kostenschätzung für den Usabilitytest einschließlich Personenstunden.
+
+---------
+
+
+Usabilitytestsitzung: Gestaltung, Test, 
+=========
+=========
+
+Der Teil eines Usabilitytests, bei dem ein bestimmter Testteilnehmer
+
+repräsentative Aufgaben unter Benutzung des interaktiven Systems oder des
+
+Prototypen eines interaktiven Systems löst.
+
+Bemerkung zum Seminar: Vergleiche mit Usabilitytest.
+
+---------
+
+
+User Interface Designer: Rollen
+=========
+Usability Professional, 
+=========
+
+Eine Rolle im Prozess des menschzentrierten Designs.
+
+
+Ein User Interface Designer implementiert das Benutzererlebnis basierend auf
+
+dem Design und den Nutzungsszenarios, des Interaktionsdesigners.
+
+Der User Interface Designer erzeugt interaktive Prototypen.
+
+Bemerkung zum Seminar: Es ist nicht erforderlich, dass Seminarteilnehmer den
+
+Unterschied zwischen Informationsarchitekt, User Interface Designer und
+
+Interaktionsdesigner kennen.
+
+---------
+
+
+User Requirements Engineer: Rollen, 
+=========
+=========
+
+Eine Rolle im Prozess des menschzentrierten Designs.
+
+
+
+Der User Requirements Engineer identifiziert und beschreibt den tatsächlichen
+
+Nutzungskontext von Benutzern. Daraus leitet der User Requirements
+
+Engineer die Nutzungsanforderungen und damit verbundene
+
+Organisatorische Anforderungen ab, die für ein bestimmtes Projekt umgesetzt
+
+werden müssen. Der User Requirements Engineer priorisiert die Anforderungen
+
+um sicherzustellen, dass die grundsätzlichen Erfordernisse des Benutzers
+
+erfüllt werden.
+
+---------
+
+
+Wireframe: Planung, 
+=========
+Mockup, Modell Attrappe
+=========
+
+Grobe Skizze von Navigations- und Inhaltselementen, die eine
+
+Benutzungsschnittstelle ausmachen. Typischerweise werden dabei das
+
+visuelle Design und das exakte Layout ignoriert. Auf Deutsch auch
+
+,,Drahtgeflecht" genannt.
+
+---------
+
+
+Ziel: Anforderung, Prinzipien 
+=========
+Goal
+=========
+
+Angestrebtes Arbeitsergebnis.
+
+---------
+
+
+Zufriedenstellung: Evaluierung, Prinzipien, 	
+=========
+Satisfaction
+=========
+
+Freiheit von Beeinträchtigungen und positive Einstellungen gegenüber der
+
+Nutzung des interaktiven Systems.
+
+Bemerkung zum Seminar: Die Zufriedenstellung wird durch eine
+
+Benutzerfragebogen ermittelt.	

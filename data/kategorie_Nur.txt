@@ -1,0 +1,275 @@
+﻿Affordance: Gestaltung, Prinzipien
+|
+Anforderung: Planung, Gestaltung, Anforderungen
+|
+Arbeitsmittel: Anforderungen, Planung
+|
+Aufgabe: Anforderungen, Prinzipien, Gestaltung,
+|
+Aufgabenangemessenheit: Prinzipien, Evaluierung, 
+|
+Aufgabenmodell: Implementierung,  
+|
+Barrierefreiheit: Prinzipien
+|
+Befund: Test, Evaluierung
+|
+Benutzer: Rollen, Anforderungen
+|
+Benutzerdokumentation: Planung, Gestaltung, System 
+|
+Benutzererlebnis: Planung, Evaluierung
+|
+Benutzerfragebogen: Evaluierung, 
+|
+Benutzergruppe: Rollen, Planung, Gestaltung, Evaluierung,
+|
+Benutzergruppenprofil: Rollen, Evaluierung, 
+|
+Benutzerunterstützung: Plaung, Gestaltung, System
+|
+Benutzerzentrierte Evaluierung: Planung, Test, Evaluierung,
+|
+Benutzerzentrierte Gestaltung: Gestaltung, 
+|
+Benutzungsschnittstelle: System, Gestaltung, Implementierung, 
+|
+Benutzungsschnittstellenstandard: System, Implementierung, Prinzipien
+|
+Beobachter: Rollen, System
+|
+Beobachtung: Prinzipien, Anforderungen,
+|
+Designmuster: Gestaltung, Test, Evaluierung,
+|
+Dialog: Gestaltung, System, Prinzipien, 
+|
+Dialogprinzip: Prinzipien, Gestaltung, 
+|
+Dringlichkeitsstufen (von Befunden): Test, 
+|
+Effektivität: Prinzipien, Evaluierung,
+|
+Effizienz: Prinzipien, Evaluierung,
+|
+Erfordernis: Anforderungen, Gestaltung,
+|
+Erwartungskonformität: Prinzipien, Evaluierung, 
+|
+Evaluierung: Test, Evaluierung, Prinzipien, 
+|
+Expertenreview: Test, Evaluierung, Prinzipien
+|
+Face-to-face Usabilitytest: Test, Evaluierung, 
+|
+Fehlermanagement: Gestaltung, Test, Evaluierung, 
+|
+Fehlertoleranz: Anforderungen, Evaluierung, 
+|
+Fokusgruppe: Anforderungen, Gestaltung, Rollen, 
+|
+Formative Evaluierung: Evaluierung, Test, Prinzipien
+|
+Fragebogen: Evaluierung, Test, 
+|
+Gebrauchstauglichkeit: Test, Anforderungen, Prinzipien, 
+|
+Geschäftsanforderung: Anforderungen, Gestaltung, 
+|
+Geschlossene Frage: Evaluierung, Test
+|
+Gestaltungsregel: Prinzipien, Gestaltung, 
+|
+Handlungsleitung: Gestaltung, Prinzipien, 
+|
+Heuristik: Prinzipien, Evaluierung, 
+|
+Heuristische Evaluierung: Evaluierung, Prinzipien, 
+|
+Heuristische Inspektion: Evaluierung, Prinzipien, 
+|
+High-fidelity Prototyp: Test, System
+|
+Indiviualisierbarkeit: Gestaltung, Prinzipien, 
+|
+Informationsarchitekt: Rollen, Gestaltung
+|
+Informationsarchitektur: Gestaltung, Anforderungen
+|
+Inspektion: Evaluierung, Test
+|
+Inspektionsbasierte Evaluierung: Evaluierung, Test, 
+|
+Interaktionsdesigner: Rollen, 
+|
+Interaktives System; System, Anforderungen, 
+|
+Interessenvertreter: Rollen, 
+|
+Interessenvertreteranforderung: Anforderungen, Gestaltung,  
+|
+Interview: Evaluierung, 
+|
+Interviewcheckliste: Evaluierung, 
+|
+Intuitiv: Anforderungen, Planung, 
+|
+ISO9241: Anforderungen, Prinzipien,  
+|
+Iterativ: Planung, Evaluierung, 
+|
+Konsistenz: Prinzipien, Evaluierung
+|
+Kontextuelles Interview: Evaluierung, 
+|
+Lernförderlichkeit: Prinzipien, Gestaltung, 
+|
+Lowfidelity Prototyp: Test, System
+|
+Marktanforderung: Anforderungen, Gestaltung, 
+|
+Meister-Schüler-Modell: Evaluierung, Prinzipien
+|
+Menschzentrierte Gestaltung: Planung, Gestaltung
+|
+Mentales Modell: Planung, 
+|
+Modell: System, Gestaltung, 
+|
+Moderation: Rollen, Planung, Test, 
+|
+Moderator: Rollen, 
+|
+Nachbesprechung: Evaluierung, 
+|
+Navigationsstruktur: System, Planung, 
+|
+Neutrale Frage: Evaluierung, Test
+|
+Nutzungsanforderung - Qualitativ: Anforderungen, Gestaltung
+|
+Nutzungsanforderung ­ Quantitativ: Anforderungen, Gestaltung
+|
+Nutzungsanforderung: Anforderungen, Gestaltung
+|
+Nutzungskontext: System, Planung, 
+|
+Nutzungsobjekt: System, Planung, 
+|
+Nutzungsproblem: Gestaltung, Evaluierung, 
+|
+Nutzungsszenario: Test, Planung, 
+|
+Offene Frage: Evaluierung, Test 
+|
+Onlinehilfe: System, Gestaltung, 
+|
+Organisatiorische Anforderung: Anforderungen, Gestaltung, Planung,
+|
+Persona: Rollen, Planung, 
+|
+Positiver Befund: Test, Evaluierung
+|
+Post-Test-Interview: Evaluierung, 
+|
+Pre-Test-Interview: Evaluierung, 
+|
+PrimäreBenutzer: Rollen, Planung, 
+|
+Protokollant: Rollen, Test
+|
+Prototyp: Test, System
+|
+Qualität: Planung, Anforderungen, Evaluierung 
+|
+Qualitative Nutzungsanforderung: Anforderungen, Gestaltung, 
+|
+QuantitativeNutzungsanforderung: Anforderungen, Gestaltung,
+|
+Rekrutierungsfragebogen: Evaluierung, Test
+|
+Rekrutierung(eines Teilnehmers für einen Usabilitytest): Planung, Test
+|
+Remote Usabilitytest: Test, Evaluierung
+|
+Ressourcen: System, 
+|
+Review: Evaluierung
+|
+Richtlinie für Benutzungsschnittstellen: Prinzipien, Gestaltung
+|
+Rolle: Anforderungen, Rollen
+|
+Sekundäre Benutzer: Rollen, Planung
+|
+Selbstbeschreibungsfähigkeit: Gestaltung, Prinzipien
+|
+Standard: Prinzipien
+|
+Steuerbarkeit: Gestaltung, Prinzipien
+|
+Storyboard: Planung, 
+|
+Styleguide: Gestaltung, Prinzipien, 
+|
+Suche: Prinzipien, System
+|
+Suggestivfrage: Evaluierung, Test
+|
+Summative Evaluierung: Evaluierung, 
+|
+Szenario: Planung, Test, 
+|
+Testaufgabe: Planung, Test, 
+|
+Testbericht: Test, Evaluierung
+|
+Testskript; Test, Evaluierung
+|
+Testszenario: Test, Planung
+|
+Testteilnehmer: Rollen, 
+|
+Umgebung: Planung, System, 
+|
+Unbeaufsichtigter Usabilitytest: Test, Evaluierung
+|
+Usability: Test, Anforderungen, Prinzipien
+|
+Usability Engineer: Rollen
+|
+Usability Professional: Rollen,
+|
+Usability Tester: Rollen, 
+|
+Usabilityevaluierung: Evaluierung, 
+|
+Usabilitylabor: System, Planung, 
+|
+Usabilityproblem: Gestaltung, Evaluierung
+|
+Usabilitytest: Test, Evaluierung
+|
+Usabilitytest ­ Face-to-face: Evaluierung, Test. 
+|
+Usabilitytest ­ Remote: Test, Evaluierung
+|
+Usabilitytest ­ Unbeaufsichtigt: Test, 
+|
+Usabilitytestbericht: Test, Evaluierung
+|
+Usabilitytestergebnis: Test, Evaluierung 
+|
+Usabilitytestplan: Planung, Evaluierung, 
+|
+Usabilitytestsitzung: Gestaltung, Test, 
+|
+User Interface Designer: Rollen
+|
+User Requirements Engineer: Rollen, 
+|
+Wireframe: Planung, 
+|
+Ziel: Anforderung, Prinzipien 
+|
+Zufriedenstellung: Evaluierung, Prinzipien, 	

@@ -5,7 +5,7 @@ define(function (){
     return function(numberOfTerms){
         this.numberOfTerms = numberOfTerms;
 
-        var readTerms = JSON.parse(localStorage.getItem(window.location.path  + "progressCounter.readTerms"));
+        var readTerms = JSON.parse(localStorage.getItem(window.location.pathname  + "progressCounter.readTerms"));
         if (readTerms === null){
             readTerms = [];
         }
@@ -14,7 +14,7 @@ define(function (){
             if (readTerms.indexOf(term) === -1){
                 readTerms.push(term);
             }
-            localStorage.setItem(window.location.path  + "progressCounter.readTerms", JSON.stringify(readTerms));
+            localStorage.setItem(window.location.pathname  + "progressCounter.readTerms", JSON.stringify(readTerms));
             this.onChange();
         };
 
@@ -23,7 +23,7 @@ define(function (){
         };
 
         this.clear = function() {
-            localStorage.removeItem(window.location.path  + "progressCounter.readTerms");
+            localStorage.removeItem(window.location.pathname  + "progressCounter.readTerms");
             readTerms = [];
             this.onChange();
         };

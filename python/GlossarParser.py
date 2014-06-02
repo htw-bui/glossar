@@ -4,16 +4,16 @@ import collections
 import os
 import re
 
-
 def merge():
     with codecs.open("../data/begriffe.txt", "r", "utf8") as infileBegriffe:
         begriffe = infileBegriffe.read().split("|")
-    begriffe = [begriff.split() for begriff in begriffe]
+        begriffe = [begriff.split() for begriff in begriffe]
 
     with codecs.open("../data/definitionen.txt", "r", "utf8") as infileDefinitionen:
         definitionen = infileDefinitionen.read().split("|")
 
     merged = []
+
 
     for i in range(len(begriffe)):
         merged.append("".join(begriffe[i]) + "\n=========" + definitionen[i])
@@ -38,9 +38,11 @@ def generate_from_merged(withlinks=True):
     for part in content:
         parts = part.split("=========")
         term = parts[0].strip()
+        category = parts[0].split(":" + ",")
         synonyms = parts[1].split(",")
         description = parts[2].strip().replace("\n", " ")
-        terms[term] = {"synonyms": synonyms,
+        terms[term] = {"category": category,
+                        "synonyms": synonyms,
                        "description": description
                        }
     od = collections.OrderedDict(sorted(terms.items()))

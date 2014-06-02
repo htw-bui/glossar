@@ -19,6 +19,7 @@
   <ItemGroup>
     <Content Include="begriffe.txt" />
     <Content Include="definitionen.txt" />
+    <Content Include="kategorie.txt"
     <Content Include="index.html" />
     <Content Include="main.js" />
     <Compile Include="GlossarParser.py" />
