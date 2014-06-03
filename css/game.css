@@ -26,6 +26,10 @@
   margin-right: 2%;
 }
 
+#timer {
+  margin-left: 5px;
+}
+
 .container {
   margin: 0 auto;
   width: 90%;
