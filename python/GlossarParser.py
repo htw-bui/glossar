@@ -45,7 +45,11 @@ def generate_from_merged(withlinks=True):
 
         synonyms = [s.strip() for s in parts[1].split(",")]
 
-        description = parts[2].strip().replace("\n", " ")
+        description = parts[2].strip()\
+                              .replace("\n", " ")\
+                              .split("Bemerkung zum Seminar")[0]\
+                              .split("Bemerkungen zum Seminar")[0]
+
         terms[term] = {"synonyms": synonyms,
                        "description": description,
                        "categories": categories
