@@ -28,7 +28,7 @@ def generate_from_merged(withlinks=True):
         path = fullpath  + '../data/merged.html'
         outpath = fullpath  + '../neu_generierte_begriffe.json'
     else:
-        path = fullpath  + '../data/categories-censored.html'
+        path = fullpath  + '../data/categories-censored-v2.html'
         outpath = fullpath  + '../terms.json'
 
     with open(path, "r", encoding="utf-8") as infile:
@@ -64,8 +64,8 @@ def generate_from_merged(withlinks=True):
 def censor():
     fullpath = os.path.dirname(os.path.abspath(__file__)) + "/"
 
-    path = fullpath + '../data/kategorie.txt'
-    outpath = fullpath + '../data/categories-censored.html'
+    path = fullpath + '../data/kategorie_v2.txt'
+    outpath = fullpath + '../data/categories-censored-v2.html'
 
     with open(path, "r", encoding="utf-8") as infile:
         content = infile.read().split("---------")
