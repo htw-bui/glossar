@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KOMET QUIZ</title>
@@ -12,8 +12,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <script src="js/hyphenate.js"></script>
 
   </head>
   <body>
@@ -26,13 +25,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class='navbar-brand' href='#'>KOMET</a>
+        <a class='navbar-brand' href='/'>KOMET</a>
       </div>
       <div class='collapse navbar-collapse' id='sitenav'>
         <ul class='nav navbar-nav'>
-          <li><a href='/index.html'>Glossar</a></li>
-          <li class=active><a href='/quiz.html'>Quiz</a></li>
-          <li><a href='/highscore.html'>Hall of Fame</a></li>
+          <li><a href='./index.html'>Glossar</a></li>
+          <li class=active><a href='./quiz.html'>Quiz</a></li>
+          <li><a href='./highscore.html'>Hall of Fame</a></li>
         </ul>
       </div>
     </div>
@@ -44,7 +43,7 @@
         </div>
         <span id="timer"></span>
       </div>
-      <div id=definiton class='row'></div>
+      <div id=definition class='row hyphenate'></div>
       <div id=choices class='row'>
         <div class='column half'> </div>
         <div class='column half'> </div>

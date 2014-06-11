@@ -117,10 +117,11 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   }
 
   function createDefinitionFor(term){
-    $('#definiton').empty();
+    $('#definition').empty();
     var definition = censorOutTerm(term, data[term].description);
-    var definitionBlock = $("<div />", {html: definition});
-    definitionBlock.appendTo('#definiton');
+    var definitionBlock = $("<div />", {html: definition, class: "hyphenate"});
+    definitionBlock.appendTo('#definition');
+    Hyphenator.run();
   }
 
   function censorOutTerm(term, definition){

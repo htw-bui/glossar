@@ -1,30 +1,62 @@
 {
-  "1": {
+  "one": {
     "synonyms": [ ], 
-    "description": "1"
+    "description": "1",
+    "categories": [
+      "Prinzipien",
+      "Gestaltung"
+    ]
   }, 
-  "2": {
+  "two": {
     "synonyms": [ ], 
-    "description": "2"
+    "description": "2",
+    "categories": [
+      "Prinzipien",
+      "Gestaltung"
+    ]
+
   }, 
-  "3": {
+  "three": {
     "synonyms": [ ], 
-    "description": "3"
+    "description": "3",
+    "categories": [
+      "Prinzipien",
+      "Gestaltung"
+    ]
+
   }, 
-  "4": {
+  "four": {
     "synonyms": [ ], 
-    "description": "4"
+    "description": "4",
+    "categories": [
+      "Prinzipien"
+    ]
+
   }, 
-  "5": {
+  "five": {
     "synonyms": [ ], 
-    "description": "5"
+    "description": "5",
+    "categories": [
+      "Prinzipien",
+      "Gestaltung"
+    ]
+
   }, 
-  "6": {
+  "six": {
     "synonyms": [ ], 
-    "description": "6"
+    "description": "6",
+    "categories": [
+      "Prinzipien"
+    ]
+
   },
   "with html": {
     "synonyms": [ ], 
-    "description": "this is a long <ul> <li> list </li> </ul> that contains html"
+    "description": "this is a long <ul> <li> list </li> </ul> that contains html",
+    "categories": [
+      "Prinzipien",
+      "Gestaltung"
+    ]
+
   }
 }

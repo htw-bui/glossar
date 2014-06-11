@@ -49,6 +49,12 @@
 #choices {
   float: left;
   width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#definition {
+  margin: 0 auto;
 }
 
 .choice {
