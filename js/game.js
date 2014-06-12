@@ -179,7 +179,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
 
 
   function sendUserToHallOfFame(){
-    window.location = window.location.origin + "/highscore.html";
+    window.location = "./highscore.html";
   }
 
   function promptUserForHighscore(){
