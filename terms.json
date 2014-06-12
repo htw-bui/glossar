@@ -1,6 +1,6 @@
 {
   "Anforderung": {
-    "description": "Bedingung oder F\u00e4higkeit, die ein <a href='#interaktives System'>interaktives System</a>, eine Komponente  eines interaktiven Systems oder eine Dienstleistung erf\u00fcllen oder besitzen  muss, um einer Vereinbarung, einem Standard, einer Spezifikation oder anderen  formal zugrunde gelegten Dokumenten zu gen\u00fcgen.",
+    "description": "Bedingung oder F\u00e4higkeit, die ein interaktives System, eine Komponente  eines interaktiven Systems oder eine Dienstleistung erf\u00fcllen oder besitzen  muss, um einer Vereinbarung, einem Standard, einer Spezifikation oder anderen  formal zugrunde gelegten Dokumenten zu gen\u00fcgen.",
     "synonyms": [
       ""
     ],
@@ -101,7 +101,7 @@
     ]
   },
   "Benutzerfragebogen": {
-    "description": "Ein Satz von Fragen, der eine strukturierte Art und Weise der Befragung einer  gro\u00dfen Gruppe von Menschen erm\u00f6glicht, um diese Menschen, ihre Interessen  und ihre Pr\u00e4ferenzen zu beschreiben.  xxxx k\u00f6nnen im Rahmen einer Benutzerbefragung benutzt  werden, um die Zufriedenstellung von Benutzern eines interaktiven Systems  und Informationen zum Nutzungskontext zu ermitteln.",
+    "description": "Ein Satz von Fragen, der eine strukturierte Art und Weise der Befragung einer  gro\u00dfen Gruppe von Menschen erm\u00f6glicht, um diese Menschen, ihre Interessen  und ihre Pr\u00e4ferenzen zu beschreiben.  xxxx k\u00f6nnen im Rahmen einer xxxx benutzt  werden, um die Zufriedenstellung von Benutzern eines interaktiven Systems  und Informationen zum Nutzungskontext zu ermitteln.",
     "synonyms": [
       ""
     ],
@@ -228,7 +228,7 @@
     ]
   },
   "Dringlichkeitsstufen von Befunden": {
-    "description": "Ein Ma\u00df f\u00fcr ein Nutzungsproblem aus einem Usabilitytest das die  Auswirkung des Nutzungsproblems auf das Benutzererlebnis bewertet.    Der Usabilitytester bewertet die Nutzungsprobleme aus Sicht der  Testteilnehmer. Typische Dringlichkeitsstufen sind: niedrig, ernst, kritisch,  lebensbedrohend.",
+    "description": "Ein Ma\u00df f\u00fcr ein Nutzungsproblem aus einem Usabilitytest das die  Auswirkung des Nutzungsproblems auf das Benutzererlebnis bewertet.    Der Usabilitytester bewertet die Nutzungsprobleme aus Sicht der  Testteilnehmer. Typische xxxx sind: niedrig, ernst, kritisch,  lebensbedrohend.",
     "synonyms": [
       "Severity rating"
     ],
@@ -257,7 +257,7 @@
     ]
   },
   "Erfordernis": {
-    "description": "Eine f\u00fcr einen Benutzer oder eine Benutzergruppe als notwendig identifizierte  Voraussetzung, um ein Ziel innerhalb eines bestimmten Nutzungskontextes zu  erreichen.  Beispiele:  - Ein Vortragender (Benutzer) muss wissen, wieviel Zeit er noch hat  (Voraussetzung), um den Vortrag w\u00e4hrend einer Pr\u00e4sentation mit einer  festgelegten Zeitbeschr\u00e4nkung (Nutzungskontext) abschliessen zu k\u00f6nnen  (Ziel).  - Ein Finanzbuchhalter (Benutzer) muss die Anzahl der erhaltenen Rechnungen  und ihre Betr\u00e4ge kennen (Voraussetzung) um die t\u00e4gliche Rechnungsstellung  (Ziel) als Teil der Cashflow-Kontrolle (Nutzungskontext) fertigstellen zu  k\u00f6nnen.",
+    "description": "Eine f\u00fcr einen Benutzer oder eine Benutzergruppe als notwendig identifizierte  Voraussetzung, um ein Ziel innerhalb eines bestimmten Nutzungskontextes zu  erreichen.",
     "synonyms": [
       "User need"
     ],
@@ -402,7 +402,7 @@
     ]
   },
   "Heuristische Evaluierung": {
-    "description": "Eine Methode der Usabilityevaluierung bei der ein oder mehrere Reviewer \u00ad  vorzugsweise Experten \u00ad ein interaktives System mit einer Liste von  Dialogprinzipien (auch als xxxx bezeichnet) vergleichen und feststellen  wo das interaktive System diesen Dialogprinzipien nicht folgt.",
+    "description": "Eine Methode der Usabilityevaluierung bei der ein oder mehrere Reviewer - vorzugsweise Experten - ein interaktives System mit einer Liste von  Dialogprinzipien vergleichen und feststellen  wo das interaktive System diesen Dialogprinzipien nicht folgt.",
     "synonyms": [
       "Heuristic evaluation  Heuristische Inspektion"
     ],
@@ -519,7 +519,7 @@
     ]
   },
   "Intuitiv": {
-    "description": "Die Benutzung des interaktiven Systems ist unmittelbar zu verstehen \u00ad  unabh\u00e4ngig von der Erfahrung, des Wissens, der Sprachkenntnisse oder des  momentanen Konzentrationsgrades des Benutzers.",
+    "description": "Die Benutzung des interaktiven Systems ist unmittelbar zu verstehen - unabh\u00e4ngig von der Erfahrung, des Wissens, der Sprachkenntnisse oder des  momentanen Konzentrationsgrades des Benutzers.",
     "synonyms": [
       "Selbstbeschreibungsf\u00e4hig  intuitive"
     ],
@@ -529,7 +529,7 @@
     ]
   },
   "Iterativ": {
-    "description": "Ein interativer Prozess wiederholt die Schritte des Prozesses des  menschzentrierten Designs solange, bis eine Evaluierung der  Benutzungsschnittstelle zeigt, dass die Nutzungsanforderungen erf\u00fcllt sind.",
+    "description": "Ein iterativer Prozess wiederholt die Schritte des Prozesses des  menschzentrierten Designs solange, bis eine Evaluierung der  Benutzungsschnittstelle zeigt, dass die Nutzungsanforderungen erf\u00fcllt sind.",
     "synonyms": [
       "Wiederholend  iterative"
     ],
@@ -757,7 +757,7 @@
     ]
   },
   "Pre-Test-Interview": {
-    "description": "Eine T\u00e4tigkeit bei einem Usabilitytest, bei der Testteilnehmer Fragen  bez\u00fcglich ihres Hintergrundes und vorheriger Erfahrung mit dem interaktiven  System oder \u00e4hnlichen interaktiven Systemen beantworten. Das Pre-Test-  Interview findet statt, bevor der Testteilnehmer beginnt, die Testaufgaben  abzuarbeiten.",
+    "description": "Eine T\u00e4tigkeit bei einem Usabilitytest, bei der Testteilnehmer Fragen  bez\u00fcglich ihres Hintergrundes und vorheriger Erfahrung mit dem interaktiven  System oder \u00e4hnlichen interaktiven Systemen beantworten. Das Pre-Test-Interview findet statt, bevor der Testteilnehmer beginnt, die Testaufgaben  abzuarbeiten.",
     "synonyms": [
       "Pre-Session Interview  Briefing"
     ],
@@ -944,7 +944,7 @@
     ]
   },
   "Summative Evaluierung": {
-    "description": "Eine Usabilityevaluierung zur Feststellung, ob ein interaktives System die  Nutzungsanforderungen erf\u00fcllt. Summative Evaluierungen werden auch  benutzt um den Grad der erreichten Gebrauchstauglichkeit eines interaktiven  Systems zu bestimmten. Summative Evaluierungen finden in der Regel dann  statt, wenn ein interaktives System oder wesentliche Teile davon fertig  entwickelt sind.",
+    "description": "Eine Usabilityevaluierung zur Feststellung, ob ein interaktives System die  Nutzungsanforderungen erf\u00fcllt. Summative Evaluierungen werden auch  benutzt, um den Grad der erreichten Gebrauchstauglichkeit eines interaktiven  Systems zu bestimmen. Summative Evaluierungen finden in der Regel dann  statt, wenn ein interaktives System oder wesentliche Teile davon fertig  entwickelt sind.",
     "synonyms": [
       "Summative usability evaluation"
     ],
@@ -1098,7 +1098,7 @@
     ]
   },
   "User Requirements Engineer": {
-    "description": "Eine Rolle im Prozess des menschzentrierten Designs.    Der User Requirements Engineer identifiziert und beschreibt den tats\u00e4chlichen  Nutzungskontext von Benutzern. Daraus leitet der User Requirements  Engineer die Nutzungsanforderungen und damit verbundenen  organisatorischen Anforderungen ab, die f\u00fcr ein bestimmtes Projekt umgesetzt  werden m\u00fcssen. Der User Requirements Engineer priorisiert die Anforderungen  um sicherzustellen, dass die grunds\u00e4tzlichen Erfordernisse des Benutzers  erf\u00fcllt werden.",
+    "description": "Eine Rolle im Prozess des menschzentrierten Designs.    Der User Requirements Engineer identifiziert und beschreibt den tats\u00e4chlichen  Nutzungskontext von Benutzern. Daraus leitet der User Requirements Engineer die Nutzungsanforderungen und damit verbundenen  organisatorischen Anforderungen ab, die f\u00fcr ein bestimmtes Projekt umgesetzt  werden m\u00fcssen. Der User Requirements Engineer priorisiert die Anforderungen  um sicherzustellen, dass die grunds\u00e4tzlichen Erfordernisse des Benutzers  erf\u00fcllt werden.",
     "synonyms": [
       ""
     ],
