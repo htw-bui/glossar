@@ -74,10 +74,13 @@ def censor():
     for part in content:
         parts = part.split("=========")
         term = parts[0].strip()
-        synonyms = parts[1].split(",")
+        synonyms = [part.strip() for part in parts[1].split(",")]
+        if "" in synonyms:
+            synonyms.remove("")
+        print(synonyms)
         description = parts[2].strip().replace("\n", " ")
         description = re.sub('(?i)(\w*)' + term + '(\w*)', r'\1xxxx\2', description)
-        p.append("%s\n=========\n%s=========\n%s\n\n" % (term, " ".join(synonyms),
+        p.append("%s\n=========\n%s\n=========\n%s\n\n" % (term, ",".join(synonyms),
                                                          description))
     with open(outpath, "w") as out:
         out.write("---------\n".join(p))
