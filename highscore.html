@@ -10,6 +10,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="http://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <nav class='navbar navbar-default' role=navigation>
@@ -47,5 +48,22 @@
       </tbody>
     </table>
     </content>
+    <style>
+      .table-striped>tbody>tr:nth-child(1)>td:nth-child(1):after {
+        content:" \f091";
+        font-family: "FontAwesome";
+        color: rgb(226,175,47);
+      }
+      .table-striped>tbody>tr:nth-child(2)>td:nth-child(1):after {
+        content:" \f091";
+        font-family: "FontAwesome";
+        color: rgb(171,165,150);
+      }
+      .table-striped>tbody>tr:nth-child(3)>td:nth-child(1):after {
+        content:" \f091";
+        font-family: "FontAwesome";
+        color: rgb(186,97,52);
+      }
+    </style>
   </body>
 </html>

@@ -2,7 +2,7 @@ Anforderung: Planung, Gestaltung, Anforderungen
 =========
 =========
 
-Bedingung oder Fähigkeit, die ein <a href='#interaktives System'>interaktives System</a>, eine Komponente
+Bedingung oder Fähigkeit, die ein interaktives System, eine Komponente
 
 eines interaktiven Systems oder eine Dienstleistung erfüllen oder besitzen
 
@@ -145,7 +145,7 @@ großen Gruppe von Menschen ermöglicht, um diese Menschen, ihre Interessen
 
 und ihre Präferenzen zu beschreiben.
 
-xxxx können im Rahmen einer Benutzerbefragung benutzt
+xxxx können im Rahmen einer xxxx benutzt
 
 werden, um die Zufriedenstellung von Benutzern eines interaktiven Systems
 
@@ -338,7 +338,7 @@ Auswirkung des Nutzungsproblems auf das Benutzererlebnis bewertet.
 
 Der Usabilitytester bewertet die Nutzungsprobleme aus Sicht der
 
-Testteilnehmer. Typische Dringlichkeitsstufen sind: niedrig, ernst, kritisch,
+Testteilnehmer. Typische xxxx sind: niedrig, ernst, kritisch,
 
 lebensbedrohend.
 
@@ -379,24 +379,6 @@ Eine für einen Benutzer oder eine Benutzergruppe als notwendig identifizierte
 Voraussetzung, um ein Ziel innerhalb eines bestimmten Nutzungskontextes zu
 
 erreichen.
-
-Beispiele:
-
-- Ein Vortragender (Benutzer) muss wissen, wieviel Zeit er noch hat
-
-(Voraussetzung), um den Vortrag während einer Präsentation mit einer
-
-festgelegten Zeitbeschränkung (Nutzungskontext) abschliessen zu können
-
-(Ziel).
-
-- Ein Finanzbuchhalter (Benutzer) muss die Anzahl der erhaltenen Rechnungen
-
-und ihre Beträge kennen (Voraussetzung) um die tägliche Rechnungsstellung
-
-(Ziel) als Teil der Cashflow-Kontrolle (Nutzungskontext) fertigstellen zu
-
-können.
 
 ---------
 
@@ -627,11 +609,9 @@ Heuristische Evaluierung: Evaluierung, Prinzipien,
 Heuristic evaluation, Heuristische Inspektion, 
 =========
 
-Eine Methode der Usabilityevaluierung bei der ein oder mehrere Reviewer ­
+Eine Methode der Usabilityevaluierung bei der ein oder mehrere Reviewer - vorzugsweise Experten - ein interaktives System mit einer Liste von
 
-vorzugsweise Experten ­ ein interaktives System mit einer Liste von
-
-Dialogprinzipien (auch als xxxx bezeichnet) vergleichen und feststellen
+Dialogprinzipien vergleichen und feststellen
 
 wo das interaktive System diesen Dialogprinzipien nicht folgt.
 
@@ -821,9 +801,7 @@ Intuitiv: Anforderungen, Planung,
 Selbstbeschreibungsfähig, intuitive
 =========
 
-Die Benutzung des interaktiven Systems ist unmittelbar zu verstehen ­
-
-unabhängig von der Erfahrung, des Wissens, der Sprachkenntnisse oder des
+Die Benutzung des interaktiven Systems ist unmittelbar zu verstehen - unabhängig von der Erfahrung, des Wissens, der Sprachkenntnisse oder des
 
 momentanen Konzentrationsgrades des Benutzers.
 
@@ -853,7 +831,7 @@ Iterativ: Planung, Evaluierung,
 Wiederholend, iterative
 =========
 
-Ein interativer Prozess wiederholt die Schritte des Prozesses des
+Ein iterativer Prozess wiederholt die Schritte des Prozesses des
 
 menschzentrierten Designs solange, bis eine Evaluierung der
 
@@ -1255,9 +1233,7 @@ Eine Tätigkeit bei einem Usabilitytest, bei der Testteilnehmer Fragen
 
 bezüglich ihres Hintergrundes und vorheriger Erfahrung mit dem interaktiven
 
-System oder ähnlichen interaktiven Systemen beantworten. Das Pre-Test-
-
-Interview findet statt, bevor der Testteilnehmer beginnt, die Testaufgaben
+System oder ähnlichen interaktiven Systemen beantworten. Das Pre-Test-Interview findet statt, bevor der Testteilnehmer beginnt, die Testaufgaben
 
 abzuarbeiten.
 
@@ -1553,9 +1529,9 @@ Eine Usabilityevaluierung zur Feststellung, ob ein interaktives System die
 
 Nutzungsanforderungen erfüllt. Summative Evaluierungen werden auch
 
-benutzt um den Grad der erreichten Gebrauchstauglichkeit eines interaktiven
+benutzt, um den Grad der erreichten Gebrauchstauglichkeit eines interaktiven
 
-Systems zu bestimmten. Summative Evaluierungen finden in der Regel dann
+Systems zu bestimmen. Summative Evaluierungen finden in der Regel dann
 
 statt, wenn ein interaktives System oder wesentliche Teile davon fertig
 
@@ -1888,9 +1864,7 @@ Eine Rolle im Prozess des menschzentrierten Designs.
 
 Der User Requirements Engineer identifiziert und beschreibt den tatsächlichen
 
-Nutzungskontext von Benutzern. Daraus leitet der User Requirements
-
-Engineer die Nutzungsanforderungen und damit verbundenen
+Nutzungskontext von Benutzern. Daraus leitet der User Requirements Engineer die Nutzungsanforderungen und damit verbundenen
 
 organisatorischen Anforderungen ab, die für ein bestimmtes Projekt umgesetzt
 
