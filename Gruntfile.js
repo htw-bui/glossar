@@ -71,6 +71,10 @@ module.exports = function(grunt) {
             src:"js/*", 
             dest:"dist/"
           },
+          {
+            src:"css/animate.css", 
+            dest:"dist/css/animate.css"
+          },
           { src:"*.json",
             dest:'dist/'
           }
