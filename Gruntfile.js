@@ -107,6 +107,6 @@ module.exports = function(grunt) {
 
 
   grunt.registerTask('default', ['sass:dev', 'autoprefixer:dev', 'watch']);
-  grunt.registerTask('build', ['sass:dist', "autoprefixer:dist", "htmlmin:dist", "copy:dist", "uglify:dist"]);
+  grunt.registerTask('build', ['sass:dist', "autoprefixer:dist", "htmlmin:dist", "copy:dist"]);//, "uglify:dist"]);
 
 };

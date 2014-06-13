@@ -25,4 +25,10 @@ define(function(){
     this.splice(this.indexOf(element), 1);
     return this;
   };
+
+  function assert(test){
+    if (!test){
+      throw "Assertion failed";
+    }
+  }
 });

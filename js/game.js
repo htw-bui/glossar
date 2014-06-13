@@ -1,4 +1,4 @@
-/*global requirejs, define*/
+/*global requirejs, define, Hyphenator, prompt, alert, handleCorrectAnswer*/
 /*jslint browser: true*/
 
 requirejs.config({
@@ -12,7 +12,7 @@ requirejs.config({
 });
 
 
-define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, ProgressCounter, Stopwatch){
+define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, ProgressCounter, Stopwatch, utils){
   var keys = [];
   var data;
   var progressCounter;
@@ -20,58 +20,8 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   var unusedTerms = [];
   var correctAnswer;
 
-  $(document).ready(initPage);
-
-  function initPage(){
-    'use strict';
-    $.getJSON("./terms.json", function (json_data) {
-      var key;
-      data = json_data;
-      for(key in data){
-        if (data.hasOwnProperty(key)){
-          keys.push(key);
-          unusedTerms.push(key);
-        }
-      }
-      setUp();
-    }).done(initializeObjects);
-  }
-
-  function restartPulseAnimation(){
-    $('#pc').removeClass().addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-      $(this).removeClass();
-    });
-  }
-
-  function initializeObjects() { 
-    progressCounter = new ProgressCounter(keys.length);
-    progressCounter.onChange = function(){
-      $("#progressCounter").text(this.numberOfTermsRead() + '|' + this.numberOfTerms);
-      restartPulseAnimation();
-    };
-    // we are only calling this here in order for the progress
-    // to display in the html from the very beginning on
-    progressCounter.onChange();
-    timer = new Stopwatch();
-    timer.execute = function(){
-      $("#timer").text(this.formatedTime());
-    };
-
-    timer.start();
-  }
-
-  function setUp(){
-    if (unusedTerms.length === 0){
-      checkIfScoreIsHighEnough();
-    }
-    else {
-      var term = unusedTerms.popRandomElement();
-      $('.container').fadeOut('slow', function(){
-        createDefinitionFor(term);
-        createAllChoiceButtons(term);
-        $('.container').fadeIn('slow');
-      });
-    }
+  function sendUserToHallOfFame(){
+    window.location = "./highscore.html";
   }
 
   function getTermsBelongingToCategory(selectedCategory){
@@ -88,89 +38,6 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     return terms;
   }
 
-  function assert(test){
-    if (!test){
-      throw "Assertion failed";
-    }
-  }
-
-  function createAllChoiceButtons(term){
-    var i, choices;
-    $('#choices').empty();
-
-    choices = [];
-    choices.push(term);
-
-    var randomCategory = data[term].categories.randomElement();
-    var termsBelongingToCategory = getTermsBelongingToCategory(randomCategory);
-
-    // the selected term should not be in the choices since we already included it above
-    termsBelongingToCategory.remove(term); 
-
-    while(choices.length <4){
-      choices.push(termsBelongingToCategory.popRandomElement());
-    }
-
-    choices.shuffle();
-    correctAnswer = choices.indexOf(term);
-    for (i = 0; i < choices.length; i++){
-      createButton(choices[i], i);
-      assert(data[choices[i]].categories.indexOf(randomCategory) !== -1);
-    }
-  }
-
-  function createDefinitionFor(term){
-    var definition = censorOutTerm(term, data[term].description);
-    $('#definition').text(definition);
-    Hyphenator.run();
-  }
-
-  function censorOutTerm(term, definition){
-    var findallRegex = new RegExp("[a-zA-Z]*" + term + "[a-zA-Z]*", "gi");
-    return definition.replace(findallRegex, "xxxx");
-  }
-
-  function handleCorrectAnswer(button){
-    progressCounter.registerTerm(button.innerHTML);
-    button.className = ("btn btn-success");
-    setTimeout(setUp, 250);
-  }
-
-
-  function handleIncorrectAnswer(button){
-    button.className = "btn btn-danger";
-    var $correctAnswer = $("#choices").children().eq(correctAnswer);
-    $correctAnswer.removeClass("btn-info");
-    $correctAnswer.addClass("btn-success");
-    setTimeout(checkIfScoreIsHighEnough, 1000);
-  }
-
-  function checkIfScoreIsHighEnough(){
-    var time = timer.ellapsed();
-    var score = progressCounter.numberOfTermsRead();
-    $.post("http://highscore.k-nut.eu/highscore/check",
-      {
-        score: score,
-        time: time
-      }).done(handleTopTenResponse)
-      .error(handleHighscoreIfNoConnection); 
-  }
-
-  function handleHighscoreIfNoConnection(){
-    alert("Es konnte keine Verbindung zum Server hergestellt werden.");
-    resetAndReload();
-  }
-
-  function handleTopTenResponse(callback){
-    callback = JSON.parse(callback);
-    if (callback.top10){
-      promptUserForHighscore();
-    }
-    else {
-      alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
-      resetAndReload();
-    }
-  }
 
   function resetAndReload(){
     timer.clear();
@@ -178,9 +45,9 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     location.reload();
   }
 
-
-  function sendUserToHallOfFame(){
-    window.location = "./highscore.html";
+  function handleHighscoreIfNoConnection(){
+    alert("Es konnte keine Verbindung zum Server hergestellt werden.");
+    resetAndReload();
   }
 
   function promptUserForHighscore(){
@@ -213,6 +80,38 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     return false;
   }
 
+  function handleTopTenResponse(callback){
+    callback = JSON.parse(callback);
+    if (callback.top10){
+      promptUserForHighscore();
+    }
+    else {
+      alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
+      resetAndReload();
+    }
+  }
+
+
+  function checkIfScoreIsHighEnough(){
+    var time = timer.ellapsed();
+    var score = progressCounter.numberOfTermsRead();
+    $.post("http://highscore.k-nut.eu/highscore/check",
+      {
+        score: score,
+        time: time
+      }).done(handleTopTenResponse)
+      .error(handleHighscoreIfNoConnection); 
+  }
+
+
+  function handleIncorrectAnswer(button){
+    button.className = "btn btn-danger";
+    var $correctAnswer = $("#choices").children().eq(correctAnswer);
+    $correctAnswer.removeClass("btn-info");
+    $correctAnswer.addClass("btn-success");
+    setTimeout(checkIfScoreIsHighEnough, 1000);
+  }
+
   function checkAnswer(event){
     if ($(this).data("position") === correctAnswer){
       handleCorrectAnswer(event.target);
@@ -231,4 +130,101 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     });
     button.appendTo('#choices');
   }
+
+  function createAllChoiceButtons(term){
+    var i, choices;
+    $('#choices').empty();
+
+    choices = [];
+    choices.push(term);
+
+    var randomCategory = data[term].categories.randomElement();
+    var termsBelongingToCategory = getTermsBelongingToCategory(randomCategory);
+
+    // the selected term should not be in the choices since we already included it above
+    termsBelongingToCategory.remove(term); 
+
+    while(choices.length <4){
+      choices.push(termsBelongingToCategory.popRandomElement());
+    }
+
+    choices.shuffle();
+    correctAnswer = choices.indexOf(term);
+    for (i = 0; i < choices.length; i++){
+      createButton(choices[i], i);
+      utils.assert(data[choices[i]].categories.indexOf(randomCategory) !== -1);
+    }
+  }
+
+  function censorOutTerm(term, definition){
+    var findallRegex = new RegExp("[a-zA-Z]*" + term + "[a-zA-Z]*", "gi");
+    return definition.replace(findallRegex, "xxxx");
+  }
+
+  function createDefinitionFor(term){
+    var definition = censorOutTerm(term, data[term].description);
+    $('#definition').text(definition);
+    Hyphenator.run();
+  }
+
+
+  function setUp(){
+    if (unusedTerms.length === 0){
+      checkIfScoreIsHighEnough();
+    }
+    else {
+      var term = unusedTerms.popRandomElement();
+      $('.container').fadeOut('slow', function(){
+        createDefinitionFor(term);
+        createAllChoiceButtons(term);
+        $('.container').fadeIn('slow');
+      });
+    }
+  }
+
+  function handleCorrectAnswer(button){
+    progressCounter.registerTerm(button.innerHTML);
+    button.className = ("btn btn-success");
+    setTimeout(setUp, 250);
+  }
+
+  function restartPulseAnimation(){
+    $('#pc').removeClass().addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass();
+    });
+  }
+
+  function initializeObjects() { 
+    progressCounter = new ProgressCounter(keys.length);
+    progressCounter.onChange = function(){
+      $("#progressCounter").text(this.numberOfTermsRead() + '|' + this.numberOfTerms);
+      restartPulseAnimation();
+    };
+    // we are only calling this here in order for the progress
+    // to display in the html from the very beginning on
+    progressCounter.onChange();
+    timer = new Stopwatch();
+    timer.execute = function(){
+      $("#timer").text(this.formatedTime());
+    };
+
+    timer.start();
+  }
+
+  function initPage(){
+    'use strict';
+    $.getJSON("./terms.json", function (json_data) {
+      var key;
+      data = json_data;
+      for(key in data){
+        if (data.hasOwnProperty(key)){
+          keys.push(key);
+          unusedTerms.push(key);
+        }
+      }
+      setUp();
+    }).done(initializeObjects);
+  }
+
+  $(document).ready(initPage);
 });
