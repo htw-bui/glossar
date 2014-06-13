@@ -20,13 +20,12 @@ require(["jquery", "timeutils", "moment"], function($, timeutils, moment){
     $.each(data, function(key, value){
       var place = parseInt(key, 10) + 1;
       var row = $("<tr />");
-      var mean = Math.round((value.time/1000)/value.score*100)/100;
-      row//.append($('<td>').text(place))
+      var mean = Math.round((value.time/1000)/value.score*10)/10;
+      row
       .append($('<td>').text(value.score))
-      .append($('<td>').text(timeutils.convertMillisecondsToFormatedTime(value.time)))
+      .append($('<td>').text(timeutils.convertMillisecondsToFormatedTime(value.time) + ' (' + mean + ')'))
       .append($('<td>').text(value.name))
-      .append($('<td>').text(moment(value.datetime).format("DD. MM. YY HH:mm")))
-      .append($('<td>').text(mean));
+      .append($('<td>').text(moment(value.datetime).format("D.MM.YY HH:mm")))
 
       row.appendTo($table);
     });
