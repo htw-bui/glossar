@@ -24,7 +24,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
 
   function initPage(){
     'use strict';
-    $.getJSON("./terms.json", function (json_data) {
+    $.getJSON("./tests.json", function (json_data) {
       var key;
       data = json_data;
       for(key in data){
@@ -58,14 +58,28 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     };
 
     timer.start();
+    removeUsedTermsFromPreviousSession();
   }
+
+  function removeUsedTermsFromPreviousSession(){
+  console.log(unusedTerms.length);
+    var readTerms = progressCounter.getReadTerms();
+    $.each(readTerms, function(key, term){
+    console.log(term);
+    console.log(unusedTerms);
+      unusedTerms = unusedTerms.remove(term);
+    });
+  console.log(unusedTerms.length);
+  console.log(unusedTerms);
+  }
+
 
   function setUp(){
     if (unusedTerms.length === 0){
       checkIfScoreIsHighEnough();
     }
     else {
-      var term = unusedTerms.popRandomElement();
+      var term = unusedTerms.randomElement();
       createDefinitionFor(term);
       createAllChoiceButtons(term);
     }
@@ -132,6 +146,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   function handleCorrectAnswer(button){
     progressCounter.registerTerm(button.innerHTML);
     button.className = ("btn btn-success");
+    unusedTerms = unusedTerms.remove(button.innerHTML);
     setTimeout(setUp, 250);
   }
 

@@ -10,6 +10,11 @@ define(function (){
             readTerms = [];
         }
 
+
+        this.getReadTerms = function(){
+        return readTerms;
+        }
+
         this.registerTerm = function(term){
             if (readTerms.indexOf(term) === -1){
                 readTerms.push(term);
