@@ -98,7 +98,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
 
   function initPage() {
     'use strict';
-    $.getJSON("./neu_generierte_begriffe.json", function (data) {
+    $.getJSON("./data/neu_generierte_begriffe.json", function (data) {
       n = new NewTerms(data);
       p = new ProgressCounter(n.keys.length);
       p.onChange = function () {

@@ -213,7 +213,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
 
   function initPage(){
     'use strict';
-    $.getJSON("./terms.json", function (json_data) {
+    $.getJSON("./data/terms.json", function (json_data) {
       var key;
       data = json_data;
       for(key in data){

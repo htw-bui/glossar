@@ -68,29 +68,29 @@ module.exports = function(grunt) {
       dist: {
         files: [ 
           {
-            src:"src/js/*", 
-            dest:"dist/"
-          },
-          {
             src:"src/css/animate.css", 
             dest:"dist/css/animate.css"
           },
-          { src:"src/*.json",
-            dest:'dist/'
+          { 
+           cwd: "src/data/",
+            src:"*.json",
+            dest:'dist/data/',
+            flatten: true,
+            expand: true
           }
         ]
       }
     },
     uglify: {
       dist: { 
-        options: {
-          mangle: true
-        },
-        files: {
-          "dist/js/main.js": "src/js/main.js",
-          "dist/js/game.js": "src/js/game.js",
-          "dist/js/highscore.js": "src/js/highscore.js"
-        }
+        files: [
+          {
+            expand: true,
+            cwd: "src/js",
+            src: "**/*.js",
+            dest: "dist/js"
+          }
+        ]
       }
     }
 
