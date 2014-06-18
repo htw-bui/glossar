@@ -26,9 +26,11 @@ define(function(){
     return this;
   };
 
-  function assert(test){
-    if (!test){
-      throw "Assertion failed";
+  return {
+    assert: function(test){
+      if (!test){
+        throw "Assertion failed";
+      }
     }
-  }
+  };
 });

@@ -12,10 +12,10 @@ module.exports = function(grunt) {
         tasks: ["sass:dev", "autoprefixer:dev"]
       },
       html: {
-        files:["*.html"]
+        files:["src/*.html"]
       },
       js: {
-        files: ["js/*"]
+        files: ["src/js/*"]
       }
     },
     sass: {
@@ -24,8 +24,8 @@ module.exports = function(grunt) {
           style: "expanded"
         },
         files: {
-          "css/main.css" : "sass/main.sass",
-          "css/game.css" : "sass/game.sass"
+          "src/css/main.css" : "sass/main.sass",
+          "src/css/game.css" : "sass/game.sass"
         }
       },
       dist: {
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
     autoprefixer: {
       dev: {
         expand: true,
-        src : "css/*.css",
+        src : "src/css/*.css",
       },
       dist: {
         expand: true,
@@ -58,9 +58,9 @@ module.exports = function(grunt) {
           collapseBooleanAttribute: true
         },
         files: {
-          'dist/index.html': 'index.html',
-          'dist/quiz.html': 'quiz.html',
-          'dist/highscore.html': 'highscore.html'
+          'dist/index.html': 'src/index.html',
+          'dist/quiz.html': 'src/quiz.html',
+          'dist/highscore.html': 'src/highscore.html'
         }
       }
     },
@@ -68,14 +68,14 @@ module.exports = function(grunt) {
       dist: {
         files: [ 
           {
-            src:"js/*", 
+            src:"src/js/*", 
             dest:"dist/"
           },
           {
-            src:"css/animate.css", 
+            src:"src/css/animate.css", 
             dest:"dist/css/animate.css"
           },
-          { src:"*.json",
+          { src:"src/*.json",
             dest:'dist/'
           }
         ]
@@ -87,9 +87,9 @@ module.exports = function(grunt) {
           mangle: true
         },
         files: {
-          "dist/js/main.js": "js/main.js",
-          "dist/js/game.js": "js/game.js",
-          "dist/js/highscore.js": "js/highscore.js"
+          "dist/js/main.js": "src/js/main.js",
+          "dist/js/game.js": "src/js/game.js",
+          "dist/js/highscore.js": "src/js/highscore.js"
         }
       }
     }
@@ -107,6 +107,6 @@ module.exports = function(grunt) {
 
 
   grunt.registerTask('default', ['sass:dev', 'autoprefixer:dev', 'watch']);
-  grunt.registerTask('build', ['sass:dist', "autoprefixer:dist", "htmlmin:dist", "copy:dist"]);//, "uglify:dist"]);
+  grunt.registerTask('build', ['sass:dist', "autoprefixer:dist", "htmlmin:dist", "copy:dist", "uglify:dist"]);
 
 };
