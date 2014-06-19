@@ -58,9 +58,9 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       progressCounter.numberOfTermsRead() +
       ' von ' +
       progressCounter.numberOfTerms +
-      ' in ' +
+      ' Quizfragen in ' +
       timer.formatedTime() + 
-      ' Minuten geschafft!\n Geben Sie Ihren Namen für den Highscore ein.';
+      ' Minuten gelöst!\n Geben Sie Ihren Namen für den Highscore ein.';
 
     timer.clear();
     progressCounter.clear();
@@ -196,6 +196,12 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     });
   }
 
+  function removeStoredTermsFromUnusedTerms(){
+    $.each(progressCounter.getReadTerms(), function(key, term){
+      unusedTerms.remove(term);
+    });
+  }
+
   function initializeObjects() { 
     progressCounter = new ProgressCounter(keys.length);
     progressCounter.onChange = function(){
@@ -213,15 +219,10 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     removeStoredTermsFromUnusedTerms();
   }
 
-  function removeStoredTermsFromUnusedTerms(){
-    $.each(progressCounter.getReadTerms(), function(key, term){
-      unusedTerms.remove(term);
-    });
-  }
 
   function initPage(){
     'use strict';
-    $.getJSON("./data/tests.json", function (json_data) {
+    $.getJSON("./data/terms.json", function (json_data) {
       var key;
       data = json_data;
       for(key in data){
