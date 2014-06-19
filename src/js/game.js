@@ -174,10 +174,10 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     }
     else {
       var term = unusedTerms.popRandomElement();
-      $('.container').fadeOut('slow', function(){
+      $('.container').fadeOut( function(){
         createDefinitionFor(term);
         createAllChoiceButtons(term);
-        $('.container').fadeIn('slow');
+        $('.container').fadeIn();
       });
     }
   }
