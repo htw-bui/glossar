@@ -173,7 +173,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       checkIfScoreIsHighEnough();
     }
     else {
-      var term = unusedTerms.popRandomElement();
+      var term = unusedTerms.randomElement();
       $('.container').fadeOut( function(){
         createDefinitionFor(term);
         createAllChoiceButtons(term);
@@ -183,7 +183,9 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   }
 
   function handleCorrectAnswer(button){
-    progressCounter.registerTerm(button.innerHTML);
+    var term = button.innerHTML;
+    progressCounter.registerTerm(term);
+    unusedTerms.remove(term);
     button.className = ("btn btn-success");
     setTimeout(setUp, 250);
   }
@@ -207,13 +209,19 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     timer.execute = function(){
       $("#timer").text(this.formatedTime());
     };
-
     timer.start();
+    removeStoredTermsFromUnusedTerms();
+  }
+
+  function removeStoredTermsFromUnusedTerms(){
+    $.each(progressCounter.getReadTerms(), function(key, term){
+      unusedTerms.remove(term);
+    });
   }
 
   function initPage(){
     'use strict';
-    $.getJSON("./data/terms.json", function (json_data) {
+    $.getJSON("./data/tests.json", function (json_data) {
       var key;
       data = json_data;
       for(key in data){
@@ -222,8 +230,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
           unusedTerms.push(key);
         }
       }
-      setUp();
-    }).done(initializeObjects);
+    }).then(initializeObjects).then(setUp);
   }
 
   $(document).ready(initPage);
