@@ -19,6 +19,8 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   var timer;
   var unusedTerms = [];
   var correctAnswer;
+  var uncensored_data;
+  var correctTerm;
 
   function sendUserToHallOfFame(){
     window.location = "./highscore.html";
@@ -103,12 +105,18 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
       .error(handleHighscoreIfNoConnection); 
   }
 
+  function replaceDefintionWithUncesonredVersion(){
+    var definition = uncensored_data[correctTerm].description;
+    $('#definition').text(definition);
+    Hyphenator.run();
+  }
 
   function handleIncorrectAnswer(button){
     button.className = "btn btn-danger";
     var $correctAnswer = $("#choices").children().eq(correctAnswer);
     $correctAnswer.removeClass("btn-info");
     $correctAnswer.addClass("btn-success");
+    replaceDefintionWithUncesonredVersion();
     setTimeout(checkIfScoreIsHighEnough, 1000);
   }
 
@@ -174,6 +182,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
     }
     else {
       var term = unusedTerms.randomElement();
+      correctTerm = term;
       $('.container').fadeOut( function(){
         createDefinitionFor(term);
         createAllChoiceButtons(term);
@@ -232,6 +241,9 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
         }
       }
     }).then(initializeObjects).then(setUp);
+    $.getJSON("./data/terms-nocensor.json", function (json_data) {
+      uncensored_data = json_data;
+    });
   }
 
   $(document).ready(initPage);
