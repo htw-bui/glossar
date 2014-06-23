@@ -21,6 +21,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   var correctAnswer;
   var uncensored_data;
   var correctTerm;
+  var baseUrl = 'http://highscore.k-nut.eu';
 
   function sendUserToHallOfFame(){
     window.location = "./highscore.html";
@@ -69,7 +70,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
 
     var highscoreName = prompt(message);
     if (highscoreName){
-      $.post("http://highscore.k-nut.eu/highscore",
+      $.post(baseUrl + "/highscore",
         {name: highscoreName,
           score: score,
           time: time
@@ -83,7 +84,6 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   }
 
   function handleTopTenResponse(callback){
-    callback = JSON.parse(callback);
     if (callback.top10){
       promptUserForHighscore();
     }
@@ -97,7 +97,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   function checkIfScoreIsHighEnough(){
     var time = timer.ellapsed();
     var score = progressCounter.numberOfTermsRead();
-    $.post("http://highscore.k-nut.eu/highscore/check",
+    $.post(baseUrl + "/highscore/check",
       {
         score: score,
         time: time
