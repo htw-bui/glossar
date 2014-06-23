@@ -15,7 +15,7 @@ requirejs.config({
 
 require(["jquery", "timeutils", "moment"], function($, timeutils, moment){
   moment.lang("de");
-  $.getJSON("http://localhost:5000/highscore", function(data){
+  $.getJSON("http://highscore.k-nut.eu/highscore", function(data){
     var month;
     var heading;
     for (month in data){
