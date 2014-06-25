@@ -12,7 +12,7 @@ requirejs.config({
 });
 
 
-define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, ProgressCounter, Stopwatch, utils){
+define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($, ProgressCounter, Stopwatch, utils, config){
   var keys = [];
   var data;
   var progressCounter;
@@ -21,7 +21,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils'], function($, Progress
   var correctAnswer;
   var uncensored_data;
   var correctTerm;
-  var baseUrl = 'http://highscore.k-nut.eu';
+  var baseUrl = config.highscoreBaseUrl;
 
   function sendUserToHallOfFame(){
     window.location = "./highscore.html";
