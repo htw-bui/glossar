@@ -112,6 +112,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
   }
 
   function handleIncorrectAnswer(button){
+    $("button").prop("disabled", true);
     button.className = "btn btn-danger";
     var $correctAnswer = $("#choices").children().eq(correctAnswer);
     $correctAnswer.removeClass("btn-info");
