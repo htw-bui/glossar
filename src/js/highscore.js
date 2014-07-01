@@ -18,21 +18,29 @@ require(["jquery", "timeutils", "moment", "config"], function($, timeutils, mome
   $.getJSON(config.highscoreBaseUrl + "/highscore", function(data){
     var month;
     var heading;
+    var shouldPrepend = false;
     for (month in data){
       if (month === 'allTime'){
         heading = 'All Time';
+        shouldPrepend = false;
       }
       else{
         heading = moment(month).format("MMMM YYYY");
+        shouldPrepend = true;
       }
       var $table = createTable(heading);
       var $tbody = createTableBodyWithScores(data[month]);
       $tbody.appendTo($table);
-      $table.prependTo('content');
+      if (shouldPrepend){
+        $table.prependTo('content');
+      }
+      else {
+        $table.appendTo('content');
+      }
       var $title = $('<h2>').text(heading);
       $title.insertBefore($table);
     }
-  }).done(addCollapseFunctionality);
+  })/*.done(addCollapseFunctionality)*/;
 
   function createTable(title){
     var $table = $('<table>').addClass('table table-striped');
@@ -65,14 +73,14 @@ require(["jquery", "timeutils", "moment", "config"], function($, timeutils, mome
     return $tbody;
   }
 
-function addCollapseFunctionality(){
-  $('content h2').css('cursor', 'pointer')
-  .click(function() {
-    $('content h2').not(this).next('table').slideUp('slow');
-    $(this).next('table').slideDown('slow');
-    return false;
-  }).next().hide();
-  $('content h2:first').click();
+  function addCollapseFunctionality(){
+    $('content h2').css('cursor', 'pointer')
+    .click(function() {
+      $('content h2').not(this).next('table').slideUp('slow');
+      $(this).next('table').slideDown('slow');
+      return false;
+    }).next().hide();
+    $('content h2:first').click();
   }
 
 });
