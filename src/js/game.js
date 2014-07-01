@@ -88,21 +88,31 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
       promptUserForHighscore();
     }
     else {
-      alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
-      resetAndReload();
+      tellUserThatHeIsNotGoodEnoughAndReset();
     }
   }
+
+  function tellUserThatHeIsNotGoodEnoughAndReset(){
+    alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
+    resetAndReload();
+  }
+
 
 
   function checkIfScoreIsHighEnough(){
     var time = timer.ellapsed();
     var score = progressCounter.numberOfTermsRead();
-    $.post(baseUrl + "/highscore/check",
-      {
-        score: score,
-        time: time
-      }).done(handleTopTenResponse)
-      .error(handleHighscoreIfNoConnection); 
+    if (score > 0){
+      $.post(baseUrl + "/highscore/check",
+        {
+          score: score,
+          time: time
+        }).done(handleTopTenResponse)
+        .error(handleHighscoreIfNoConnection); 
+    }
+    else {
+      tellUserThatHeIsNotGoodEnoughAndReset();
+    }
   }
 
   function replaceDefintionWithUncesonredVersion(){
