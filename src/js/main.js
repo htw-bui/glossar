@@ -15,7 +15,7 @@ requirejs.config({
 
 
 
-require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphenate, ProgressCounter, $, Stopwatch){
+require(["hyphenate", "ProgressCounter", "jquery", "stopwatch"], function(hyphenate, ProgressCounter, $, Stopwatch){
   var n;
   var p;
   var timer;
@@ -37,7 +37,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
       synonyms.push("<a href='#" + value + "'>" + value + "</a>");
     });
     $( "<aside>", {html: synonyms.join("")}).appendTo("#main");
-    $("<p>", {html: termObject.description, class:'hyphenate'}).appendTo("#main");
+    $("<p>", {html: termObject.description, class:"hyphenate"}).appendTo("#main");
     Hyphenator.run();
   }
 
@@ -62,7 +62,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
 
 
   function NewTerms(items){
-    'use strict';
+    "use strict";
     var key;
     this.items = items;
     this.keys = [];
@@ -88,8 +88,8 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
       this.selectedIndex = position;
       setActiveItemInNavigation(term);
       checkPaginationVisibilty();
-      $("#nextTerm").attr("href", "#" +this.nextTerm());
-      $("#previousTerm").attr("href", "#" +this.prevTerm());
+      $("#nextTerm").attr("href", "#" + this.nextTerm());
+      $("#previousTerm").attr("href", "#" + this.prevTerm());
       return this.items[term];
     };
 
@@ -97,7 +97,7 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
 
 
   function initPage() {
-    'use strict';
+    "use strict";
     $.getJSON("./data/neu_generierte_begriffe.json", function (data) {
       n = new NewTerms(data);
       p = new ProgressCounter(n.keys.length);
@@ -106,16 +106,16 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
       };
       timer = new Stopwatch();
       timer.execute = function() {
-        $('#time').text(this.formatedTime());
+        $("#time").text(this.formatedTime());
       };
       timer.start();
       createNaviagtion(n.keys);
     }).done(function(){loadNewDefintition();});
 
-    $('#showNav').on('click', showNav);
-    $('#filterTerms').on('keyup', filterNavigation);
-    document.getElementById('filterTerms').onsearch = filterNavigation;
-    $('#reset').on('click', reset);
+    $("#showNav").on("click", showNav);
+    $("#filterTerms").on("keyup", filterNavigation);
+    document.getElementById("filterTerms").onsearch = filterNavigation;
+    $("#reset").on("click", reset);
   }
 
   function reset(){
@@ -134,13 +134,13 @@ require(["hyphenate", "ProgressCounter", 'jquery', 'stopwatch'], function(hyphen
     navList.appendTo(".nav-open");
 
     $.each(data, function(key, term ) {
-      var link = $('<a />', 
-        {href: '#' + term,
+      var link = $("<a />", 
+        {href: "#" + term,
           id: "navigation" + n.keys.indexOf(term),
           text: term
         }
       );
-      var listItem = $('<li>');
+      var listItem = $("<li>");
       link.appendTo(listItem);
       listItem.appendTo(navList);
     });

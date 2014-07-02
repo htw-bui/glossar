@@ -2,6 +2,7 @@
 /*global define: false */
 
 define(function (){
+  "use strict";
   return function(numberOfTerms){
     this.numberOfTerms = numberOfTerms;
 
@@ -33,7 +34,7 @@ define(function (){
     };
 
     this.onChange = function(){
-      console.log("onChange function of ProgressCounter not overwritten");
+    /* needs to be implemented by user */
     };
   };
 });

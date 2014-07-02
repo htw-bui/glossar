@@ -1,8 +1,9 @@
-define(['timeutils'], function(timeutils){
+define(["timeutils"], function(timeutils){
+  "use strict";
   return function(){
     var self = this;
     var startTime;
-    var timeFromtLastRun = JSON.parse(localStorage.getItem(window.location.pathname  + 'timer.ellapsed'));
+    var timeFromtLastRun = JSON.parse(localStorage.getItem(window.location.pathname  + "timer.ellapsed"));
     if (timeFromtLastRun === null) {
       timeFromtLastRun = 0;
     }
@@ -28,16 +29,16 @@ define(['timeutils'], function(timeutils){
     };
 
     this.execute = function(){
-      console.log('execute function not implemented');
+      /* should be implemented by user */
     };
 
     this.t = function(){
       self.execute();
-      localStorage.setItem(window.location.pathname  + 'timer.ellapsed', self.ellapsed());
+      localStorage.setItem(window.location.pathname  + "timer.ellapsed", self.ellapsed());
     };
 
     this.clear = function  () {
-      localStorage.removeItem(window.location.pathname  + 'timer.ellapsed');
+      localStorage.removeItem(window.location.pathname  + "timer.ellapsed");
       timeFromtLastRun = 0;
       startTime = Date.now();
     };
