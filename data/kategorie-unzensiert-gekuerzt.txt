@@ -11,7 +11,7 @@ Anforderung: Planung, Gestaltung, Anforderungen
 =========
 =========
 
-Bedingung oder Fähigkeit, die ein <a href='#interaktives System'>interaktives System</a>, eine Komponente
+Bedingung oder Fähigkeit, die ein interaktives System, eine Komponente
 
 eines interaktiven Systems oder eine Dienstleistung erfüllen oder besitzen
 
