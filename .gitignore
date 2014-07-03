@@ -159,3 +159,4 @@ $RECYCLE.BIN/
 
 *.swp
 .sass-cache
+node_modules/

@@ -418,7 +418,7 @@ Dialogprinzipien mit Gestaltungsregeln.
 ---------
 
 
-Dringlichkeitsstufen (von Befunden): Test, 
+Dringlichkeitsstufen von Befunden: Test, 
 =========
 Severity rating
 =========
@@ -1218,7 +1218,7 @@ erfolgreichen Zimmerreservierung.
 ---------
 
 
-Lowfidelity Prototyp: Test, System
+Low-fidelity Prototyp: Test, System
 =========
 Prototyp, 
 =========
@@ -1832,13 +1832,16 @@ Siehe Nutzungsanforderung ­ qualitativ
 ---------
 
 
-QuantitativeNutzungsanforderung: Anforderungen, Gestaltung,
+Quantitative Nutzungsanforderung: Anforderungen, Gestaltung,
 =========
 Quantitative user requirement  
 =========
 
-Siehe Nutzungsanforderung ­ quantitativ
+Geforderte Leistung, die die Basis für Design und die Evaluierung eines
 
+interaktiven Systems darstellt, mit dem Ziel, identifizierte Erfordernisse zu
+
+befriedigen.
 ---------
 
 
@@ -1866,7 +1869,7 @@ Interviews.
 ---------
 
 
-Rekrutierung(eines Teilnehmers für einen Usabilitytest): Planung, Test
+Rekrutierung: Planung, Test
 =========
 Recruiting 
 =========
