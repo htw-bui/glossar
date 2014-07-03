@@ -15,34 +15,15 @@ requirejs.config({
 
 require(["jquery", "timeutils", "moment", "config"], function($, timeutils, moment, config){
   moment.lang("de");
-  $.getJSON(config.highscoreBaseUrl + "/highscore", function(data){
-    var month;
-    var heading;
-    var shouldPrepend = false;
-    for (month in data){
-      if (month === 'allTime'){
-        heading = 'All Time';
-        shouldPrepend = false;
-      }
-      else{
-        heading = moment(month).format("MMMM YYYY");
-        shouldPrepend = true;
-      }
-      var $table = createTable(heading);
-      var $tbody = createTableBodyWithScores(data[month]);
-      $tbody.appendTo($table);
-      if (shouldPrepend){
-        $table.prependTo('content');
-      }
-      else {
-        $table.appendTo('content');
-      }
-      var $title = $('<h2>').text(heading);
-      $title.insertBefore($table);
-    }
-  })/*.done(addCollapseFunctionality)*/;
 
-  function createTable(title){
+  var isThisMonth = function(month){
+    if (moment().format("MMMM YYYY") === moment(month).format("MMMM YYYY")){
+      return true;
+    }
+    return false;
+  };
+
+  function createTable(){
     var $table = $('<table>').addClass('table table-striped');
     var $tableHead = $('<thead>');
     var $row = $('<tr>');
@@ -56,10 +37,12 @@ require(["jquery", "timeutils", "moment", "config"], function($, timeutils, mome
     return $table;
   }
 
-  function createTableBodyWithScores(scores){
+  function createTableBodyWithScores(scores, limitTo3){
     var $tbody = $('<tbody>');
+    if (limitTo3){
+      scores = scores.slice(0,3);
+    }
     $.each(scores, function(key, value){
-      var place = parseInt(key, 10) + 1;
       var row = $("<tr />");
       var mean = Math.round((value.time/1000)/value.score*10)/10;
       row
@@ -73,16 +56,37 @@ require(["jquery", "timeutils", "moment", "config"], function($, timeutils, mome
     return $tbody;
   }
 
-  function addCollapseFunctionality(){
-    $('content h2').css('cursor', 'pointer')
-    .click(function() {
-      $('content h2').not(this).next('table').slideUp('slow');
-      $(this).next('table').slideDown('slow');
-      return false;
-    }).next().hide();
-    $('content h2:first').click();
-  }
-
+  $.getJSON(config.highscoreBaseUrl + "/highscore", function(data){
+    var month;
+    var heading;
+    var shouldPrepend = false;
+    var only3 = false;
+    var $table;
+    var $tbody;
+    var $title;
+    for (month in data){
+      if (month === 'allTime'){
+        heading = 'All Time';
+        shouldPrepend = false;
+      }
+      else{
+        heading = moment(month).format("MMMM YYYY");
+        shouldPrepend = true;
+        only3 = isThisMonth(month) ? false : true;
+      }
+      $table = createTable();
+      $tbody = createTableBodyWithScores(data[month], only3);
+      $tbody.appendTo($table);
+      if (shouldPrepend){
+        $table.prependTo('content');
+      }
+      else {
+        $table.appendTo('content');
+      }
+      $title = $('<h2>').text(heading);
+      $title.insertBefore($table);
+    }
+  });
 });
 
 
