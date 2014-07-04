@@ -16,6 +16,7 @@ requirejs.config({
 
 
 require(["hyphenate", "ProgressCounter", "jquery", "stopwatch"], function(hyphenate, ProgressCounter, $, Stopwatch){
+  "use strict";
   var n;
   var p;
   var timer;
