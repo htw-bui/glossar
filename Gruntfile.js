@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    //pkg: grunt.file.readJSON('package.json'),
+    //pkg: grunt.file.readJSON("package.json"),
     watch:{
       options: {
         livereload: true
@@ -58,9 +58,9 @@ module.exports = function(grunt) {
           collapseBooleanAttribute: true
         },
         files: {
-          'dist/index.html': 'src/index.html',
-          'dist/quiz.html': 'src/quiz.html',
-          'dist/highscore.html': 'src/highscore.html'
+          "dist/index.html": "src/index.html",
+          "dist/quiz.html": "src/quiz.html",
+          "dist/highscore.html": "src/highscore.html"
         }
       }
     },
@@ -72,23 +72,23 @@ module.exports = function(grunt) {
             dest:"dist/css/animate.css"
           },
           { 
-           cwd: "src/data/",
+            cwd: "src/data/",
             src:"*.json",
-            dest:'dist/data/',
+            dest:"dist/data/",
             flatten: true,
             expand: true
           },
           { 
-           cwd: "src/img/",
+            cwd: "src/img/",
             src:"**",
-            dest:'dist/img/',
+            dest:"dist/img/",
             flatten: true,
             expand: true
           },
           { 
-           cwd: "src/fonts/",
+            cwd: "src/fonts/",
             src:"**",
-            dest:'dist/fonts/',
+            dest:"dist/fonts/",
             flatten: true,
             expand: true
           }
@@ -108,21 +108,32 @@ module.exports = function(grunt) {
           }
         ]
       }
+    },
+    appcache: {
+      options: {
+        basePath: "src"
+      },
+      all: {
+        dest: "src/manifest.appcache",
+        cache: "src/**/*",
+        network: "*"
+      }
     }
-
 
   });
 
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-sass'); 
-  grunt.loadNpmTasks('grunt-autoprefixer'); 
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks("grunt-contrib-watch");
+  grunt.loadNpmTasks("grunt-contrib-sass"); 
+  grunt.loadNpmTasks("grunt-autoprefixer"); 
+  grunt.loadNpmTasks("grunt-contrib-htmlmin");
+  grunt.loadNpmTasks("grunt-contrib-copy");
+  grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.loadNpmTasks('grunt-appcache');
 
 
 
-  grunt.registerTask('default', ['sass:dev', 'autoprefixer:dev', 'watch']);
-  grunt.registerTask('build', ['sass:dist', "autoprefixer:dist", "htmlmin:dist", "copy:dist", "uglify:dist"]);
+  grunt.registerTask("default", ["sass:dev", "autoprefixer:dev", "watch"]);
+  grunt.registerTask("build", ["sass:dist", "autoprefixer:dist", "htmlmin:dist", "copy:dist", "uglify:dist"]);
+  grunt.registerTask("cacheIt", ["appcache:all"]);
 
 };

@@ -1,18 +1,21 @@
 {
   "name": "glossar",
-  "repository":
-  { 
+  "repository": {
     "type": "git",
     "url": "https://github.com/k-nut/glossar"
   },
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "latest",
-    "grunt-contrib-sass": "latest",
-    "grunt-contrib-watch": "latest",
+    "grunt-appcache": "^0.1.6",
     "grunt-autoprefixer": "latest",
-    "grunt-contrib-htmlmin": "latest",
     "grunt-contrib-copy": "latest",
-    "grunt-contrib-uglify": "latest"
+    "grunt-contrib-htmlmin": "latest",
+    "grunt-contrib-sass": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest"
+  },
+  "dependencies": {
+    "grunt-appcache": "^0.1.6"
   }
 }
