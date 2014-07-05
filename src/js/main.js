@@ -63,7 +63,6 @@ require(["hyphenate", "ProgressCounter", "jquery", "stopwatch"], function(hyphen
 
 
   function NewTerms(items){
-    "use strict";
     var key;
     this.items = items;
     this.keys = [];
@@ -98,7 +97,6 @@ require(["hyphenate", "ProgressCounter", "jquery", "stopwatch"], function(hyphen
 
 
   function initPage() {
-    "use strict";
     $.getJSON("./data/neu_generierte_begriffe.json", function (data) {
       n = new NewTerms(data);
       p = new ProgressCounter(n.keys.length);
@@ -123,6 +121,11 @@ require(["hyphenate", "ProgressCounter", "jquery", "stopwatch"], function(hyphen
     timer.clear();
     p.clear();
     return false;
+  }
+
+  function closeNav(){
+    $(".nav-open").addClass("termnav");
+    $(".nav-open").removeClass("nav-open");
   }
 
   function createNaviagtion(data){
@@ -168,10 +171,6 @@ require(["hyphenate", "ProgressCounter", "jquery", "stopwatch"], function(hyphen
     }
   }
 
-  function closeNav(){
-    $(".nav-open").addClass("termnav");
-    $(".nav-open").removeClass("nav-open");
-  }
 
   function showNav(){
     $("nav.termnav").addClass("nav-open");
