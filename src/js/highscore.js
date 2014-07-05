@@ -50,7 +50,7 @@ require(["jquery", "timeutils", "moment", "config"], function($, timeutils, mome
       .append($("<td>").text(value.score))
       .append($("<td>").text(timeutils.convertMillisecondsToFormatedTime(value.time) + " (" + mean + ")"))
       .append($("<td>").text(value.name))
-      .append($("<td>").text(moment(value.datetime).format("D.MM.YY HH:mm")));
+      .append($("<td>").text(moment(value.datetime).format("DD.MM.YY HH:mm")));
 
       row.appendTo($tbody);
     });
