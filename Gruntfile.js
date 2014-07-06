@@ -46,7 +46,7 @@ module.exports = function(grunt) {
       },
       dist: {
         expand: true,
-        src : "dist/css/*.css",
+        src : "dist/css/*.css"
       }
     },
     htmlmin: {
@@ -68,8 +68,10 @@ module.exports = function(grunt) {
       dist: {
         files: [ 
           {
-            src:"src/css/animate.css", 
-            dest:"dist/css/animate.css"
+            src:"src/css/*.css", 
+            dest:"dist/css/",
+            expand: true,
+            flatten: true
           },
           { 
             cwd: "src/data/",
