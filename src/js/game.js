@@ -7,19 +7,21 @@ requirejs.config({
       "https://code.jquery.com/jquery-2.1.0",
       // If the CDN fails, load from this local module instead
       "lib/jquery"
-    ]
+    ],
+    "bootbox" : "bootbox.min"
   }
 });
 
 
-define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($, ProgressCounter, Stopwatch, utils, config){
+define(["jquery", "ProgressCounter", "stopwatch", "utils", "config", "bootbox"], function($, ProgressCounter, Stopwatch, utils, config, bootbox){
+  "use strict";
   var keys = [];
   var data;
   var progressCounter;
   var timer;
   var unusedTerms = [];
   var correctAnswer;
-  var uncensored_data;
+  var uncensoredData;
   var correctTerm;
   var baseUrl = config.highscoreBaseUrl;
 
@@ -49,8 +51,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
   }
 
   function handleHighscoreIfNoConnection(){
-    alert("Es konnte keine Verbindung zum Server hergestellt werden.");
-    resetAndReload();
+    bootbox.alert("Es konnte keine Verbindung zum Server hergestellt werden.", resetAndReload);
   }
 
   function promptUserForHighscore(){
@@ -59,27 +60,28 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
 
     var message = "Sie haben " + 
       progressCounter.numberOfTermsRead() +
-      ' von ' +
+      " von " +
       progressCounter.numberOfTerms +
-      ' Quizfragen in ' +
+      " Quizfragen in " +
       timer.formatedTime() + 
-      ' Minuten gelöst!\n Geben Sie Ihren Namen für den Highscore ein.';
+      " Minuten gelöst!\n Geben Sie Ihren Namen für den Highscore ein.";
 
     timer.clear();
     progressCounter.clear();
 
-    var highscoreName = prompt(message);
-    if (highscoreName){
-      $.post(baseUrl + "/highscore",
-        {name: highscoreName,
-          score: score,
-          time: time
-        }).done(sendUserToHallOfFame)
-        .error(handleHighscoreIfNoConnection); 
-    }
-    else{
-      location.reload();
-    }
+    bootbox.prompt(message , function(highscoreName){
+      if (highscoreName){
+        $.post(baseUrl + "/highscore",
+          {name: highscoreName,
+            score: score,
+            time: time
+          }).done(sendUserToHallOfFame)
+          .error(handleHighscoreIfNoConnection); 
+      }
+      else{
+        location.reload();
+      }
+    });
     return false;
   }
 
@@ -93,8 +95,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
   }
 
   function tellUserThatHeIsNotGoodEnoughAndReset(){
-    alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal");
-    resetAndReload();
+    bootbox.alert("Sie sind nicht in den Top 10 gelandet probieren Sie es doch noch mal", resetAndReload);
   }
 
 
@@ -116,8 +117,8 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
   }
 
   function replaceDefintionWithUncesonredVersion(){
-    var definition = uncensored_data[correctTerm].description;
-    $('#definition').text(definition);
+    var definition = uncensoredData[correctTerm].description;
+    $("#definition").text(definition);
     Hyphenator.run();
   }
 
@@ -147,12 +148,12 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
       on: {click: checkAnswer},
       data: {"position": position}
     });
-    button.appendTo('#choices');
+    button.appendTo("#choices");
   }
 
   function createAllChoiceButtons(term){
     var i, choices;
-    $('#choices').empty();
+    $("#choices").empty();
 
     choices = [];
     choices.push(term);
@@ -163,7 +164,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
     // the selected term should not be in the choices since we already included it above
     termsBelongingToCategory.remove(term); 
 
-    while(choices.length <4){
+    while(choices.length < 4){
       choices.push(termsBelongingToCategory.popRandomElement());
     }
 
@@ -182,7 +183,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
 
   function createDefinitionFor(term){
     var definition = censorOutTerm(term, data[term].description);
-    $('#definition').text(definition);
+    $("#definition").text(definition);
     Hyphenator.run();
   }
 
@@ -194,10 +195,10 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
     else {
       var term = unusedTerms.randomElement();
       correctTerm = term;
-      $('.container').fadeOut( function(){
+      $(".container").fadeOut( function(){
         createDefinitionFor(term);
         createAllChoiceButtons(term);
-        $('.container').fadeIn();
+        $(".container").fadeIn();
       });
     }
   }
@@ -211,7 +212,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
   }
 
   function restartPulseAnimation(){
-    $('#pc').removeClass().addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    $("#pc").removeClass().addClass("animated pulse").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){
       $(this).removeClass();
     });
   }
@@ -225,7 +226,7 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
   function initializeObjects() { 
     progressCounter = new ProgressCounter(keys.length);
     progressCounter.onChange = function(){
-      $("#progressCounter").text(this.numberOfTermsRead() + '|' + this.numberOfTerms);
+      $("#progressCounter").text(this.numberOfTermsRead() + "|" + this.numberOfTerms);
       restartPulseAnimation();
     };
     // we are only calling this here in order for the progress
@@ -241,10 +242,9 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
 
 
   function initPage(){
-    'use strict';
-    $.getJSON("./data/terms.json", function (json_data) {
+    $.getJSON("./data/terms.json", function (jsonData) {
       var key;
-      data = json_data;
+      data = jsonData;
       for(key in data){
         if (data.hasOwnProperty(key)){
           keys.push(key);
@@ -252,8 +252,8 @@ define(['jquery', 'ProgressCounter', 'stopwatch', 'utils', 'config'], function($
         }
       }
     }).then(initializeObjects).then(setUp);
-    $.getJSON("./data/terms-nocensor.json", function (json_data) {
-      uncensored_data = json_data;
+    $.getJSON("./data/terms-nocensor.json", function (jsonData) {
+      uncensoredData = jsonData;
     });
   }
 
