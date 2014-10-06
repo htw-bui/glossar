@@ -1,18 +1,16 @@
-<!doctype html>
-<html lang=de>
+<!DOCTYPE html>
+<html lang="de">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KOMET QUIZ</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> KOMET Glossar</title>
-    <script data-main="js/main" src="js/require.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <!-- Latest compiled and minified JavaScript -->
+    <script src="./js/require.js" data-main='js/uba-game' type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="./css/game.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/animate.css" type="text/css" media="screen" title="no title" charset="utf-8">
     <script src="http://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="js/hyphenate.js"></script>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen" >
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="./img/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="./img/apple-touch-icon-114x114.png">
@@ -30,51 +28,41 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-TileImage" content="./img/mstile-144x144.png">
 
-  </head>
+    <script src="js/hyphenate.js"></script>
 
+  </head>
   <body>
     <nav class='navbar navbar-default' role=navigation>
     <div class='container-fluid'>
       <div class='navbar-header'>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sitenav">
           <span class="sr-only">Toggle navigation</span>
-          <i class="fa fa-bars"></i>
-        </button>
-        <button id='showNav' type="button" class="navbar-toggle">
-          <!--Inhalt -->
-          <i class="fa fa-book"></i>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
         <a class='navbar-brand' href='/'>KOMET</a>
       </div>
       <div class='collapse navbar-collapse' id='sitenav'>
         <ul class='nav navbar-nav'>
-          <li class=active><a href='./index.html'>Glossar</a></li>
-          <li><a href='./quiz.html'>Quiz</a></li>
+          <li><a href='./uba.html'>Glossar</a></li>
+          <li class=active><a href='./ubaQuiz.html'>Quiz</a></li>
           <li><a href='./highscore.html'>Hall of Fame</a></li>
-          <li><a href='http://komet.f2.htw-berlin.de/impressum'>Impressum</a></li>
         </ul>
       </div>
     </div>
     </nav>
-
-    <div id="container">
-      <nav class=termnav>
-      <h2 style='float: left'>Inhalt</h2> 
-      <a style='float: right; font-size: 2em; color: black; margin-right: 20px' class=hideDesktop>×</a>
-      <input id=filterTerms type="search" class='form-control' placeholder="Filter....">
-      </nav>
-
-      <div id="content">
-        <div id='stats'>
-          <span id="time"> </span>
-          <span id="progress"> </span>
-          <a href='#' id='reset'><i class="fa fa-history"></i></a>
+    <div class=container>
+      <div id=topright>
+        <div id="pc" style="display: inline-block">
+          <span id="progressCounter"></span>
         </div>
-        <div id="main"> Begriffe </div>
-        <div id="paging">
-          <a type=button class='btn btn-default' id="previousTerm">Zurück</a>
-          <a type=button class='btn btn-default'id="nextTerm" style="float: right">Nächster</a>
-        </div>
+        <span id="timer"></span>
+      </div>
+      <div id=definition class='row hyphenate'></div>
+      <div id=choices class='row'>
+        <div class='column half'> </div>
+        <div class='column half'> </div>
       </div>
     </div>
     <script>
@@ -87,7 +75,5 @@
       ga('send', 'pageview');
 
     </script> 
-
-
   </body>
 </html>
