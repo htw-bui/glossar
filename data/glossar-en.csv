@@ -1,0 +1,641 @@
+"Concept","Definition"
+"Accessibility","The attributes and characteristics of an interactive system that allow people with limited vision, hearing, dexterity, cognition or physical mobility to interact effectively and efficiently with the interactive system.
+Notes: 
+1.	Standards and guidelines for accessibility are available, and standards may be legally enforced in some markets. 
+2.	Accessibility aids, such as screen readers, may be added to an interactive system to allow users with disabilities to use those systems."
+"Affordance","An aspect of an object that makes it obvious how the object could be used.
+Note: 
+1.	Affordances and self-descriptiveness are means to make an interactive system intuitive.
+Examples of affordances:
+1.	A handle on a tea pot or tea cup provides an obvious affordance for holding. 
+2.	A button on a web page provides an affordance for clicking.
+3.	A company logo in the upper left corner of a web page provides limited affordance for clicking."
+"As-is scenario","See scenario"
+"Briefing","The first activity in an Interview or a Usability test session where the participant is informed about the purpose of the Interview or Usability test and what their role and contribution are."
+"Closed question","An interview question that requires an answer from a predetermined set of alternatives, for example yes and no.
+Notes:
+1.	Avoid several closed questions in sequence. They stop users talking because they sound like a police interrogation. 
+2.	Compare to Open question. 
+Example of a closed question: 
+1.	""Have you ever rented a car?""
+Corresponding open question: ""Please tell me about the last time you rented a car."""
+"Conformity with user expectations ","Correspondence to predictable contextual needs of the user and to commonly accepted conventions.
+Notes:
+1.	Consistency is an aspect of Conformity with user expectations.
+2.	Conformity with user expectations is a dialogue principle."
+"Consistency","The same information is presented in the same way throughout the interactive system, in accordance with the user’s expectation.
+Notes:
+1.	Consistency is an aspect of Conformity with user expectations.
+2.	Consistency is relevant on several levels, for example 
+a.	within a screen;
+b.	across screens in the same interactive system;
+c.	across interactive systems from the same manufacturer;
+d.	across similar interactive systems from different manufacturers."
+"Context of use","Users, tasks, resources, and the physical and social environments in which an interactive system is used 
+Notes:
+1.	The results from observations and contextual interviews are described in the ""context of use description"". This description is the basis for identifying user needs and tracing them back to their source.
+2.	A context of use description describes
+a.	User groups and user group profiles, 
+b.	Tasks, 
+c.	Environments,
+d.	Equipment,
+e.	Scenarios illustrating what happens in the context of use
+Course note:
+1.	Helpful acronym: PACT = People, Activities, Contexts, Technologies.
+Examples of context of use descriptions: 
+1.	Teenagers use mobile phones to send text messages to their friends while sitting on a bus. 
+2.	Secretaries use Microsoft Word to write documents in a firm of solicitors."
+"Contextual interview","An interview that takes place at the location where the user's interaction with the interactive system usually takes place, for example the user's workplace.
+Note:
+1.	""Contextual interview"" is often referred to as ""Contextual inquiry""."
+"Control­lability","The ability of a user to initiate and control the direction and pace of the interaction until the point at which the goal has been met.
+Note:
+1.	Controllability is a dialogue principle."
+"Debriefing","See Post-session interview."
+"Design pattern","A general reusable solution to a commonly occurring problem within a given context in software design that describes a design problem, a solution, and where this solution has been found to work.
+Course note:
+1.	Several websites offer free access to a large selection of design patterns, for example www.welie.com"
+"Dialogue","Interaction between a user and an interactive system that consists of user actions (input) and responses from the interactive system (output) in order to achieve a goal."
+"Dialogue principles","General goals for the design of useful and usable dialogues.
+Notes:
+1.	Dialogue principles are not bound to any specific technology or technique. 
+2.	Dialogue principles may be difficult to apply because of their generality.
+3.	ISO 9241-110 lists the following seven dialogue principles:
+a.	Suitability for the task;
+b.	Self-descriptiveness;
+c.	Conformity with user expectations;
+d.	Suitability for learning;
+e.	Controllability;
+f.	Error tolerance;
+g.	Suitability for individualization.
+4.	Compare dialogue principle to 
+a.	Heuristic – A rule of thumb that helps to achieve dialogue principles. It is more specific and easier to apply than a dialogue principle.
+b.	User interface guideline – Low-level specific rule for interface design."
+"Direct user","Person who interacts with an interactive system.
+Note: 
+1.	A direct user is either a Primary user or a Secondary user.
+Examples of direct users: 
+1.	A supporter in a call centre using a computer system is a direct user of the computer system, while customers who call the call centre are direct users of the support service, but indirect users of the computer system."
+"Effectiveness","Extent to which correct and complete goals are achieved.
+Notes: 
+1.	Effectiveness is one of the three measurable attributes for usability. The others are efficiency and satisfaction.
+2.	Effectiveness is the attribute of usability that focuses on being able to accomplish tasks."
+"Efficiency","Resources expended to achieve specified goals. 
+Notes:
+1.	Resources include time, human effort, financial and material resources.
+2.	Efficiency is one of the three measurable attributes for usability. The others are effectiveness and satisfaction.
+3.	Efficiency is the attribute of usability that focuses on being able to accomplish a task using acceptable amounts of resources."
+"Environment","The physical, social and technical conditions in which a user interacts with an interactive system.
+Note: 
+1.	The social conditions include the organizational conditions."
+"Error tolerance","The property of a dialogue to achieve the intended result with either no, or minimal, corrective action by the user despite evident errors in input. 
+Note:
+1.	Error tolerance is a dialogue principle.
+Examples of error tolerance:
+1.	When an error occurs, the interactive system should provide a precise and comprehensible explanation. The explanation must also be constructive – that is, it must suggest a solution to the problem.
+2.	If severe consequences could result from a user action, the interactive system should provide explanation and request confirmation before carrying out the action."
+"Evaluation","See Usability evaluation."
+"Evaluation report","A document reporting the results of a usability test, an inspection or a user survey.
+Note:
+1.	The evaluation report for a usability test is usually referred to as a usability test report."
+"Facilitator","See Moderator"
+"Finding","See Usability finding"
+"Formative usability evaluation","A type of usability evaluation designed and used to improve an interactive system, especially when it is still being designed.
+Note: 
+1.	Compare to Summative usability evaluation."
+"Focus group","A focused discussion where a moderator leads a group of participants through a set of questions on a particular topic.
+Notes: 
+1.	Do not use focus groups for usability evaluation.
+2.	Focus groups are about opinion. In comparison, usability tests are about observing actual user behaviour."
+"Goal","Intended outcome."
+"Guideline","See User interface guideline."
+"Heuristic","A generally recognized rule of thumb that helps to achieve usability.
+Notes:
+1.	Heuristics mainly serve to ensure usability (rather than usefulness).
+2.	Compare heuristic to
+a.	Dialogue principle – a general goal for the design of dialogues. May be difficult to apply because of its generality
+b.	User interface guideline – Low-level specific rule for interface design.
+Examples of generally recognized heuristics (by Jakob Nielsen and Rolf Molich):
+1.	Follow real world conventions. 
+For example, speak the users' language.
+2.	Follow platform conventions.
+3.	Minimize the user's memory load by making objects, actions, and options visible.
+4.	Provide appropriate feedback within reasonable time.
+5.	Help users recognize, diagnose, and recover from errors."
+"Heuristic evaluation","A usability evaluation method in which one or more evaluators, preferably experts, compare an interactive system to a list of heuristics and identify where the interactive system does not follow those heuristics.
+Notes: 
+1.	The list of heuristics must be manageable. Usually about 10 heuristics are used.
+2.	Experts can be usability experts or subject matter experts (""single experts""), or both (""double experts"")."
+"High-fidelity prototype","A software prototype of the user interface to the interactive system that is being designed. A high-fidelity prototype resembles the finished interactive system and may or may not be interactive.
+Note: 
+1.	Compare to low-fidelity prototype.
+2.	High fidelity prototypes can be constructed either using a prototyping application or using office software (such as PowerPoint)."
+"Human-centred design","An approach to design that aims to make interactive systems more usable by focusing on the use of the interactive system and applying human factors, ergonomics and usability knowledge and techniques.
+Notes:
+1.	The concept ""human-centred design"" is used instead of ""user-centred design"" to emphasise the need to consider additional stakeholders who may not be users.
+2.	Feedback from users through usability evaluation is a critical source of information in human-centred design."
+"Indirect user","Person who directly uses the output of the interactive system, but does not interact directly with the system.
+Example of an indirect user: 
+1.	A bank customer who receives a paper or electronic statement, or visits a branch is an indirect user of the output produced by the bank computer system."
+"Information architect","A person who creates and organizes the structure of information to enable each user group to efficiently locate required information when using interactive systems. 
+Note: 
+1.	Information architect is a process role in human-centred design."
+"Information architecture","The naming and structuring of the information that must be accessible to the user, including task objects, system objects (such as printers) and additional information that users need."
+"Inspection","See Usability evaluation – Inspection based"
+"Interaction designer","A person who defines and designs the interaction between humans and system based on user requirements and the context of use.
+Note: 
+1.	Scenarios and personas are also important bases for the work of the interaction designer
+2.	Interaction designer is a process role in human-centred design. "
+"Interactive system","A combination of hardware, software and/or services that receives input from, and communicates output to, users.
+Note: 
+1.	This includes, where appropriate, packaging, branding, user documentation, on-line help, support and training."
+"Interview","A data-gathering technique that studies a few carefully selected individuals in depth to arrive at a fuller understanding of the work practice across all users. Through inquiry and interpretation, it reveals commonalities across an interactive system's user base.
+Notes: 
+1.	In an interview, the interviewer (the user requirements engineer) typically conducts a briefing and then asks questions to a user about current procedures and the planned interactive system. The interviewer uses an interview checklist to ensure that all relevant questions are asked.
+2.	The master-apprentice model should be applied when conducting interviews
+3.	Interview questions should be 
+a.	Open rather than closed, 
+b.	Neutral rather than leading.
+4.	Compare to contextual interview, pre-session interview and post-session interview."
+"Interview checklist ","A written list of suitable questions and cues used by an interviewer during an interview to make sure that all relevant topics are addressed."
+"Intuitive","Use of the interactive system is easy to understand, regardless of the user's experience, knowledge, language skills, or current concentration level. 
+Note: 
+1.	Affordances and self-descriptiveness are means to make an interactive system intuitive."
+"ISO 9241","A family of standards covering human-centred design.
+Note:
+1.	ISO 9241 includes standards related to 
+a.	Software ergonomics, 
+b.	The human-centred design process, 
+c.	Displays and display related hardware, 
+d.	Physical input devices, 
+e.	Workplace ergonomics, 
+f.	Environment ergonomics, 
+g.	Control centres, 
+h.	Tactile and haptic interactions."
+"Iterative","Repetitive.
+An iterative process repeats steps in the human-centred design process until a usability evaluation of the user interface shows that the user requirements have been adequately met."
+"Leading question","A question in an interview that signals a preference for certain possibilities, or attempts to direct the reply in a certain direction. 
+Note:
+1.	Compare to neutral question.
+Example of a leading question:
+1.	""Would you like to have pretty colours on the home page of the new car rental website?""
+	Corresponding neutral question: ""What should the home page of the new car rental website look like?"" Note that the neutral question doesn't even mention colour."
+"Low-fidelity prototype","A low-cost, simple illustration of a design or concept used to gather user feedback at the very early stages of design
+Notes:
+1.	A low-fidelity prototype is often created using paper, pens, sticky notes and so on. Screen mockups are often made by using a wireframe prototyping tool.
+2.	A low-fidelity prototype may be operated by a human being instead of a computer. 
+3.	A low-fidelity prototype should be capable of being updated in moments.
+4.	Compare to prototype and high-fidelity prototype."
+"Market requirement","A requirement for an interactive system based on marketing policy aimed at maximizing business opportunities, purchase and use.
+Notes:
+1.	Market requirements are often referred to as customer requirements.
+Example of market requirement:
+1.	""The website must be at least as usable as that of the two top competitors"""
+"Master-apprentice model","A principle for a successful interview: The interviewer treats the user as the Master while the interviewer is the Apprentice. The interviewer asks because they sincerely want to learn – not to demonstrate their knowledge"
+"Mental model","The perception people have of themselves, others, the environment, and the things with which they interact. 
+Notes: 
+1.	Alternative, popular definition: A person's thought process about how something works in the real world.
+2.	People form mental models through experience, training, and instruction. The mental model of an interactive system is formed largely by interpreting its perceived actions and its visible structure. Expectations resulting from the use of other or similar systems are also of importance.
+3.	If a user's mental model of an interactive system is incomplete or contradictory, then the user cannot easily use the interactive system."
+"Moderation","The activity carried out by a moderator in a usability test or focus group."
+"Moderator","A neutral person who conducts a usability test session or a focus group session.
+Notes:
+1. 	Moderator is a role in a usability test session or focus group session.
+2.	The moderator's tasks during a usability test session are described under usability test session.
+3.	Facilitator is a frequently used synonym for moderator."
+"Navigation structure","The logical organization of the units of displayed information that comprise the user interface.
+Notes:
+1.	In practice, the ""units of displayed information"" are often screens, pages or windows.
+2.	The navigation structure comprises: 
+a.	The logical structure, for example hierarchy, the order and grouping of elements of the user interface and navigation items.
+b.	The navigation elements that are used to navigate the structure, for example menus and breadcrumbs.
+3.	The navigation structure is part of the information architecture. The information architect is responsible, and creates it together with the interaction designer."
+"Neutral question","A question in an interview that has no built-in assumptions, and no frame that excludes anything or directs the reply in a certain direction. 
+Note:
+1.	Compare to leading question.
+Examples of neutral (and open) interview questions: 
+1.	What happened?
+2.	What do you mean by that?
+3.	What possibilities do you have now?
+4.	What should the home page of the new car rental website look like?"
+"Note-taker","A usability specialist who makes notes of usability findings during a usability test session, focus group or interview. 
+Notes:
+1.	Note-taker is a role in a usability test session, focus group or interview.
+2.	The use of a note-taker allows the moderator to fully concentrate on the usability test participant."
+"Observation","A technique for gathering contextual information relating to user needs in which an observer watches users who carry out tasks that are related to the interactive system. 
+Notes:
+1.	The observer behaves unobtrusively except that he/she may ask an occasional clarifying question.
+2.	If no interactive system is available, observe the existing manual procedures.
+3.	Observation should take place in a context that is as natural as possible, for example at the user's workplace."
+"Observer","A person who watches users who discuss or carry out tasks that are related to the interactive system.
+Notes:
+1.	Observer is a role in a usability activity, such as an observation, usability test session or focus group.
+2.	Observers do not interfere with the usability activity. Observers may be actively involved in the analysis of the results."
+"Online help","Assistance delivered through computer software that can be topic-oriented, procedural or reference information. 
+Notes:
+1.	Most online help is designed to give assistance in the use of an interactive system, but can also be used to present information on a broad range of subjects. 
+2.	Online help is a form of user assistance."
+"Open question","A question in an interview that does not give any indication of the expected format or content of the answer.
+Notes: 
+1.	Open questions are desirable in interviews because they invite users to start talking and provide extensive answers to questions. 
+2.	Compare to Closed question. 
+Examples: 
+1.	For examples of open (and neutral) interview questions see Neutral question:"
+"Organization­al requirement","An organizational rule that users have to follow when conducting their tasks.
+Note: 
+1.	Organizational requirements are requirements on the users that lead to requirements on the interactive system.
+Examples:
+1.	A salesperson must have a written approval from the director for offers that exceed 100.000 Euros.
+2.	An exact description of how a user must handle an order."
+"Persona","A description of a user and what he or she intends to do when using an interactive system. 
+Note:
+1.	Personas are not real; rather they are imaginary but realistic examples of the real users they represent based on empirically determined data, for example from observations or interviews.
+2.	Personas typically have a name, age, some background, goals and aspirations. A persona description should include information about the persona's knowledge about and interest in the subject matter of the interactive system. Persona descriptions often but not always have a photo."
+"Positive usability finding","See Usability finding"
+"Post-session interview","An activity in a usability test session where the usability test participant answers questions about his/her experience and general impression of the usability of the interactive system. 
+Notes:
+1.	The post-session interview takes place after the usability test participant has carried out as many usability test tasks as time allows. 
+2.	Also referred to as a debriefing."
+"Pre-session interview","An activity in a usability test session where the usability test participant answers questions about his/her background and previous experience with the interactive system or related interactive systems. 
+Note:
+1.	The pre-session interview takes place after the briefing but before the usability test participant starts carrying out usability test tasks."
+"Primary user","A person who interacts with an interactive system to achieve goals supported by the system."
+"Problem","See Usability problem"
+"Prototype","A representation of all or part of an interactive system that, although limited in some way, can be used for analysis, design and evaluation.
+Note: 
+1.	This glossary further distinguishes between high-fidelity prototype and low-fidelity prototype."
+"Qualitative user requirement ","A statement of what users must be able to locate, recognize, understand, select or input as part of conducting a task with the interactive system. 
+Notes: 
+1.	Qualitative user requirements are the basis for efficient use of the interactive system.
+	In contrast, quantitative user requirements can enforce measures on the efficiency of the interactive system – that is, whether users can solve particular tasks with the interactive system, e.g. in an acceptable time or with a specified maximum number of use errors.
+2.	Qualitative user requirements are not features. They provide the basis for features.
+3.	Compare to quantitative user requirement 
+Examples:
+1.	Reasonable qualitative user requirements: 
+a.	""The user must be able to compare the differences between cars that are available for a specific price range at the car rental website.""
+b.	""The user must be able to select a car with automatic transmission at the car rental website.""
+c.	""The user must be able to see the opening hours of a specific car rental location.""
+2.	Incorrect qualitative user requirements:
+a.	""The user interface must be usable and support all user tasks"" (too general)
+b.	""The user interface must have a big, red ""Rent this car"" button"" (too detailed)"
+"Quality","The degree to which the interactive system fulfils requirements.
+Note: 
+1.	Examples of quality characteristics other than usability are correctness, reliability and security."
+"Quantitative user requirement ","Required level of usability to meet identified user needs expressed in terms of measures of effectiveness, efficiency and satisfaction in a specified context of use.
+Notes: 
+1.	Quantitative user requirements are acceptance criteria for the effectiveness, efficiency and satisfaction of the interactive system, for example whether users can solve particular tasks with the system in an acceptable time or with a specified maximum number of use errors.
+2.	Compare to qualitative user requirement. In particular, compare the examples.
+Example: 
+1.	""80% of users who have used the car rental website at least twice must be able to rent within 5 minutes an economy size car at Frankfurt Airport (Germany) for two days starting tomorrow at 09.00.""
+2.	Compare the above example to the examples in qualitative user requirement."
+"Questionnaire","A set of questions that is used collect data from users, often in a user survey.
+Notes: 
+1.	Two important uses of questionnaires in usability are:
+a.	To understand the context of use. Questions are about the users' experience with the current interactive system and their expectations for the new interactive system. Questions are answered in text form.
+b.	To evaluate the user experience before, during and after the use of an interactive system.
+2.	Questionnaires must be usable. They must adhere to dialogue principles, for example
+a.	Each question must contribute significantly to the purpose of the questionnaire;
+b.	Questions must be easy to understand; 
+c.	The questionnaire must keep users informed of their progress;
+d.	The questionnaire must be usability tested.
+3.	This definition applies to both digital and paper questionnaires.
+Examples of questions to understand context of use:
+1.	""When did you last use the car rental website? What was your business?""
+2.	""What do you expect from a car rental website?""
+Examples of questions to evaluate satisfaction:
+1.	""On a scale from 1 to 5, where 1 means ""strongly disagree"", 3 means ""neutral"", and 5 means ""strongly agree"", please rate the following statements:
+a.	The new car rental website looks cool.
+b.	The new car rental website is easy to use.
+c.	The new car rental website lets me rent cars quickly."
+"Recruiting","A process for selecting candidates that have the required qualifications to participate in a human-centred activity such as a focus group, contextual interview, or usability test.
+Note:
+1.	A recruitment screener is often used to determine whether candidates have the required qualifications to participate in the human-centred activity.
+2.	Relevant qualifications include: Background, knowledge of the subject matter, attitudes and interests."
+"Recruitment screener","A series of questions for prospective participants to identify whether they represent the intended users and therefore qualify to participate in a human-centred activity, for example a usability test or a focus group.
+Notes:
+1.	A recruitment screener is used during recruiting to determine whether candidates have the required qualifications to participate in the activity.
+2.	Relevant qualifications include: Background, knowledge of the subject matter, attitudes and interests."
+"Remote usability test","A usability test where the usability test participant and the moderator are in different physical locations. 
+Notes: 
+1.	The moderator observes the usability test participant using an internet connection. 
+2.	The moderator communicates with the usability test participant over the telephone or via an internet connection.
+3.	Compare to usability test and unattended usability test."
+"Requirement","A condition or capability that must be met or possessed by an interactive system to satisfy an agreement, standard, specification or other formally imposed documents
+Notes: 
+1.	A requirement should have a determinable condition that makes it possible to validate it.
+2.	This glossary defines the following types of requirements:
+a.	Stakeholder requirement;
+b.	Market requirement;
+c.	Organizational requirement;
+d.	User requirement.
+3.	This glossary further distinguishes between
+Qualitative user requirement, and 
+Quantitative user requirement."
+"Resources","All means required to use an interactive system.
+Note:
+1.	Typical examples of resources are time, financial cost, physical and mental effort, hardware, software and materials."
+"Role ","A duty or function that a person carries out within an organization.
+Notes: 
+1.	A role describes a set of connected behaviors, rights, obligations, and norms in a job situation. 
+2.	Roles are occupied by individuals, who are called actors.
+3.	Depending on the complexity of a project, several people might share one role or multiple roles might be assigned to one person.
+4.	Work roles are ""hats"" that people wear when they take on the corresponding job responsibilities and perform the associated activities.
+Example: 
+1.	In a usability test session, one person can simultaneously occupy the roles moderator and note-taker. In another usability test session, in contrast, one person may act as moderator and two other people may both act as note-takers."
+"Satisfaction","Freedom from discomfort, and positive attitudes towards the use of the product
+Notes: 
+1.	The proposed new ISO definition may be a bit easier to understand: Attitudes related to the use of an interactive system, and the emotional and physical outcomes arising from use.
+2.	Satisfaction is one of the three measurable attributes for usability. The others are effectiveness and efficiency.
+3.	Satisfaction is measured using a questionnaire."
+"Scenario","A narrative text description of the procedure a specific user follows to complete one or more tasks.
+Notes: 
+1.	The specific user in the scenario is often a persona.
+2.	There are two main types of scenarios
+a.	As-is scenarios describe how tasks are currently accomplished. As-is scenarios describe the current context of use and serve as a basis for identifying user needs and deriving user requirements. See example 1 below.
+ b.	Use scenarios describe how tasks are accomplished with the anticipated interactive system. Use scenarios are used to create initial low-fidelity prototypes. See example 2 below.
+3.	Scenarios are created by the user requirements engineer based on results from observation and contextual interviews.
+4.	Personas and scenarios evolve together as thinking about users involves thinking about what they want to do, and thinking about activities involves thinking about who will be undertaking them.
+5.	Scenarios are reviewed by users to detect misunderstandings that may have occurred during contextual inquiry
+6.	A scenario should avoid placing unnecessary constraints on the design by referencing specific objects, such as buttons, in the user interface.
+7.	Scenarios are used to create task models and early prototypes that support the tasks in the scenario.
+Examples of scenarios:
+1.	“John Miller is a business traveler who often takes flights in the course of a week. He prefers to take his car to the airport. But every now and then he misses a flight and then regrets not to have taken a taxi or the tram to the airport. He simply underestimates the car queues in front of the car park and the walking time to the gate.”
+This example corresponds to note 2a, the current situation.
+2.	“Before going to the airport, John Miller checks the situation at the car park at the airport with his new application. If sufficient parking spaces are available, he reserves a place to park with his new application and then relaxedly drives to the airport with his car. He knows that since the application has been launched there is a separate entry for cars with reservations,”
+This example corresponds to note 2b, the anticipated situation.
+3.	The following text, which supplements the above example 2, is too specific and violates note 6: 
+""John Miller looks at the 'Overview of available park spaces' screen and selects a parking space by clicking the 'Select' button. He then clicks the 'Reserve'-button and reserves the parking space."""
+"Secondary user","A person who interacts with an interactive system to support the use of the system or maintain the system.
+Examples of secondary users: 
+1.	Security manager, administrator, trainer and maintenance."
+"Self-descriptive­ness","The property of a dialogue to, at any time, make it obvious to the users which dialogue they are in, where they are within the dialogue, which actions can be taken, and how they can be performed.
+Note: 
+1.	Affordances and self-descriptiveness are means to make an interactive system intuitive. 
+2.	Self-descriptiveness is a dialogue principle. "
+"Severity rating","A measure given to a usability problem from a usability test to indicate the impact and criticality on the user experience and the consequences.
+Notes:
+1.	The usability tester rates usability problems from the usability test participants' point of view. Sometimes, the ratings are done in cooperation between the usability tester and a domain expert
+2.	Typical severity ratings are: Minor, severe, critical, and life-threatening."
+"Stakeholder","Individual or organization having a right, share, claim or interest in an interactive system or in its possession of characteristics that meet their needs and expectations.
+Notes:
+1.	All users are stakeholders.
+2.	See also the various types of requirements.
+3.	The following examples illustrate the breadth of this concept. 
+Examples of stakeholders: 
+1.	Users, supporters, trainers, documentation writers, developers, managers of developers, and marketing people."
+"Stakeholder requirement","What the interactive system should be capable of from the point of view of the stakeholders."
+"Storyboard","A sequence of visual frames illustrating the interplay between a user and an envisioned interactive system. 
+Note:
+1.	A storyboard is often a comic book style representation of a scenario.
+2.	Storyboards are unsuitable as prototypes because they tell stories and do not afford interaction."
+"Styleguide","A collection of user interface guidelines used to ensure consistency in the appearance and behaviour of the user interface of the interactive systems produced by an organization 
+Note:
+1.	Styleguides are sometimes called UX Guides.
+Examples of styleguides:
+1.	Windows User Experience Interaction Guidelines for Windows Desktop apps (“UX Guide”)
+2.	IOS Human Interface Guidelines"
+"Suitability for individuali­zation","The property of a dialogue that allows users to modify interaction and presentation of information to suit their individual capabilities and needs.
+Note: 
+1.	Suitability for individuali­zation is a dialogue principle."
+"Suitability for learning","A dialogue is suitable for learning when it supports and guides the user in learning to use the interactive system.
+Notes: 
+1.	Recommendations for observing the dialogue principle:
+a.	The dialogue should provide sufficient feedback about the intermediary and final results of an activity so that the user learns from successfully accomplished activities.
+b.	If appropriate to the tasks and learning goals, the interactive system should allow the user to explore (“try out”) dialogue steps without negative consequences.
+2.	Suitability for learning is a dialogue principle.
+Example of suitability for learning:
+1.	When users reserve a room using a hotel room reservation system, the users receive step-by-step feedback to refine their queries and details about the successful reservation of the room."
+"Suitability for the task","The property of an interactive system to support the user in the completion of the task, i.e. to base the functionality and the dialogue on the task characteristics (rather than the technology chosen to perform the task).
+Notes: 
+1.	Recommendations for observing the dialogue principle:
+a.	The dialogue should present the user with information related to the successful completion of the task.
+b.	The dialogue should avoid presenting the user with information not needed for the successful completion of relevant tasks.
+c.	The format of input and output should be appropriate to the task. If typical input values are required for a task, these values should be available to the user automatically as defaults.
+d.	The steps required by the dialogue should be appropriate to the completion of the task, i.e. necessary steps should be included and unnecessary steps should be avoided.
+2.	Suitability for the task is a dialogue principle."
+"Summative usability evaluation","A type of usability evaluation designed and used to gather conclusions about the merit or worth of an interactive system, especially when a substantial part of it has completed design.
+Notes:
+1.	A summative usability evaluation may be used to evaluate a design against user requirements in order to determine whether the design is acceptable from the users' point of view.
+2.	Compare to Formative usability evaluation."
+"System-initiated guidance","Explicit information about an event or a condition from an interactive system to a user.
+Note: 
+1.	System-initiated guidance includes 
+a.	Messages (informative, warning, error)
+b.	Status information, for example ""7 new messages""
+c.	Instructions, for example ""Separate e-mail addresses by space, comma, semicolon or line break""
+2.	Messages must be constructive, precise, comprehensible and visible. 
+3.	System-initiated guidance is a form of user assistance."
+"Task","Activities required to achieve a goal 
+Notes:
+1.	Most tasks can be subdivided into subtasks –that is, activities. 
+2.	Most subtasks lead to choices or inputs of the user when using the interactive system.
+3.	Some subtasks can be subdivided into smaller subtasks.
+Examples of tasks: 
+1.	Renting a car is a task. 
+2.	Cancelling a reservation is a task. 
+3.	Registering on a car rental website is a subtask. It is not a user goal but an annoyance from the user's point of view. Users would never feel that they had achieved a goal after registering.
+4.	""Logging in"" is a subtask. It is not a user goal but an annoyance from the user's point of view.
+5.	Entering the user name and pressing the Tab key is one of several subtasks required to complete the subtask ""logging in"". "
+"Task model","A description of the subtasks that have to be carried out in order to reach the user’s goals.
+Note:
+1.	A task model describes the logic of the task itself, while a scenario describes the completion of one or more tasks by a persona."
+"Task object","The key units of information, or data, with which users interact in order to carry out their tasks. 
+Examples of task objects:
+1.	For a customer management system: 
+- A letter to a customer;
+	- A list of the customer's unpaid bills;
+	- An order from the customer.
+2.	For a train ticket vending machine:
+	- A ticket:
+	- A receipt for the purchase of a ticket;
+	- A travel plan."
+"Test participant","See Usability test participant"
+"Test report","See Usability test report."
+"Test script","See Usability test script."
+"Test task","See Usability test task."
+"Unattended usability test","A usability test where usability test participants solve usability test tasks without being observed. 
+Note: 
+1.	Usability test participants' actions are usually video recorded for later analysis.
+2.	Unattended usability tests are often conducted on the test participant's computer in his/her home. Video recording is accomplished through recording software installed on the computer by a vendor of unattended usability testing services.
+3.	Compare to Usability test and Remote usability test."
+"Usability","Extent to which an interactive system can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use.
+Note:
+1.	The phrases ""specified users"", ""specified goals"" and ""specified context of use"" are of particular importance in the definition."
+"Usability engineer","A person who manages a human-centred design process.
+Notes:
+1.	The usability engineer (UE) is well versed in the human-centred design process, available human-centred engineering methods and tools, and guidelines for usable user interfaces. This knowledge enables the UE to manage
+a.	Human-centred design activities;
+b.	The integration of human-centred design into the organization's design process for interactive systems; 
+c.	The definition of measurable human-centred goals for a project;
+d.	The training of participating project team members.
+2.	The UE determines suitable approaches, tools and styleguides for the human-centred design in general and for specific projects. The UE assists management in deciding whether work packages should be carried out by qualified employees in the organization or by competent subcontractors.
+3.	Usability engineer is a process role in human-centred design."
+"Usability evaluation","A process through which information about the usability of an interactive system is gathered in order to improve the interactive system (known as formative usability evaluation) or to assess the merit or worth of an interactive system (known as summative usability evaluation). 
+Notes:
+1.	Usability evaluation is a common term for
+a.	Usability evaluation - Inspection based
+b.	Usability evaluation – User based
+2.	The synonym ""Evaluation"" is also often used."
+"Usability evaluation – Inspection based","Usability evaluation based on the judgment of one or more evaluators who examine or use an interactive system to identify potential usability problems and deviations from established criteria.
+Notes:
+1.	Inspection-based usability evaluation is often performed by usability experts or subject matter experts who base their judgement on prior experience of usability problems encountered by users and their own knowledge of ergonomic user interface guidelines and styleguides.
+2.	Heuristic evaluation is a technique for inspection based usability evaluation."
+"Usability evaluation –  User based","Usability evaluation that involves representative users performing specific tasks with the interactive system to enable identification of usability problems, or measurements of efficiency, effectiveness, user satisfaction, or other measures of user experience.
+Note:
+1.	See Usability test."
+"Usability finding","A result from a usability evaluation. 
+Note:
+1.	A usability finding can describe 
+a.	A usability problem.
+b.	Something that users liked – that is, a positive usability finding."
+"Usability lab","Two or more rooms that are specially equipped for usability testing or focus groups. 
+Note:
+1.	A usability lab often consists of 
+a.	a test room where the usability test participant sits, 
+b.	an observation room where stakeholders can watch usability test participants as they solve usability test tasks. 
+	Often, the two rooms are separated by a one way mirror which enables observers to watch the usability test participant but not vice versa."
+"Usability problem","A difficulty in using the user interface design that affects the ability of the user to achieve their goals effectively, or efficiently, or with satisfaction. 
+Note:
+1.	Usability problems can lead to confusion, error, delay, or outright failure to complete some task on the part of the user."
+"Usability professional","A professional who has one or more of the following process roles: 
+1.	Usability engineer, 
+2.	User requirements engineer, 
+3.	Usability tester,
+4.	Information architect,
+5.	Interaction designer,
+6.	User interface designer."
+"Usability test","A usability evaluation that involves representative users performing specific tasks with the interactive system to enable identification of usability problems or the measurement of effectiveness, efficiency, and user satisfaction.
+Notes:
+1.	A usability test is managed by a usability tester.
+2.	A usability test usually has three phases:
+a.	Planning, including writing the usability test plan, writing the usability test script, and recruiting suitable usability test participants,
+b.	Conducting usability test sessions as described in note 3,
+c.	Communicating usability findings, including writing the usability test report.
+3.	A usability test consists of a number of usability test sessions. In each session, a usability test participant attempts to carry out representative usability test tasks using the interactive system or a prototype of the interactive system. Usually, usability test sessions are moderated by a moderator and observed by a number of observers, who are often stakeholders. A note-taker records important usability findings.
+4.	The concept ""usability test"" usually refers to a test where the usability test participant and the moderator are in the same physical location. Other forms of usability tests are Remote usability test and Unattended usability test.
+5.	Testing may result in qualitative or quantitative data. 
+6.	Testing may occur at any time during human-centred design, from early analysis through interactive system delivery and beyond. Testing may be based on paper sketches or display mock-ups, as well as on interactive systems under design and completed interactive systems.
+7.	Roles in a usability test are:
+a.	Moderator;
+b.	Note-taker;
+c.	Observer;
+d.	Usability test participant."
+"Usability test participant","A representative user who solves typical tasks in a usability test."
+"Usability test plan","A brief description of the purpose and extent of a usability test. 
+Notes:
+1.	The usability test plan is intended for management to decide whether the usability test should be run or not. It is deliberately brief and focuses on the resources required for the usability test.
+2.	The usability test plan includes 
+a.	Number of planned usability test participants;
+b.	Approximate length of each usability test session;
+c.	Name of moderator;
+d.	Time plan;
+e.	A cost estimate for the usability test including person hours.
+3.	Further details about the usability test such as usability test tasks, test method and required software and hardware are provided in the usability test script."
+"Usability test report","A document that describes the results of a usability test. 
+Notes:
+1.	A usability test report typically contains 
+a.	An executive summary;
+b.	5-50 usability findings (including positive usability findings); 
+c.	The usability test script used for the usability test;
+d.	Often, the usability test report also contains screenshots or pictures that supplement the description of important usability findings.
+2.	Also referred to as test report."
+"Usability test result","See Usability finding"
+"Usability test script","A checklist used by a moderator in a usability test to keep track of briefing and pre-session interview questions, usability test tasks, and post-session interview questions."
+"Usability test session","A part of a usability test where one usability test participant carries out representative usability test tasks using the interactive system or a prototype of the interactive system.
+Notes:
+1.	In a usability test session, the moderator typically 
+a.	Greets the usability test participant; 
+b.	Conducts the usability briefing and pre-session interview, 
+c.	Hands out usability test tasks to the usability test participant
+d.	Observes the usability test participant during usability test task solution, 
+e.	Conducts the post-session interview.
+2.	Compare to Usability test."
+"Usability test task","A description of a task that a moderator asks a usability test participant to carry out during a usability test. "
+"Usability tester","A person who evaluates user interfaces in various stages of realization. 
+Notes:
+1.	In cooperation with other stakeholders, the usability tester 
+a.	Plans usability evaluations, 
+b.	Conducts usability evaluations, 
+c.	Communicates usability findings to stakeholders.
+2.	During usability test sessions the usability tester has the role of moderator or note-taker.
+3.	Usability tester is a process role in human-centred design."
+"Use scenario","See scenario"
+"User","Person who interacts with an interactive system, or who uses the output of the system.
+Notes:
+1.	""User"" is subdivided into 
+a.	Direct user: Interacts with the interactive system.
+b.	Indirect user: Uses the output of the interactive system.
+c.	Primary user: Interacts with the interactive system to achieve goals supported by the interactive system.
+d.	Secondary user: Interacts with the interactive system to provide support, etc.
+2.	Stakeholders may or may not be users. Stakeholders are not considered to be users if they are affected by an interactive system but neither interact with the interactive system nor use the output of the interactive system.
+Examples of stakeholders who are not users:
+1.	Managers of users.
+2.	People affected by noise produced by the person using the interactive system.
+3.	Marketers affected by the impact of the output on the brand of the interactive system."
+"User assistance","Information to help a user to interact with an interactive system. 
+Notes:
+1.	User assistance can include describing the user interface, but also focuses on how to help the user to best apply the capabilities of the interactive system to their needs. 
+2.	User assistance incorporates all forms of help available to a user, for example 
+a.	User documentation, 
+b.	Online help;
+c.	System-initiated guidance."
+"User-centred design","See Human-centred design."
+"User document­ation","Written or other information for users about an interactive system, how it works, and how to use it.
+Note:
+1.	User documentation is a form of user assistance."
+"User experience","A person's perceptions and responses resulting from the use or anticipated use of an interactive system.
+Notes: 
+1.	User experience includes usability. Usability criteria can be used to assess aspects of user experience.
+2.	User experience includes all the users' emotions, beliefs, preferences, perceptions and accomplishments that occur before, during and after use of the interactive system. 
+3.	User experience is a consequence of brand image, presentation, functionality, system performance, interactive behaviour and assistive capabilities of the interactive system, and the context of use. 
+Examples that illustrate the difference between usability and user experience: 
+When ordering flowers for delivery from a flower store's website:
+1.	Usability problems encountered during checkout affect both the user experience and usability.
+2.	The quality of the physical flowers delivered affect only the user experience. It does not affect usability.
+3.	The experience of visiting the physical store affects the user experience of subsequent visits to the website. It does not affect usability.
+Course note:
+1.	Students must know the difference between usability and user experience."
+"User group","A collection of users with the same or similar personal characteristics and context of use related to the interactive system."
+"User group profile","A generalized description of a user group."
+"User interface","All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system."
+"User interface designer","A person who creates interactive prototypes and implements the dialogue and user experience based on the design created by the interaction designer and the scenarios created by the user requirements engineer. The user interface designer also creates interactive prototypes.
+Note: 
+1.	User interface designer is a process role in human-centred design."
+"User interface guideline","Low-level, specific rule or recommendation for user interface design that leaves little room for interpretation so designers implement it similarly.
+Notes: 
+1.	Collections of user interface guidelines are called styleguides.
+2.	Design patterns must comply with relevant user interface guidelines.
+3.	Compare user interface guideline to
+a.	Dialogue principle – a general goal for the design of dialogues. May be difficult to apply because of its generality.
+a.	Heuristic – A rule of thumb that helps to achieve dialogue principles. It is more specific and easier to apply than a dialogue principle.
+Examples of user interface guidelines:
+1.	For all controls, such as buttons, select the safest, most secure value by default to prevent loss of data or system access. If safety and security aren't factors, select the most likely or convenient value.
+2.	The company logo must appear in the upper left corner of each page. Its position must be exactly the same as on the home page. Clicking the logo must cause the home page to be displayed.
+3.	The height of a button must be 23 pixels."
+"User need","A prerequisite identified as necessary for a user, or a user group, to achieve a goal, implied or stated within a specific context of use.
+Notes:
+1.	A user need is independent of any proposed solution for that need. In other words: A user need must not reference for example ""the system"" or ""the website"".
+2.	User needs are identified based on various approaches including interviews with users, observations, user surveys, usability evaluations, expert analysis, etc.
+3.	User needs often represent gaps (or discrepancies) between what should be and what is.
+4.	User needs are transformed into user requirements considering the context of use, user priorities, tradeoffs with other system requirements and constraints
+Examples of user needs:
+1.	A presenter (user) needs to know how much time is left (prerequisite) in order to complete the presentation in time (goal) during a presentation with a fixed time limit (context of use).
+2.	An account manager (user) needs to know the number of invoices received and their amounts (prerequisite), in order to complete the daily accounting log (goal) as part of monitoring the cash flow (context of use)."
+"User requirement","Requirement for use that provides the basis for design and evaluation of an interactive system to meet identified user needs.
+Notes: 
+1.	User requirements are derived from user needs. 
+2.	A user requirement can be a 
+qualitative user requirement or a quantitative user requirement."
+"User requirements engineer","A person who identifies and describes the actual or intended context of use of users, and derives the user requirements and related organizational requirements, which need to be realized for a specific project. 
+Notes:
+1.	The user requirements engineer identifies the context of use based on methods such as interviews with users, observations, user surveys, usability evaluations, expert analysis, etc.
+2.	The user requirements engineer generates personas and scenarios that ensure the effectiveness, efficiency and satisfaction when performing tasks with the interactive system.
+3.	 User requirements engineer is a process role in human-centred design."
+"User survey","An evaluation where users are asked to report subjective data into a questionnaire based on their experience in using an interactive system.
+Notes: 
+1.	User surveys can be used to evaluate users' satisfaction with an interactive system and to gather context of use information.
+2.	When done correctly, surveys can produce a higher degree of certainty in evaluation results than any qualitative research method."
+"Wireframe","A form of low-fidelity prototype consisting of schematic diagrams typically comprised of lines, rectangular boxes and text that represent the intended interaction design and navigational flow.
+Note:
+1.	Wireframes typically do not address visual design and precise layout.
+2.	A wireframe is a mockup of one screen. A suitable collection of wireframes forms a low-fidelity prototype."

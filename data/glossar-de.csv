@@ -1,0 +1,657 @@
+"Begriff","Definition"
+"Affordance","Aspekte eines Objektes, die verdeutlichen, wie das Objekt benutzt werden kann.
+Anmerkung:
+1.	Affordances und Selbstbeschreibungsfähigkeit sind Mittel, um interaktive Systeme intuitiv bedienbar zu machen..
+Beispiele für Affordances:
+1.	Ein Henkel einer Teetasse stellt eine offensichtliche Handlungsanweisung dar, sie zu halten. 
+2.	Ein Button auf einer Webseite bietet die Handlungsanweisung, auf ihn zu klicken.
+3.	Ein Firmenemblem in der oberen linken Ecke einer Webseite bietet eingeschränkte Handlungsanweisung, darauf zu klicken."
+"Anforderung","Eine Bedingung oder Fähigkeit, die ein  interaktives System erfüllen oder besitzen muss, um einer Vereinbarung, einem Standard, einer Spezifikation oder anderen formal zugrunde gelegten Dokumenten zu genügen.
+Anmerkungen:
+1.	Eine Anforderung sollte eine festgelegte Bedingung haben, mit der sie validiert werden kann.
+2.	Dieses Glossar definiert die folgenden Arten von Anforderungen:
+a.	Interessenvertreteranforderung,
+b.	Marktanforderung,
+c.	Organisatorische Anforderung,
+d.	Nutzungsanforderung.
+3.	Dieses Glossar unterscheidet außerdem zwischen 
+Qualitative Nutzungsanforderung, und Quantitative Nutzungsanforderung."
+"Aufgabe","Aktivität die erforderlich ist, um ein Ziel zu erreichen.
+Anmerkungen:
+1.	Viele Aufgaben können in Teilaufgaben unterteilt werden.
+2.	Viele Teilaufgaben führen zu Auswahlmöglichkeiten oder Eingaben des Benutzers während der Nutzung des interaktiven Systems. 
+3.	Einige Teilaufgaben können in kleinere Teilaufgaben aufgeteilt werden.
+Beispiele für Aufgaben: 
+1.	„Ein Auto mieten“ ist eine Aufgabe. 
+2.	„Eine Reservierung stornieren“ ist eine Aufgabe. 
+3.	„Sich auf der Webseite einer Autoverleihfirma registrieren“ ist eine Teilaufgabe. Registrierung ist vom Gesichtspunkt des Benutzers kein Ziel sondern ein Ärgernis.
+4.	„Sich einloggen“ ist eine Teilaufgabe. Einloggen ist vom Gesichtspunkt des Benutzers kein Ziel sondern ein Ärgernis.
+5.	Die Eingabe des Benutzernamens und das Drücken der Tabulatortaste ist eine von vielen Teilaufgaben die erforderlich sind, um die Teilaufgabe ”Log-in” abzuschließen."
+"Aufgaben­angemessenheit","Die Eigenschaft eines interaktives Systems den Benutzer zu unterstützen, seine Aufgabe zu erledigen, d. h., die Funktionalität und Dialog an die charakteristischen Eigenschaften der Aufgabe anzupassen, anstatt an die zur Aufgabenerledigung eingesetzten Technologie.
+Anmerkung:
+1.	Empfehlungen zu Befolgung des Dialogprinzips:
+a.	Der Dialog sollte dem Benutzer solche Informationen anzeigen, die im Zusammenhang mit der erfolgreichen Erledigung der Aufgabe stehen.
+b.	Der Dialog sollte dem Benutzer keine Informationen anzeigen, die nicht für die erfolgreiche Erledigung relevanter Aufgaben benötigt werden.
+c.	Die Form der Eingabe und Ausgabe sollte der Aufgabe angepasst sein. Wenn für eine Aufgabe ganz bestimmte Eingabewerte typisch sind, sollten diese Werte dem Benutzer automatisch als voreingestellte Werte verfügbar sein.
+d.	Die vom interaktiven System verlangten Dialogschritte sollten zum Arbeitsablauf passen, d. h. notwendige Dialogschritte sollten enthalten sein und unnötige Dialogschritte sollten vermieden werden.
+2.	Aufgaben­angemessenheit ist ein Dialogprinzip."
+"Aufgabenmodell","Eine Beschreibung der Teilaufgaben die erledigt werden müssen, um die Ziele des Benutzers zu erreichen.
+Anmerkung:
+1.	Ein Aufgabenmodell beschreibt die Logik einer Aufgabe an sich, während ein Szenario die Erledigung einer oder mehrerer Aufgaben durch eine Persona beschreibt."
+"Barrierefreiheit","Die Attribute und Charakteristiken eines interaktiven Systems die Menschen mit eingeschränkter Sicht, eingeschränktem Hören, eingeschränkter Geschicklichkeit, eingeschränkter Kognition oder eingeschränkter physischer Mobilität ermöglichen sollen effektiv und effizient mit dem interaktiven System zu interagieren.
+Anmerkungen:
+1.	Standards und Richtlinien für Barrierefreiheit sind verfügbar und in manchen Unternehmen oder Ländern gesetzlich zu erfüllen
+2.	Hilfsmittel zur Schaffung von Barrierefreiheit wie z.B. Screenreader können einem System hinzugefügt werden, um Menschen mit Behinderungen zu ermöglichen, das System zu nutzen"
+"Befund","Siehe Usability-Befund"
+"Benutzer","Person, die mit einem interaktiven System arbeitet oder Daten die vom System erzeugt werden benutzt.
+Anmerkungen:
+1.	„Benutzer“ werden unterteilt in
+a.	Direkter Benutzer: Interagiert mit dem interaktiven System.
+b.	Indirekter Benutzer: Benutzt Daten die vom interaktiven System erzeugt werden.
+c.	Primärer Benutzer: Interagiert mit dem interaktiven System um Ziele die vom interaktiven System unterstützt werden zu erreichen.
+d.	Sekundärer Benutzer: Interagiert mit dem interaktiven System um Unterstützung etc. zu geben.
+2.	Interessenvertreter können Benutzer sein oder auch nicht. Sie werden nicht als Benutzer betrachtet wenn sie zwar durch das interaktive System beeinflusst werden, jedoch weder mit dem interaktiven System selbst interagieren noch das mit Hilfe des interaktiven Systems erzielte Arbeitsergebnis nutzen.
+Beispiele von Interessenvertretern die keine Benutzer sind:
+1.	Manager von Benutzern.
+2.	Personen die von Lärm der von der Person die das interaktive System benutzt erzeugt wird betroffen sind.
+3.	Marketingfachleute die von der Auswirkung der Ergebnisse auf die Markenbezeichnung betroffen sind."
+"Benutzer­befragung","Eine Evaluierung bei der Benutzer subjektive Daten in einem Fragebogen angeben sollen, basierend auf ihren Erfahrungen bei der Benutzung eines interaktiven Systems. 
+Anmerkung:
+1	Benutzerbefragungen können verwendet werden, um die Zufriedenstellung mit einem interaktiven System zu evaluieren und um Informationen über den Nutzungskontext zu sammeln.
+2. 	Bei korrekter Ausführung können Benutzerbefragungen einen höheren Grad an Sicherheit bei Evaluierungsergebnissen erzielen als jede andere qualitative Untersuchungsmethode."
+"Benutzer­dokumentation","Für Benutzer geschriebene oder andere Anleitungen zu dem interaktiven System, wie es funktioniert, und wie man es bedient.
+Anmerkung:
+1.	Benutzer­dokumentation ist eine Form der Benutzerunterstützung."
+"Benutzererlebnis","Wahrnehmungen und Reaktionen einer Person, die aus der tatsächlichen oder erwarteten Benutzung eines interaktiven Systems resultieren. 
+Anmerkungen: 
+1.	Benutzererlebnis schliesst Usability ein. Usability Kriterien können eingesetzt werden um Aspekte des Benutzererlebnisses zu evaluieren.
+2.	Benutzererlebnis umfasst die Gefühle, Meinungen, Bevorzugungen, Auffassungen und Leistungen der Benutzer die bevor, während und nach der Benutzung des interaktiven Systems auftreten.
+3.	Das Benutzererlebnis hängt ab	von Markenimage, Darstellung, Funktionalität, Systemleistung, interaktivem Verhalten und unterstützenden Fähigkeiten des interaktiven Systems, sowie vom Nutzungskontext.
+Beispiele die den Unterschied zwischen Usability und User Experience veranschaulichen:
+Wenn Blumen auf einer Website eines Blumengeschäftes zur Auslieferung bestellt werden:
+1.	Aufgetauchte Usability-Probleme während des Checkouts beeinflussen sowohl das Benutzererlebnis als auch die Usability.
+2.	Die Qualität der physisch gelieferten Blumen beeinflusst ausschließlich die User Experience, nicht die Usability.
+3.	Die gemachte Erfahrung beim Besuch des physikalischen Geschäfts, beeinflusst die User Experience zukünftiger Besuche der Website. Sie hat keinen Einfluss auf die Usability.
+Anmerkung zum Training:
+1.	Zertifizierungsanwärter müssen den Unterschied zwischen Usability und Benutzererlebnis kennen."
+"Benutzergruppe","Eine Gruppe von Benutzern mit denselben oder ähnlichen Personenmerkmalen und Nutzungskontext bezogen auf das interaktive System."
+"Benutzer­gruppen­profil","Eine verallgemeinerte Beschreibung einer Benutzergruppe."
+"Benutzer­unterstützung","Informationen um einem Benutzer bei der Interaktion mit einem interaktiven System zu helfen.
+Anmerkungen:
+1.	Benutzerunterstützung kann eine Beschreibung der Benutzeroberfläche selbst beinhalten, aber auch Informationen, wie der Benutzer am besten die Möglichkeiten des interaktiven Systems für die Erfüllung seiner Anforderungen einsetzen kann.
+2. 	Benutzerunterstützung schließt alle Formen von Hilfestellung, die für den Benutzer zur Verfügung stehen, ein, z.B.:
+a.	Benutzerdokumentation 
+b.	Onlinehilfe
+c.	Systeminitiierte Benutzerführung"
+"Benutzer­zentrierte Gestaltung","Siehe Menschzentrierte Gestaltung."
+"Benutzer­zentrierte Usability-Evaluierung","Usability-Evaluierung, die repräsentative Benutzer involviert, die bestimmte Aufgaben mit dem interaktiven System ausführen, um die Identifikation von Usability-Problemen oder die Messung von Effizienz, Effektivität und Zufriedenstellung zu ermöglichen.
+Anmerkung:
+1.	Siehe Usability-Test."
+"Benutzungs­schnittstelle","Alle Bestandteile eines interaktiven Systems (Software oder Hardware), die Informationen und Steuerelemente zur Verfügung stellen, die für den Benutzer notwendig sind, um bestimmte Aufgaben mit dem interaktiven System zu erledigen."
+"Beobachter","Eine Person, die Benutzer beobachtet, die eine Aufgabe diskutieren oder eine Aufgabe mittels eines interaktiven Systems ausführen.
+Anmerkungen:
+1.	Beobachter ist eine Rolle während einer Usability-Aktivität, wie z.B. Beobachtung, einer Usability-Testsitzung oder einer Fokusgruppe.
+2.	Beobachter dürfen nicht aktiv in die Usability-Aktivität eingreifen. Sie können aber aktiv in die Analyse der Ergebnisse involviert sein."
+"Beobachtung","Eine Technik für das Sammeln von Kontextinformationen zu den Erfordernissen des Nutzungskontexts. Während einer Beobachtung sieht der Beobachter dem Benutzer bei der Ausführung von Aufgaben am interaktiven System zu. 
+Anmerkungen:
+1.	Der Beobachter greift nicht ein, außer  es besteht gelegentlich die Notwendigkeit zu einer klärenden Frage.
+2.	Wenn kein interaktives System benutzt wird, sollten die vorhandenen manuellen Abäufe beobachtet werden.
+3.	Die Beobachtung sollte in einem möglichst natürlichen Kontext stattfinden, z. B. am Arbeitsplatz des Benutzers."
+"Briefing","Die erste Aktivität in einem Interview oder Usability-Test, in dem dem Teilnehmer erklärt wird, warum das Interview oder der Usability-Test durchgeführt wird und was seine Rolle und sein Beitrag ist"
+"Design Pattern","Eine wiederverwendbare Lösung für ein Gestaltungsproblem innerhalb eines Kontexts. Ein Design Pattern beschreibt ein Gestaltungsproblem, eine Lösung und wo sich diese Lösung als funktionierend herausgestellt hat.
+Anmerkung:
+1.	Auf Deutsch wird „design pattern“ manchmal als „Entwurfsmuster“ bezeichnet.
+Anmerkung zum Training:
+1.	Verschiedene Webseiten bieten freien Zugang zu einer großen Auswahl an Design Patterns z.B. www.welie.com "
+"Dialog","Interaktion zwischen einem Benutzer und einem interaktiven System in Form einer Folge von Handlungen des Benutzers (Eingaben) und Antworten des interaktiven Systems (Ausgaben), um ein Ziel zu erreichen."
+"Dialogprinzipien","Allgemeine Ziele für das Dialogdesign.
+Anmerkungen
+1.	Dialogprinzipien sind unabhängig von einer spezifischen Technologie oder Technik
+2.	Aufgrund ihrer Allgemeingültigkeit kann es schwierig sein, Dialogprinzipien im konkreten Kontext umzusetzen.
+3.	Die DIN EN ISO 9241-110 führt folgende sieben Dialogprinzipien auf:
+a.	Aufgabenangemessenheit,
+b.	Selbstbeschreibungsfähigkeit,
+c.	Erwartungskonformität,
+d.	Lernförderlichkeit,
+e.	Steuerbarkeit,
+f.	Fehlertoleranz,
+g.	Individualisierbarkeit.
+4.	Vergleiche Dialogprinzip mit 
+a.	Heuristik: Daumenregel, die der Umsetzung von Dialogprinzipien dient aber konkreter und einfacher anzuwenden ist.
+b.	Gestaltungsregel: Spezifischer Regel für das Design der Benutzungsschnittstelle."
+"Direkter Benutzer","Eine Person, die mit einem interaktiven System interagiert.
+Anmerkung
+1.	Ein direkter Benutzer ist ein primärer ode rein sekundärer Benutzer.
+Beispiele für direkte Benutzer
+1.	Ein Kundenbetreuer in einem Call-Center der ein Computersystem nutzt ist ein direkter Benutzer des Computersystems. Ein Kunde der das Call-Center anruft ist zwar ein direkter Nutzer des Services des Kundenbetreuers aber nur ein indirekter Benutzer des Computersystems. "
+"Dringlichkeits­stufe","Ein Maß für ein Usability-Problem aus einem Usability-Test, das die Auswirkung des Usability-Problems auf das Benutzererlebnis bewertet.
+Anmerkungen: 
+1.	Der Usability-Tester bewertet Usability-Probleme aus Sicht der Usability-Testteilnehmer. Manchmal erfolgen die Bewertungen in Kooperation des Usability-Testers mit einem Experten des Fachgebiets. 
+2.	Typische Dringlichkeits­stufen sind: niedrig, ernst, kritisch, lebensbedrohend."
+"Effektivität","Ausmaß der Vollständigkeit und Genauigkeit der Zielerreichung.
+Anmerkungen: 
+1.	Die Effektivität ist eines der drei messbaren Attribute für Usability. Die anderen beiden Attribute sind Effizienz und Zufriedenstellung.
+2.	Die Effektivität ist ein Attribut von Usability, das auf die prinzipielle Fähigkeit zur Aufgabenerledigung verweist."
+"Effizienz","Eingesetzte Ressourcen, um bestimmte Ziele zu erreichen.
+Anmerkungen:
+1. Ressourcen beinhalten zeitliche, finanzielle und  materielle Aufwände sowie mentale Aufwände die aus menschlichem Wahrnehmen, Denken und Handeln resultieren  
+2.	Effizienz ist eines der drei messbaren Attribute von Usability. Die anderen beiden Attribute sind Effektivität und Zufriedenstellung. 
+3.	Effizienz ist ein Attribut von Usability welches auf die Erledigung einer Aufgabe mit einem akzeptierbarem Aufwand verweist.   "
+"Erfordernis","Eine für einen Benutzer oder eine Benutzergruppe als notwendig identifizierte Voraussetzung, um ein Ziel innerhalb eines bestimmten Nutzungskontextes zu erreichen. 
+Anmerkungen:
+1.	Ein Erfordernis ist unabhängig von jeglicher vorgeschlagenen Lösung für dieses Erfordernis. Mit anderen Worten: Ein Erfordernis darf nicht auf z.B. ”das System” oder ”die Website” hinweisen.
+2.	Erfordernisse werden aufgrund verschiedener Ansätze identifiziert, unter anderem  Interviews mit Benutzern, Beobachtungen, Benutzerbefragungen, Usability-Evaluierungen, Expertenanalyse usw.
+3.	Erfordernisse repräsentieren oftmals Lücken (oder Diskrepanzen) zwischen dem was ist und dem was sein soll.
+4.	Erfordernisse werden transformiert in Nutzungsanforderungen, die den Nutzungskontext, Benutzerprioritäten sowie das Wechselspiel mit anderen Anforderungen und -Einschränkungen mit berücksichtigen. 
+4.	„Erfordernis“ heisst auf Englisch „User need“.
+Beispiele für Erfordernisse:
+1.	Ein Vortragender (Benutzer) muss wissen, wie viel Zeit er noch hat (Voraussetzung), um den Vortrag während einer Präsentation mit einer festgelegten Zeitbeschränkung  (Nutzungskontext) abschliessen zu können (Ziel).
+2.	Ein Finanzbuchhalter (Benutzer) muss die Anzahl der erhaltenen Rechnungen und ihre Beträge kennen (Voraussetzung) um die tägliche Rechnungsstellung (Ziel) als Teil der Cashflow-Kontrolle (Nutzungskontext) fertigstellen zu können."
+"Erwartungs­konformität","Übereinstimmung mit den aus dem Nutzungskontext heraus vorhersehbaren Benutzerbelangen sowie allgemein anerkannten Konventionen.
+Anmerkungen:
+1.	Konsistenz ist ein Aspekt der Erwartungskonformität.
+2.	Erwartungskonformität ist ein Dialogprinzip.
+"
+"Evaluierung","Siehe Usability-Evaluierung"
+"Evaluierungs-bericht","Ein Dokument, in dem die Ergebnisse eines Usability-Tests, einer Inspektion oder einer Benutzerbefragung dokumentiert werden.
+Anmerkung:
+1.	Das Dokument für einen Usability-Test wird üblicherweise als Usability-Testbericht bezeichnet."
+"Facilitator","Siehe Moderator"
+"Fehlertoleranz","Die Eigenschaft eines Dialogs das beabsichtigte Arbeitsergebnis trotz erkennbar fehlerhafter Eingaben entweder mit keinem oder mit minimalem Korrekturaufwand seitens des Benutzers zu erreichen.
+Anmerkung:
+1.	Fehlertoleranz ist ein Dialogprinzip.
+Beispiele für Fehlertoleranz:
+1.	Wenn ein Fehler auftritt, sollte das interaktive System eine genaue und verständliche Erklärung anbieten und konstruktiv eine Lösung vorschlagen, also was als nächstes zu tun ist.
+2.	Wenn aus einer Benutzeraktion schwerwiegende Folgen entstehen können, dann sollte das interaktive System eine Erklärung anbieten und eine Bestätigung vor der Durchführung der Aktion durch den Benutzer einholen."
+"Fokusgruppe","Eine gezielte Diskussion, bei der ein Moderator eine Gruppe von Teilnehmern durch eine Menge von Fragen zu einem bestimmten Thema führt. 
+Anmerkungen: 
+1.	Die Durchführung von Fokusgruppen ist kein Ersatz für eine Usability-Evaluierung.
+2.	Fokusgruppen befassen sich mit Meinungen, Usability-Tests mit der Beobachtung des tatsächlichen Benutzerverhaltens."
+"Formative Usability-Evaluierung","Eine Art der Usability-Evaluierung die hilft, das Design für ein interaktives System zu verbessern, besonders während es noch gestaltet wird.
+Anmerkung:
+1.	Vergleiche mit Summative Usability-Evaluierung."
+"Fragebogen","Ein Satz von Fragen, der von Benutzern in einer Benutzerbefragung beantwortet wird, um  Daten zu sammeln.
+Anmerkungen: 
+1.	Zwei wichtige Verwendungszwecke von Fragebögen im Bereich Usability sind:
+a.	Um den Nutzungskontext zu verstehen. Die gestellten Fragen beziehen sich auf die Erfahurngen die ein Benutzer mit dem momentanen, interaktiven System gemacht hat und die Erwartungen, die er an ein neues interaktives System stellt. 
+b.	Um das Benutzererlebnis vor, während und nach der Benutzung eines interaktiven Systems zu evaluieren.
+2.	Fragebögen müssen benutzbar sein. Sie müssen den Dialogprinzipien folgen, z.B.
+a.	Jede Frage muss einen wesentlichen Beitrag zur Beantwortung der globalen Fragestellung liefern.
+b.	Fragen müssen leicht zu verstehen sein.
+c.	Der Fragebogen muss die Benutzer hinsichtlich ihres Fortschritts in der Beantwortung der Fragen auf dem Laufenden halten.
+d.	Der Fragebogen muss anhand eines Usability-Tests optimiert worden sein.
+3.	Diese Definition bezieht sich sowohl auf Digitale- als auch auf Papierfragebögen.
+Beispielfragen um den Nutzungskontext zu verstehen:
+1. 	“Wann haben Sie das letzte Mal die Website für Autovermietung benutzt? Was wollten Sie auf der Seite tun?“
+2.	“Was erwarten Sie von einer Website für Autovermietung?”
+Beispiele für Fragen zur Evaluierung der Zufriedenstellung:
+1.	“Auf einer Skala von 1 bis 5, bei der 1 für “stimme gar nicht zu“, 3 „neutral“ und 5 für „stimme voll  zu“ steht, bewerten Sie bitte die folgenden Aussagen:
+a.	Die neue Website für Autovermietung sieht cool aus.
+b.	Die neue Website für Autovermietung ist einfach zu benutzen.
+c.	Die neue Website für Autovermietung ermöglicht schnelles Mieten von Autos."
+"Gebrauchs­tauglichkeit","Siehe Usability"
+"Geschlossene Frage","Eine Interviewfrage die eine Antwort aus einem vordefinierten Satz von Alternativen fordert, oft einfach „ja“ oder „nein“.
+Anmerkungen: 
+1.	Vermeide mehrere geschlossene Fragen hintereinander. Sie unterbrechen den Redefluss der Benutzer weil sie sich wie ein Polizeiverhör anhören. 
+2.	Vergleiche mit offene Frage.
+Beispiel für geschlossene Frage:
+1.	„Haben Sie jemals ein Auto gemietet?“ Entsprechende offene Frage: „Bitte erzählen Sie mir von dem letzten Mal wo Sie ein Auto gemietet haben.“"
+"Gestaltungsregel","Konkrete, spezifische Instruktion oder Empfehlung, die wenig Interpretationsspielraum lässt, so dass verschiedene Designer sie ähnlich umsetzen.
+Anmerkungen:
+1. 	Sammlungen von Gestaltungsregeln werden als Styleguides bezeichnet.
+2. 	Design Patterns müssen relevante Gestaltungsregeln erfüllen.
+3. 	Vergleiche Gestaltungsregel mit
+a.	Dialogprinzip – ein generelles Ziel für das Dialogdesign. Evtl. schwierig anzuwenden auf Grund der Allgemeingültigkeit.
+b.	Heuristik – Eine Daumenregel die bei der Erreichung von Dialogprinzipien hilft. Diese ist spezifischer und einfacher anzuwenden als ein Dialogprinzip.
+Beispiele für Gestaltungsregeln:
+1.	Für alle Steuerelemente, wie z.B. Buttons, wähle den zuverlässigsten, sichersten Wert als Voreinstellung um den Datenverlust bzw. den risikablen Systemzugriff zu verhindern. Wenn Sicherheit und Schutz der Daten keine relevanten Faktoren sind, wähle den häufigsten oder bequemsten Wert.
+2. 	Das Firmenlogo muss in der oberen, linken Ecke jeder Seite erscheinen. Die Position muss exakt die gleiche sein wie die auf der Homepage. Klicken auf das Logo muss die Anzeige der Homepage zur Folge haben.
+3. 	Die Höhe eines Buttons muss 23 Pixel betragen"
+"Heuristik","Eine allgemein anerkannte Daumenregel die hilft Usability zu erreichen.
+Anmerkungen:
+Heuristiken dienen hauptsächlich dazu, Usability zu gewährleisten (und nicht Nützlichkeit). 
+Vergleiche Heuristik mit
+a.  Dialogprinzip – ein allgemeines Ziel für das Design von Dialogen. Ist möglicherweise schwieriger anzuwenden auf Grund seiner Allgemeingültigkeit. 
+b.  Gestaltungsregel – einfache, aber  spezifische Regel für Gestaltung von Benutzungs­schnittstellen.
+Beispiele allgemein anerkannter Heuristiken (von Jakob Nielsen und Rolf Molich):
+1.	Beachte Konventionen der realen Welt, z.B. sprich die Sprache der Benutzer
+2.	Beachte Konventionen der verwendeten Plattform
+3.	Minimiere die Notwendigkeit zur Erinnerung beim Benutzers in dem Objekte, Handlungen und Optionen sichtbar gemacht werden.
+4.	Biete angemessenes Feedback innerhalb angemessener Zeit
+5.	Hilf Benutzern beim Erkennen, Verstehen und Beseitigen von Fehlern.
+"
+"Heuristische Evaluierung","Eine Methode der Usability-Evaluierung bei der ein oder mehrere Begutachter – vorzugsweise Experten – ein interaktives System mit einer Liste von Heuristiken vergleichen und feststellen an welchen Stellen das interaktive System diesen Heuristiken nicht folgt.
+Anmerkungen:
+1.	Die Liste der Heuristiken muss handhabbar sein. Üblicherweise werden etwa 10 Heuristiken benutzt.
+2.	Experten können Usability-Experten oder Experten im Anwendungsbereich sein."
+"High-fidelity-Prototyp","Ein Software Prototyp der Benutzungsschnittstelle des zu designenden interaktiven Systems. Ein high-fidelity-Prototyp ähnelt dem fertigen interaktiven System und kann interaktiv oder nicht interaktiv sein.
+Anmerkungen:
+1.	Vergleiche mit low-fidelity-Prototyp.
+2.	High-fidelity-Prototypen können entweder mit einem Programm zum Prototyping oder mit einem Büroprogramm (wie z.B. PowerPoint) entworfen werden. "
+"Indirekter Benutzer","Personen, die direkt die Ergebnisse eines interaktiven Systems nutzen, aber nicht direkt mit dem System interagieren. 
+Beispiel für indirekter Benutzer:
+1.	Ein Bankkunde, der ein Dokument oder einen elektronischen Bericht erhält, oder eine Filiale besucht, ist ein indirekter Benutzer eines Arbeitsergebnisses, das mit Hilfe eines Systems erzeugt wurde, das die Mitarbeiter der Bank benutzen."
+"Individualisier­barkeit","Die Eigenschaft eines Dialogs die Benutzer ermöglicht die Interaktion mit dem System und die Darstellung von Informationen an ihre individuellen Fähigkeiten und Bedürfnisse anpassen zu können.
+Anmerkung:
+1.	Individualisierbarkeit ist ein Dialogprinzip."
+"Informations­architekt","Eine Person die die Struktur von Information in interaktiven Systemen für das effiziente Auffinden durch jede Benutzergruppe kreiert und organisiert.
+Anmerkung:
+1.	Informationsarchitekt ist eine Rolle im Prozess der menschzentrierten Gestaltung."
+"Informations­architektur","Die Benennung und Strukturierung der Informationen die für den Benutzer erreichbar sein müssen einschließlich der Nutzungsobjekte, Systemobjekte (wie z.B. „Drucker“) und weiterer für den Benutzer erforderlichen Informationen. "
+"Inspektion","Siehe inspektionsbasierte Usability-Evaluierung"
+"Inspektions­basierte Usability-Evaluierung","Usability-Evaluierung die auf der Beurteilung ein oder mehrerer Evaluatoren basiert, die ein interaktives System prüfen oder benutzen, um potentielle Usability-Probleme und Abweichungen von anerkannten Kriterien zu identifizieren.
+Anmerkungen:
+1.	Inspektionsbasierte Usability-Evaluierung wird oft von Usability-Experten oder Fachexperten durchgeführt, die ihre Urteile auf die frühere Erfahrung mit Usability-Problemen und ihr eigenes Wissen über Gestaltungsregeln und Styleguides gründen.
+2.	Heuristische Evaluierung ist eine Vorgehensweise für Inspektionsbasierte Usability-Evaluierung."
+"Interaktions­designer","Eine Person die die Interaktion zwischen Mensch und System auf Basis der Nutzungs­anforderungen und Nutzungskontext definiert und konzipiert. 
+Anmerkung:
+1.	Szenarien und Personas sind auch wichtige Grundlagen für die Arbeit des Interaktionsdesigners.
+2.	Interaktionsdesigner ist eine Rolle im Prozess der menschzentrierten Gestaltung."
+"Interaktives System","Kombination von Hardware-, Software- und Servicekomponenten, die Eingaben von einem Benutzer empfängt und Ausgaben zu einem Benutzer übermittelt.
+Anmerkung:
+1.	Das schließt, wo relevant, Verpackung, Branding, Benutzerdokumentation, Onlinehilfe, Support und Training mit ein.  "
+"Interessen­vertreter","Individuum oder Organisation, die ein Anrecht, einen Anteil, einen Anspruch oder ein Interesse auf ein interaktives System oder an dessen Merkmalen hat, die ihren Erfordernissen und Erwartungen entsprechen. 
+Anmerkungen: 
+1.	Alle Benutzer sind Interessenvertreter.
+2.	Siehe auch unterschiedliche Typen von Anforderungen
+3.	Die folgenden Beispiele für Interessenvertreter zeigen die breite Perspektive dieses Begriffs
+4.	Der englische Ausdruck für Interessenvertreter ist Stakeholder
+Beispiele für Interessenvertreter: 
+1.	Benutzer, Support, Trainer, Autoren von Dokumentationen, Entwickler, Manager von Entwicklern und Personen im Marketing."
+"Interessen­vertreter­anforderung","Was das interaktive System aus Sicht des Interessenvertreters leisten muss.
+Anmerkung:
+1.	Der englische Ausdruck für Interessenvertreteranforderung ist Stakeholder requirement."
+"Interview","Eine Methode der Datensammlung, die sorgfältig ausgewählte Individuen untersucht, um ein tiefes Verständnis der Arbeitstätigkeit der Benutzer zu erreichen. Durch die Befragung und Interpretation werden Gemeinsamkeiten und Unterschiede innerhalb der Benutzer  eines interaktiven Systems aufgedeckt.  
+Anmerkungen: 
+1.	In einem Interview führt der Interviewer (der User Requirements Engineer) üblicherweise ein Briefing durch und stellt danach dem Benutzer Fragen über die üblichen Abläufe vor dem Hintergrund des geplanten interaktiven Systems. Der Interviewer nutzt eine Interviewcheckliste, um sicherzustellen, dass zu allen relevanten Aspekten befragt wurde.
+2.	Das Meister-Schüler-Modell sollte beim Interview Anwendung finden.
+3.	Interviewfragen sollten 
+a.	eher offen als geschlossen
+b.	eher neutral als suggestiv
+formuliert sein.
+4.	Vergleiche kontextuelles Interview, Pre-Session Interview und Post-Session Interview"
+"Interview–checkliste","Eine schriftliche Liste passender Fragen und Hinweise, die während eines Interviews verwendet wird, um sicherzustellen, dass alle relevanten Themen berücksichtigt werden."
+"Intuitiv","Die Benutzung des interaktiven Systems ist unmittelbar zu verstehen – unabhängig von der Erfahrung, vom Wissen, von den Sprachkenntnissen oder vom momentanen Konzentrationsgrad des Benutzers.
+Anmerkung:
+1.	Affordance und Selbstbeschreibungsfähigkeit sind Mittel, ein interaktives System intuitiv zu gestalten."
+"ISO 9241","Eine Reihe von Standards, die die menschzentrierte Gestaltung interaktiver Systeme betrifft.  
+Anmerkung:
+1.	ISO 9241 beinhaltet Standards zu den Themen
+a.	Software-Ergonomie
+b.	Prozess menschzentrierter Gestaltung
+c.	Displays und Display bezogene Hardware
+d.	Physikalisches Eingabegeräte
+e.	Ergonomie des Arbeitsplatzes
+f.	Ergonomie der Umgebung
+g.	Kontrollzentren
+h.	Taktile und haptische Interaktionen"
+"Iterativ","Wiederholend.
+Ein iteratives Vorgehen wiederholt Schritte des Prozesses der menschzentrierten Gestaltung solange, bis eine Usability-Evaluierung der Benutzungsschnittstelle zeigt, dass die Nutzungsanforderungen ausreichend erfüllt sind."
+"Konsistenz","Die gleiche Information wird in gleicher Weise innerhalb des gesamten interaktiven Systems entsprechend der Benutzererwartung dargestellt.
+Anmerkungen:
+1.	Konsistenz ist eine Komponente der Erwartungskonformität. 
+2.	Konsistenz ist auf verschiedenen Ebenen relevant wie zum Beispiel 
+a.	innerhalb einer Bildschirmanzeige,
+b.	zwischen den Bildschirmanzeigen desselben interaktiven Systems, 
+c.	zwischen interaktiven Systemen desselben Herstellers,
+d.	zwischen ähnlichen interaktiven Systemen unterschiedlicher Hersteller."
+"Kontextuelles Interview","Ein Interview das dort stattfindet wo die Interaktion des Benutzers mit dem interaktiven System üblicherweise stattfindet, z.B. am Arbeitsplatz des Benutzers.
+Anmerkungen: 
+1.	„Kontextuelles Interview“ wird auf Englisch oft als „Contextual inquiry“ bezeichnet."
+"Lern­förderlichkeit","Die Eigenschaft eines Dialogs die Benutzer beim Erlernen der Nutzung des interaktiven Systems zu unterstützen und anzuleiten.
+Anmerkungen:
+1.	Empfehlungen zur Befolgung des Dialogprinzips:
+a.	Der Dialog sollte ausreichende Rückmeldung über Zwischen- und Endergebnisse von Handlungen bereitstellen, damit die Benutzer von erfolgreich ausgeführten Handlungen lernen.
+b.	Falls es zu den Aufgaben und den Lernzielen passt, sollte das interaktive System dem Benutzer erlauben, Dialogschritte ohne nachteilige Auswirkungen auszuprobieren.
+2.	Lernförderlichkeit ist ein Dialogprinzip.
+Beispiel für Lernförderlichkeit:
+1.	Wenn Benutzer mit Hilfe eines Hotelzimmerreservierungssystems ein Zimmer reservieren, erhalten die Benutzer Schritt für Schritt Rückmeldungen, um ihre Anfrage zu verfeinern und immer mehr Details über den Fortschritt der erfolgreichen Zimmerreservierung."
+"Low-fidelity-Prototyp","Eine einfache und preiswerte Veranschaulichung eines Designs oder eines Begriffs. Wird benutzt, um Benutzer-Feedback in frühen Phasen der Entwicklung einzuholen
+Anmerkungen: 
+1.	Ein low-fidelity-Prototyp wird häufig mit Hilfe von Papier, Stiften, Haftzetteln usw. erstellt. 
+2.	Ein low-fidelity-Prototyp wird üblicherweise von einem Menschen und nicht durch einen Computer betrieben.
+3.	Ein low-fidelity-Prototyp sollte so hinterlegt sein, dass er unmittelbar modifiziert werden kann.
+4.	Vergleiche mit high-fidelity-Prototyp."
+"Markt­anforderung","Eine Anforderung an ein interaktives System, die aus der Absatzpolitik des Anbieters abgeleitet ist und darauf abzielt, Geschäftschancen, Verkäufe und die Nutzung des interaktiven Systems zu maximieren.
+Anmerkungen:
+1.	Häufig werden Marktanforderungen Kundenanforderungen genannt.
+Beispiel für Marktanforderung: 
+1.	„Die Webseite muss mindestens so benutzbar sein wie jene der zwei stärksten Wettbewerber.“"
+"Meister-Schüler-Modell","Ein Verhaltensprinzip für ein erfolgreiches Interview:  Der Interviewer behandelt den Benutzer als den Meister während der Interviewer selbst der Schüler ist. Der Interviewer demonstriert nicht sein Wissen, sondern stellt seine Fragen mit dem Ziel etwas zu lernen."
+"Mensch­zentrierte Gestaltung","Herangehensweise bei der Gestaltung und Entwicklung von interaktiven Systemen, die darauf abzielt, diese gebrauchtauglicher zu machen indem sie sich auf die Verwendung des interaktiven Systems konzentriert und Kenntnisse und Techniken aus den Bereichen der Arbeitswissenschaft, Ergonomie und der Gebrauchstauglichkeit anwendet.
+Anmerkungen:
+1.	Der Begriff “menschzentrierte Gestaltung” wird statt “benutzerzentrierter Gestaltung” verwendet, um auch die Erfordernisse weiterer Interessenvertreter einzuschliessen, die nicht unbedingt Benutzer sind.
+2.	Feedback von Benutzern aus Usability Evaluierungen ist eine wichtige Informationsquelle in der menschzentrierten Gestaltung."
+"Mentales Modell","Die Vorstellung, die Menschen von sich, anderen, der Umgebung und den Dingen haben, mit denen sie interagieren. 
+Anmerkungen: 
+1.	Alternative, populäre Definition: Der Denkprozess einer Person darüber, wie etwas in der realen Welt funktioniert.
+2.	Menschen generieren mentale Modelle aufgrund von Erfahrung, Training und Instruktion. Das mentale Modell bezüglich eines interaktiven Systems wird größtenteils durch die Interpretation von wahrgenommenen Aktionen und sichtbaren Strukturen gebildet. Die Erwartung durch die Benutzung anderer oder ähnlicher Systeme spielt auch eine Rolle.
+3.	Wenn ein mentales Modell eines Benutzers von einem interaktiven System unvollständig oder widersprüchlich ist, dann kann der Benutzer das interaktive System nicht hindernisfrei benutzen."
+"Moderation","Die durch einen Moderator während eines Usability-Tests oder einer Fokusgruppe ausgeübte Tätigkeit."
+"Moderator","Eine neutrale Person die eine Usability-Testsitzung oder eine Fokusgruppe leitet.
+Anmerkungen: 
+1.	Moderator ist eine Rolle in einer Usability-Testsitzung oder in einer Fokusgruppensitzung.
+2.	Die typischen Aufgaben des Moderators während einer Usability-Testsitzung sind beim Begriff Usability-Testsitzung beschrieben.
+3.	Auf Englisch wird Facilitator oft als Synonym für Moderator verwendet."
+"Nach­besprechung","Siehe Post-Session Interview."
+"Navigations­struktur","Die logische Organisation der angezeigten Informationseinheiten der Benutzungsschnittstelle.
+Anmerkungen:
+1.	In der Praxis sind die „angezeigten Informationseinheiten“ oft Bildschirminhalte, Seiten oder Fenster.
+2.	Die Navigationsstruktur umfasst: 
+a.	Die logische Struktur, zum Beispiel Hierarchie, Anordnung sowie Gruppierung von Bestandteilen des User Interfaces bzw. Navigationsitems.
+b.	Die Navigationsmittel zum Navigieren in der Struktur, zum Beispiel Menü und Brotkrumen
+3.	Die Navigationsstruktur ist ein Teil der Informationsarchitektur. Verantwortlich ist der Informationsarchitekt – er kann das aber nicht ohne den Interaktionsdesigner festlegen."
+"Neutrale Frage","Eine Frage in einem Interview, die keine impliziten Annahmen beinhaltet und auch keinen Ansatz bietet, einen Aspekt auszuschliessen oder die Antwort in eine bestimmte Richtung zu lenken. 
+Anmerkung:
+1.	Vergleiche mit Suggestivfrage.
+Beispiele für neutrale (und offene) Interviewfragen
+1.	Was ist passiert?
+2.	Was meinen Sie damit?
+3.	Welche Möglichkeiten haben Sie jetzt?
+4.	Wie sollte die Homepage der neuen Autovermietungswebsite aussehen?"
+"Nutzungs­anforderung","Anforderung an die Nutzung, die die Basis für die Gestaltung und Evaluierung eines interaktiven Systems in Hinblick auf identifizierte Erfordernisse bildet. 
+Anmerkungen:
+1.	Nutzungsanforderungen werden von Erfordernissen abgeleitet.
+2.	Eine Nutzungsanforderung kann eine qualitative Nutzungsanforderung oder eine quantitative Nutzungsanforderung sein.
+3.	„Nutzungsanforderung“ heisst auf Englisch „User requirement“."
+"Nutzungs­kontext","Benutzer, Aufgaben, Ressourcen sowie die physische und soziale Umgebung in der das interaktive System genutzt wird.
+Anmerkungen:
+1.	Die Ergebnisse aus den Beobachtungen und kontextuellen Interviews werden in der ”Nutzungskontextbeschreibung” dokumentiert. Diese ist die Basis für das Identifizieren von Erfordernissen bzw. deren Zurückführbarkeit auf den Nutzungskontext.   
+2. Eine Nutzungskontextbeschreibung beschreibt:
+a.	Benutzergruppen und Benutzergruppenprofile,
+b.	Aufgaben,
+c.	Umgebungen,
+d.	Ausrüstung,
+e.	Szenarien, die illustrieren, was im Nutzungskontext geschieht
+Anmerkung zum Training:
+1.	Hilfreiche Abkürzung: PACT = 
+People (Benutzer), 
+Activities (Aufgaben), 
+Contexts (Umgebung), 
+Technologies (Ressourcen, Ausrüstung der Benutzer)
+Beispiele:
+1.	Jugendliche verwenden Handys, um ihren Freunden Textmitteilungen zu senden während sie in einem Bus sitzen. 
+2.	Sekretärinnen benutzen Microsoft Word, um Dokumente in einer Rechtskanzlei zu schreiben."
+"Nutzungsobjekt","Die wichtigsten Informationseinheiten oder Daten mit denen Benutzer interagieren, um ihre Aufgaben durchzuführen.
+Anmerkung:
+1.	Der englische Ausdruck für Nutzungsobjekt ist Task object.
+Beispiele für Nutzungsobjekte:
+1.	Für ein Kundenmanagementsystem: 
+	- Ein Brief an einen Kunden, 
+	- Eine Liste unbezahlter Rechnungen des Kunden, 
+	- Eine Auftrag von dem Kunden.
+2.	Für einen Automaten der Bahnkarten verkauft:
+	- Eine Fahrkarte,
+	- Eine Quittung für den Kauf einer Fahrkarte,
+	- Einen Reiseplan."
+"Nutzungs­problem","Siehe Usability-Problem"
+"Nutzungs–szenario","Siehe Szenario"
+"Offene Frage","Eine Frage in einem Interview, die keine Einschränkung der Antwortmöglichkeiten nach sich zieht
+Anmerkungen: 
+1.	Offene Fragen sind in Interviews zu bevorzugen, weil sie Benutzer zur freien Rede animieren und ausführliche  Antworten auf die Frage zulassen. 
+2.	Vergleiche mit geschlossener Frage.
+Beispiele:
+1.	Für Beispiele zu offenen (und neutralen) Interviewfragen siehe Neutrale Fragen."
+"Onlinehilfe","Unterstützung die durch ein Computerprogramm bereitgestellt wird. Onlinehilfe kann themenorientiert, verfahrensorientiert oder ein Hinweis sein.
+Anmerkungen:
+1.	Onlinehilfe kann auch Informationen zu weitergehenden Themenbereichen bieten.
+2.	Onlinehilfe ist eine Form der Benutzerunterstützung."
+"Organisato­rische Anforderung","Eine organisatorische Regel die Benutzer befolgen müssen während sie ihre Aufgaben lösen.
+Anmerkung:
+1.	Organisatorische Anforderungen sind Anforderungen an die Benutzer die zu Anforderungen an das interaktive System führen.
+Beispiele: 
+1.	Ein Verkäufer muss Angebote über 100.000 Euro vom Geschäftsführer unterschreiben lassen.
+2.	Eine exakte Beschreibung der Art und Weise wie ein Benutzer eine Bestellung ausführen muss."
+"Persona","Eine Beschreibung eines Benutzers und was dieser bei der Benutzung eines interaktiven Systems beabsichtigt. 
+Anmerkung:
+1.	Personas sind nicht Beschreibungen existierender Personen, sondern repräsentieren erfundene Beispiele eines realen Benutzers auf der Basis empirisch ermittelter Daten, zum Beispiel von Beobachtungen oder Interviews.
+2.	Personas verfügen typischerweise über einen Namen, Alter, einige Hintergrund­informationen, Ziele und Wünsche. Eine Persona-Beschreibung sollte Informationen über wesentliches Wissen im Themenfeld des interaktiven Systems und die entsprechenden Interessen der Persona im Themenfeld beinhalten. Persona-Beschreibungen enthalten oft, aber nicht immer ein Foto."
+"Positiver Usability-Befund","Siehe Usability-Befund"
+"Post-Session Interview","Eine Aktivität in einem Usability-Test, bei der ein Usability-Testteilnehmer Fragen bezüglich seines allgemeinen Eindrucks hinsichtlich der Usability des interaktiven Systems beantwortet. 
+Anmerkungen:
+1.	Das Post-Session Interview findet statt, nachdem der Usability-Testteilnehmer soviele der vorgesehenen Usability-Testaufgaben wie möglich in der vorgegebenen Zeit erledigt hat. 
+2.	Wird auch als Debriefing oder Nachbesprechung bezeichnet."
+"Pre-Session Interview","Eine Tätigkeit bei einem Usability-Test, bei der Usability-Testteilnehmer Fragen bezüglich ihres Hintergrundes und vorheriger Erfahrung mit dem interaktiven System oder ähnlichen interaktiven Systemen beantworten. 
+Anmerkung:
+1.	Das Pre-Session Interview findet nach dem Briefing statt, bevor der Usability-Testteilnehmer beginnt, die Usability-Testaufgaben abzuarbeiten."
+"Primärer Benutzer","Eine Person, die mit einem interaktiven System interagiert, um Ziele zu erreichen, die durch das System unterstützt werden."
+"Protokollant","Ein Usabilityspezialist, der Notizen über Usability-Befunde während einer Usability-Testsitzung, Fokusgruppe oder Interview notiert. 
+Anmerkungen:
+1.	Protokollant ist eine Rolle in einer Usability-Testsitzung, Fokusgruppe oder Interview
+2.	Der Einsatz eines Protokollanten erlaubt dem Moderator, sich voll auf den Usability-Testteilnehmer zu konzentrieren."
+"Prototyp","Eine Repräsentation von Teilen oder des gesamten interaktiven Systems, die in einem bestimmten Maß für Analyse, Design und Evaluierung benutzt werden kann.
+Anmerkung:
+1.	Zertifizierungsanwärter müssen auch mit den Begriffen high-fidelity-Prototyp und low-fidelity-Prototyp vertraut sein."
+"Qualität","Grad der Erfüllung von Anforderungen durch ein interaktives System.
+Anmerkung: 
+1.	Beispiele für Qualitätsmerkmale neben Usability sind Korrektheit, Verlässlichkeit und Sicherheit."
+"Qualitative Nutzungs­anforderung","Eine Beschreibung, was Benutzer während der Durchführung einer Aufgabe mit dem interaktiven System finden, erkennen, verstehen, auswählen oder eingeben müssen.
+Anmerkungen:
+1.	Qualitative Nutzungsanforderungen sind die Basis für den effizienten Gebrauch von interaktiven Systemen.
+	Im Gegensatz dazu können Quantitative Nutzungsanforderungen Messungen der Effizienz des interaktiven Systems ermöglichen  – d.h. ob ein Benutzer mit Hilfe des interaktiven Systems eine Aufgabe z.B. in einer angemessenen Zeit oder mit einem definierten Maximum an Bedienungsfehlern lösen kann.
+2.	Qualitative Nutzungsanforderungen sind keine Funktionen, sondern stellen die Basis für Funktionen dar.
+3.	Vergleiche mit Quantitativer Nutzungsanforderung 
+Beispiele
+1.	Sinnvolle qualitative Nutzungsanforderungen:
+a.	„Der Benutzer muss die unterschiedlichen Fahrzeuge, die für einen bestimmten Preisbereich auf der Autovermietungs­webseite verfügbar sind, vergleichen können.“ 
+b.	„Der Benutzer muss ein Fahrzeug mit automatischer Übertragung auf der Autovermietungswebseite auswählen können.“
+c.	„Der Benutzer muss die Öffnungszeiten einer bestimmten Autovermietungsstelle sehen können.“
+2.	Falsch formulierte qualitative Nutzungsanforderungen:
+a.	„Die Benutzungsschnittstelle muss gebrauchstauglich sein und alle Benutzeraufgaben unterstützen.“ (zu allgemein)
+b.	„Die Benutzungsschnittstelle muss einen großen roten Button „Auto mieten“ haben“ (zu detailliert)"
+"Quantitative Nutzungs­anforderung","Benötigtes Maß an Usability um identifizierten Erfordernissen zu genügen im Sinne der Effektivität, Effizienz und Zufriedenstellung in einem festgelegten Nutzungskontext.
+Anmerkungen:
+1.	Quantitative Nutzungsanforderungen sind Akzeptanzkriterien für die Effektivität, Effizienz und Zufriedenstellung eines interaktiven Systems, z.B. ob Benutzer eine bestimmte Aufgabe in einer angemessenen Zeit oder mit einem festgeschriebenen Maximum an Benutzungsfehlern mit dem System erledigen können.
+2.	Vergleiche mit Qualitativer Nutzungsanforderung. Vergleiche insbesondere die Beispiele.
+Beispiel: 
+1.	„80% der Benutzer, die die Autovermietungs­webseite zumindest zweimal benutzt haben, müssen in der Lage sein, innerhalb von 5 Minuten einen Kleinwagen ab Flughafen Frankfurt (Deutschland) für zwei Tage beginnend ab morgen 09:00 Uhr zu mieten“.
+2.	Vergleiche das obige Beispiel mit Beispielen  „qualitativer Nutzungsanforderung“."
+"Rekrutierung","Akquise von Benutzern, die die erforderlichen Qualifikationen haben, an einer menschzentrierten Aktivität wie z.B. einem Usability-Test, einem kontextuellen Interview oder einer Fokusgruppe teilzunehmen.
+Anmerkung: 
+1.	Oft wird ein Rekrutierungsfragebogen eingesetzt, um festzustellen ob Kandidaten über die erforderlichen Qualifikationen zur Teilnahme an der menschzentrierten Aktivität verfügen.
+2.	Relevante Qualifikationen beinhalten: Hintergrund, Wissen über das Sachgebiet, Einstellungen und Interessen."
+"Rekrutierungs­fragebogen","Eine Reihe von Fragen für potenzielle Teilnehmer hinsichtlich ihrer Qualifikationen zur Teilnahme an einer menschzentrierten Aktivität wie z.B. einem Usability-Test oder einer Fokusgruppe.
+Anmerkungen: 
+1.	Ein Rekrutierungsfragebogen wird während der Rekrutierung von Teilnehmern benutzt, um festzustellen ob Kandidaten über die erforderlichen Qualifikationen zur Teilnahme an der menschzentrierten Aktivität verfügen.
+2.	Relevante Qualifikationen beinhalten: Hintergrund, Wissen über das Sachgebiet, Einstellungen und Interessen.
+3.	Der englische Ausdruck für Rekrutierungs­fragebogen ist Screener oder Recruitment Screener."
+"Remote Usability-Test","Ein Usability-Test bei dem sich der Usability-Testteilnehmer und der Moderator an unterschiedlichen Orten befinden 
+(„Remote“ bedeutet hier „entfernt liegend“). 
+Anmerkungen:
+1.	Der Moderator beobachtet den Usability-Testteilnehmer über eine Internetverbindung. 
+2.	Der Moderator kommuniziert mit dem Usability-Testteilnehmer über Telefon oder Internet.
+3.	Vergleiche mit Usability-Test und unbeaufsichtigter Usability-Test."
+"Ressourcen","Alle Mittel die zur Nutzung eines interaktiven Systems notwendig sind. 
+Anmerkung: 
+1.	typische Beispiele von Ressourcen sind Zeit, finanzielle Kosten, physischer und mentaler Aufwand, Hardware, Software und Materialien"
+"Richtlinie","Siehe Gestaltungsregel"
+"Rolle","Eine Funktion die eine Person innerhalb der Struktur einer Organisation inne hat.
+Anmerkungen:
+1.	Eine Rolle beschreibt eine Menge von zusammengehörigen Verhaltensweisen, Rechten, Pflichten und Normen in einem beruflichen Kontext.
+2.	Rollen werden von Individuen besetzt.
+3.	Abhängig von der Komplexität eines Projektes können mehrere Menschen eine Rolle teilen oder mehrere Rollen einer Person zugewiesen werden.
+4.	Arbeitsrollen sind „Hüte“, die Menschen aufhaben, wenn sie die entsprechenden Verantwortlichkeiten übernehmen und die damit verbundenen Tätigkeiten ausüben.
+Beispiel:
+1.	In einer Usability-Testsitzung kann eine Person gleichzeitig die Rolle des Moderators und die des Protokollanten übernehmen. 
+	In einer anderen Usability-Testsitzung hingegen, könnte eine Person als Moderator fungieren und zwei andere Personen könnten beide als Protokollant auftreten."
+"Sekundärer Benutzer","Eine Person, die mit einem interaktiven System interagiert, um die Nutzung des Systems zu unterstützen oder das System zu warten.
+Beispiele für sekundäre Benutzer:
+1.	Sicherheitsmanager, Administrator, Trainer und Wartung."
+"Selbst­beschreibungs­fähigkeit","Die Eigenschaft eines Dialogs zu jeder Zeit dem Benutzer offensichtlich zu machen, in welchem Dialog, an welcher Stelle im Dialog er sich befindet, welche Handlungen unternommen werden können und wie diese ausgeführt werden können.
+Anmerkung:
+1.	Affordance und Selbstbeschreibungsfähigkeit sind Mittel, um ein interaktives System intuitive zu gestalten.
+2.	Selbstbeschreibungsfähigkeit ist ein Dialogprinzip. "
+"Steuerbarkeit","Der Benutzer ist in der Lage einen Dialogablauf zu starten sowie seine Richtung und Geschwindigkeit zu beeinflussen, bis das Ziel erreicht ist.
+Anmerkung:
+1.	Steuerbarkeit ist ein Dialogprinzip."
+"Storyboard","Eine Folge visueller Bildschirminhalte, die das Zusammenspiel zwischen einem Benutzer und einem vorgestellten interaktiven System darstellt. 
+Anmerkung:
+1.	Ein Storyboard ist oft eine Comic-­artige Darstellung eines Nutzungsszenarios.
+2.	Storyboards sind nicht als Prototypen geeignet, da sie eine Geschichte erzählen und keine Interaktion ermöglichen "
+"Styleguide","Eine Sammlung von Gestaltungsregeln die verwendet wird, um die grundsätzliche Erscheinung der Benutzungsschnittstelle auf jeglicher Software einer Organisation festzulegen.
+Anmerkung:
+1.	Styleguides werden manchmal auch als UX Guides bezeichnet.
+Beispiele für Styleguides:
+1.	Windows User Experience Interaction Guidelines for Windows Desktop apps („UX Guide“)
+2.	IOS Human Interface Guidelines"
+"Suggestiv­frage","Eine Frage in einem Interview, die eine Präferenz für bestimmte Antwortmöglichkeiten vorgibt oder versucht, die Antwort in eine bestimmte Richtung zu lenken. 
+Anmerkung:
+1.	Vergleiche mit neutraler Frage.
+Beispiel für Suggestivfrage:
+1.	„Möchten Sie schöne Farben auf der Homepage der neuen Autovermietungswebsite?“
+Entsprechende neutrale Frage: „Wie sollte die Homepage der neuen Autovermietungswebsite aussehen?“ Beachten Sie, dass die neutrale Frage den Begriff „Farbe“ nicht einmal enthält."
+"Summative Usability-Evaluierung","Eine Usabilityevaluierung, die darauf ausgerichtet ist, Schlussfolgerungen zur Qualität eines interaktiven Systems aus Sicht der Usability zu ziehen, insbesondere wenn ein wesentlicher Teil der Entwicklung fertig ist.  
+Anmerkung: 
+1.	Eine summative Evaluierung kann dazu genutzt werden, ein Design gegen Nutzungsanforderungen zu evaluieren, um festzustellen, ob das Design aus der Perspektive der Benutzer akzeptabel ist.
+2.	Vergleiche mit Formativer Usability-Evaluierung."
+"Systeminitiierte Benutzerführung","Explizite Information über ein Ereignis oder einen Zustand vom interaktiven System an den Benutzer. 
+Anmerkungen: 
+Systeminitiierte Benutzerführung umfasst:
+Meldungen (informativ, warnend, auf Fehler hinweisend)
+Statusinformation, z.B. ”7 neue Nachrichten”
+Instruktionen, z.B. ”E-Mail-Adressen können mit einem Leerzeichen, einem Komma, einem Semikolon oder einem Zeilenumbruch getrennt werden.”
+2.	Meldungen, müssen konstruktiv, präzise, verständlich und sichtbar sein.
+3.	Systeminitiierte Benutzerführung ist eine Form der Benutzerunterstützung."
+"Szenario","Eine narrative Textbeschreibung des Vorgehens, das ein bestimmter Benutzer anwendet, um eine oder mehrere Aufgaben zu erledigen. 
+Anmerkungen: 
+1.	Der Benutzer im Szenario kann durch eine Persona repräsentiert werden.
+2.	Es gibt zwei Typen von Szenarien: 
+a.	Szenarien des Ist-Zustands, die beschreiben, wie Aufgaben bisher erledigt werden. Szenarien des Ist-Zustands beschreiben den gegenwärtigen Nutzungskontext und dienen dazu, Erfordernisse zu erkennen und Nutzungsanforderungen abzuleiten. Siehe Beispiel 1.
+b.	Nutzungsszenarien beschreiben, wie Aufgaben mit dem zukünftigen interaktiven System erledigt werden. Nutzungsszenarien dienen als Basis für das Entwickeln erster Low-Fidelity-Prototypen. Siehe Beispiel 2.
+3. 	Szenarien werden vom User Requirements Engineer auf Grundlage der Ergebnisse von Beobachtungen und Kontextinterviews erstellt
+4. 	Personas und Szenarien werden zusammen entwickelt, da das Analysieren von Benutzern auch eine Analyse ihres Verhaltens involviert und die Analyse ihres Handelns beinhaltet, wer diese Handlungen durchführt.
+5. 	Szenarien werden von Benutzern überprüft, um Missverständnisse zu entdecken, die während der Contextual Inquiry aufgetreten sein könnten.
+6.	Ein Szenario soll nicht auf spezifische Umsetzungen von  Objekten der Benutzungsschnittstelle referenzieren (z.B. auf einen Button).
+7.	Szenarien werden benutzt um Aufgabenmodelle und frühe Prototypen zu erstellen, die die Aufgabe im Szenario unterstützen.
+Beispiele für Szenarien:
+„John Miller ist Geschäftsreisender der im Laufe einer Woche mehrere Flüge tätigt. Er fährt bevorzugt mit seinem Auto zum Flughafen. Gelegentlich verpasst er ein Flugzeug und bereut dann nicht mit einem Taxi oder mit der Bahn zum Flughafen gefahren zu sein. Er unterschätzt einfach die Fahrzeugschlangen vor an der Einfahrt des Parkhauses und die Laufzeit bis zum Flugsteig.“ Dieses Beispiel bezieht sich auf Anmerkung 2a, den Ist-Zustand.
+„Bevor John Miller zum Flughafen fährt, sichtet er mit seiner neuen App immer die Parksituation am Flughafen. Wenn ausreichend Parkplätze vorhanden sind, reserviert er mit seiner neuen App einen Parkplatz und fährt dann entspannt mit seinem Wagen zum Flughafen. Er weiss, dass mit der Veröffentlichung der neuen App am Flughafen ein separater Zugang für Parkhausgäste mit reserviertem Parkplatz geschaffen wurde.“ Dieses Beispiel bezieht sich auf Anmerkung 2b, den zukünftigen Soll-Zustand.
+3.	Der folgende Text, der das Beispiel 2 ergänzt, ist zu spezifisch und verstösst gegen Anmerkung 6: 
+„John Miller schaut sich den Bildschirm „Überblick über verfügbare Parkplätze“ an und wählt einen Parkplätz mit der Schaltfläche „Auswählen“ aus. Anschliessend klickt er auf die Schaltfläche „Reservieren“ und reserviert diesen Parkplatz.“"
+"Szenario des Ist-Zustands","Siehe Szenario"
+"Testaufgabe","Siehe Usability-Testaufgabe."
+"Testbericht","Siehe Usability-Testbericht."
+"Testskript","Siehe Usability-Testskript."
+"Testteilnehmer","Siehe Usability-Testteilnehmer"
+"Umgebung","Die Gesamtheit der gegebenen Umstände oder Bedingungen, in denen ein Benutzer arbeitet. Diese umfassen die physische, soziale und technische Umgebung.
+Anmerkung: 
+1.	Die soziale Umgebung schließt die organisatorische Umgebung mit ein."
+"Un­beaufsichtigter Usability-Test","Ein Usability-Test bei dem Usability-Testteilnehmer Usability-Testaufgaben lösen ohne dabei beobachtet zu werden. 
+Anmerkung: 
+1.	Handlungen werden auf Video zur späteren Analyse aufgezeichnet.
+2.	Unbeaufsichtigte Usability-Tests werden oft beim Testteilnehmer zuhause, auf dessen Computer durchgeführt. Videoaufnahmen werden mithilfe einer Aufzeichnungssoftware gespeichert die von einem Anbieter für unbeaufsichtigte Usability-Tests auf dem Computer installiert wird.
+3.	Vergleiche mit Usability-Test und Remote Usability-Test"
+"Usability","Ausmaß, in dem ein interaktives System durch bestimmte Benutzer in einem bestimmten Nutzungskontext genutzt werden kann, um festgelegte Ziele effektiv, effizient und zufriedenstellend zu erreichen.
+Anmerkung:
+1.	Die Ausdrücke „bestimmte Benutzer“, „festgelegte Ziele“ und „bestimmter Nutzungskontext“ sind in dieser Definition besonders wichtig."
+"Usability Engineer","Eine Person die in einer Querschnittsfunktion verantwortlich einen menschzentrierten Gestaltungsprozess betreut. 
+Anmerkungen:
+1.	Der Usability Engineer (UE) ist kompetent und erfahren in den Prozessschritten, verfügbaren Methoden der menschzentrierten Gestaltung und Gestaltungsregeln für Benutzererlebnis, sodass er die Entwicklungsprojekte unter dem Aspekt menschzentrierter Gestaltung planen und die Qualität der Ausführung von menschzentrierten Gestaltungsbezogenen Aktivitäten sicherstellen kann. Dies beinhaltet 
+a.	Menschzentrierte Gestaltungsaktivitäten,
+b.	Die Integration der menschzentrierten Gestaltung in den Produktentwicklungs­prozess des Unternehmens, 
+c.	Die Definition von Erfolgskriterien für solche Projekte,
+d.	Das Training von beteiligten Projektteams. 
+2.	Der UE legt angemessene Vorgehensweisen, Werkzeuge und Styleguides für das menschzentrierte Design im Allgemeinen als auch für spezifische Projekte fest. Der UE unterstützt das Management bei der Entscheidung, welche Arbeitspakete von qualifizierten Mitarbeitern im Unternehmen und welche durch kompetente Subunternehmer ausgeführt werden sollten.
+3.	Usability Engineer ist eine Rolle im Prozess der menschzentrierten Gestaltung.
+"
+"Usability Professional","Eine Person die eine oder mehrere der folgenden Rollen hat: 
+1.	Usability Engineer, 
+2.	User Requirements Engineer, 
+3.	Usability-Tester,
+4.	Informationsarchitect,
+5.	Interaktionsdesigner,
+6.	User Interface Designer."
+"Usability-Befund","Ergebnis aus einer Usability-Evaluierung. 
+Anmerkung:
+1.	Mögliche Usability-Befunde sind
+a.	Ein Usability-Problem 
+b.	Etwas, das die Benutzer mochten, also ein positiver Usability-Befund."
+"Usability-Evaluierung","Ein Prozess der Informationen über die Usability eines interaktiven Systems sammelt um das interaktive System zu verbessern (formative Usability-Evaluierung) oder um das interaktive System zu bewerten (summative Usability-Evaluierung). 
+Anmerkungen:
+1.	Usability-Evaluierung ist ein gemeinsamer Ausdruck für 
+a.	Inspektionsbasierte Usability-Evaluierung 
+b.	Benutzerzentrierte Usability-Evaluierung.
+2.	Das Synonym „Evaluation“ wird auch oft verwendet."
+"Usability-Labor","Zwei oder mehrere Räume, die speziell für die Durchführung von Usabiltytests oder Fokusgruppen ausgestattet sind. 
+Anmerkung:
+1.	Ein Usability-Labor besteht oft aus 
+a.	einem Testraum, wo der Usability-Testteilnehmer sitzt,
+b.	einem Beobachtungsraum, wo Interessenvertreter die Usability-Testteilnehmer beobachten können, während die Usability-Testteilnehmer Aufgaben lösen. 
+	Oft sind diese zwei Räume durch eine Spiegelwand getrennt, was den Beobachtern erlaubt, den Usability-Testteilnehmern zuzuschauen, nicht aber umgekehrt."
+"Usability-Problem","Ein Problem in der Benutzung der Benutzungsschnittstelle, das sich auf die Zufriedenstellung des Benutzers sowie die Effektivität und Effizienz des interaktiven Systems auswirkt. 
+Anmerkung:
+1.	Usability-Probleme können zu Irritationen, Fehlern oder Verzögerungen führen oder sogar die Fertigstellung einer Aufgabe des Benutzers verhindern."
+"Usability-Test","Eine Usability-Evaluierung bei der repräsentative Benutzer bestimmte Aufgaben mit dem interaktiven System ausführen, um Usability-Probleme oder die Messwerte für Effektivität, Effizienz und Zufriedenstellung zu erfassen. 
+Anmerkungen:
+1.	Ein Usability-Test wird von einem Usability-Tester geleitet.
+2.	Ein Usability-Test besteht üblicherweise aus 3 Phasen:
+a.	Planung, dazu gehören: Schreiben des Usabiliy-Testplans, schreiben des Usability-Testskripts, und Rekrutierung von passenden Usability-Testteilnehmern.
+b.	Durchführung der Usability-Testsitzungen wie in Anmerkung 3 beschrieben.
+c.	Usability-Testergebnisse kommunizieren, einschließlich Schreiben eines Usability-Testberichts 
+3.	Ein Usability-Test umfasst eine Reihe von Usability-Testsitzungen. In jeder Sitzung versucht ein Usability-Testteilnehmer unter Benutzung des interaktiven Systems oder eines Prototypen eines interaktiven Systems repräsentative Usability-Testaufgaben zu lösen. Üblicherweise werden Usability-Testsitzungen von einem Moderator moderiert und von einer Anzahl von Beobachtern, die oft Interessenvertreter sind, beobachtet. Ein Protokollant zeichnet wichtige Usability-Befunde auf.
+4.	Der Begriff ”Usability-Test” bezieht sich üblicherweise auf einen Test, bei dem sich der Usability-Testteilnehmer und der Moderator am gleichen physischen Ort befinden. Andere Arten von Usability-Tests sind: Remote Usability-Test und Unbeaufsichtigter Usability-Test.
+5.	Das Testen kann qualitative oder quantitative Daten ergeben. 
+6.	Das Testen kann zu jedem Zeitpunkt während der menschzentrierten Gestaltung geschehen – von der frühen Analysephase bis hin zur Lieferung des interaktiven Systems und darüberhinaus. Die Tests können sowohl an Papierentwürfen oder anderen low-fidelity-Prototypen als auch an in Entwicklung befindlichen oder bereits fertiggestellten interaktiven Systemen durchgeführt werden.
+7.	Rollen bei einem Usability-Test sind:
+a.	Moderator
+b.	Protokollant
+c.	Beobachter
+d.	Usability-Testteilnehmer "
+"Usability-Testaufgabe","Eine Beschreibung einer typischen Aufgabe, die ein Moderator einem Usability-Testteilnehmer während eines Usability-Tests stellt. "
+"Usability-Testbericht","Ein Dokument, das die Ergebnisse eines Usability-Tests beschreibt. 
+Anmerkungen:
+1.	Ein Usability-Testbericht beinhaltet üblicherweise 
+a.	Eine Kurzdarstellung, 
+b.	5-50 Usability-Befunde (auch positive),
+c.	Das Usability-Testskript für den Usability-Test. 
+d.	Oft umfasst der Usability-Testbericht auch Screenshots oder Bilder die die Beschreibungen von wichtigen Usability-Befunden ergänzen.
+2.	Wird auch nur als Testbericht bezeichnet."
+"Usability-Tester","Eine Person die Benutzungsschnittstellen in verschiedenen Stadien der Realisierung evaluiert. 
+Anmerkungen:
+1.	In Kooperation mit anderen Interessensvertretern, muss der Usability-Tester
+a.	die Usability-Evaluierungen planen
+b.	die Usability-Evaluierungen leiten
+c.	die Usability-Testergebnisse an die Interessenvertreter kommunizieren.
+2.	Während einer Usability-Testsitzung übernimmt der Usability-Tester die Rolle des Moderators oder des Protokollanten.
+3.	Usability-Tester ist eine Rolle im Prozess der menschzentrierten Gestaltung."
+"Usability-Test­ergebnis","Siehe Usability-Befund."
+"Usability-Testplan","Eine kurze Beschreibung des Zwecks und Umfangs eines Usability-Tests. 
+Anmerkungen:
+1.	Der Usability-Testplan ist für das Management vorgesehen, um entscheiden zu können, ob der Usability-Test durchgeführt werden sollte oder nicht. Der Plan ist absichtlich kurz gehalten und fokussiert auf die für den Usability-Test benötigten Ressourcen.
+2.	Der Usability-Testplan beinhaltet 
+a.	Die Anzahl geplanter Usability-Testteilnehmer, 
+b.	Die ungefähre Länge jeder Usability-Testsitzung, 
+c.	Den Namen des Moderators, 
+d.	Einen Zeitplan, 
+e.	Eine Kostenschätzung für den Usability-Test einschließlich Personenstunden.
+3.	Weitere Details über den Usability-Test wie z.B. Usability-Testaufgaben, Testmethode und erforderliche Soft- und Hardware werden im Usability-Testskript bereitgestellt."
+"Usability-Testsitzung","Der Teil eines Usability-Tests, bei dem ein bestimmter Usability-Testteilnehmer repräsentative Usability-Testaufgaben unter Benutzung des interaktiven Systems oder des Prototypen eines interaktiven Systems löst.
+Anmerkungen:
+1.	Typische Aufgaben des Moderators während einer Usability-Testsitzung sind:
+a.	Begrüßung des Usability-Testteilnehmers;
+b.	Durchführung des Briefings und des Pre-Session Interviews;
+c.	Übergabe von Usability-Testaufgaben an den Usability-Testteilnehmer.
+d.	Beobachtung des jeweiligen Usability-Testteilnehmers während der Erledigung der Aufgaben;
+e.	Durchführung des Post-Session Interviews.
+2.	Vergleiche mit Usability-Test."
+"Usability-Testskript","Eine von einem Moderator in einem Usability-Test verwendete Checkliste, um den Überblick über die Fragen des Briefings und des Pre-Session Interviews, die Usability-Testaufgaben und die Fragen des Post-Session Interviews zu behalten."
+"Usability-Testteilnehmer","Repräsentativer Benutzer, der typische Aufgaben in einem Usability-Test löst."
+"User Interface Designer","Eine Person die den Dialog und das Benutzererlebnis basierend auf dem Design des  Interaktions­designers und den Nutzungsszenarios des User Requirements Engineers implementiert. Der User Interface Designer erzeugt ausserdem interaktive Prototypen.
+Anmerkung:
+1.	User Interface Designer ist eine Rolle im Prozess der menschzentrierten Gestaltung."
+"User Requirements Engineer","Eine Person die den tatsächlichen oder geplanten Nutzungskontext von Benutzern identifiziert und beschreibt. Daraus leitet der User Requirements Engineer die Nutzungsanforderungen und damit verbundene organisatorische Anforderungen ab, die für ein bestimmtes Projekt umgesetzt werden müssen. 
+Anmerkungen:
+1.	Der User Requirements Engineer identifiziert den Nutzungskontext durch Methoden wie Benutzerinterviews, Beobachtungen, Benutzerbefragungen, Usability-Evaluierungen, Expertenanalysen usw.
+2.	Der User Requirements Engineer erzeugt Nutzungs­szenarien, die die Effektivität, Effizienz und Zufriedenstellung bei der Aufgabenerledigung mit dem interaktiven System sicherstellen sollen.
+3.	User Requirements Engineer ist eine Rolle im Prozess der menschzentrierten Gestaltung."
+"Wireframe","Eine Form des Low-fidelity-Prototyps bestehend aus schematischen Diagrammen, typischerweise dargestellt mit Linien, rechteckigen Kästen und Text der das Interaktionsdesign und den Navigationsfluss repräsentiert.
+Anmerkungen:
+1.	Wireframes adressieren üblicherweise nicht das visuelle Design und das genaue Layout.
+2.	Ein Wireframe ist ein Mockup (Modell, Attrappe) eines Bildschirms. Eine adäquate Sammlung von Wireframes formt einen Low-fidelity-Prototyp.
+3.	Auf Deutsch auch „Drahtgeflecht“ genannt."
+"Ziel","Angestrebtes Arbeitsergebnis."
+"Zufrieden­stellung","Freiheit von Beeinträchtigung und positive Grundeinstellung zur Nutzung des Produkts
+Anmerkungen:
+1.	Der neue Vorschlag der ISO Definition könnte etwas einfacher zu verstehen sein: Einstellungen bezogen auf die Verwendung des interakiven Systems und die emotionalen und physischen Folgen der tatsächlichen Verwendung.
+2.	Zufriedenstellung ist eines der drei Meßbaren Attribute von Usability. Die anderen beiden sind Effektivität und Effizienz.
+3. 	Zufriedenstellung kann mit Fragebögen gemessen werden."
