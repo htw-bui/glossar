@@ -1,0 +1,9 @@
+
+      <h2 style='float: left'>Inhalt</h2> 
+      <a style='float: right; font-size: 2em; color: black; margin-right: 20px' class=hideDesktop>×</a>
+      <input id=filterTerms type="search" class='form-control' placeholder="Filter...."  ng-model="searchTerm">
+      <ul class='navItems'>
+        <li ng-repeat='term in terms | filter: filter' > 
+        <a ng-href='#{{term.term}}' ng-click='setSelectedItem(this)' ng-class='{"active-item": selectedTerm.term === term.term}'>{{term.term}}</a>
+        </li>
+      </ul>

@@ -1,0 +1,25 @@
+<nav navigation-list class=termnav >
+</nav>
+
+<div id="content">
+  <div id='stats'>
+    <!--<span id="time"> {{stopWatch.seconds() }}</span>-->
+    <span id="progress"> {{progressCounter.numberOfTermsRead() }}  | {{ progressCounter.numberOfTerms }} </span>
+    <a href='#' id='reset' ng-click='resetProgress()'><i class="fa fa-history"></i></a>
+  </div>
+  <div id="main"> 
+    <h1 class='hyphenate'> {{selectedTerm.term}} </h1>
+    <p  class='hyphenate'> {{selectedTerm.description}} <p>
+  </div>
+  <div id="paging">
+    <a type=button class='btn btn-default' id="previousTerm" ng-hide='selectedTermIsFirstTerm()' ng-click='prevTerm()'>Zurück</a>
+    <a type=button 
+      class='btn btn-default'
+      id="nextTerm" 
+      style="float: right" 
+      ng-hide='selectedTermIsLastTerm()' 
+      ng-click='nextTerm()'>
+      Nächster
+    </a>
+  </div>
+</div>

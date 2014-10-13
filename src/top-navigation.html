@@ -1,0 +1,21 @@
+<div class='container-fluid'>
+  <div class='navbar-header'>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sitenav">
+      <span class="sr-only">Toggle navigation</span>
+      <i class="fa fa-bars"></i>
+    </button>
+    <button id='showNav' type="button" class="navbar-toggle">
+      <!--Inhalt -->
+      <i class="fa fa-book"></i>
+    </button>
+    <a class='navbar-brand' href='/'>KOMET</a>
+  </div>
+  <div class='collapse navbar-collapse' id='sitenav'>
+    <ul class='nav navbar-nav'>
+      <li ng-class="{active: tab===1}"><a ng-click="tab=1">Glossar</a></li>
+      <li ng-class="{active: tab===3}"><a ng-click="tab=3">Quiz</a></li>
+      <li ng-class="{active: tab===2}"><a ng-click="tab=2">Hall of Fame</a></li>
+      <li ng-class="{active: tab===4}"><a ng-click="tab=3">Impressum</a></li>
+    </ul>
+  </div>
+</div>

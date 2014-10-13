@@ -2,21 +2,48 @@
   "use strict";
   var app = angular.module("dashboard", []);
 
+
+  app.directive("navigationList", function(){
+    return {
+      restrict: "A",
+      templateUrl: "navigation-list.html"
+    };
+  });
+
+  app.directive("topNavigation", function(){
+    return {
+      restrict: "A",
+      templateUrl: "top-navigation.html"
+    };
+  });
+
+  app.directive("glossaryControl", function(){
+    return {
+      restrict: "A",
+      templateUrl: "glossary.html"
+    };
+  });
+
+  app.directive("highscoreView", function(){
+    return {
+      restrict: "E",
+      templateUrl: "highscore.html"
+    };
+  });
+
   app.controller("DashboardController" , function($scope, $http){
+    $scope.tab = 2;
     $scope.searchTerm = "";
     $scope.terms = [{"term": "dummy"}];
     $scope.selectedTerm = {};
     $scope.progressCounter = {};
+    $scope.stopWatch = {};
 
     $http.get("/data/terms-en.json")
     .then(function(res){
       $scope.terms = res.data;
       $scope.selectedTerm = res.data[0];
       $scope.progressCounter = new ProgressCounter(res.data.length);
-
-      //$scope.progressCounter.onChange = function () {
-      //$("#progress").text(this.numberOfTermsRead() + "|" + this.numberOfTerms);
-      //};
     }).then(loadTermFromHash);
 
     $scope.filter = function(term){
@@ -37,9 +64,6 @@
       window.location.hash = term.term;
     }
 
-    $scope.selectedTermIsLastTerm = function(){
-      return _.last($scope.terms).term === $scope.selectedTerm.term;
-    };
 
     $scope.prevTerm = function(){
       var indexOfSelectedTerm = getIndexOfSelectedTerm();
@@ -53,6 +77,10 @@
 
     $scope.selectedTermIsFirstTerm = function(){
       return $scope.terms[0].term === $scope.selectedTerm.term;
+    };
+
+    $scope.selectedTermIsLastTerm = function(){
+      return _.last($scope.terms).term === $scope.selectedTerm.term;
     };
 
 

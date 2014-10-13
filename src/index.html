@@ -22,6 +22,7 @@
     <script src="./js/hyphenate.js"></script>
     <script src="./js/lodash.js"></script>
     <script src="./js/ProgressCounter.js"></script>
+    <script src="./js/stopwatch.js"></script>
     <link href="./css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen" >
 
@@ -49,65 +50,11 @@
   </head>
 
   <body>
-    <nav class='navbar navbar-default' role=navigation>
-    <div class='container-fluid'>
-      <div class='navbar-header'>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sitenav">
-          <span class="sr-only">Toggle navigation</span>
-          <i class="fa fa-bars"></i>
-        </button>
-        <button id='showNav' type="button" class="navbar-toggle">
-          <!--Inhalt -->
-          <i class="fa fa-book"></i>
-        </button>
-        <a class='navbar-brand' href='/'>KOMET</a>
-      </div>
-      <div class='collapse navbar-collapse' id='sitenav'>
-        <ul class='nav navbar-nav'>
-          <li class=active><a href='./index.html'>Glossar</a></li>
-          <li><a href='./quiz.html'>Quiz</a></li>
-          <li><a href='./highscore.html'>Hall of Fame</a></li>
-          <li><a href='http://komet.f2.htw-berlin.de/impressum'>Impressum</a></li>
-        </ul>
-      </div>
-    </div>
+    <nav class='navbar navbar-default' role=navigation top-navigation>
     </nav>
 
-    <div id="container">
-      <nav class=termnav>
-      <h2 style='float: left'>Inhalt</h2> 
-      <a style='float: right; font-size: 2em; color: black; margin-right: 20px' class=hideDesktop>×</a>
-      <input id=filterTerms type="search" class='form-control' placeholder="Filter...."  ng-model="searchTerm">
-      <ul class='navItems'>
-        <li ng-repeat='term in terms | filter: filter' > 
-        <a ng-href='#{{term.term}}' ng-click='setSelectedItem(this)' ng-class='{"active-item": selectedTerm.term === term.term}'>{{term.term}}</a>
-        </li>
-      </ul>
-      </nav>
-
-      <div id="content">
-        <div id='stats'>
-          <span id="time"> </span>
-          <span id="progress"> {{progressCounter.numberOfTermsRead() }}  | {{ progressCounter.numberOfTerms }} </span>
-          <a href='#' id='reset' ng-click='resetProgress()'><i class="fa fa-history"></i></a>
-        </div>
-        <div id="main"> 
-          <h1 class='hyphenate'> {{selectedTerm.term}} </h1>
-          <p  class='hyphenate'> {{selectedTerm.description}} <p>
-        </div>
-        <div id="paging">
-          <a type=button class='btn btn-default' id="previousTerm" ng-hide='selectedTermIsFirstTerm()' ng-click='prevTerm()'>Zurück</a>
-          <a type=button 
-            class='btn btn-default'
-            id="nextTerm" 
-            style="float: right" 
-            ng-hide='selectedTermIsLastTerm()' 
-            ng-click='nextTerm()'>
-            Nächster
-          </a>
-        </div>
-      </div>
-    </div>
+    <div id="container" glossary-control ng-show="tab === 1"> </div>
+    <highscore-view ng-show="tab ===2"></highscore-view>
     <!--
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
