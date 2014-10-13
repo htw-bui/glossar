@@ -4,13 +4,19 @@
 
   app.controller("DashboardController" , function($scope, $http){
     $scope.searchTerm = "";
-    $scope.terms = {};
+    $scope.terms = [{"term": "dummy"}];
     $scope.selectedTerm = {};
+    $scope.progressCounter = {};
 
     $http.get("/data/terms-en.json")
     .then(function(res){
       $scope.terms = res.data;
       $scope.selectedTerm = res.data[0];
+      $scope.progressCounter = new ProgressCounter(res.data.length);
+
+      //$scope.progressCounter.onChange = function () {
+      //$("#progress").text(this.numberOfTermsRead() + "|" + this.numberOfTerms);
+      //};
     }).then(loadTermFromHash);
 
     $scope.filter = function(term){
@@ -18,8 +24,18 @@
     };
 
     $scope.setSelectedItem = function(term){
-      $scope.selectedTerm = term.term;
+      setSelectedTerm(term.term);
     };
+
+    $scope.resetProgress = function(){
+      $scope.progressCounter.clear();
+    };
+
+    function setSelectedTerm(term){
+      $scope.progressCounter.registerTerm(term.term);
+      $scope.selectedTerm = term;
+      window.location.hash = term.term;
+    }
 
     $scope.selectedTermIsLastTerm = function(){
       return _.last($scope.terms).term === $scope.selectedTerm.term;
@@ -27,12 +43,12 @@
 
     $scope.prevTerm = function(){
       var indexOfSelectedTerm = getIndexOfSelectedTerm();
-      $scope.selectedTerm = $scope.terms[indexOfSelectedTerm - 1];
+      setSelectedTerm($scope.terms[indexOfSelectedTerm - 1]);
     };
 
     $scope.nextTerm = function(){
       var indexOfSelectedTerm = getIndexOfSelectedTerm();
-      $scope.selectedTerm = $scope.terms[indexOfSelectedTerm + 1];
+      setSelectedTerm($scope.terms[indexOfSelectedTerm + 1]);
     };
 
     $scope.selectedTermIsFirstTerm = function(){

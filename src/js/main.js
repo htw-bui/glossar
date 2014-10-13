@@ -59,46 +59,8 @@ require(["hyphenate", "ProgressCounter", "jquery", "stopwatch"], function(hyphen
     changeDisplay(term);
   };
 
-  window.addEventListener("hashchange", loadNewDefintition, false);
-
-
-  function NewTerms(items){
-    var key;
-    this.items = items;
-    this.keys = [];
-    this.selectedIndex = 0;
-    for (key in items){
-      this.keys.push(key);
-    }
-
-    this.selectedTerm = function (){
-      return this.keys[this.selected];
-    };
-
-    this.nextTerm = function(){
-      return this.keys[this.selectedIndex + 1];
-    };
-
-    this.prevTerm = function(){
-      return this.keys[this.selectedIndex - 1];
-    };
-
-    this.getDefinition = function (term){
-      var position = this.keys.indexOf(term);
-      this.selectedIndex = position;
-      setActiveItemInNavigation(term);
-      checkPaginationVisibilty();
-      $("#nextTerm").attr("href", "#" + this.nextTerm());
-      $("#previousTerm").attr("href", "#" + this.prevTerm());
-      return this.items[term];
-    };
-
-  }
-
-
   function initPage() {
     $.getJSON("./data/neu_generierte_begriffe.json", function (data) {
-      n = new NewTerms(data);
       p = new ProgressCounter(n.keys.length);
       p.onChange = function () {
         $("#progress").text(this.numberOfTermsRead() + "|" + this.numberOfTerms);
@@ -129,25 +91,6 @@ require(["hyphenate", "ProgressCounter", "jquery", "stopwatch"], function(hyphen
   }
 
   function createNaviagtion(data){
-    $(".navItems").remove();
-
-    var navList = $( "<ul/>", {
-      class: "navItems"
-    });
-    navList.appendTo("nav.termnav");
-    navList.appendTo(".nav-open");
-
-    $.each(data, function(key, term ) {
-      var link = $("<a />", 
-        {href: "#" + term,
-          id: "navigation" + n.keys.indexOf(term),
-          text: term
-        }
-      );
-      var listItem = $("<li>");
-      link.appendTo(listItem);
-      listItem.appendTo(navList);
-    });
 
     $("nav a").bind("click", closeNav);
     $("#main").bind("click", closeNav);
@@ -155,21 +98,6 @@ require(["hyphenate", "ProgressCounter", "jquery", "stopwatch"], function(hyphen
     $(".navbar").bind("click", closeNav);
   }
 
-
-  function checkPaginationVisibilty(){
-    var positionOfSelectedTerm = n.selectedIndex;
-    var numberOfTerms = n.keys.length;
-    $("#nextTerm").show();
-    $("#previousTerm").show();
-    if (positionOfSelectedTerm === 0){
-      $("#previousTerm").hide();
-      return;
-    }
-    if (positionOfSelectedTerm === (numberOfTerms - 1) ){
-      $("#nextTerm").hide();
-      return;
-    }
-  }
 
 
   function showNav(){
@@ -179,18 +107,4 @@ require(["hyphenate", "ProgressCounter", "jquery", "stopwatch"], function(hyphen
     return false;
   }
 
-  function filterBySearchTerm(term){
-    var searchTerm = $("#filterTerms").val();
-    if (term.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1){
-      return true;
-    }
-    return false;
-  }
-
-  function filterNavigation(){
-    var filteredItems = jQuery.extend([], n.keys);
-    filteredItems = filteredItems.filter(filterBySearchTerm);
-    createNaviagtion(filteredItems);
-    return false;
-  }
 });
