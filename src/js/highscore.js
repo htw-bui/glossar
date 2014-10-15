@@ -24,20 +24,6 @@ require(["jquery", "timeutils", "moment", "config"], function($, timeutils, mome
     return false;
   };
 
-  function createTable(){
-    var $table = $("<table>").addClass("table table-striped");
-    var $tableHead = $("<thead>");
-    var $row = $("<tr>");
-    $row
-    .append($("<th>").text("Punkte"))
-    .append($("<th>").text("Zeit (Ø)"))
-    .append($("<th>").text("Name"))
-    .append($("<th>").text("Datum"));
-    $row.appendTo($tableHead);
-    $tableHead.appendTo($table);
-    return $table;
-  }
-
   function createTableBodyWithScores(scores, limitTo3){
     var $tbody = $("<tbody>");
     if (limitTo3){

@@ -1,14 +1,23 @@
 <content>
-<table class="table table-striped">
-  <thead>
-    <tr> 
-      <td> Punke </td>
-      <td> Zeit </td>
-      <td> Datum </td>
-      <td> Name </td>
+<div ng-repeat="(key, scores) in highscores | orderBy: key : reverse">
+  <h1>  {{ getMonthAndYear(key) }}</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr> 
+        <th> Punkte </th>
+        <th> Zeit (Ø)</th>
+        <th> Name </th>
+        <th> Datum </th>
+      </tr>
+    </thead>
+    <tr ng-repeat="score in scores">
+      <td> {{score.score}}</td>
+      <td> {{score.time}} ({{calculateMean(this)}})</td>
+      <td> {{score.name}}</td>
+      <td> {{parseDate(score.datetime) | date:"short"}}</td>
     </tr>
-  </thead>
-</table>
+  </table>
+</div>
 
 </content>
 <style>

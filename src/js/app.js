@@ -27,7 +27,26 @@
   app.directive("highscoreView", function(){
     return {
       restrict: "E",
-      templateUrl: "highscore.html"
+      templateUrl: "highscore.html",
+      controller: function($scope, $http){
+        $scope.highscores = {};
+        $http.get("http://highscore.k-nut.eu/highscore")
+          .then(function(res){
+            $scope.highscores = res.data;
+            window.s = res.data;
+          });
+          $scope.calculateMean = function (score){
+            score = score.score; // TODO naming
+            return Math.round((score.time / 1000) / score.score * 10) / 10;
+          };
+          $scope.getMonthAndYear = function(date){
+            moment.lang("de");
+            return moment(date).format("MMMM YYYY");
+          };
+          $scope.parseDate = function(date){
+            return Date.parse(date);
+          };
+      }
     };
   });
 
