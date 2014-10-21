@@ -1,0 +1,12 @@
+<content>
+<div id=topright>
+  <div id="pc" style="display: inline-block">
+    <span id="progressCounter"></span>
+  </div>
+  <span id="timer"></span>
+</div>
+<div id=definition class='row hyphenate'> {{activeTerm.description}}</div>
+<div id=choices class='row'>
+  <button class="btn btn-info" ng-repeat="choice in choices" ng-click="checkAnswer(this, $event)"> {{choice.term}} </button>
+</div>
+</content>

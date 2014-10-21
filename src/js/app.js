@@ -17,6 +17,10 @@
         templateUrl: 'highscore.html',
         controller: "HighscoreCtrl"
         }).
+      when('/game', {
+        templateUrl: 'game.html',
+        controller: "GameCtrl"
+        }).
       otherwise({
         redirectTo: '/highscore'
       });

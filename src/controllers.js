@@ -23,7 +23,45 @@ kometControllers.controller("HighscoreCtrl", ["$scope", "$http",
   }
 ]);
 
-kometControllers.controller("DashboardController" , function($scope, $http, $routeParams, $location){
+kometControllers.controller("GameCtrl" , function($scope, $http, $routeParams, $location){
+  $scope.choices = [];
+  $scope.activeTerm = {};
+  $scope.unusedTerms = {};
+
+  $http.get("/data/terms-en.json")
+  .then(function(res){
+    $scope.terms = res.data;
+    $scope.unusedTerms = res.data;
+  }).then(pickTerm)
+
+  function pickTerm(){
+    var choices = [];
+    $scope.activeTerm = $scope.unusedTerms.popRandomElement()
+    choices.push($scope.activeTerm);
+    while(choices.length < 4){
+      var randomTerm = $scope.terms.randomElement()
+      if (choices.indexOf(randomTerm) === -1){
+        choices.push(randomTerm);
+      }
+    }
+    $scope.choices = choices.shuffle();
+  }
+
+  $scope.checkAnswer = function(button, $event){
+    if (button.choice == $scope.activeTerm){
+      //progressCounter.registerTerm(term);
+      $scope.unusedTerms.remove(button.choice);
+      window.b = button;
+      $($event.target).removeClass("btn-info").addClass("btn-success");
+      //setTimeout(setUp, 250);
+    }
+    else{
+      console.log("fail");
+    }
+  }
+});
+
+kometControllers.controller("DashboardController" , function($scope, $http, $location){
   $scope.searchTerm = "";
   $scope.terms = [{"term": "dummy"}];
   $scope.selectedTerm = {};
