@@ -8,7 +8,6 @@ kometControllers.controller("HighscoreCtrl", ["$scope", "$http",
     $http.get("http://highscore.k-nut.eu/highscore")
       .then(function(res){
         $scope.highscores = res.data;
-        window.s = res.data;
       });
       $scope.calculateMean = function (score){
         score = score.score; // TODO naming
@@ -25,17 +24,15 @@ kometControllers.controller("HighscoreCtrl", ["$scope", "$http",
 ]);
 
 kometControllers.controller("DashboardController" , function($scope, $http, $routeParams, $location){
-  $scope.tab = 2;
   $scope.searchTerm = "";
   $scope.terms = [{"term": "dummy"}];
   $scope.selectedTerm = {};
   $scope.progressCounter = {};
   $scope.stopWatch = {};
-  console.log($location.path());
 
-  $scope.setActive = function(t){
-    console.log(t);
-  };
+  $scope.isActive = function(path) {
+    return $location.path().substr(0, path.length) == path
+  }
 
   $http.get("/data/terms-en.json")
   .then(function(res){

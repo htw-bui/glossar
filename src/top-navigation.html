@@ -12,9 +12,9 @@
   </div>
   <div class='collapse navbar-collapse' id='sitenav'>
     <ul class='nav navbar-nav'>
-      <li ng-class="{active: tab===1}"><a href="#/glossary">Glossar</a></li>
-      <li ng-class="{active: tab===3}"><a ng-click="tab=3">Quiz</a></li>
-      <li ng-class="{active: tab===2}"><a href="#/highscore">Hall of Fame</a></li>
+      <li ng-class="{active: isActive('/glossary')}"><a href="#/glossary">Glossar</a></li>
+      <li ng-class="{active: isActive('/game')}"><a href="#/game">Quiz</a></li>
+      <li ng-class="{active: isActive('/highscore')}"><a href="#/highscore">Hall of Fame</a></li>
       <li><a href="http://komet.f2.htw-berlin.de/impressum" target="_blank">Impressum</a></li>
     </ul>
   </div>
