@@ -3,6 +3,6 @@
 <input id=filterTerms type="search" class='form-control' placeholder="Filter...."  ng-model="searchTerm">
 <ul class='navItems'>
   <li ng-repeat='term in terms | filter: filter' > 
-  <a ng-href='#{{term.term}}' ng-click="setSelectedItem(this)" ng-class='{"active-item": selectedTerm.term === term.term}'>{{term.term}}</a>
+  <a ng-click="setSelectedItem(this)" ng-class='{"active-item": selectedTerm.term === term.term}'>{{term.term}}</a>
   </li>
 </ul>

@@ -25,11 +25,14 @@
     <script src="./js/stopwatch.js"></script>
     <script src="./js/moment-with-langs.min.js"></script>
 
+
     <link href="./css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen" >
 
     <script src="./js/angular.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="./js/app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./controllers.js" type="text/javascript" charset="utf-8"></script>
     <!-- <script data-main="js/main" src="js/require.js"></script> -->
 
 
@@ -55,8 +58,10 @@
     <nav class='navbar navbar-default' role=navigation top-navigation>
     </nav>
 
-    <div id="container" glossary-control ng-show="tab === 1"> </div>
-    <highscore-view ng-show="tab ===2"></highscore-view>
+    <div ng-view></div>
+    <!--<div id="container" glossary-control ng-show="tab === 1"> </div>-->
+    <!--<highscore-view ng-show="tab ===2"></highscore-view>-->
+
     <!--
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
