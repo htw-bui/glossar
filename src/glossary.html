@@ -3,7 +3,7 @@
 
 <div id="content">
   <div id='stats'>
-    <!--<span id="time"> {{stopWatch.seconds() }}</span>-->
+    <span id="time"> {{timer.getTime()}}</span>
     <span id="progress"> {{progressCounter.numberOfTermsRead() }}  | {{ progressCounter.numberOfTerms }} </span>
     <a href='#' id='reset' ng-click='resetProgress()'><i class="fa fa-history"></i></a>
   </div>

@@ -1,9 +1,9 @@
 <content>
 <div id=topright>
   <div id="pc" style="display: inline-block">
-    <span id="progressCounter"></span>
+    <span id="progressCounter"> {{progressCounter.numberOfTermsRead() }}  | {{ progressCounter.numberOfTerms }} </span>
   </div>
-  <span id="timer"></span>
+  <span id="timer">{{timer.getTime()}}</span>
 </div>
 <div id=definition class='row hyphenate'> {{activeTerm.description}}</div>
 <div id=choices class='row'>
