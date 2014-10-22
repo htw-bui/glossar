@@ -1,11 +1,11 @@
 "use strict";
 
 var kometControllers = angular.module("kometControllers", [])
-.factory("stopwatch", ["$timeout", function($timeout){
-var self = this;
-  var stopwatch = null;
-  self.seconds = 99;
+.factory("stopwatch", ["$interval", function($interval){
+  var self = this;
+  self.seconds = 0;
   self.stopwatchName = "notSet";
+  self.interval = {};
   var getTime = function(){
     return self.seconds;
   };
@@ -15,15 +15,26 @@ var self = this;
     self.seconds = JSON.parse(localStorage.getItem(stopwatchName + ".timer.ellapsed")) | 0;
   };
 
-  var start = function () {
-    stopwatch = $timeout(function() {
-      self.seconds++;
+  var stopTimer = function(){
+    $interval.cancel(self.interval);
+  }
+
+
+
+  var start = function (name) {
+    self.interval = $interval(function(){
+      if (self.stopwatchName === name){
+        self.seconds++;
+      }
       localStorage.setItem(self.stopwatchName  + ".timer.ellapsed", self.seconds);
-      start();
-    }, 1000);
+    }, 1000)
   };
 
-  return {getTime: getTime, seconds:self.seconds, start:start, setUp: setUp};
+  function StopWatch(){
+    return {getTime: getTime, seconds:self.seconds, start:start, setUp: setUp, stopTimer: stopTimer};
+  }
+
+  return StopWatch;
 }
 ]);
 
@@ -54,7 +65,7 @@ kometControllers.controller("GameCtrl" , ["$scope", "$http", "$location", "$time
   $scope.activeTerm = {};
   $scope.unusedTerms = {};
   $scope.progressCounter = {};
-  $scope.timer = stopwatch;
+  $scope.timer = new stopwatch();
 
   $http.get("/data/terms-en.json")
   .then(function(res){
@@ -62,9 +73,13 @@ kometControllers.controller("GameCtrl" , ["$scope", "$http", "$location", "$time
     $scope.unusedTerms = res.data;
     $scope.progressCounter = new ProgressCounter(res.data.length);
     $scope.timer.setUp("game");
-    $scope.timer.start();
-    //$interval(function(){$scope.timer++;}, 1000);
+    $scope.timer.start("game");
   }).then(pickTerm)
+
+  $scope.$on('$destroy', function() {
+    // Make sure that the interval is destroyed too
+    $scope.timer.stopTimer();
+  });
 
   function pickTerm(){
     var choices = [];
@@ -91,29 +106,34 @@ kometControllers.controller("GameCtrl" , ["$scope", "$http", "$location", "$time
       $($event.target).removeClass("btn-info").addClass("btn-danger");
       $scope.progressCounter.clear();
       $http.post("http://highscore.k-nut.eu/highscore/check", {
-          score: $scope.progressCounter.numberOfTermsRead(),
-          time: $scope.timer.getTime()
-        }).then(checkIfScoreIsHighEnough);
+        score: $scope.progressCounter.numberOfTermsRead(),
+        time: $scope.timer.getTime()
+      }).then(checkIfScoreIsHighEnough);
       bootbox.alert("FAIL");
     }
   };
 
   function checkIfScoreIsHighEnough(response){
-  console.log(response);
+    console.log(response);
   };
 
 }]);
 
-kometControllers.controller("DashboardController" , ["$scope", "$http", "$location", "stopwatch", function($scope, $http, $location, stopwatch){
+kometControllers.controller("DashboardController" , ["$scope", "$http", "$location", "stopwatch", function($scope, $http, $location, StopWatch){
   $scope.searchTerm = "";
   $scope.terms = [{"term": "dummy"}];
   $scope.selectedTerm = {};
   $scope.progressCounter = {};
-  $scope.timer = stopwatch;
+  $scope.timer = new StopWatch();
 
   $scope.isActive = function(path) {
     return $location.path().substr(0, path.length) == path
   }
+
+  $scope.$on('$destroy', function() {
+    // Make sure that the interval is destroyed too
+    $scope.timer.stopTimer();
+  });
 
   $http.get("/data/terms-en.json")
   .then(function(res){
@@ -121,7 +141,7 @@ kometControllers.controller("DashboardController" , ["$scope", "$http", "$locati
     $scope.selectedTerm = res.data[0];
     $scope.progressCounter = new ProgressCounter(res.data.length);
     $scope.timer.setUp("glossary");
-    $scope.timer.start();
+    $scope.timer.start("glossary");
   }).then(loadTermFromHash);
 
   $scope.filter = function(term){
