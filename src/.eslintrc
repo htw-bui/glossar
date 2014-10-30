@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true,
+  },
+    "globals":{
+      "angular": true,
+      "_": true,
+      "moment": true,
+      "ProgressCounter": true,
+      "$": true,
+      "bootbox": true,
+    },
+    "rules": {
+      "no-use-before-define": "nofunc"
+    }
+}
+
