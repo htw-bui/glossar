@@ -5,24 +5,24 @@
     "kometControllers"
   ]);
 
-  app.config(['$routeProvider',
+  app.config(["$routeProvider",
     function($routeProvider) {
       $routeProvider.
-      when('/glossary', {
-        templateUrl: 'glossary.html',
-        controller: 'DashboardController',
+      when("/glossary", {
+        templateUrl: "glossary.html",
+        controller: "DashboardController",
         reloadOnSearch: false
       }).
-      when('/highscore', {
-        templateUrl: 'highscore.html',
+      when("/highscore", {
+        templateUrl: "highscore.html",
         controller: "HighscoreCtrl"
         }).
-      when('/game', {
-        templateUrl: 'game.html',
+      when("/game", {
+        templateUrl: "game.html",
         controller: "GameCtrl"
         }).
       otherwise({
-        redirectTo: '/highscore'
+        redirectTo: "/highscore"
       });
     }]);
 
