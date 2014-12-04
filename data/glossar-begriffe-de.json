@@ -1,0 +1,526 @@
+{
+  "Affordance": {
+    "description": "Aspekte eines Objektes, die verdeutlichen, wie das Objekt benutzt werden kann.\nAnmerkung:\n1.\tAffordances und Selbstbeschreibungsf\u00e4higkeit sind Mittel, um interaktive Systeme intuitiv bedienbar zu machen..\nBeispiele f\u00fcr Affordances:\n1.\tEin Henkel einer Teetasse stellt eine offensichtliche Handlungsanweisung dar, sie zu halten. \n2.\tEin Button auf einer Webseite bietet die Handlungsanweisung, auf ihn zu klicken.\n3.\tEin Firmenemblem in der oberen linken Ecke einer Webseite bietet eingeschr\u00e4nkte Handlungsanweisung, darauf zu klicken.",
+    "synonyms": []
+  },
+  "Anforderung": {
+    "description": "Eine Bedingung oder F\u00e4higkeit, die ein  interaktives System erf\u00fcllen oder besitzen muss, um einer Vereinbarung, einem Standard, einer Spezifikation oder anderen formal zugrunde gelegten Dokumenten zu gen\u00fcgen.\nAnmerkungen:\n1.\tEine Anforderung sollte eine festgelegte Bedingung haben, mit der sie validiert werden kann.\n2.\tDieses Glossar definiert die folgenden Arten von Anforderungen:\na.\tInteressenvertreteranforderung,\nb.\tMarktanforderung,\nc.\tOrganisatorische Anforderung,\nd.\tNutzungsanforderung.\n3.\tDieses Glossar unterscheidet au\u00dferdem zwischen \nQualitative\u00a0Nutzungsanforderung, und Quantitative\u00a0Nutzungsanforderung.",
+    "synonyms": []
+  },
+  "Aufgabe": {
+    "description": "Aktivit\u00e4t die erforderlich ist, um ein Ziel zu erreichen.\nAnmerkungen:\n1.\tViele Aufgaben k\u00f6nnen in Teilaufgaben unterteilt werden.\n2.\tViele Teilaufgaben f\u00fchren zu Auswahlm\u00f6glichkeiten oder Eingaben des Benutzers w\u00e4hrend der Nutzung des interaktiven Systems. \n3.\tEinige Teilaufgaben k\u00f6nnen in kleinere Teilaufgaben aufgeteilt werden.\nBeispiele f\u00fcr Aufgaben: \n1.\t\u201eEin Auto mieten\u201c ist eine Aufgabe. \n2.\t\u201eEine Reservierung stornieren\u201c ist eine Aufgabe. \n3.\t\u201eSich auf der Webseite einer Autoverleihfirma registrieren\u201c ist eine Teilaufgabe. Registrierung ist vom Gesichtspunkt des Benutzers kein Ziel sondern ein \u00c4rgernis.\n4.\t\u201eSich einloggen\u201c ist eine Teilaufgabe. Einloggen ist vom Gesichtspunkt des Benutzers kein Ziel sondern ein \u00c4rgernis.\n5.\tDie Eingabe des Benutzernamens und das Dr\u00fccken der Tabulatortaste ist eine von vielen Teilaufgaben die erforderlich sind, um die Teilaufgabe \u201dLog-in\u201d abzuschlie\u00dfen.",
+    "synonyms": []
+  },
+  "Aufgabenmodell": {
+    "description": "Eine Beschreibung der Teilaufgaben die erledigt werden m\u00fcssen, um die Ziele des Benutzers zu erreichen.\nAnmerkung:\n1.\tEin Aufgabenmodell beschreibt die Logik einer Aufgabe an sich, w\u00e4hrend ein Szenario die Erledigung einer oder mehrerer Aufgaben durch eine Persona beschreibt.",
+    "synonyms": []
+  },
+  "Aufgaben\u00adangemessenheit": {
+    "description": "Die Eigenschaft eines interaktives Systems den Benutzer zu unterst\u00fctzen, seine Aufgabe zu erledigen, d. h., die Funktionalit\u00e4t und Dialog an die charakteristischen Eigenschaften der Aufgabe anzupassen, anstatt an die zur Aufgabenerledigung eingesetzten Technologie.\nAnmerkung:\n1.\tEmpfehlungen zu Befolgung des Dialogprinzips:\na.\tDer Dialog sollte dem Benutzer solche Informationen anzeigen, die im Zusammenhang mit der erfolgreichen Erledigung der Aufgabe stehen.\nb.\tDer Dialog sollte dem Benutzer keine Informationen anzeigen, die nicht f\u00fcr die erfolgreiche Erledigung relevanter Aufgaben ben\u00f6tigt werden.\nc.\tDie Form der Eingabe und Ausgabe sollte der Aufgabe angepasst sein. Wenn f\u00fcr eine Aufgabe ganz bestimmte Eingabewerte typisch sind, sollten diese Werte dem Benutzer automatisch als voreingestellte Werte verf\u00fcgbar sein.\nd.\tDie vom interaktiven System verlangten Dialogschritte sollten zum Arbeitsablauf passen, d. h. notwendige Dialogschritte sollten enthalten sein und unn\u00f6tige Dialogschritte sollten vermieden werden.\n2.\tAufgaben\u00adangemessenheit ist ein Dialogprinzip.",
+    "synonyms": []
+  },
+  "Barrierefreiheit": {
+    "description": "Die Attribute und Charakteristiken eines interaktiven Systems die Menschen mit eingeschr\u00e4nkter Sicht, eingeschr\u00e4nktem H\u00f6ren, eingeschr\u00e4nkter Geschicklichkeit, eingeschr\u00e4nkter Kognition oder eingeschr\u00e4nkter physischer Mobilit\u00e4t erm\u00f6glichen sollen effektiv und effizient mit dem interaktiven System zu interagieren.\nAnmerkungen:\n1.\tStandards und Richtlinien f\u00fcr Barrierefreiheit sind verf\u00fcgbar und in manchen Unternehmen oder L\u00e4ndern gesetzlich zu erf\u00fcllen\n2.\tHilfsmittel zur Schaffung von Barrierefreiheit wie z.B. Screenreader k\u00f6nnen einem System hinzugef\u00fcgt werden, um Menschen mit Behinderungen zu erm\u00f6glichen, das System zu nutzen",
+    "synonyms": []
+  },
+  "Befund": {
+    "description": "Siehe Usability-Befund",
+    "synonyms": []
+  },
+  "Benutzer": {
+    "description": "Person, die mit einem interaktiven System arbeitet oder Daten die vom System erzeugt werden benutzt.\nAnmerkungen:\n1.\t\u201eBenutzer\u201c werden unterteilt in\na.\tDirekter Benutzer: Interagiert mit dem interaktiven System.\nb.\tIndirekter Benutzer: Benutzt Daten die vom interaktiven System erzeugt werden.\nc.\tPrim\u00e4rer Benutzer: Interagiert mit dem interaktiven System um Ziele die vom interaktiven System unterst\u00fctzt werden zu erreichen.\nd.\tSekund\u00e4rer Benutzer: Interagiert mit dem interaktiven System um Unterst\u00fctzung etc. zu geben.\n2.\tInteressenvertreter k\u00f6nnen Benutzer sein oder auch nicht. Sie werden nicht als Benutzer betrachtet wenn sie zwar durch das interaktive System beeinflusst werden, jedoch weder mit dem interaktiven System selbst interagieren noch das mit Hilfe des interaktiven Systems erzielte Arbeitsergebnis nutzen.\nBeispiele von Interessenvertretern die keine Benutzer sind:\n1.\tManager von Benutzern.\n2.\tPersonen die von L\u00e4rm der von der Person die das interaktive System benutzt erzeugt wird betroffen sind.\n3.\tMarketingfachleute die von der Auswirkung der Ergebnisse auf die Markenbezeichnung betroffen sind.",
+    "synonyms": []
+  },
+  "Benutzererlebnis": {
+    "description": "Wahrnehmungen und Reaktionen einer Person, die aus der tats\u00e4chlichen oder erwarteten Benutzung eines interaktiven Systems resultieren. \nAnmerkungen: \n1.\tBenutzererlebnis schliesst Usability ein. Usability Kriterien k\u00f6nnen eingesetzt werden um Aspekte des Benutzererlebnisses zu evaluieren.\n2.\tBenutzererlebnis umfasst die Gef\u00fchle, Meinungen, Bevorzugungen, Auffassungen und Leistungen der Benutzer die bevor, w\u00e4hrend und nach der Benutzung des interaktiven Systems auftreten.\n3.\tDas Benutzererlebnis h\u00e4ngt ab\tvon Markenimage, Darstellung, Funktionalit\u00e4t, Systemleistung, interaktivem Verhalten und unterst\u00fctzenden F\u00e4higkeiten des interaktiven Systems, sowie vom Nutzungskontext.\nBeispiele die den Unterschied zwischen Usability und User Experience veranschaulichen:\nWenn Blumen auf einer Website eines Blumengesch\u00e4ftes zur Auslieferung bestellt werden:\n1.\tAufgetauchte Usability-Probleme w\u00e4hrend des Checkouts beeinflussen sowohl das Benutzererlebnis als auch die Usability.\n2.\tDie Qualit\u00e4t der physisch gelieferten Blumen beeinflusst ausschlie\u00dflich die User Experience, nicht die Usability.\n3.\tDie gemachte Erfahrung beim Besuch des physikalischen Gesch\u00e4fts, beeinflusst die User Experience zuk\u00fcnftiger Besuche der Website. Sie hat keinen Einfluss auf die Usability.\nAnmerkung zum Training:\n1.\tZertifizierungsanw\u00e4rter m\u00fcssen den Unterschied zwischen Usability und Benutzererlebnis kennen.",
+    "synonyms": []
+  },
+  "Benutzergruppe": {
+    "description": "Eine Gruppe von Benutzern mit denselben oder \u00e4hnlichen Personenmerkmalen und Nutzungskontext bezogen auf das interaktive System.",
+    "synonyms": []
+  },
+  "Benutzer\u00adbefragung": {
+    "description": "Eine Evaluierung bei der Benutzer subjektive Daten in einem Fragebogen angeben sollen, basierend auf ihren Erfahrungen bei der Benutzung eines interaktiven Systems. \nAnmerkung:\n1\tBenutzerbefragungen k\u00f6nnen verwendet werden, um die Zufriedenstellung mit einem interaktiven System zu evaluieren und um Informationen \u00fcber den Nutzungskontext zu sammeln.\n2. \tBei korrekter Ausf\u00fchrung k\u00f6nnen Benutzerbefragungen einen h\u00f6heren Grad an Sicherheit bei Evaluierungsergebnissen erzielen als jede andere qualitative Untersuchungsmethode.",
+    "synonyms": []
+  },
+  "Benutzer\u00addokumentation": {
+    "description": "F\u00fcr Benutzer geschriebene oder andere Anleitungen zu dem interaktiven System, wie es funktioniert, und wie man es bedient.\nAnmerkung:\n1.\tBenutzer\u00addokumentation ist eine Form der Benutzerunterst\u00fctzung.",
+    "synonyms": []
+  },
+  "Benutzer\u00adgruppen\u00adprofil": {
+    "description": "Eine verallgemeinerte Beschreibung einer Benutzergruppe.",
+    "synonyms": []
+  },
+  "Benutzer\u00adunterst\u00fctzung": {
+    "description": "Informationen um einem Benutzer bei der Interaktion mit einem interaktiven System zu helfen.\nAnmerkungen:\n1.\tBenutzerunterst\u00fctzung kann eine Beschreibung der Benutzeroberfl\u00e4che selbst beinhalten, aber auch Informationen, wie der Benutzer am besten die M\u00f6glichkeiten des interaktiven Systems f\u00fcr die Erf\u00fcllung seiner Anforderungen einsetzen kann.\n2. \tBenutzerunterst\u00fctzung schlie\u00dft alle Formen von Hilfestellung, die f\u00fcr den Benutzer zur Verf\u00fcgung stehen, ein, z.B.:\na.\tBenutzerdokumentation \nb.\tOnlinehilfe\nc.\tSysteminitiierte Benutzerf\u00fchrung",
+    "synonyms": []
+  },
+  "Benutzer\u00adzentrierte Gestaltung": {
+    "description": "Siehe Menschzentrierte Gestaltung.",
+    "synonyms": []
+  },
+  "Benutzer\u00adzentrierte Usability-Evaluierung": {
+    "description": "Usability-Evaluierung, die repr\u00e4sentative Benutzer involviert, die bestimmte Aufgaben mit dem interaktiven System ausf\u00fchren, um die Identifikation von Usability-Problemen oder die Messung von Effizienz, Effektivit\u00e4t und Zufriedenstellung zu erm\u00f6glichen.\nAnmerkung:\n1.\tSiehe Usability-Test.",
+    "synonyms": []
+  },
+  "Benutzungs\u00adschnittstelle": {
+    "description": "Alle Bestandteile eines interaktiven Systems (Software oder Hardware), die Informationen und Steuerelemente zur Verf\u00fcgung stellen, die f\u00fcr den Benutzer notwendig sind, um bestimmte Aufgaben mit dem interaktiven System zu erledigen.",
+    "synonyms": []
+  },
+  "Beobachter": {
+    "description": "Eine Person, die Benutzer beobachtet, die eine Aufgabe diskutieren oder eine Aufgabe mittels eines interaktiven Systems ausf\u00fchren.\nAnmerkungen:\n1.\tBeobachter ist eine Rolle w\u00e4hrend einer Usability-Aktivit\u00e4t, wie z.B. Beobachtung, einer Usability-Testsitzung oder einer Fokusgruppe.\n2.\tBeobachter d\u00fcrfen nicht aktiv in die Usability-Aktivit\u00e4t eingreifen. Sie k\u00f6nnen aber aktiv in die Analyse der Ergebnisse involviert sein.",
+    "synonyms": []
+  },
+  "Beobachtung": {
+    "description": "Eine Technik f\u00fcr das Sammeln von Kontextinformationen zu den Erfordernissen des Nutzungskontexts. W\u00e4hrend einer Beobachtung sieht der Beobachter dem Benutzer bei der Ausf\u00fchrung von Aufgaben am interaktiven System zu. \nAnmerkungen:\n1.\tDer Beobachter greift nicht ein, au\u00dfer  es besteht gelegentlich die Notwendigkeit zu einer kl\u00e4renden Frage.\n2.\tWenn kein interaktives System benutzt wird, sollten die vorhandenen manuellen Ab\u00e4ufe beobachtet werden.\n3.\tDie Beobachtung sollte in einem m\u00f6glichst nat\u00fcrlichen Kontext stattfinden, z. B. am Arbeitsplatz des Benutzers.",
+    "synonyms": []
+  },
+  "Briefing": {
+    "description": "Die erste Aktivit\u00e4t in einem Interview oder Usability-Test, in dem dem Teilnehmer erkl\u00e4rt wird, warum das Interview oder der Usability-Test durchgef\u00fchrt wird und was seine Rolle und sein Beitrag ist",
+    "synonyms": []
+  },
+  "Design Pattern": {
+    "description": "Eine wiederverwendbare L\u00f6sung f\u00fcr ein Gestaltungsproblem innerhalb eines Kontexts. Ein\u00a0Design Pattern beschreibt ein Gestaltungsproblem, eine L\u00f6sung und wo sich diese L\u00f6sung als funktionierend herausgestellt hat.\nAnmerkung:\n1.\tAuf Deutsch wird \u201edesign pattern\u201c manchmal als \u201eEntwurfsmuster\u201c bezeichnet.\nAnmerkung zum Training:\n1.\tVerschiedene Webseiten bieten freien Zugang zu einer gro\u00dfen Auswahl an Design Patterns z.B. www.welie.com ",
+    "synonyms": []
+  },
+  "Dialog": {
+    "description": "Interaktion zwischen einem Benutzer und einem interaktiven System in Form einer Folge von Handlungen des Benutzers (Eingaben) und Antworten des interaktiven Systems (Ausgaben), um ein Ziel zu erreichen.",
+    "synonyms": []
+  },
+  "Dialogprinzipien": {
+    "description": "Allgemeine Ziele f\u00fcr das Dialogdesign.\nAnmerkungen\n1.\tDialogprinzipien sind unabh\u00e4ngig von einer spezifischen Technologie oder Technik\n2.\tAufgrund ihrer Allgemeing\u00fcltigkeit kann es schwierig sein, Dialogprinzipien im konkreten Kontext umzusetzen.\n3.\tDie DIN EN ISO 9241-110 f\u00fchrt folgende sieben Dialogprinzipien auf:\na.\tAufgabenangemessenheit,\nb.\tSelbstbeschreibungsf\u00e4higkeit,\nc.\tErwartungskonformit\u00e4t,\nd.\tLernf\u00f6rderlichkeit,\ne.\tSteuerbarkeit,\nf.\tFehlertoleranz,\ng.\tIndividualisierbarkeit.\n4.\tVergleiche Dialogprinzip mit \na.\tHeuristik: Daumenregel, die der Umsetzung von Dialogprinzipien dient aber konkreter und einfacher anzuwenden ist.\nb.\tGestaltungsregel: Spezifischer Regel f\u00fcr das Design der Benutzungsschnittstelle.",
+    "synonyms": []
+  },
+  "Direkter Benutzer": {
+    "description": "Eine Person, die mit einem interaktiven System interagiert.\nAnmerkung\n1.\tEin direkter Benutzer ist ein prim\u00e4rer ode rein sekund\u00e4rer Benutzer.\nBeispiele f\u00fcr direkte Benutzer\n1.\tEin Kundenbetreuer in einem Call-Center der ein Computersystem nutzt ist ein direkter Benutzer des Computersystems. Ein Kunde der das Call-Center anruft ist zwar ein direkter Nutzer des Services des Kundenbetreuers aber nur ein indirekter Benutzer des Computersystems. ",
+    "synonyms": []
+  },
+  "Dringlichkeits\u00adstufe": {
+    "description": "Ein Ma\u00df f\u00fcr ein Usability-Problem aus einem Usability-Test, das die Auswirkung des Usability-Problems auf das Benutzererlebnis bewertet.\nAnmerkungen: \n1.\tDer Usability-Tester bewertet Usability-Probleme aus Sicht der Usability-Testteilnehmer. Manchmal erfolgen die Bewertungen in Kooperation des Usability-Testers mit einem Experten des Fachgebiets. \n2.\tTypische Dringlichkeits\u00adstufen sind: niedrig, ernst, kritisch, lebensbedrohend.",
+    "synonyms": []
+  },
+  "Effektivit\u00e4t": {
+    "description": "Ausma\u00df der Vollst\u00e4ndigkeit und Genauigkeit der Zielerreichung.\nAnmerkungen: \n1.\tDie Effektivit\u00e4t ist eines der drei messbaren Attribute f\u00fcr Usability. Die anderen beiden Attribute sind Effizienz und Zufriedenstellung.\n2.\tDie Effektivit\u00e4t ist ein Attribut von Usability, das auf die prinzipielle F\u00e4higkeit zur Aufgabenerledigung verweist.",
+    "synonyms": []
+  },
+  "Effizienz": {
+    "description": "Eingesetzte Ressourcen, um bestimmte Ziele zu erreichen.\nAnmerkungen:\n1. Ressourcen beinhalten zeitliche, finanzielle und  materielle Aufw\u00e4nde sowie mentale Aufw\u00e4nde die aus menschlichem Wahrnehmen, Denken und Handeln resultieren  \n2.\tEffizienz ist eines der drei messbaren Attribute von Usability. Die anderen beiden Attribute sind Effektivit\u00e4t und Zufriedenstellung. \n3.\tEffizienz ist ein Attribut von Usability welches auf die Erledigung einer Aufgabe mit einem akzeptierbarem Aufwand verweist.   ",
+    "synonyms": []
+  },
+  "Erfordernis": {
+    "description": "Eine f\u00fcr einen Benutzer oder eine Benutzergruppe als notwendig identifizierte Voraussetzung, um ein Ziel innerhalb eines bestimmten Nutzungskontextes zu erreichen. \nAnmerkungen:\n1.\tEin Erfordernis ist unabh\u00e4ngig von jeglicher vorgeschlagenen L\u00f6sung f\u00fcr dieses Erfordernis. Mit anderen Worten: Ein Erfordernis darf nicht auf z.B. \u201ddas System\u201d oder \u201ddie Website\u201d hinweisen.\n2.\tErfordernisse werden aufgrund verschiedener Ans\u00e4tze identifiziert, unter anderem  Interviews mit Benutzern, Beobachtungen, Benutzerbefragungen, Usability-Evaluierungen, Expertenanalyse usw.\n3.\tErfordernisse repr\u00e4sentieren oftmals L\u00fccken (oder Diskrepanzen) zwischen dem was ist und dem was sein soll.\n4.\tErfordernisse werden transformiert in Nutzungsanforderungen, die den Nutzungskontext, Benutzerpriorit\u00e4ten sowie das Wechselspiel mit anderen Anforderungen und -Einschr\u00e4nkungen mit ber\u00fccksichtigen. \n4.\t\u201eErfordernis\u201c heisst auf Englisch \u201eUser need\u201c.\nBeispiele f\u00fcr Erfordernisse:\n1.\tEin Vortragender (Benutzer) muss wissen, wie viel Zeit er noch hat (Voraussetzung), um den Vortrag w\u00e4hrend einer Pr\u00e4sentation mit einer festgelegten Zeitbeschr\u00e4nkung  (Nutzungskontext) abschliessen zu k\u00f6nnen (Ziel).\n2.\tEin Finanzbuchhalter (Benutzer) muss die Anzahl der erhaltenen Rechnungen und ihre Betr\u00e4ge kennen (Voraussetzung) um die t\u00e4gliche Rechnungsstellung (Ziel) als Teil der Cashflow-Kontrolle (Nutzungskontext) fertigstellen zu k\u00f6nnen.",
+    "synonyms": []
+  },
+  "Erwartungs\u00adkonformit\u00e4t": {
+    "description": "\u00dcbereinstimmung mit den aus dem Nutzungskontext heraus vorhersehbaren Benutzerbelangen sowie allgemein anerkannten Konventionen.\nAnmerkungen:\n1.\tKonsistenz ist ein Aspekt der Erwartungskonformit\u00e4t.\n2.\tErwartungskonformit\u00e4t ist ein Dialogprinzip.\n",
+    "synonyms": []
+  },
+  "Evaluierung": {
+    "description": "Siehe Usability-Evaluierung",
+    "synonyms": []
+  },
+  "Evaluierungs-bericht": {
+    "description": "Ein Dokument, in dem die Ergebnisse eines Usability-Tests, einer Inspektion oder einer Benutzerbefragung dokumentiert werden.\nAnmerkung:\n1.\tDas Dokument f\u00fcr einen Usability-Test wird \u00fcblicherweise als Usability-Testbericht bezeichnet.",
+    "synonyms": []
+  },
+  "Facilitator": {
+    "description": "Siehe Moderator",
+    "synonyms": []
+  },
+  "Fehlertoleranz": {
+    "description": "Die Eigenschaft eines Dialogs das beabsichtigte Arbeitsergebnis trotz erkennbar fehlerhafter Eingaben entweder mit keinem oder mit minimalem Korrekturaufwand seitens des Benutzers zu erreichen.\nAnmerkung:\n1.\tFehlertoleranz ist ein Dialogprinzip.\nBeispiele f\u00fcr Fehlertoleranz:\n1.\tWenn ein Fehler auftritt, sollte das interaktive System eine genaue und verst\u00e4ndliche Erkl\u00e4rung anbieten und konstruktiv eine L\u00f6sung vorschlagen, also was als n\u00e4chstes zu tun ist.\n2.\tWenn aus einer Benutzeraktion schwerwiegende Folgen entstehen k\u00f6nnen, dann sollte das interaktive System eine Erkl\u00e4rung anbieten und eine Best\u00e4tigung vor der Durchf\u00fchrung der Aktion durch den Benutzer einholen.",
+    "synonyms": []
+  },
+  "Fokusgruppe": {
+    "description": "Eine gezielte Diskussion, bei der ein Moderator eine Gruppe von Teilnehmern durch eine Menge von Fragen zu einem bestimmten Thema f\u00fchrt. \nAnmerkungen: \n1.\tDie Durchf\u00fchrung von Fokusgruppen ist kein Ersatz f\u00fcr eine Usability-Evaluierung.\n2.\tFokusgruppen befassen sich mit Meinungen, Usability-Tests mit der Beobachtung des tats\u00e4chlichen Benutzerverhaltens.",
+    "synonyms": []
+  },
+  "Formative Usability-Evaluierung": {
+    "description": "Eine Art der Usability-Evaluierung die hilft, das Design f\u00fcr ein interaktives System zu verbessern, besonders w\u00e4hrend es noch gestaltet wird.\nAnmerkung:\n1.\tVergleiche mit Summative Usability-Evaluierung.",
+    "synonyms": []
+  },
+  "Fragebogen": {
+    "description": "Ein Satz von Fragen, der von Benutzern in einer Benutzerbefragung beantwortet wird, um  Daten zu sammeln.\nAnmerkungen: \n1.\tZwei wichtige Verwendungszwecke von Frageb\u00f6gen im Bereich Usability sind:\na.\tUm den Nutzungskontext zu verstehen. Die gestellten Fragen beziehen sich auf die Erfahurngen die ein Benutzer mit dem momentanen, interaktiven System gemacht hat und die Erwartungen, die er an ein neues interaktives System stellt. \nb.\tUm das Benutzererlebnis vor, w\u00e4hrend und nach der Benutzung eines interaktiven Systems zu evaluieren.\n2.\tFrageb\u00f6gen m\u00fcssen benutzbar sein. Sie m\u00fcssen den Dialogprinzipien folgen, z.B.\na.\tJede Frage muss einen wesentlichen Beitrag zur Beantwortung der globalen Fragestellung liefern.\nb.\tFragen m\u00fcssen leicht zu verstehen sein.\nc.\tDer Fragebogen muss die Benutzer hinsichtlich ihres Fortschritts in der Beantwortung der Fragen auf dem Laufenden halten.\nd.\tDer Fragebogen muss anhand eines Usability-Tests optimiert worden sein.\n3.\tDiese Definition bezieht sich sowohl auf Digitale- als auch auf Papierfrageb\u00f6gen.\nBeispielfragen um den Nutzungskontext zu verstehen:\n1. \t\u201cWann haben Sie das letzte Mal die Website f\u00fcr Autovermietung benutzt? Was wollten Sie auf der Seite tun?\u201c\n2.\t\u201cWas erwarten Sie von einer Website f\u00fcr Autovermietung?\u201d\nBeispiele f\u00fcr Fragen zur Evaluierung der Zufriedenstellung:\n1.\t\u201cAuf einer Skala von 1 bis 5, bei der 1 f\u00fcr \u201cstimme gar nicht zu\u201c, 3 \u201eneutral\u201c und 5 f\u00fcr \u201estimme voll  zu\u201c steht, bewerten Sie bitte die folgenden Aussagen:\na.\tDie neue Website f\u00fcr Autovermietung sieht cool aus.\nb.\tDie neue Website f\u00fcr Autovermietung ist einfach zu benutzen.\nc.\tDie neue Website f\u00fcr Autovermietung erm\u00f6glicht schnelles Mieten von Autos.",
+    "synonyms": []
+  },
+  "Gebrauchs\u00adtauglichkeit": {
+    "description": "Siehe Usability",
+    "synonyms": []
+  },
+  "Geschlossene Frage": {
+    "description": "Eine Interviewfrage die eine Antwort aus einem vordefinierten Satz von Alternativen fordert, oft einfach \u201eja\u201c oder \u201enein\u201c.\nAnmerkungen: \n1.\tVermeide mehrere geschlossene Fragen hintereinander. Sie unterbrechen den Redefluss der Benutzer weil sie sich wie ein Polizeiverh\u00f6r anh\u00f6ren. \n2.\tVergleiche mit offene Frage.\nBeispiel f\u00fcr geschlossene Frage:\n1.\t\u201eHaben Sie jemals ein Auto gemietet?\u201c Entsprechende offene Frage: \u201eBitte erz\u00e4hlen Sie mir von dem letzten Mal wo Sie ein Auto gemietet haben.\u201c",
+    "synonyms": []
+  },
+  "Gestaltungsregel": {
+    "description": "Konkrete, spezifische Instruktion oder Empfehlung, die wenig Interpretationsspielraum l\u00e4sst, so dass verschiedene Designer sie \u00e4hnlich umsetzen.\nAnmerkungen:\n1. \tSammlungen von Gestaltungsregeln werden als Styleguides bezeichnet.\n2. \tDesign Patterns m\u00fcssen relevante Gestaltungsregeln erf\u00fcllen.\n3. \tVergleiche Gestaltungsregel mit\na.\tDialogprinzip \u2013 ein generelles Ziel f\u00fcr das Dialogdesign. Evtl. schwierig anzuwenden auf Grund der Allgemeing\u00fcltigkeit.\nb.\tHeuristik \u2013 Eine Daumenregel die bei der Erreichung von Dialogprinzipien hilft. Diese ist spezifischer und einfacher anzuwenden als ein Dialogprinzip.\nBeispiele f\u00fcr Gestaltungsregeln:\n1.\tF\u00fcr alle Steuerelemente, wie z.B. Buttons, w\u00e4hle den zuverl\u00e4ssigsten, sichersten Wert als Voreinstellung um den Datenverlust bzw. den risikablen Systemzugriff zu verhindern. Wenn Sicherheit und Schutz der Daten keine relevanten Faktoren sind, w\u00e4hle den h\u00e4ufigsten oder bequemsten Wert.\n2. \tDas Firmenlogo muss in der oberen, linken Ecke jeder Seite erscheinen. Die Position muss exakt die gleiche sein wie die auf der Homepage. Klicken auf das Logo muss die Anzeige der Homepage zur Folge haben.\n3. \tDie H\u00f6he eines Buttons muss 23 Pixel betragen",
+    "synonyms": []
+  },
+  "Heuristik": {
+    "description": "Eine allgemein anerkannte Daumenregel die hilft Usability zu erreichen.\nAnmerkungen:\nHeuristiken dienen haupts\u00e4chlich dazu, Usability zu gew\u00e4hrleisten (und nicht N\u00fctzlichkeit). \nVergleiche Heuristik mit\na.  Dialogprinzip \u2013 ein allgemeines Ziel f\u00fcr das Design von Dialogen. Ist m\u00f6glicherweise schwieriger anzuwenden auf Grund seiner Allgemeing\u00fcltigkeit. \nb.  Gestaltungsregel \u2013 einfache, aber  spezifische Regel f\u00fcr Gestaltung von Benutzungs\u00adschnittstellen.\nBeispiele allgemein anerkannter Heuristiken (von Jakob Nielsen und Rolf Molich):\n1.\tBeachte Konventionen der realen Welt, z.B. sprich die Sprache der Benutzer\n2.\tBeachte Konventionen der verwendeten Plattform\n3.\tMinimiere die Notwendigkeit zur Erinnerung beim Benutzers in dem Objekte, Handlungen und Optionen sichtbar gemacht werden.\n4.\tBiete angemessenes Feedback innerhalb angemessener Zeit\n5.\tHilf Benutzern beim Erkennen, Verstehen und Beseitigen von Fehlern.\n",
+    "synonyms": []
+  },
+  "Heuristische Evaluierung": {
+    "description": "Eine Methode der Usability-Evaluierung bei der ein oder mehrere Begutachter \u2013 vorzugsweise Experten \u2013 ein interaktives System mit einer Liste von Heuristiken vergleichen und feststellen an welchen Stellen das interaktive System diesen Heuristiken nicht folgt.\nAnmerkungen:\n1.\tDie Liste der Heuristiken muss handhabbar sein. \u00dcblicherweise werden etwa 10 Heuristiken benutzt.\n2.\tExperten k\u00f6nnen Usability-Experten oder Experten im Anwendungsbereich sein.",
+    "synonyms": []
+  },
+  "High-fidelity-Prototyp": {
+    "description": "Ein Software Prototyp der Benutzungsschnittstelle des zu designenden interaktiven Systems. Ein high-fidelity-Prototyp \u00e4hnelt dem fertigen interaktiven System und kann interaktiv oder nicht interaktiv sein.\nAnmerkungen:\n1.\tVergleiche mit low-fidelity-Prototyp.\n2.\tHigh-fidelity-Prototypen k\u00f6nnen entweder mit einem Programm zum Prototyping oder mit einem B\u00fcroprogramm (wie z.B. PowerPoint) entworfen werden. ",
+    "synonyms": []
+  },
+  "ISO 9241": {
+    "description": "Eine Reihe von Standards, die die menschzentrierte Gestaltung interaktiver Systeme betrifft.  \nAnmerkung:\n1.\tISO 9241 beinhaltet Standards zu den Themen\na.\tSoftware-Ergonomie\nb.\tProzess menschzentrierter Gestaltung\nc.\tDisplays und Display bezogene Hardware\nd.\tPhysikalisches Eingabeger\u00e4te\ne.\tErgonomie des Arbeitsplatzes\nf.\tErgonomie der Umgebung\ng.\tKontrollzentren\nh.\tTaktile und haptische Interaktionen",
+    "synonyms": []
+  },
+  "Indirekter Benutzer": {
+    "description": "Personen, die direkt die Ergebnisse eines interaktiven Systems nutzen, aber nicht direkt mit dem System interagieren. \nBeispiel f\u00fcr indirekter Benutzer:\n1.\tEin Bankkunde, der ein Dokument oder einen elektronischen Bericht erh\u00e4lt, oder eine Filiale besucht, ist ein indirekter Benutzer eines Arbeitsergebnisses, das mit Hilfe eines Systems erzeugt wurde, das die Mitarbeiter der Bank benutzen.",
+    "synonyms": []
+  },
+  "Individualisier\u00adbarkeit": {
+    "description": "Die Eigenschaft eines Dialogs die Benutzer erm\u00f6glicht die Interaktion mit dem System und die Darstellung von Informationen an ihre individuellen F\u00e4higkeiten und Bed\u00fcrfnisse anpassen zu k\u00f6nnen.\nAnmerkung:\n1.\tIndividualisierbarkeit ist ein Dialogprinzip.",
+    "synonyms": []
+  },
+  "Informations\u00adarchitekt": {
+    "description": "Eine Person die die Struktur von Information in interaktiven Systemen f\u00fcr das effiziente Auffinden durch jede Benutzergruppe kreiert und organisiert.\nAnmerkung:\n1.\tInformationsarchitekt ist eine Rolle im Prozess der menschzentrierten Gestaltung.",
+    "synonyms": []
+  },
+  "Informations\u00adarchitektur": {
+    "description": "Die Benennung und Strukturierung der Informationen die f\u00fcr den Benutzer erreichbar sein m\u00fcssen einschlie\u00dflich der Nutzungsobjekte, Systemobjekte (wie z.B. \u201eDrucker\u201c) und weiterer f\u00fcr den Benutzer erforderlichen Informationen. ",
+    "synonyms": []
+  },
+  "Inspektion": {
+    "description": "Siehe inspektionsbasierte Usability-Evaluierung",
+    "synonyms": []
+  },
+  "Inspektions\u00adbasierte Usability-Evaluierung": {
+    "description": "Usability-Evaluierung die auf der Beurteilung ein oder mehrerer Evaluatoren basiert, die ein interaktives System pr\u00fcfen oder benutzen, um potentielle Usability-Probleme und Abweichungen von anerkannten Kriterien zu identifizieren.\nAnmerkungen:\n1.\tInspektionsbasierte Usability-Evaluierung wird oft von Usability-Experten oder Fachexperten durchgef\u00fchrt, die ihre Urteile auf die fr\u00fchere Erfahrung mit Usability-Problemen und ihr eigenes Wissen \u00fcber Gestaltungsregeln und Styleguides gr\u00fcnden.\n2.\tHeuristische Evaluierung ist eine Vorgehensweise f\u00fcr Inspektionsbasierte Usability-Evaluierung.",
+    "synonyms": []
+  },
+  "Interaktions\u00addesigner": {
+    "description": "Eine Person die die Interaktion zwischen Mensch und System auf Basis der Nutzungs\u00adanforderungen und Nutzungskontext definiert und konzipiert. \nAnmerkung:\n1.\tSzenarien und Personas sind auch wichtige Grundlagen f\u00fcr die Arbeit des Interaktionsdesigners.\n2.\tInteraktionsdesigner ist eine Rolle im Prozess der menschzentrierten Gestaltung.",
+    "synonyms": []
+  },
+  "Interaktives System": {
+    "description": "Kombination von Hardware-, Software- und Servicekomponenten, die Eingaben von einem Benutzer empf\u00e4ngt und Ausgaben zu einem Benutzer \u00fcbermittelt.\nAnmerkung:\n1.\tDas schlie\u00dft, wo relevant, Verpackung, Branding, Benutzerdokumentation, Onlinehilfe, Support und Training mit ein.  ",
+    "synonyms": []
+  },
+  "Interessen\u00advertreter": {
+    "description": "Individuum oder Organisation, die ein Anrecht, einen Anteil, einen Anspruch oder ein Interesse auf ein interaktives System oder an dessen Merkmalen hat, die ihren Erfordernissen und Erwartungen entsprechen. \nAnmerkungen: \n1.\tAlle Benutzer sind Interessenvertreter.\n2.\tSiehe auch unterschiedliche Typen von Anforderungen\n3.\tDie folgenden Beispiele f\u00fcr Interessenvertreter zeigen die breite Perspektive dieses Begriffs\n4.\tDer englische Ausdruck f\u00fcr Interessenvertreter ist Stakeholder\nBeispiele f\u00fcr Interessenvertreter: \n1.\tBenutzer, Support, Trainer, Autoren von Dokumentationen, Entwickler, Manager von Entwicklern und Personen im Marketing.",
+    "synonyms": []
+  },
+  "Interessen\u00advertreter\u00adanforderung": {
+    "description": "Was das interaktive System aus Sicht des Interessenvertreters leisten muss.\nAnmerkung:\n1.\tDer englische Ausdruck f\u00fcr Interessenvertreteranforderung ist Stakeholder requirement.",
+    "synonyms": []
+  },
+  "Interview": {
+    "description": "Eine Methode der Datensammlung, die sorgf\u00e4ltig ausgew\u00e4hlte Individuen untersucht, um ein tiefes Verst\u00e4ndnis der Arbeitst\u00e4tigkeit der Benutzer zu erreichen. Durch die Befragung und Interpretation werden Gemeinsamkeiten und Unterschiede innerhalb der Benutzer  eines interaktiven Systems aufgedeckt.  \nAnmerkungen: \n1.\tIn einem Interview f\u00fchrt der Interviewer (der User Requirements Engineer) \u00fcblicherweise ein Briefing durch und stellt danach dem Benutzer Fragen \u00fcber die \u00fcblichen Abl\u00e4ufe vor dem Hintergrund des geplanten interaktiven Systems. Der Interviewer nutzt eine Interviewcheckliste, um sicherzustellen, dass zu allen relevanten Aspekten befragt wurde.\n2.\tDas Meister-Sch\u00fcler-Modell sollte beim Interview Anwendung finden.\n3.\tInterviewfragen sollten \na.\teher offen als geschlossen\nb.\teher neutral als suggestiv\nformuliert sein.\n4.\tVergleiche kontextuelles Interview, Pre-Session Interview und Post-Session Interview",
+    "synonyms": []
+  },
+  "Interview\u2013checkliste": {
+    "description": "Eine schriftliche Liste passender Fragen und Hinweise, die w\u00e4hrend eines Interviews verwendet wird, um sicherzustellen, dass alle relevanten Themen ber\u00fccksichtigt werden.",
+    "synonyms": []
+  },
+  "Intuitiv": {
+    "description": "Die Benutzung des interaktiven Systems ist unmittelbar zu verstehen \u2013 unabh\u00e4ngig von der Erfahrung, vom Wissen, von den Sprachkenntnissen oder vom momentanen Konzentrationsgrad des Benutzers.\nAnmerkung:\n1.\tAffordance und Selbstbeschreibungsf\u00e4higkeit sind Mittel, ein interaktives System intuitiv zu gestalten.",
+    "synonyms": []
+  },
+  "Iterativ": {
+    "description": "Wiederholend.\nEin iteratives Vorgehen wiederholt Schritte des Prozesses der menschzentrierten Gestaltung solange, bis eine Usability-Evaluierung der Benutzungsschnittstelle zeigt, dass die Nutzungsanforderungen ausreichend erf\u00fcllt sind.",
+    "synonyms": []
+  },
+  "Konsistenz": {
+    "description": "Die gleiche Information wird in gleicher Weise innerhalb des gesamten interaktiven Systems entsprechend der Benutzererwartung dargestellt.\nAnmerkungen:\n1.\tKonsistenz ist eine Komponente der Erwartungskonformit\u00e4t. \n2.\tKonsistenz ist auf verschiedenen Ebenen relevant wie zum Beispiel \na.\tinnerhalb einer Bildschirmanzeige,\nb.\tzwischen den Bildschirmanzeigen desselben interaktiven Systems, \nc.\tzwischen interaktiven Systemen desselben Herstellers,\nd.\tzwischen \u00e4hnlichen interaktiven Systemen unterschiedlicher Hersteller.",
+    "synonyms": []
+  },
+  "Kontextuelles Interview": {
+    "description": "Ein Interview das dort stattfindet wo die Interaktion des Benutzers mit dem interaktiven System \u00fcblicherweise stattfindet, z.B. am Arbeitsplatz des Benutzers.\nAnmerkungen: \n1.\t\u201eKontextuelles Interview\u201c wird auf Englisch oft als \u201eContextual inquiry\u201c bezeichnet.",
+    "synonyms": []
+  },
+  "Lern\u00adf\u00f6rderlichkeit": {
+    "description": "Die Eigenschaft eines Dialogs die Benutzer beim Erlernen der Nutzung des interaktiven Systems zu unterst\u00fctzen und anzuleiten.\nAnmerkungen:\n1.\tEmpfehlungen zur Befolgung des Dialogprinzips:\na.\tDer Dialog sollte ausreichende R\u00fcckmeldung \u00fcber Zwischen- und Endergebnisse von Handlungen bereitstellen, damit die Benutzer von erfolgreich ausgef\u00fchrten Handlungen lernen.\nb.\tFalls es zu den Aufgaben und den Lernzielen passt, sollte das interaktive System dem Benutzer erlauben, Dialogschritte ohne nachteilige Auswirkungen auszuprobieren.\n2.\tLernf\u00f6rderlichkeit ist ein Dialogprinzip.\nBeispiel f\u00fcr Lernf\u00f6rderlichkeit:\n1.\tWenn Benutzer mit Hilfe eines Hotelzimmerreservierungssystems ein Zimmer reservieren, erhalten die Benutzer Schritt f\u00fcr Schritt R\u00fcckmeldungen, um ihre Anfrage zu verfeinern und immer mehr Details \u00fcber den Fortschritt der erfolgreichen Zimmerreservierung.",
+    "synonyms": []
+  },
+  "Low-fidelity-Prototyp": {
+    "description": "Eine einfache und preiswerte Veranschaulichung eines Designs oder eines Begriffs. Wird benutzt, um Benutzer-Feedback in fr\u00fchen Phasen der Entwicklung einzuholen\nAnmerkungen: \n1.\tEin low-fidelity-Prototyp wird h\u00e4ufig mit Hilfe von Papier, Stiften, Haftzetteln usw. erstellt. \n2.\tEin low-fidelity-Prototyp wird \u00fcblicherweise von einem Menschen und nicht durch einen Computer betrieben.\n3.\tEin low-fidelity-Prototyp sollte so hinterlegt sein, dass er unmittelbar modifiziert werden kann.\n4.\tVergleiche mit high-fidelity-Prototyp.",
+    "synonyms": []
+  },
+  "Markt\u00adanforderung": {
+    "description": "Eine Anforderung an ein interaktives System, die aus der Absatzpolitik des Anbieters abgeleitet ist und darauf abzielt, Gesch\u00e4ftschancen, Verk\u00e4ufe und die Nutzung des interaktiven Systems zu maximieren.\nAnmerkungen:\n1.\tH\u00e4ufig werden Marktanforderungen Kundenanforderungen genannt.\nBeispiel f\u00fcr Marktanforderung: \n1.\t\u201eDie Webseite muss mindestens so benutzbar sein wie jene der zwei st\u00e4rksten Wettbewerber.\u201c",
+    "synonyms": []
+  },
+  "Meister-Sch\u00fcler-Modell": {
+    "description": "Ein Verhaltensprinzip f\u00fcr ein erfolgreiches Interview:  Der Interviewer behandelt den Benutzer als den Meister w\u00e4hrend der Interviewer selbst der Sch\u00fcler ist. Der Interviewer demonstriert nicht sein Wissen, sondern stellt seine Fragen mit dem Ziel etwas zu lernen.",
+    "synonyms": []
+  },
+  "Mensch\u00adzentrierte Gestaltung": {
+    "description": "Herangehensweise bei der Gestaltung und Entwicklung von interaktiven Systemen, die darauf abzielt, diese gebrauchtauglicher zu machen indem sie sich auf die Verwendung des interaktiven Systems konzentriert und Kenntnisse und Techniken aus den Bereichen der Arbeitswissenschaft, Ergonomie und der Gebrauchstauglichkeit anwendet.\nAnmerkungen:\n1.\tDer Begriff \u201cmenschzentrierte Gestaltung\u201d wird statt \u201cbenutzerzentrierter Gestaltung\u201d verwendet, um auch die Erfordernisse weiterer Interessenvertreter einzuschliessen, die nicht unbedingt Benutzer sind.\n2.\tFeedback von Benutzern aus Usability Evaluierungen ist eine wichtige Informationsquelle in der menschzentrierten Gestaltung.",
+    "synonyms": []
+  },
+  "Mentales Modell": {
+    "description": "Die Vorstellung, die Menschen von sich, anderen, der Umgebung und den Dingen haben, mit denen sie interagieren. \nAnmerkungen: \n1.\tAlternative, popul\u00e4re Definition: Der Denkprozess einer Person dar\u00fcber, wie etwas in der realen Welt funktioniert.\n2.\tMenschen generieren mentale Modelle aufgrund von Erfahrung, Training und Instruktion. Das mentale Modell bez\u00fcglich eines interaktiven Systems wird gr\u00f6\u00dftenteils durch die Interpretation von wahrgenommenen Aktionen und sichtbaren Strukturen gebildet. Die Erwartung durch die Benutzung anderer oder \u00e4hnlicher Systeme spielt auch eine Rolle.\n3.\tWenn ein mentales Modell eines Benutzers von einem interaktiven System unvollst\u00e4ndig oder widerspr\u00fcchlich ist, dann kann der Benutzer das interaktive System nicht hindernisfrei benutzen.",
+    "synonyms": []
+  },
+  "Moderation": {
+    "description": "Die durch einen Moderator w\u00e4hrend eines Usability-Tests oder einer Fokusgruppe ausge\u00fcbte T\u00e4tigkeit.",
+    "synonyms": []
+  },
+  "Moderator": {
+    "description": "Eine neutrale Person die eine Usability-Testsitzung oder eine Fokusgruppe leitet.\nAnmerkungen: \n1.\tModerator ist eine Rolle in einer Usability-Testsitzung oder in einer Fokusgruppensitzung.\n2.\tDie typischen Aufgaben des Moderators w\u00e4hrend einer Usability-Testsitzung sind beim Begriff Usability-Testsitzung beschrieben.\n3.\tAuf Englisch wird Facilitator oft als Synonym f\u00fcr Moderator verwendet.",
+    "synonyms": []
+  },
+  "Nach\u00adbesprechung": {
+    "description": "Siehe Post-Session Interview.",
+    "synonyms": []
+  },
+  "Navigations\u00adstruktur": {
+    "description": "Die logische Organisation der angezeigten Informationseinheiten der Benutzungsschnittstelle.\nAnmerkungen:\n1.\tIn der Praxis sind die \u201eangezeigten Informationseinheiten\u201c oft Bildschirminhalte, Seiten oder Fenster.\n2.\tDie Navigationsstruktur umfasst: \na.\tDie logische Struktur, zum Beispiel Hierarchie, Anordnung sowie Gruppierung von Bestandteilen des User Interfaces bzw. Navigationsitems.\nb.\tDie Navigationsmittel zum Navigieren in der Struktur, zum Beispiel Men\u00fc und Brotkrumen\n3.\tDie Navigationsstruktur ist ein Teil der Informationsarchitektur. Verantwortlich ist der Informationsarchitekt \u2013 er kann das aber nicht ohne den Interaktionsdesigner festlegen.",
+    "synonyms": []
+  },
+  "Neutrale Frage": {
+    "description": "Eine Frage in einem Interview, die keine impliziten Annahmen beinhaltet und auch keinen Ansatz bietet, einen Aspekt auszuschliessen oder die Antwort in eine bestimmte Richtung zu lenken. \nAnmerkung:\n1.\tVergleiche mit Suggestivfrage.\nBeispiele f\u00fcr neutrale (und offene) Interviewfragen\n1.\tWas ist passiert?\n2.\tWas meinen Sie damit?\n3.\tWelche M\u00f6glichkeiten haben Sie jetzt?\n4.\tWie sollte die Homepage der neuen Autovermietungswebsite aussehen?",
+    "synonyms": []
+  },
+  "Nutzungsobjekt": {
+    "description": "Die wichtigsten Informationseinheiten oder Daten mit denen Benutzer interagieren, um ihre Aufgaben durchzuf\u00fchren.\nAnmerkung:\n1.\tDer englische Ausdruck f\u00fcr Nutzungsobjekt ist Task object.\nBeispiele f\u00fcr Nutzungsobjekte:\n1.\tF\u00fcr ein Kundenmanagementsystem: \n\t- Ein Brief an einen Kunden, \n\t- Eine Liste unbezahlter Rechnungen des Kunden, \n\t- Eine Auftrag von dem Kunden.\n2.\tF\u00fcr einen Automaten der Bahnkarten verkauft:\n\t- Eine Fahrkarte,\n\t- Eine Quittung f\u00fcr den Kauf einer Fahrkarte,\n\t- Einen Reiseplan.",
+    "synonyms": []
+  },
+  "Nutzungs\u00adanforderung": {
+    "description": "Anforderung an die Nutzung, die die Basis f\u00fcr die Gestaltung und Evaluierung eines interaktiven Systems in Hinblick auf identifizierte Erfordernisse bildet. \nAnmerkungen:\n1.\tNutzungsanforderungen werden von Erfordernissen abgeleitet.\n2.\tEine Nutzungsanforderung kann eine qualitative\u00a0Nutzungsanforderung oder eine quantitative Nutzungsanforderung sein.\n3.\t\u201eNutzungsanforderung\u201c heisst auf Englisch \u201eUser requirement\u201c.",
+    "synonyms": []
+  },
+  "Nutzungs\u00adkontext": {
+    "description": "Benutzer, Aufgaben, Ressourcen sowie die physische und soziale Umgebung in der das interaktive System genutzt wird.\nAnmerkungen:\n1.\tDie Ergebnisse aus den Beobachtungen und kontextuellen Interviews werden in der \u201dNutzungskontextbeschreibung\u201d dokumentiert. Diese ist die Basis f\u00fcr das Identifizieren von Erfordernissen bzw. deren Zur\u00fcckf\u00fchrbarkeit auf den Nutzungskontext.   \n2. Eine Nutzungskontextbeschreibung beschreibt:\na.\tBenutzergruppen und Benutzergruppenprofile,\nb.\tAufgaben,\nc.\tUmgebungen,\nd.\tAusr\u00fcstung,\ne.\tSzenarien, die illustrieren, was im Nutzungskontext geschieht\nAnmerkung zum Training:\n1.\tHilfreiche Abk\u00fcrzung: PACT = \nPeople (Benutzer), \nActivities (Aufgaben), \nContexts (Umgebung), \nTechnologies (Ressourcen, Ausr\u00fcstung der Benutzer)\nBeispiele:\n1.\tJugendliche verwenden Handys, um ihren Freunden Textmitteilungen zu senden w\u00e4hrend sie in einem Bus sitzen. \n2.\tSekret\u00e4rinnen benutzen Microsoft Word, um Dokumente in einer Rechtskanzlei zu schreiben.",
+    "synonyms": []
+  },
+  "Nutzungs\u00adproblem": {
+    "description": "Siehe Usability-Problem",
+    "synonyms": []
+  },
+  "Nutzungs\u2013szenario": {
+    "description": "Siehe Szenario",
+    "synonyms": []
+  },
+  "Offene Frage": {
+    "description": "Eine Frage in einem Interview, die keine Einschr\u00e4nkung der Antwortm\u00f6glichkeiten nach sich zieht\nAnmerkungen: \n1.\tOffene Fragen sind in Interviews zu bevorzugen, weil sie Benutzer zur freien Rede animieren und ausf\u00fchrliche  Antworten auf die Frage zulassen. \n2.\tVergleiche mit geschlossener Frage.\nBeispiele:\n1.\tF\u00fcr Beispiele zu offenen (und neutralen) Interviewfragen siehe Neutrale Fragen.",
+    "synonyms": []
+  },
+  "Onlinehilfe": {
+    "description": "Unterst\u00fctzung die durch ein Computerprogramm bereitgestellt wird. Onlinehilfe kann themenorientiert, verfahrensorientiert oder ein Hinweis sein.\nAnmerkungen:\n1.\tOnlinehilfe kann auch Informationen zu weitergehenden Themenbereichen bieten.\n2.\tOnlinehilfe ist eine Form der Benutzerunterst\u00fctzung.",
+    "synonyms": []
+  },
+  "Organisato\u00adrische Anforderung": {
+    "description": "Eine organisatorische Regel die Benutzer befolgen m\u00fcssen w\u00e4hrend sie ihre Aufgaben l\u00f6sen.\nAnmerkung:\n1.\tOrganisatorische Anforderungen sind Anforderungen an die Benutzer die zu Anforderungen an das interaktive System f\u00fchren.\nBeispiele: \n1.\tEin Verk\u00e4ufer muss Angebote \u00fcber 100.000 Euro vom Gesch\u00e4ftsf\u00fchrer unterschreiben lassen.\n2.\tEine exakte Beschreibung der Art und Weise wie ein Benutzer eine Bestellung ausf\u00fchren muss.",
+    "synonyms": []
+  },
+  "Persona": {
+    "description": "Eine Beschreibung eines Benutzers und was dieser bei der Benutzung eines interaktiven Systems beabsichtigt. \nAnmerkung:\n1.\tPersonas sind nicht Beschreibungen existierender Personen, sondern repr\u00e4sentieren erfundene Beispiele eines realen Benutzers auf der Basis empirisch ermittelter Daten, zum Beispiel von Beobachtungen oder Interviews.\n2.\tPersonas verf\u00fcgen typischerweise \u00fcber einen Namen, Alter, einige Hintergrund\u00adinformationen, Ziele und W\u00fcnsche. Eine Persona-Beschreibung sollte Informationen \u00fcber wesentliches Wissen im Themenfeld des interaktiven Systems und die entsprechenden Interessen der Persona im Themenfeld beinhalten. Persona-Beschreibungen enthalten oft, aber nicht immer ein Foto.",
+    "synonyms": []
+  },
+  "Positiver Usability-Befund": {
+    "description": "Siehe Usability-Befund",
+    "synonyms": []
+  },
+  "Post-Session Interview": {
+    "description": "Eine Aktivit\u00e4t in einem Usability-Test, bei der ein Usability-Testteilnehmer Fragen bez\u00fcglich seines allgemeinen Eindrucks hinsichtlich der Usability des interaktiven Systems beantwortet. \nAnmerkungen:\n1.\tDas Post-Session Interview findet statt, nachdem der Usability-Testteilnehmer soviele der vorgesehenen Usability-Testaufgaben wie m\u00f6glich in der vorgegebenen Zeit erledigt hat. \n2.\tWird auch als Debriefing oder Nachbesprechung bezeichnet.",
+    "synonyms": []
+  },
+  "Pre-Session Interview": {
+    "description": "Eine T\u00e4tigkeit bei einem Usability-Test, bei der Usability-Testteilnehmer Fragen bez\u00fcglich ihres Hintergrundes und vorheriger Erfahrung mit dem interaktiven System oder \u00e4hnlichen interaktiven Systemen beantworten. \nAnmerkung:\n1.\tDas Pre-Session Interview findet nach dem Briefing statt, bevor der Usability-Testteilnehmer beginnt, die Usability-Testaufgaben abzuarbeiten.",
+    "synonyms": []
+  },
+  "Prim\u00e4rer Benutzer": {
+    "description": "Eine Person, die mit einem interaktiven System interagiert, um Ziele zu erreichen, die durch das System unterst\u00fctzt werden.",
+    "synonyms": []
+  },
+  "Protokollant": {
+    "description": "Ein Usabilityspezialist, der Notizen \u00fcber Usability-Befunde w\u00e4hrend einer Usability-Testsitzung, Fokusgruppe oder Interview notiert. \nAnmerkungen:\n1.\tProtokollant ist eine Rolle in einer Usability-Testsitzung, Fokusgruppe oder Interview\n2.\tDer Einsatz eines Protokollanten erlaubt dem Moderator, sich voll auf den Usability-Testteilnehmer zu konzentrieren.",
+    "synonyms": []
+  },
+  "Prototyp": {
+    "description": "Eine Repr\u00e4sentation von Teilen oder des gesamten interaktiven Systems, die in einem bestimmten Ma\u00df f\u00fcr Analyse, Design und Evaluierung benutzt werden kann.\nAnmerkung:\n1.\tZertifizierungsanw\u00e4rter m\u00fcssen auch mit den Begriffen high-fidelity-Prototyp und low-fidelity-Prototyp vertraut sein.",
+    "synonyms": []
+  },
+  "Qualitative Nutzungs\u00adanforderung": {
+    "description": "Eine Beschreibung, was Benutzer w\u00e4hrend der Durchf\u00fchrung einer Aufgabe mit dem interaktiven System finden, erkennen, verstehen, ausw\u00e4hlen oder eingeben m\u00fcssen.\nAnmerkungen:\n1.\tQualitative Nutzungsanforderungen sind die Basis f\u00fcr den effizienten Gebrauch von interaktiven Systemen.\n\tIm Gegensatz dazu k\u00f6nnen Quantitative Nutzungsanforderungen Messungen der Effizienz des interaktiven Systems erm\u00f6glichen  \u2013 d.h. ob ein Benutzer mit Hilfe des interaktiven Systems eine Aufgabe z.B. in einer angemessenen Zeit oder mit einem definierten Maximum an Bedienungsfehlern l\u00f6sen kann.\n2.\tQualitative Nutzungsanforderungen sind keine Funktionen, sondern stellen die Basis f\u00fcr Funktionen dar.\n3.\tVergleiche mit Quantitativer Nutzungsanforderung \nBeispiele\n1.\tSinnvolle qualitative Nutzungsanforderungen:\na.\t\u201eDer Benutzer muss die unterschiedlichen Fahrzeuge, die f\u00fcr einen bestimmten Preisbereich auf der Autovermietungs\u00adwebseite verf\u00fcgbar sind, vergleichen k\u00f6nnen.\u201c \nb.\t\u201eDer Benutzer muss ein Fahrzeug mit automatischer \u00dcbertragung auf der Autovermietungswebseite ausw\u00e4hlen k\u00f6nnen.\u201c\nc.\t\u201eDer Benutzer muss die \u00d6ffnungszeiten einer bestimmten Autovermietungsstelle sehen k\u00f6nnen.\u201c\n2.\tFalsch formulierte qualitative Nutzungsanforderungen:\na.\t\u201eDie Benutzungsschnittstelle muss gebrauchstauglich sein und alle Benutzeraufgaben unterst\u00fctzen.\u201c (zu\u00a0allgemein)\nb.\t\u201eDie Benutzungsschnittstelle muss einen gro\u00dfen roten Button \u201eAuto mieten\u201c haben\u201c (zu detailliert)",
+    "synonyms": []
+  },
+  "Qualit\u00e4t": {
+    "description": "Grad der Erf\u00fcllung von Anforderungen durch ein interaktives System.\nAnmerkung: \n1.\tBeispiele f\u00fcr Qualit\u00e4tsmerkmale neben Usability sind Korrektheit, Verl\u00e4sslichkeit und Sicherheit.",
+    "synonyms": []
+  },
+  "Quantitative Nutzungs\u00adanforderung": {
+    "description": "Ben\u00f6tigtes Ma\u00df an Usability um identifizierten Erfordernissen zu gen\u00fcgen im Sinne der Effektivit\u00e4t, Effizienz und Zufriedenstellung in einem festgelegten Nutzungskontext.\nAnmerkungen:\n1.\tQuantitative Nutzungsanforderungen sind Akzeptanzkriterien f\u00fcr die Effektivit\u00e4t, Effizienz und Zufriedenstellung eines interaktiven Systems, z.B. ob Benutzer eine bestimmte Aufgabe in einer angemessenen Zeit oder mit einem festgeschriebenen Maximum an Benutzungsfehlern mit dem System erledigen k\u00f6nnen.\n2.\tVergleiche mit Qualitativer Nutzungsanforderung. Vergleiche insbesondere die Beispiele.\nBeispiel: \n1.\t\u201e80% der Benutzer, die die Autovermietungs\u00adwebseite zumindest zweimal benutzt haben, m\u00fcssen in der Lage sein, innerhalb von 5 Minuten einen Kleinwagen ab Flughafen Frankfurt (Deutschland) f\u00fcr zwei Tage beginnend ab morgen 09:00 Uhr zu mieten\u201c.\n2.\tVergleiche das obige Beispiel mit Beispielen  \u201equalitativer Nutzungsanforderung\u201c.",
+    "synonyms": []
+  },
+  "Rekrutierung": {
+    "description": "Akquise von Benutzern, die die erforderlichen Qualifikationen haben, an einer menschzentrierten Aktivit\u00e4t wie z.B. einem Usability-Test, einem kontextuellen Interview oder einer Fokusgruppe teilzunehmen.\nAnmerkung: \n1.\tOft wird ein Rekrutierungsfragebogen eingesetzt, um festzustellen ob Kandidaten \u00fcber die erforderlichen Qualifikationen zur Teilnahme an der menschzentrierten Aktivit\u00e4t verf\u00fcgen.\n2.\tRelevante Qualifikationen beinhalten: Hintergrund, Wissen \u00fcber das Sachgebiet, Einstellungen und Interessen.",
+    "synonyms": []
+  },
+  "Rekrutierungs\u00adfragebogen": {
+    "description": "Eine Reihe von Fragen f\u00fcr potenzielle Teilnehmer hinsichtlich ihrer Qualifikationen zur Teilnahme an einer menschzentrierten Aktivit\u00e4t wie z.B. einem Usability-Test oder einer Fokusgruppe.\nAnmerkungen: \n1.\tEin Rekrutierungsfragebogen wird w\u00e4hrend der Rekrutierung von Teilnehmern benutzt, um festzustellen ob Kandidaten \u00fcber die erforderlichen Qualifikationen zur Teilnahme an der menschzentrierten Aktivit\u00e4t verf\u00fcgen.\n2.\tRelevante Qualifikationen beinhalten: Hintergrund, Wissen \u00fcber das Sachgebiet, Einstellungen und Interessen.\n3.\tDer englische Ausdruck f\u00fcr Rekrutierungs\u00adfragebogen ist Screener oder Recruitment Screener.",
+    "synonyms": []
+  },
+  "Remote Usability-Test": {
+    "description": "Ein Usability-Test bei dem sich der Usability-Testteilnehmer und der Moderator an unterschiedlichen Orten befinden \n(\u201eRemote\u201c bedeutet hier \u201eentfernt liegend\u201c). \nAnmerkungen:\n1.\tDer Moderator beobachtet den Usability-Testteilnehmer \u00fcber eine Internetverbindung. \n2.\tDer Moderator kommuniziert mit dem Usability-Testteilnehmer \u00fcber Telefon oder Internet.\n3.\tVergleiche mit Usability-Test und unbeaufsichtigter Usability-Test.",
+    "synonyms": []
+  },
+  "Ressourcen": {
+    "description": "Alle Mittel die zur Nutzung eines interaktiven Systems notwendig sind. \nAnmerkung: \n1.\ttypische Beispiele von Ressourcen sind Zeit, finanzielle Kosten, physischer und mentaler Aufwand, Hardware, Software und Materialien",
+    "synonyms": []
+  },
+  "Richtlinie": {
+    "description": "Siehe Gestaltungsregel",
+    "synonyms": []
+  },
+  "Rolle": {
+    "description": "Eine Funktion die eine Person innerhalb der Struktur einer Organisation inne hat.\nAnmerkungen:\n1.\tEine Rolle beschreibt eine Menge von zusammengeh\u00f6rigen Verhaltensweisen, Rechten, Pflichten und Normen in einem beruflichen Kontext.\n2.\tRollen werden von Individuen besetzt.\n3.\tAbh\u00e4ngig von der Komplexit\u00e4t eines Projektes k\u00f6nnen mehrere Menschen eine Rolle teilen oder mehrere Rollen einer Person zugewiesen werden.\n4.\tArbeitsrollen sind \u201eH\u00fcte\u201c, die Menschen aufhaben, wenn sie die entsprechenden Verantwortlichkeiten \u00fcbernehmen und die damit verbundenen T\u00e4tigkeiten aus\u00fcben.\nBeispiel:\n1.\tIn einer Usability-Testsitzung kann eine Person gleichzeitig die Rolle des Moderators und die des Protokollanten \u00fcbernehmen. \n\tIn einer anderen Usability-Testsitzung hingegen, k\u00f6nnte eine Person als Moderator fungieren und zwei andere Personen k\u00f6nnten beide als Protokollant auftreten.",
+    "synonyms": []
+  },
+  "Sekund\u00e4rer Benutzer": {
+    "description": "Eine Person, die mit einem interaktiven System interagiert, um die Nutzung des Systems zu unterst\u00fctzen oder das System zu warten.\nBeispiele f\u00fcr sekund\u00e4re Benutzer:\n1.\tSicherheitsmanager, Administrator, Trainer und Wartung.",
+    "synonyms": []
+  },
+  "Selbst\u00adbeschreibungs\u00adf\u00e4higkeit": {
+    "description": "Die Eigenschaft eines Dialogs zu jeder Zeit dem Benutzer offensichtlich zu machen, in welchem Dialog, an welcher Stelle im Dialog er sich befindet, welche Handlungen unternommen werden k\u00f6nnen und wie diese ausgef\u00fchrt werden k\u00f6nnen.\nAnmerkung:\n1.\tAffordance und Selbstbeschreibungsf\u00e4higkeit sind Mittel, um ein interaktives System intuitive zu gestalten.\n2.\tSelbstbeschreibungsf\u00e4higkeit ist ein Dialogprinzip. ",
+    "synonyms": []
+  },
+  "Steuerbarkeit": {
+    "description": "Der Benutzer ist in der Lage einen Dialogablauf zu starten sowie seine Richtung und Geschwindigkeit zu beeinflussen, bis das Ziel erreicht ist.\nAnmerkung:\n1.\tSteuerbarkeit ist ein Dialogprinzip.",
+    "synonyms": []
+  },
+  "Storyboard": {
+    "description": "Eine Folge visueller Bildschirminhalte, die das Zusammenspiel zwischen einem Benutzer und einem vorgestellten interaktiven System darstellt. \nAnmerkung:\n1.\tEin Storyboard ist oft eine Comic-\u00adartige Darstellung eines Nutzungsszenarios.\n2.\tStoryboards sind nicht als Prototypen geeignet, da sie eine Geschichte erz\u00e4hlen und keine Interaktion erm\u00f6glichen ",
+    "synonyms": []
+  },
+  "Styleguide": {
+    "description": "Eine Sammlung von Gestaltungsregeln die verwendet wird, um die grunds\u00e4tzliche Erscheinung der Benutzungsschnittstelle auf jeglicher Software einer Organisation festzulegen.\nAnmerkung:\n1.\tStyleguides werden manchmal auch als UX Guides bezeichnet.\nBeispiele f\u00fcr Styleguides:\n1.\tWindows User Experience Interaction Guidelines for Windows Desktop apps (\u201eUX\u00a0Guide\u201c)\n2.\tIOS Human Interface Guidelines",
+    "synonyms": []
+  },
+  "Suggestiv\u00adfrage": {
+    "description": "Eine Frage in einem Interview, die eine Pr\u00e4ferenz f\u00fcr bestimmte Antwortm\u00f6glichkeiten vorgibt oder versucht, die Antwort in eine bestimmte Richtung zu lenken. \nAnmerkung:\n1.\tVergleiche mit neutraler Frage.\nBeispiel f\u00fcr Suggestivfrage:\n1.\t\u201eM\u00f6chten Sie sch\u00f6ne Farben auf der Homepage der neuen Autovermietungswebsite?\u201c\nEntsprechende neutrale Frage: \u201eWie sollte die Homepage der neuen Autovermietungswebsite aussehen?\u201c Beachten Sie, dass die neutrale Frage den Begriff \u201eFarbe\u201c nicht einmal enth\u00e4lt.",
+    "synonyms": []
+  },
+  "Summative Usability-Evaluierung": {
+    "description": "Eine Usabilityevaluierung, die darauf ausgerichtet ist, Schlussfolgerungen zur Qualit\u00e4t eines interaktiven Systems aus Sicht der Usability zu ziehen, insbesondere wenn ein wesentlicher Teil der Entwicklung fertig ist.  \nAnmerkung: \n1.\tEine summative Evaluierung kann dazu genutzt werden, ein Design gegen Nutzungsanforderungen zu evaluieren, um festzustellen, ob das Design aus der Perspektive der Benutzer akzeptabel ist.\n2.\tVergleiche mit Formativer Usability-Evaluierung.",
+    "synonyms": []
+  },
+  "Systeminitiierte Benutzerf\u00fchrung": {
+    "description": "Explizite Information \u00fcber ein Ereignis oder einen Zustand vom interaktiven System an den Benutzer. \nAnmerkungen: \nSysteminitiierte Benutzerf\u00fchrung umfasst:\nMeldungen (informativ, warnend, auf Fehler hinweisend)\nStatusinformation, z.B. \u201d7 neue Nachrichten\u201d\nInstruktionen, z.B. \u201dE-Mail-Adressen k\u00f6nnen mit einem Leerzeichen, einem Komma, einem Semikolon oder einem Zeilenumbruch getrennt werden.\u201d\n2.\tMeldungen, m\u00fcssen konstruktiv, pr\u00e4zise, verst\u00e4ndlich und sichtbar sein.\n3.\tSysteminitiierte Benutzerf\u00fchrung ist eine Form der Benutzerunterst\u00fctzung.",
+    "synonyms": []
+  },
+  "Szenario": {
+    "description": "Eine narrative Textbeschreibung des Vorgehens, das ein bestimmter Benutzer anwendet, um eine oder mehrere Aufgaben zu erledigen. \nAnmerkungen: \n1.\tDer Benutzer im Szenario kann durch eine Persona repr\u00e4sentiert werden.\n2.\tEs gibt zwei Typen von Szenarien: \na.\tSzenarien des Ist-Zustands, die beschreiben, wie Aufgaben bisher erledigt werden. Szenarien des Ist-Zustands beschreiben den gegenw\u00e4rtigen Nutzungskontext und dienen dazu, Erfordernisse zu erkennen und Nutzungsanforderungen abzuleiten. Siehe Beispiel 1.\nb.\tNutzungsszenarien beschreiben, wie Aufgaben mit dem zuk\u00fcnftigen interaktiven System erledigt werden. Nutzungsszenarien dienen als Basis f\u00fcr das Entwickeln erster Low-Fidelity-Prototypen. Siehe Beispiel 2.\n3. \tSzenarien werden vom User Requirements Engineer auf Grundlage der Ergebnisse von Beobachtungen und Kontextinterviews erstellt\n4. \tPersonas und Szenarien werden zusammen entwickelt, da das Analysieren von Benutzern auch eine Analyse ihres Verhaltens involviert und die Analyse ihres Handelns beinhaltet, wer diese Handlungen durchf\u00fchrt.\n5. \tSzenarien werden von Benutzern \u00fcberpr\u00fcft, um Missverst\u00e4ndnisse zu entdecken, die w\u00e4hrend der Contextual Inquiry aufgetreten sein k\u00f6nnten.\n6.\tEin Szenario soll nicht auf spezifische Umsetzungen von  Objekten der Benutzungsschnittstelle referenzieren (z.B. auf einen Button).\n7.\tSzenarien werden benutzt um Aufgabenmodelle und fr\u00fche Prototypen zu erstellen, die die Aufgabe im Szenario unterst\u00fctzen.\nBeispiele f\u00fcr Szenarien:\n\u201eJohn Miller ist Gesch\u00e4ftsreisender der im Laufe einer Woche mehrere Fl\u00fcge t\u00e4tigt. Er f\u00e4hrt bevorzugt mit seinem Auto zum Flughafen. Gelegentlich verpasst er ein Flugzeug und bereut dann nicht mit einem Taxi oder mit der Bahn zum Flughafen gefahren zu sein. Er untersch\u00e4tzt einfach die Fahrzeugschlangen vor an der Einfahrt des Parkhauses und die Laufzeit bis zum Flugsteig.\u201c Dieses Beispiel bezieht sich auf Anmerkung 2a, den Ist-Zustand.\n\u201eBevor John Miller zum Flughafen f\u00e4hrt, sichtet er mit seiner neuen App immer die Parksituation am Flughafen. Wenn ausreichend Parkpl\u00e4tze vorhanden sind, reserviert er mit seiner neuen App einen Parkplatz und f\u00e4hrt dann entspannt mit seinem Wagen zum Flughafen. Er weiss, dass mit der Ver\u00f6ffentlichung der neuen App am Flughafen ein separater Zugang f\u00fcr Parkhausg\u00e4ste mit reserviertem Parkplatz geschaffen wurde.\u201c Dieses Beispiel bezieht sich auf Anmerkung 2b, den zuk\u00fcnftigen Soll-Zustand.\n3.\tDer folgende Text, der das Beispiel 2 erg\u00e4nzt, ist zu spezifisch und verst\u00f6sst gegen Anmerkung 6: \n\u201eJohn Miller schaut sich den Bildschirm \u201e\u00dcberblick \u00fcber verf\u00fcgbare Parkpl\u00e4tze\u201c an und w\u00e4hlt einen Parkpl\u00e4tz mit der Schaltfl\u00e4che \u201eAusw\u00e4hlen\u201c aus. Anschliessend klickt er auf die Schaltfl\u00e4che \u201eReservieren\u201c und reserviert diesen Parkplatz.\u201c",
+    "synonyms": []
+  },
+  "Szenario des Ist-Zustands": {
+    "description": "Siehe Szenario",
+    "synonyms": []
+  },
+  "Testaufgabe": {
+    "description": "Siehe Usability-Testaufgabe.",
+    "synonyms": []
+  },
+  "Testbericht": {
+    "description": "Siehe Usability-Testbericht.",
+    "synonyms": []
+  },
+  "Testskript": {
+    "description": "Siehe Usability-Testskript.",
+    "synonyms": []
+  },
+  "Testteilnehmer": {
+    "description": "Siehe Usability-Testteilnehmer",
+    "synonyms": []
+  },
+  "Umgebung": {
+    "description": "Die Gesamtheit der gegebenen Umst\u00e4nde oder Bedingungen, in denen ein Benutzer arbeitet. Diese umfassen die physische, soziale und technische Umgebung.\nAnmerkung: \n1.\tDie soziale Umgebung schlie\u00dft die organisatorische Umgebung mit ein.",
+    "synonyms": []
+  },
+  "Un\u00adbeaufsichtigter Usability-Test": {
+    "description": "Ein Usability-Test bei dem Usability-Testteilnehmer Usability-Testaufgaben l\u00f6sen ohne dabei beobachtet zu werden. \nAnmerkung: \n1.\tHandlungen werden auf Video zur sp\u00e4teren Analyse aufgezeichnet.\n2.\tUnbeaufsichtigte Usability-Tests werden oft beim Testteilnehmer zuhause, auf dessen Computer durchgef\u00fchrt. Videoaufnahmen werden mithilfe einer Aufzeichnungssoftware gespeichert die von einem Anbieter f\u00fcr unbeaufsichtigte Usability-Tests auf dem Computer installiert wird.\n3.\tVergleiche mit Usability-Test und Remote Usability-Test",
+    "synonyms": []
+  },
+  "Usability": {
+    "description": "Ausma\u00df, in dem ein interaktives System durch bestimmte Benutzer in einem bestimmten Nutzungskontext genutzt werden kann, um festgelegte Ziele effektiv, effizient und zufriedenstellend zu erreichen.\nAnmerkung:\n1.\tDie Ausdr\u00fccke \u201ebestimmte Benutzer\u201c, \u201efestgelegte Ziele\u201c und \u201ebestimmter Nutzungskontext\u201c sind in dieser Definition besonders wichtig.",
+    "synonyms": []
+  },
+  "Usability Engineer": {
+    "description": "Eine Person die in einer Querschnittsfunktion verantwortlich einen menschzentrierten Gestaltungsprozess betreut. \nAnmerkungen:\n1.\tDer Usability Engineer (UE) ist kompetent und erfahren in den Prozessschritten, verf\u00fcgbaren Methoden der menschzentrierten Gestaltung und Gestaltungsregeln f\u00fcr Benutzererlebnis, sodass er die Entwicklungsprojekte unter dem Aspekt menschzentrierter Gestaltung planen und die Qualit\u00e4t der Ausf\u00fchrung von menschzentrierten Gestaltungsbezogenen Aktivit\u00e4ten sicherstellen kann. Dies beinhaltet \na.\tMenschzentrierte Gestaltungsaktivit\u00e4ten,\nb.\tDie Integration der menschzentrierten Gestaltung in den Produktentwicklungs\u00adprozess des Unternehmens, \nc.\tDie Definition von Erfolgskriterien f\u00fcr solche Projekte,\nd.\tDas Training von beteiligten Projektteams. \n2.\tDer UE legt angemessene Vorgehensweisen, Werkzeuge und Styleguides f\u00fcr das menschzentrierte Design im Allgemeinen als auch f\u00fcr spezifische Projekte fest. Der UE unterst\u00fctzt das Management bei der Entscheidung, welche Arbeitspakete von qualifizierten Mitarbeitern im Unternehmen und welche durch kompetente Subunternehmer ausgef\u00fchrt werden sollten.\n3.\tUsability Engineer ist eine Rolle im Prozess der menschzentrierten Gestaltung.\n",
+    "synonyms": []
+  },
+  "Usability Professional": {
+    "description": "Eine Person die eine oder mehrere der folgenden Rollen hat: \n1.\tUsability Engineer, \n2.\tUser Requirements Engineer, \n3.\tUsability-Tester,\n4.\tInformationsarchitect,\n5.\tInteraktionsdesigner,\n6.\tUser Interface Designer.",
+    "synonyms": []
+  },
+  "Usability-Befund": {
+    "description": "Ergebnis aus einer Usability-Evaluierung. \nAnmerkung:\n1.\tM\u00f6gliche Usability-Befunde sind\na.\tEin Usability-Problem \nb.\tEtwas, das die Benutzer mochten, also ein positiver Usability-Befund.",
+    "synonyms": []
+  },
+  "Usability-Evaluierung": {
+    "description": "Ein Prozess der Informationen \u00fcber die Usability eines interaktiven Systems sammelt um das interaktive System zu verbessern (formative Usability-Evaluierung) oder um das interaktive System zu bewerten (summative Usability-Evaluierung). \nAnmerkungen:\n1.\tUsability-Evaluierung ist ein gemeinsamer Ausdruck f\u00fcr \na.\tInspektionsbasierte Usability-Evaluierung \nb.\tBenutzerzentrierte Usability-Evaluierung.\n2.\tDas Synonym \u201eEvaluation\u201c wird auch oft verwendet.",
+    "synonyms": []
+  },
+  "Usability-Labor": {
+    "description": "Zwei oder mehrere R\u00e4ume, die speziell f\u00fcr die Durchf\u00fchrung von Usabiltytests oder Fokusgruppen ausgestattet sind. \nAnmerkung:\n1.\tEin Usability-Labor besteht oft aus \na.\teinem Testraum, wo der Usability-Testteilnehmer sitzt,\nb.\teinem Beobachtungsraum, wo Interessenvertreter die Usability-Testteilnehmer beobachten k\u00f6nnen, w\u00e4hrend die Usability-Testteilnehmer Aufgaben l\u00f6sen. \n\tOft sind diese zwei R\u00e4ume durch eine Spiegelwand getrennt, was den Beobachtern erlaubt, den Usability-Testteilnehmern zuzuschauen, nicht aber umgekehrt.",
+    "synonyms": []
+  },
+  "Usability-Problem": {
+    "description": "Ein Problem in der Benutzung der Benutzungsschnittstelle, das sich auf die Zufriedenstellung des Benutzers sowie die Effektivit\u00e4t und Effizienz des interaktiven Systems auswirkt. \nAnmerkung:\n1.\tUsability-Probleme k\u00f6nnen zu Irritationen, Fehlern oder Verz\u00f6gerungen f\u00fchren oder sogar die Fertigstellung einer Aufgabe des Benutzers verhindern.",
+    "synonyms": []
+  },
+  "Usability-Test": {
+    "description": "Eine Usability-Evaluierung bei der repr\u00e4sentative Benutzer bestimmte Aufgaben mit dem interaktiven System ausf\u00fchren, um Usability-Probleme oder die Messwerte f\u00fcr Effektivit\u00e4t, Effizienz und Zufriedenstellung zu erfassen. \nAnmerkungen:\n1.\tEin Usability-Test wird von einem Usability-Tester geleitet.\n2.\tEin Usability-Test besteht \u00fcblicherweise aus 3 Phasen:\na.\tPlanung, dazu geh\u00f6ren: Schreiben des Usabiliy-Testplans, schreiben des Usability-Testskripts, und Rekrutierung von passenden Usability-Testteilnehmern.\nb.\tDurchf\u00fchrung der Usability-Testsitzungen wie in Anmerkung 3 beschrieben.\nc.\tUsability-Testergebnisse kommunizieren, einschlie\u00dflich Schreiben eines Usability-Testberichts \n3.\tEin Usability-Test umfasst eine Reihe von Usability-Testsitzungen. In jeder Sitzung versucht ein Usability-Testteilnehmer unter Benutzung des interaktiven Systems oder eines Prototypen eines interaktiven Systems repr\u00e4sentative Usability-Testaufgaben zu l\u00f6sen. \u00dcblicherweise werden Usability-Testsitzungen von einem Moderator moderiert und von einer Anzahl von Beobachtern, die oft Interessenvertreter sind, beobachtet. Ein Protokollant zeichnet wichtige Usability-Befunde auf.\n4.\tDer Begriff \u201dUsability-Test\u201d bezieht sich \u00fcblicherweise auf einen Test, bei dem sich der Usability-Testteilnehmer und der Moderator am gleichen physischen Ort befinden. Andere Arten von Usability-Tests sind: Remote Usability-Test und Unbeaufsichtigter Usability-Test.\n5.\tDas Testen kann qualitative oder quantitative Daten ergeben. \n6.\tDas Testen kann zu jedem Zeitpunkt w\u00e4hrend der menschzentrierten Gestaltung geschehen \u2013 von der fr\u00fchen Analysephase bis hin zur Lieferung des interaktiven Systems und dar\u00fcberhinaus. Die Tests k\u00f6nnen sowohl an Papierentw\u00fcrfen oder anderen low-fidelity-Prototypen als auch an in Entwicklung befindlichen oder bereits fertiggestellten interaktiven Systemen durchgef\u00fchrt werden.\n7.\tRollen bei einem Usability-Test sind:\na.\tModerator\nb.\tProtokollant\nc.\tBeobachter\nd.\tUsability-Testteilnehmer ",
+    "synonyms": []
+  },
+  "Usability-Testaufgabe": {
+    "description": "Eine Beschreibung einer typischen Aufgabe, die ein Moderator einem Usability-Testteilnehmer w\u00e4hrend eines Usability-Tests stellt. ",
+    "synonyms": []
+  },
+  "Usability-Testbericht": {
+    "description": "Ein Dokument, das die Ergebnisse eines Usability-Tests beschreibt. \nAnmerkungen:\n1.\tEin Usability-Testbericht beinhaltet \u00fcblicherweise \na.\tEine Kurzdarstellung, \nb.\t5-50 Usability-Befunde (auch positive),\nc.\tDas Usability-Testskript f\u00fcr den Usability-Test. \nd.\tOft umfasst der Usability-Testbericht auch Screenshots oder Bilder die die Beschreibungen von wichtigen Usability-Befunden erg\u00e4nzen.\n2.\tWird auch nur als Testbericht bezeichnet.",
+    "synonyms": []
+  },
+  "Usability-Tester": {
+    "description": "Eine Person die Benutzungsschnittstellen in verschiedenen Stadien der Realisierung evaluiert. \nAnmerkungen:\n1.\tIn Kooperation mit anderen Interessensvertretern, muss der Usability-Tester\na.\tdie Usability-Evaluierungen planen\nb.\tdie Usability-Evaluierungen leiten\nc.\tdie Usability-Testergebnisse an die Interessenvertreter kommunizieren.\n2.\tW\u00e4hrend einer Usability-Testsitzung \u00fcbernimmt der Usability-Tester die Rolle des Moderators oder des Protokollanten.\n3.\tUsability-Tester ist eine Rolle im Prozess der menschzentrierten Gestaltung.",
+    "synonyms": []
+  },
+  "Usability-Testplan": {
+    "description": "Eine kurze Beschreibung des Zwecks und Umfangs eines Usability-Tests. \nAnmerkungen:\n1.\tDer Usability-Testplan ist f\u00fcr das Management vorgesehen, um entscheiden zu k\u00f6nnen, ob der Usability-Test durchgef\u00fchrt werden sollte oder nicht. Der Plan ist absichtlich kurz gehalten und fokussiert auf die f\u00fcr den Usability-Test ben\u00f6tigten Ressourcen.\n2.\tDer Usability-Testplan beinhaltet \na.\tDie Anzahl geplanter Usability-Testteilnehmer, \nb.\tDie ungef\u00e4hre L\u00e4nge jeder Usability-Testsitzung, \nc.\tDen Namen des Moderators, \nd.\tEinen Zeitplan, \ne.\tEine Kostensch\u00e4tzung f\u00fcr den Usability-Test einschlie\u00dflich Personenstunden.\n3.\tWeitere Details \u00fcber den Usability-Test wie z.B. Usability-Testaufgaben, Testmethode und erforderliche Soft- und Hardware werden im Usability-Testskript bereitgestellt.",
+    "synonyms": []
+  },
+  "Usability-Testsitzung": {
+    "description": "Der Teil eines Usability-Tests, bei dem ein bestimmter Usability-Testteilnehmer repr\u00e4sentative Usability-Testaufgaben unter Benutzung des interaktiven Systems oder des Prototypen eines interaktiven Systems l\u00f6st.\nAnmerkungen:\n1.\tTypische Aufgaben des Moderators w\u00e4hrend einer Usability-Testsitzung sind:\na.\tBegr\u00fc\u00dfung des Usability-Testteilnehmers;\nb.\tDurchf\u00fchrung des Briefings und des Pre-Session Interviews;\nc.\t\u00dcbergabe von Usability-Testaufgaben an den Usability-Testteilnehmer.\nd.\tBeobachtung des jeweiligen Usability-Testteilnehmers w\u00e4hrend der Erledigung der Aufgaben;\ne.\tDurchf\u00fchrung des Post-Session Interviews.\n2.\tVergleiche mit Usability-Test.",
+    "synonyms": []
+  },
+  "Usability-Testskript": {
+    "description": "Eine von einem Moderator in einem Usability-Test verwendete Checkliste, um den \u00dcberblick \u00fcber die Fragen des Briefings und des Pre-Session Interviews, die Usability-Testaufgaben und die Fragen des Post-Session Interviews zu behalten.",
+    "synonyms": []
+  },
+  "Usability-Testteilnehmer": {
+    "description": "Repr\u00e4sentativer Benutzer, der typische Aufgaben in einem Usability-Test l\u00f6st.",
+    "synonyms": []
+  },
+  "Usability-Test\u00adergebnis": {
+    "description": "Siehe Usability-Befund.",
+    "synonyms": []
+  },
+  "User Interface Designer": {
+    "description": "Eine Person die den Dialog und das Benutzererlebnis basierend auf dem Design des  Interaktions\u00addesigners und den Nutzungsszenarios des User Requirements Engineers implementiert. Der User Interface Designer erzeugt ausserdem interaktive Prototypen.\nAnmerkung:\n1.\tUser Interface Designer ist eine Rolle im Prozess der menschzentrierten Gestaltung.",
+    "synonyms": []
+  },
+  "User Requirements Engineer": {
+    "description": "Eine Person die den tats\u00e4chlichen oder geplanten Nutzungskontext von Benutzern identifiziert und beschreibt. Daraus leitet der User Requirements Engineer die Nutzungsanforderungen und damit verbundene organisatorische Anforderungen ab, die f\u00fcr ein bestimmtes Projekt umgesetzt werden m\u00fcssen. \nAnmerkungen:\n1.\tDer User Requirements Engineer identifiziert den Nutzungskontext durch Methoden wie Benutzerinterviews, Beobachtungen, Benutzerbefragungen, Usability-Evaluierungen, Expertenanalysen usw.\n2.\tDer User Requirements Engineer erzeugt Nutzungs\u00adszenarien, die die Effektivit\u00e4t, Effizienz und Zufriedenstellung bei der Aufgabenerledigung mit dem interaktiven System sicherstellen sollen.\n3.\tUser Requirements Engineer ist eine Rolle im Prozess der menschzentrierten Gestaltung.",
+    "synonyms": []
+  },
+  "Wireframe": {
+    "description": "Eine Form des Low-fidelity-Prototyps bestehend aus schematischen Diagrammen, typischerweise dargestellt mit Linien, rechteckigen K\u00e4sten und Text der das Interaktionsdesign und den Navigationsfluss repr\u00e4sentiert.\nAnmerkungen:\n1.\tWireframes adressieren \u00fcblicherweise nicht das visuelle Design und das genaue Layout.\n2.\tEin Wireframe ist ein Mockup (Modell, Attrappe) eines Bildschirms. Eine ad\u00e4quate Sammlung von Wireframes formt einen Low-fidelity-Prototyp.\n3.\tAuf Deutsch auch \u201eDrahtgeflecht\u201c genannt.",
+    "synonyms": []
+  },
+  "Ziel": {
+    "description": "Angestrebtes Arbeitsergebnis.",
+    "synonyms": []
+  },
+  "Zufrieden\u00adstellung": {
+    "description": "Freiheit von Beeintr\u00e4chtigung und positive Grundeinstellung zur Nutzung des Produkts\nAnmerkungen:\n1.\tDer neue Vorschlag der ISO Definition k\u00f6nnte etwas einfacher zu verstehen sein: Einstellungen bezogen auf die Verwendung des interakiven Systems und die emotionalen und physischen Folgen der tats\u00e4chlichen Verwendung.\n2.\tZufriedenstellung ist eines der drei Me\u00dfbaren Attribute von Usability. Die anderen beiden sind Effektivit\u00e4t und Effizienz.\n3. \tZufriedenstellung kann mit Frageb\u00f6gen gemessen werden.",
+    "synonyms": []
+  }
+}
