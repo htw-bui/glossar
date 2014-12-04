@@ -47,14 +47,22 @@
         .then(function(res){
           $scope.highscores = res.data;
         });
+
         $scope.calculateMean = function (score){
           score = score.score; // TODO naming
           return Math.round((score.time / 1000) / score.score * 10) / 10;
         };
+
         $scope.getMonthAndYear = function(date){
           moment.lang("de");
           return moment(date).format("MMMM YYYY");
         };
+
+        $scope.getFormatedDate = function(date){
+          moment.lang("de");
+          return moment(date).format("lll");
+        };
+
         $scope.parseDate = function(date){
           return Date.parse(date);
         };

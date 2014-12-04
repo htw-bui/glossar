@@ -19,7 +19,7 @@
       <td> {{score.score}}</td>
       <td> {{score.time}} ({{calculateMean(this)}})</td>
       <td> {{score.name}}</td>
-      <td> {{parseDate(score.datetime) | date:"short"}}</td>
+      <td> {{getFormatedDate(score.datetime)}}</td>
     </tr>
   </table>
 </div>
