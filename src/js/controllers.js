@@ -20,6 +20,12 @@
       }, 1000);
     };
 
+    var clearTimer = function(){
+      self.seconds = 0;
+      localStorage.setItem("timer.ellapsed", self.seconds);
+    };
+
+
     var getFormatedTime = function(){
       var t = self.seconds;
       var minutes = pad(Math.floor(t / 60));
@@ -32,7 +38,7 @@
     };
 
     function StopWatch(){
-      return {getTime: getTime, getFormatedTime: getFormatedTime, seconds:self.seconds, start:start, stopTimer: stopTimer};
+      return {getTime: getTime, getFormatedTime: getFormatedTime, seconds:self.seconds, start:start, stopTimer: stopTimer, clearTimer: clearTimer};
     }
 
     return StopWatch;
@@ -107,7 +113,8 @@
 
     $scope.checkAnswer = function(button, $event){
       var term = button.choice;
-      if (term === $scope.activeTerm){
+      var answerIsCorrect = (term === $scope.activeTerm);
+      if (answerIsCorrect){
         $scope.progressCounter.registerTerm(term);
         $scope.unusedTerms.remove(term);
         $($event.target).removeClass("btn-info").addClass("btn-success");
@@ -115,11 +122,12 @@
       }
       else{
         $($event.target).removeClass("btn-info").addClass("btn-danger");
-        $scope.progressCounter.clear();
         $http.post("http://highscore.k-nut.eu/highscore/check", {
           score: $scope.progressCounter.numberOfTermsRead(),
           time: $scope.timer.getTime()
         }).then(checkIfScoreIsHighEnough);
+        $scope.progressCounter.clear();
+        $scope.timer.clearTimer();
         bootbox.alert("FAIL");
       }
     };
