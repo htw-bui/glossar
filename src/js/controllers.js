@@ -54,12 +54,15 @@
         };
 
         $scope.getMonthAndYear = function(date){
-          moment.lang("de");
-          return moment(date).format("MMMM YYYY");
+          if (date !== "allTime"){
+            return moment(date).format("MMMM YYYY");
+          }
+          else{
+            return "All Time";
+          }
         };
 
         $scope.getFormatedDate = function(date){
-          moment.lang("de");
           return moment(date).format("lll");
         };
 

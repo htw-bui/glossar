@@ -1,5 +1,8 @@
 (function(){
   "use strict";
+
+  moment.locale("de");
+
   var app = angular.module("dashboard", [
     "ngRoute",
     "kometControllers"
