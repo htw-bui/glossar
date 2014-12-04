@@ -2,6 +2,11 @@
 <div ng-repeat="(key, scores) in highscores | orderBy: key : reverse">
   <h1>  {{ getMonthAndYear(key) }}</h1>
   <table class="table table-striped">
+    <colgroup>
+      <col style="width: 25%" />
+      <col style="width: 25%" />
+      <col style="width: 25%" />
+      <col style="width: 25%" />
     <thead>
       <tr> 
         <th> Punkte </th>
