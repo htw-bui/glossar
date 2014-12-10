@@ -27,20 +27,8 @@
       localStorage.setItem("timer.ellapsed", self.seconds);
     };
 
-
-    var getFormatedTime = function(){
-      var t = self.seconds;
-      var minutes = pad(Math.floor(t / 60));
-      var seconds = pad(t % 60);
-      return minutes +  ":" + seconds;
-
-      function pad(n){
-        return n < 10 ? "0" + n : n;
-      }
-    };
-
     function StopWatch(){
-      return {getTime: getTime, getFormatedTime: getFormatedTime, seconds:self.seconds, start:start, stopTimer: stopTimer, clearTimer: clearTimer};
+      return {getTime: getTime, seconds:self.seconds, start:start, stopTimer: stopTimer, clearTimer: clearTimer};
     }
 
     return StopWatch;

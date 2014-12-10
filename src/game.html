@@ -3,7 +3,7 @@
   <div id="pc" style="display: inline-block">
     <span id="progressCounter"> {{progressCounter.numberOfTermsRead() }}  | {{ progressCounter.numberOfTerms }} </span>
   </div>
-  <span id="timer">{{timer.getFormatedTime()}}</span>
+  <span id="timer">{{timer.getTime() | formatedTime}}</span>
 </div>
 <div id=definition class='row hyphenate'> {{activeTerm.description}}</div>
 <div id=choices class='row'>
