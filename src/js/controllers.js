@@ -69,7 +69,7 @@
     }
   ]);
 
-  kometControllers.controller("GameCtrl" , ["$scope", "$http", "$location", "$timeout", "stopwatch", function($scope, $http, $location, $timeout, Stopwatch){
+  kometControllers.controller("GameCtrl" , ["$scope", "$http", "$location", "$timeout", "stopwatch", "$route", function($scope, $http, $location, $timeout, Stopwatch, $route){
     $scope.choices = [];
     $scope.activeTerm = {};
     $scope.unusedTerms = {};
@@ -129,7 +129,8 @@
         promptUserForName();
       }
       else{
-        bootbox.alert("Verloren!");
+        bootbox.alert("Sie haben es leider nicht in die Top10 geschafft. <br /> Probieren Sie es doch noch einmal!");
+        $route.reload();
       }
     }
 
@@ -139,8 +140,11 @@
       bootbox.prompt("Sie haben es in die Top 10 geschaft! <br /> Bitte geben Sie Ihren Namen für den Highscore an", function(userName){
         if (userName){
           $http.post("http://localhost:5000/highscore", { score: score, time:time, name:userName}).success(function(){
-          $location.path("/highscore");});
-        };
+            $location.path("/highscore");});
+        }
+        else {
+          $route.reload();
+        }
       });
     }
 
