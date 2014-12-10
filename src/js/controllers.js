@@ -1,5 +1,7 @@
 (function(){
   "use strict";
+
+
   var kometControllers = angular.module("kometControllers", [])
   .factory("stopwatch", ["$interval", function($interval){
     var self = this;
@@ -49,14 +51,14 @@
   kometControllers.controller("HighscoreCtrl", ["$scope", "$http", 
     function($scope, $http){
       $scope.highscores = {};
-      $http.get("http://highscore.k-nut.eu/highscore")
+      $http.get("http://localhost:5000/highscore")
         .then(function(res){
           $scope.highscores = res.data;
         });
 
         $scope.calculateMean = function (score){
           score = score.score; // TODO naming
-          return Math.round((score.time / 1000) / score.score * 10) / 10;
+          return Math.round(score.time/ score.score * 10) / 10;
         };
 
         $scope.getMonthAndYear = function(date){
@@ -72,9 +74,10 @@
           return moment(date).format("lll");
         };
 
-        $scope.parseDate = function(date){
-          return Date.parse(date);
+        $scope.highscoreSort = function(scoreList){
+          return scoreList.name;
         };
+
     }
   ]);
 
@@ -122,18 +125,35 @@
       }
       else{
         $($event.target).removeClass("btn-info").addClass("btn-danger");
-        $http.post("http://highscore.k-nut.eu/highscore/check", {
+        $http.post("http://localhost:5000/highscore/check", {
           score: $scope.progressCounter.numberOfTermsRead(),
           time: $scope.timer.getTime()
-        }).then(checkIfScoreIsHighEnough);
-        $scope.progressCounter.clear();
-        $scope.timer.clearTimer();
-        bootbox.alert("FAIL");
+        }).then(checkIfScoreIsHighEnough).then(function(){
+          $scope.progressCounter.clear();
+          $scope.timer.clearTimer();
+        });
       }
     };
 
     function checkIfScoreIsHighEnough(response){
-      bootbox.alert(response);
+      var inTop10 = response.data.top10;
+      if (inTop10){
+        promptUserForName();
+      }
+      else{
+        bootbox.alert("Verloren!");
+      }
+    }
+
+    function promptUserForName(){
+      var score = $scope.progressCounter.numberOfTermsRead();
+      var time = $scope.timer.getTime();
+      bootbox.prompt("Sie haben es in die Top 10 geschaft! <br /> Bitte geben Sie Ihren Namen für den Highscore an", function(userName){
+        if (userName){
+          $http.post("http://localhost:5000/highscore", { score: score, time:time, name:userName}).success(function(){
+          $location.path("/highscore");});
+        };
+      });
     }
 
   }]);

@@ -1,6 +1,6 @@
 <content>
-<div ng-repeat="(key, scores) in highscores | orderBy: key : reverse">
-  <h1>  {{ getMonthAndYear(key) }}</h1>
+<div ng-repeat="scores in highscores | orderBy: highscoreSort">
+  <h1>  {{ getMonthAndYear(scores.month) }}</h1>
   <table class="table table-striped">
     <colgroup>
       <col style="width: 25%" />
@@ -15,9 +15,9 @@
         <th> Datum </th>
       </tr>
     </thead>
-    <tr ng-repeat="score in scores">
+    <tr ng-repeat="score in scores.scores">
       <td> {{score.score}}</td>
-      <td> {{score.time}} ({{calculateMean(this)}})</td>
+      <td> {{score.time | formatedTime}} ({{calculateMean(this)}})</td>
       <td> {{score.name}}</td>
       <td> {{getFormatedDate(score.datetime)}}</td>
     </tr>
