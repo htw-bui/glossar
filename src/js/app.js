@@ -18,7 +18,7 @@
 
   var app = angular.module("dashboard", [
     "ngRoute",
-    "kometControllers",
+    "komet.controllers",
     "kometFilters"
   ]);
 
