@@ -170,7 +170,7 @@ aside {
     width: 100%;
     margin-bottom: 20px;
   }
-  #paging a {
+  #paging button {
     text-align: center;
     display: block;
     width: 50%;

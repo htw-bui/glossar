@@ -1,4 +1,4 @@
-<nav navigation-list class=termnav >
+<nav navigation-list class=termnav ng-show="showNav">
 </nav>
 
 <div id="content">
@@ -12,14 +12,14 @@
     <p  class='hyphenate'> {{selectedTerm.description}} <p>
   </div>
   <div id="paging">
-    <a type=button class='btn btn-default' id="previousTerm" ng-hide='selectedTermIsFirstTerm()' ng-click='prevTerm()'>Zurück</a>
-    <a type=button 
+    <button type=button class='btn btn-default' id="previousTerm" ng-hide='selectedTermIsFirstTerm()' ng-click='prevTerm()'>Zurück</button>
+    <button type=button 
       class='btn btn-default'
       id="nextTerm" 
       style="float: right" 
       ng-hide='selectedTermIsLastTerm()' 
       ng-click='nextTerm()'>
       Nächster
-    </a>
+    </button>
   </div>
 </div>
