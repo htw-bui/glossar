@@ -137,13 +137,17 @@
     function promptUserForName(){
       var score = $scope.progressCounter.numberOfTermsRead();
       var time = $scope.timer.getTime();
-      bootbox.prompt("Sie haben es in die Top 10 geschaft! <br /> Bitte geben Sie Ihren Namen für den Highscore an", function(userName){
-        if (userName){
-          $http.post("http://localhost:5000/highscore", { score: score, time:time, name:userName}).success(function(){
-            $location.path("/highscore");});
-        }
-        else {
-          $route.reload();
+      bootbox.prompt({"title": "Sie haben es in die Top 10 geschaft! <br /> Bitte geben Sie Ihren Namen für den Highscore an",
+        value: localStorage.getItem("lastUsername") || "",
+        callback: function(userName){
+          if (userName){
+            $http.post("http://localhost:5000/highscore", { score: score, time:time, name:userName}).success(function(){
+              localStorage.setItem("lastUsername", userName);
+              $location.path("/highscore");});
+          }
+          else {
+            $route.reload();
+          }
         }
       });
     }
