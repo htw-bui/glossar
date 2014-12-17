@@ -1,4 +1,4 @@
-angular.module("komet.controllers").controller("DashboardController" , ["$scope", "$http", "$location", function($scope, $http, $location){
+angular.module("komet.controllers").controller("DashboardController" , ["$scope", "$http", "$location", "$translate", function($scope, $http, $location, $translate){
   $scope.searchTerm = "";
   $scope.terms = [{"term": "dummy"}];
   $scope.selectedTerm = {};
@@ -14,6 +14,15 @@ angular.module("komet.controllers").controller("DashboardController" , ["$scope"
 
   $scope.filter = function(term){
     return term.term.toLowerCase().contains($scope.searchTerm.toLowerCase());
+  };
+
+  $scope.changeLang = function () {
+  var key = $translate.use() == "de"? "en" : "de";
+    $translate.use(key).then(function (key) {
+      console.log("Sprache zu " + key + " gewechselt.");
+    }, function (key) {
+      console.log("Irgendwas lief schief.");
+    });
   };
 
   $scope.setSelectedItem = function(term){
