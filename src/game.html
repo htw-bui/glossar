@@ -5,8 +5,8 @@
   </div>
   <span id="timer">{{timer.getTime() | formatedTime}}</span>
 </div>
-<div id=definition class='row hyphenate'> {{activeTerm["description-english"]}}</div>
+<div id=definition class='row hyphenate'> {{activeTerm | localDefinition}}</div>
 <div id=choices class='row'>
-  <button class="btn btn-info" ng-repeat="choice in choices" ng-click="checkAnswer(this, $event)"> {{choice["term-english"]}} </button>
+  <button class="btn btn-info" ng-repeat="choice in choices" ng-click="checkAnswer(this, $event)"> {{choice | localTerm}} </button>
 </div>
 </content>
