@@ -1,5 +1,5 @@
 <h2 style='float: left'>{{ 'CONTENT' | translate }}</h2> 
-<a style='float: right; font-size: 2em; color: black; margin-right: 20px' class=hideDesktop>×</a>
+<a style='float: right; font-size: 2em; color: black; margin-right: 20px' class=hideDesktop ng-click="$parent.navOpen = false">×</a>
 <input id=filterTerms type="search" class='form-control' placeholder="Filter...."  ng-model="searchTerm">
 <ul class='navItems'>
   <li ng-repeat='term in terms | filter: filter' > 

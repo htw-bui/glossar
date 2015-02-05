@@ -3,7 +3,6 @@ angular.module("komet.controllers").controller("DashboardController" , ["$scope"
   $scope.terms = [{"term": "dummy"}];
   $scope.selectedTerm = {};
   $scope.progressCounter = {};
-  $scope.showNav = true;
 
   $http.get("/data/terms-en.json")
   .then(function(res){
@@ -28,6 +27,10 @@ angular.module("komet.controllers").controller("DashboardController" , ["$scope"
   $scope.setSelectedItem = function(term){
     setSelectedTerm(term.term);
   };
+
+  $scope.toggleNavigation = function(){
+    $scope.navOpen = !$scope.navOpen;
+  }
 
   $scope.isActive = function(path){
     return $location.path() === path;

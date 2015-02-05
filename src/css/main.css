@@ -120,37 +120,45 @@ aside {
   nav {
     -webkit-transition: all 1s ease-in-out;
             transition: all 1s ease-in-out;
+    background: white;
   }
 
-  nav.termnav {
+  nav.navClosed {
     position: absolute;
     left: -200%;
-    background: white;
   }
 
   .hideDesktop {
     display: block;
   }
 
-  .nav-open {
-    padding-left: 20px;
+  .navOpen {
     position: absolute;
+    height: 100%;
+    padding-left: 20px;
+    right: 10%;
+    left: 0;
     display: block;
     z-index: 100000;
     background: white;
     width: 90%;
     border-right: 1px solid black;
   }
-  .nav-open ul {
+  .navOpen ul {
     padding-left: 0;
     list-style-type: none;
     float: left;
-    height: 70%;
+    height: 80%;
+    width: 100%;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto; 
   }
-  .nav-open ul li {
+  .navOpen ul li {
     padding-top: 20px;
+  }
+
+  nav.termnav{
+    width: 90%;
   }
 
   #container {
