@@ -12,14 +12,14 @@
     <p  class='hyphenate'> {{selectedTerm.description}} <p>
   </div>
   <div id="paging">
-    <button type=button class='btn btn-default' id="previousTerm" ng-hide='selectedTermIsFirstTerm()' ng-click='prevTerm()'>Zurück</button>
+    <button type=button class='btn btn-default' id="previousTerm" ng-hide='selectedTermIsFirstTerm()' ng-click='prevTerm()'>{{ 'PREV' | translate}}</button>
     <button type=button 
       class='btn btn-default'
       id="nextTerm" 
       style="float: right" 
       ng-hide='selectedTermIsLastTerm()' 
       ng-click='nextTerm()'>
-      Nächster
+      {{ 'NEXT' | translate }}
     </button>
   </div>
 </div>

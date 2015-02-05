@@ -1,4 +1,4 @@
-angular.module("komet.controllers").controller("GameCtrl" , ["$scope", "$http", "$location", "$timeout", "stopwatch", "$route", function($scope, $http, $location, $timeout, Stopwatch, $route){
+angular.module("komet.controllers").controller("GameCtrl" , ["$scope", "$http", "$location", "$timeout", "stopwatch", "$route", "$translate", function($scope, $http, $location, $timeout, Stopwatch, $route, $translate){
   $scope.choices = [];
   $scope.activeTerm = {};
   $scope.unusedTerms = {};
@@ -58,26 +58,30 @@ angular.module("komet.controllers").controller("GameCtrl" , ["$scope", "$http", 
       promptUserForName();
     }
     else{
-      bootbox.alert("Sie haben es leider nicht in die Top10 geschafft. <br /> Probieren Sie es doch noch einmal!");
+    $translate("FAIL_MESSAGE").then(function(message){
+      bootbox.alert(message);
       $route.reload();
+    });
     }
   }
 
   function promptUserForName(){
     var score = $scope.progressCounter.numberOfTermsRead();
     var time = $scope.timer.getTime();
-    bootbox.prompt({"title": "Sie haben es in die Top 10 geschaft! <br /> Bitte geben Sie Ihren Namen für den Highscore an",
-      value: localStorage.getItem("lastUsername") || "",
-      callback: function(userName){
-        if (userName){
-          $http.post("http://localhost:5000/highscore", { score: score, time:time, name:userName}).success(function(){
-            localStorage.setItem("lastUsername", userName);
-            $location.path("/highscore");});
+    $translate('TOP10_MESSAGE').then(function(message){
+      bootbox.prompt({"title": message,
+        value: localStorage.getItem("lastUsername") || "",
+        callback: function(userName){
+          if (userName){
+            $http.post("http://localhost:5000/highscore", { score: score, time:time, name:userName}).success(function(){
+              localStorage.setItem("lastUsername", userName);
+              $location.path("/highscore");});
+          }
+          else {
+            $route.reload();
+          }
         }
-        else {
-          $route.reload();
-        }
-      }
+      });
     });
   }
 
