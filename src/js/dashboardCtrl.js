@@ -1,4 +1,5 @@
-angular.module("komet.controllers").controller("DashboardController" , ["$scope", "$http", "$location", "$translate", function($scope, $http, $location, $translate){
+angular.module("komet.controllers").controller("DashboardController", ["$scope", "$http", "$location", "$translate", function($scope, $http, $location, $translate){
+  "use strict";
   $scope.searchTerm = "";
   $scope.terms = [{"term": "dummy"}];
   $scope.selectedTerm = {};
@@ -12,18 +13,11 @@ angular.module("komet.controllers").controller("DashboardController" , ["$scope"
   }).then(loadTermFromHash);
 
   $scope.filter = function(term){
-	  return true;
-	  try {
-	  	
     return term["term-english"].toLowerCase().contains($scope.searchTerm.toLowerCase());
-	  } catch (e) {
-		  console.log(e);
-	  	/* handle error */
-	  }
   };
 
   $scope.changeLang = function () {
-    var key = $translate.use() == "de"? "en" : "de";
+    var key = $translate.use() === "de"? "en" : "de";
     $translate.use(key);
   };
 
@@ -33,7 +27,7 @@ angular.module("komet.controllers").controller("DashboardController" , ["$scope"
 
   $scope.toggleNavigation = function(){
     $scope.navOpen = !$scope.navOpen;
-  }
+  };
 
   $scope.isActive = function(path){
     return $location.path() === path;

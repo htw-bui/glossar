@@ -8,20 +8,20 @@
       function pad(n){
         return n < 10 ? "0" + n : n;
       }
-      
+
       var minutes = pad(Math.floor(totalSeconds / 60));
       var seconds = pad(totalSeconds % 60);
-      return minutes +  ":" + seconds;
+      return minutes + ":" + seconds;
 
     };
   }).filter("localDefinition", function($translate){
     return function(termObject){
-      var property = $translate.use() === "en"? "description-english": "description-german";
+      var property = $translate.use() === "en" ? "description-english": "description-german";
       return termObject[property];
     };
   }).filter("localTerm", function($translate){
     return function(termObject){
-      var property = $translate.use() === "en"? "term-english": "term-german";
+      var property = $translate.use() === "en" ? "term-english": "term-german";
       return termObject[property];
     };
   });
@@ -34,7 +34,7 @@
   ]);
 
   app.config(function($translateProvider){
-    $translateProvider.translations("de", 
+    $translateProvider.translations("de",
     {
     NEXT: "Weiter",
     PREV: "Zurück",
@@ -45,10 +45,10 @@
     DATE: "Datum",
     IMPRINT: "Impressum",
     TOP10_MESSAGE: "Sie haben es in die Top 10 geschaft! Bitte geben Sie Ihren Namen für den Highscore an",
-    FAIL_MESSAGE:"Sie haben es leider nicht in die Top10 geschafft. <br /> Probieren Sie es doch noch einmal!",
+    FAIL_MESSAGE: "Sie haben es leider nicht in die Top10 geschafft. <br /> Probieren Sie es doch noch einmal!",
     GLOSSARY: "Glossar"
     });
-    $translateProvider.translations("en", 
+    $translateProvider.translations("en",
     {
     NEXT: "Next",
     PREV: "Previous",
@@ -59,7 +59,7 @@
     DATE: "Date",
     IMPRINT: "Imprint",
     TOP10_MESSAGE: "You made it into the top10! <br /> Please enter your name for the highscore.",
-    FAIL_MESSAGE:"You did not make it into the top 10. <br /> Why don't you try again?!",
+    FAIL_MESSAGE: "You did not make it into the top 10. <br /> Why don't you try again?!",
     GLOSSARY: "Glossary"
     });
     $translateProvider.preferredLanguage("en");

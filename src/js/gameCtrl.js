@@ -1,4 +1,5 @@
-angular.module("komet.controllers").controller("GameCtrl" , ["$scope", "$http", "$location", "$timeout", "stopwatch", "$route", "$translate", function($scope, $http, $location, $timeout, Stopwatch, $route, $translate){
+angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "$location", "$timeout", "stopwatch", "$route", "$translate", function($scope, $http, $location, $timeout, Stopwatch, $route, $translate){
+  "use strict";
   $scope.choices = [];
   $scope.activeTerm = {};
   $scope.unusedTerms = {};
@@ -69,12 +70,12 @@ angular.module("komet.controllers").controller("GameCtrl" , ["$scope", "$http", 
   function promptUserForName(){
     var score = $scope.progressCounter.numberOfTermsRead();
     var time = $scope.timer.getTime();
-    $translate('TOP10_MESSAGE').then(function(message){
+    $translate("TOP10_MESSAGE").then(function(message){
       bootbox.prompt({"title": message,
         value: localStorage.getItem("lastUsername") || "",
         callback: function(userName){
           if (userName){
-            $http.post("http://localhost:5000/highscore", { score: score, time:time, name:userName}).success(function(){
+            $http.post("http://localhost:5000/highscore", { score: score, time: time, name: userName}).success(function(){
               localStorage.setItem("lastUsername", userName);
               $location.path("/highscore");});
           }

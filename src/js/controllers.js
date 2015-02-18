@@ -29,7 +29,7 @@
     };
 
     function StopWatch(){
-      return {getTime: getTime, seconds:self.seconds, start:start, stopTimer: stopTimer, clearTimer: clearTimer};
+      return {getTime: getTime, seconds: self.seconds, start: start, stopTimer: stopTimer, clearTimer: clearTimer};
     }
 
     return StopWatch;
