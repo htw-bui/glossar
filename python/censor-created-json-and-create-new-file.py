@@ -20,6 +20,10 @@ with open("/home/knut/glossar/src/data/terms-international.json") as infile:
         
         term["description-english"] = censored_desc_english
         term["description-german"] = censored_desc_german
+
+    # take out all the terms with a descirption of less then 3 words
+    # those are just "siehe ..."
+    content = [term for term in content if len(term["description-english"].split()) > 3]
     
 with open("/home/knut/glossar/src/data/terms-international-censored.json", "w") as outfile:
     json.dump(content, outfile, indent=2)

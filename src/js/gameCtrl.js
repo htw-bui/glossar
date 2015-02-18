@@ -6,7 +6,7 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
   $scope.progressCounter = {};
   $scope.timer = new Stopwatch();
 
-  $http.get("/data/terms-international.json")
+  $http.get("/data/terms-international-censored.json")
   .then(function(res){
     $scope.terms = res.data;
     $scope.unusedTerms = res.data;
