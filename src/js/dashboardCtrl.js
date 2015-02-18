@@ -13,7 +13,9 @@ angular.module("komet.controllers").controller("DashboardController", ["$scope",
   }).then(loadTermFromHash);
 
   $scope.filter = function(term){
-    return term["term-english"].toLowerCase().contains($scope.searchTerm.toLowerCase());
+    var selectedLanguage = $translate.use();
+    var property = selectedLanguage === "en" ? "term-english" : "term-german";
+    return term[property].toLowerCase().contains($scope.searchTerm.toLowerCase());
   };
 
   $scope.changeLang = function () {
