@@ -18,6 +18,7 @@ angular.module("komet.controllers").controller("DashboardController" , ["$scope"
 
   $scope.changeLang = function () {
   var key = $translate.use() == "de"? "en" : "de";
+  moment.locale(key);
     $translate.use(key).then(function (key) {
       console.log("Sprache zu " + key + " gewechselt.");
     }, function (key) {

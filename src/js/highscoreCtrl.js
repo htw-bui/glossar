@@ -21,7 +21,7 @@ angular.module("komet.controllers").controller("HighscoreCtrl", ["$scope", "$htt
       };
 
       $scope.getFormatedDate = function(date){
-        return moment(date).format("lll");
+        return moment(date).format("ll");
       };
   }
 ]);
