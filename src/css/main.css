@@ -9,6 +9,10 @@
           box-sizing: border-box;
 }
 
+a {
+  cursor: pointer;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -201,5 +205,6 @@ aside {
     padding-bottom: 10px;
   }
 }
+
 
 
