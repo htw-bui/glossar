@@ -1,5 +1,6 @@
-angular.module("komet.controllers").controller("HighscoreCtrl", ["$scope", "$http", 
+angular.module("komet.controllers").controller("HighscoreCtrl", ["$scope", "$http",
   function($scope, $http){
+    "use strict";
     $scope.highscores = {};
     $http.get("http://localhost:5000/highscore")
       .then(function(res){
@@ -8,7 +9,7 @@ angular.module("komet.controllers").controller("HighscoreCtrl", ["$scope", "$htt
 
       $scope.calculateMean = function (score){
         score = score.score; // TODO naming
-        return Math.round(score.time/ score.score * 10) / 10;
+        return Math.round(score.time / score.score * 10) / 10;
       };
 
       $scope.getMonthAndYear = function(date){

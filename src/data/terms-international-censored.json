@@ -1,0 +1,704 @@
+[
+  {
+    "term-german": "Affordance",
+    "term-english": "Affordance",
+    "description-german": "Aspekte eines Objektes, die verdeutlichen, wie das Objekt benutzt werden kann.\n",
+    "description-english": "An aspect of an object that makes it obvious how the object could be used.\n"
+  },
+  {
+    "term-german": "Anforderung",
+    "term-english": "Requirement",
+    "description-german": "Eine Bedingung oder F\u00e4higkeit, die ein  interaktives System erf\u00fcllen oder besitzen muss, um einer Vereinbarung, einem Standard, einer Spezifikation oder anderen formal zugrunde gelegten Dokumenten zu gen\u00fcgen.\n",
+    "description-english": "A condition or capability that must be met or possessed by an interactive system to satisfy an agreement, standard, specification or other formally imposed documents\n"
+  },
+  {
+    "term-german": "Aufgabe",
+    "term-english": "Task",
+    "description-german": "Aktivit\u00e4t die erforderlich ist, um ein Ziel zu erreichen.\n",
+    "description-english": "Activities required to achieve a goal \n"
+  },
+  {
+    "term-german": "Aufgabenangemessenheit",
+    "term-english": "Suitability for the task",
+    "description-german": "Die Eigenschaft eines interaktives Systems den Benutzer zu unterst\u00fctzen, seine Aufgabe zu erledigen, d. h., die Funktionalit\u00e4t und Dialog an die charakteristischen Eigenschaften der Aufgabe anzupassen, anstatt an die zur Aufgabenerledigung eingesetzten Technologie.\n",
+    "description-english": "The property of an interactive system to support the user in the completion of the task, i.e. to base the functionality and the dialogue on the task characteristics (rather than the technology chosen to perform the task).\n"
+  },
+  {
+    "term-german": "Aufgabenmodell",
+    "term-english": "Task model",
+    "description-german": "Eine Beschreibung der Teilaufgaben die erledigt werden m\u00fcssen, um die Ziele des Benutzers zu erreichen.\n",
+    "description-english": "A description of the subtasks that have to be carried out in order to reach the user\u2019s goals.\n"
+  },
+  {
+    "term-german": "Barrierefreiheit",
+    "term-english": "Accessibility",
+    "description-german": "Die Attribute und Charakteristiken eines interaktiven Systems die Menschen mit eingeschr\u00e4nkter Sicht, eingeschr\u00e4nktem H\u00f6ren, eingeschr\u00e4nkter Geschicklichkeit, eingeschr\u00e4nkter Kognition oder eingeschr\u00e4nkter physischer Mobilit\u00e4t erm\u00f6glichen sollen effektiv und effizient mit dem interaktiven System zu interagieren.\n",
+    "description-english": "The attributes and characteristics of an interactive system that allow people with limited vision, hearing, dexterity, cognition or physical mobility to interact effectively and efficiently with the interactive system.\n"
+  },
+  {
+    "term-german": "Benutzer",
+    "term-english": "User",
+    "description-german": "Person, die mit einem interaktiven System arbeitet oder Daten die vom System erzeugt werden benutzt.\n",
+    "description-english": "Person who interacts with an interactive system, or who uses\u00a0the output of the system.\n"
+  },
+  {
+    "term-german": "Benutzerbefragung",
+    "term-english": "User survey",
+    "description-german": "Eine Evaluierung bei der Benutzer subjektive Daten in einem Fragebogen angeben sollen, basierend auf ihren Erfahrungen bei der Benutzung eines interaktiven Systems. \n",
+    "description-english": "An evaluation where users are asked to report subjective data into a questionnaire based on their experience in using an interactive system.\n"
+  },
+  {
+    "term-german": "Benutzerdokumentation",
+    "term-english": "User documentation",
+    "description-german": "F\u00fcr Benutzer geschriebene oder andere Anleitungen zu dem interaktiven System, wie es funktioniert, und wie man es bedient.\n",
+    "description-english": "Written or other information for users about an interactive system, how it works, and how to use it.\n"
+  },
+  {
+    "term-german": "Benutzererlebnis",
+    "term-english": "User experience",
+    "description-german": "Wahrnehmungen und Reaktionen einer Person, die aus der tats\u00e4chlichen oder erwarteten Benutzung eines interaktiven Systems resultieren. \n",
+    "description-english": "A person's perceptions and responses resulting from the use or anticipated use of an interactive system.\n"
+  },
+  {
+    "term-german": "Benutzergruppe",
+    "term-english": "User group",
+    "description-german": "Eine Gruppe von Benutzern mit denselben oder \u00e4hnlichen Personenmerkmalen und Nutzungskontext bezogen auf das interaktive System.",
+    "description-english": "A collection of users with the same or similar personal characteristics and context of use related to the interactive system."
+  },
+  {
+    "term-german": "Benutzergruppenprofil",
+    "term-english": "User group profile",
+    "description-german": "Eine verallgemeinerte Beschreibung einer Benutzergruppe.",
+    "description-english": "A generalized description of a user group."
+  },
+  {
+    "term-german": "Benutzerunterst\u00fctzung",
+    "term-english": "User assistance",
+    "description-german": "Informationen um einem Benutzer bei der Interaktion mit einem interaktiven System zu helfen.\n",
+    "description-english": "Information to help a user to interact with an interactive system. \n"
+  },
+  {
+    "term-german": "Benutzerzentrierte Usability-Evaluierung",
+    "term-english": "Usability evaluation \u2013  User based",
+    "description-german": "Usability-Evaluierung, die repr\u00e4sentative Benutzer involviert, die bestimmte Aufgaben mit dem interaktiven System ausf\u00fchren, um die Identifikation von Usability-Problemen oder die Messung von Effizienz, Effektivit\u00e4t und Zufriedenstellung zu erm\u00f6glichen.\n",
+    "description-english": "Usability evaluation that involves representative users performing specific tasks with the interactive system to enable identification of usability problems, or measurements of efficiency, effectiveness, user satisfaction, or other measures of user experience.\n"
+  },
+  {
+    "term-german": "Benutzungsschnittstelle",
+    "term-english": "User interface",
+    "description-german": "Alle Bestandteile eines interaktiven Systems (Software oder Hardware), die Informationen und Steuerelemente zur Verf\u00fcgung stellen, die f\u00fcr den Benutzer notwendig sind, um bestimmte Aufgaben mit dem interaktiven System zu erledigen.",
+    "description-english": "All components of an interactive system (software or hardware) that provide information and controls for the user to accomplish specific tasks with the interactive system."
+  },
+  {
+    "term-german": "Beobachter",
+    "term-english": "Observer",
+    "description-german": "Eine Person, die Benutzer beobachtet, die eine Aufgabe diskutieren oder eine Aufgabe mittels eines interaktiven Systems ausf\u00fchren.\n",
+    "description-english": "A person who watches users who discuss or carry out tasks that are related to the interactive system.\n"
+  },
+  {
+    "term-german": "Beobachtung",
+    "term-english": "Observation",
+    "description-german": "Eine Technik f\u00fcr das Sammeln von Kontextinformationen zu den Erfordernissen des Nutzungskontexts. W\u00e4hrend einer xxx sieht der Beobachter dem Benutzer bei der Ausf\u00fchrung von Aufgaben am interaktiven System zu. \n",
+    "description-english": "A technique for gathering contextual information relating to user needs in which an observer watches users who carry out tasks that are related to the interactive system. \n"
+  },
+  {
+    "term-german": "Briefing",
+    "term-english": "Briefing",
+    "description-german": "Die erste Aktivit\u00e4t in einem Interview oder Usability-Test, in dem dem Teilnehmer erkl\u00e4rt wird, warum das Interview oder der Usability-Test durchgef\u00fchrt wird und was seine Rolle und sein Beitrag ist",
+    "description-english": "The first activity in an Interview or a Usability test session where the participant is informed about the purpose of the Interview or Usability test and what their role and contribution are."
+  },
+  {
+    "term-german": "Design Pattern",
+    "term-english": "Design pattern",
+    "description-german": "Eine wiederverwendbare L\u00f6sung f\u00fcr ein Gestaltungsproblem innerhalb eines Kontexts. Ein\u00a0xxx beschreibt ein Gestaltungsproblem, eine L\u00f6sung und wo sich diese L\u00f6sung als funktionierend herausgestellt hat.\n",
+    "description-english": "A general reusable solution to a commonly occurring problem within a given context in software design that describes a design problem, a solution, and where this solution has been found to work.\nCourse note:\n1.\tSeveral websites offer free access to a large selection of design patterns, for example www.welie.com"
+  },
+  {
+    "term-german": "Dialog",
+    "term-english": "Dialogue",
+    "description-german": "Interaktion zwischen einem Benutzer und einem interaktiven System in Form einer Folge von Handlungen des Benutzers (Eingaben) und Antworten des interaktiven Systems (Ausgaben), um ein Ziel zu erreichen.",
+    "description-english": "Interaction between a user and an interactive system that consists of user actions (input) and responses from the interactive system (output) in order to achieve a goal."
+  },
+  {
+    "term-german": "Dialogprinzipien",
+    "term-english": "Dialogue principles",
+    "description-german": "Allgemeine Ziele f\u00fcr das Dialogdesign.\n",
+    "description-english": "General goals for the design of useful and usable dialogues.\n"
+  },
+  {
+    "term-german": "Direkter Benutzer",
+    "term-english": "Direct user",
+    "description-german": "Eine Person, die mit einem interaktiven System interagiert.\n",
+    "description-english": "Person who interacts with an interactive system.\n"
+  },
+  {
+    "term-german": "Dringlichkeitsstufe",
+    "term-english": "Severity rating",
+    "description-german": "Ein Ma\u00df f\u00fcr ein Usability-Problem aus einem Usability-Test, das die Auswirkung des Usability-Problems auf das Benutzererlebnis bewertet.\n",
+    "description-english": "A measure given to a usability problem from a usability test to indicate the impact and criticality on the user experience and the consequences.\n"
+  },
+  {
+    "term-german": "Effektivit\u00e4t",
+    "term-english": "Effectiveness",
+    "description-german": "Ausma\u00df der Vollst\u00e4ndigkeit und Genauigkeit der Zielerreichung.\n",
+    "description-english": "Extent to which correct and complete goals are achieved.\n"
+  },
+  {
+    "term-german": "Effizienz",
+    "term-english": "Efficiency",
+    "description-german": "Eingesetzte Ressourcen, um bestimmte Ziele zu erreichen.\n",
+    "description-english": "Resources expended to achieve specified goals. \n"
+  },
+  {
+    "term-german": "Erfordernis",
+    "term-english": "User need",
+    "description-german": "Eine f\u00fcr einen Benutzer oder eine Benutzergruppe als notwendig identifizierte Voraussetzung, um ein Ziel innerhalb eines bestimmten Nutzungskontextes zu erreichen. \n",
+    "description-english": "A prerequisite identified as necessary for a user, or a user group, to achieve a goal, implied or stated within a specific context of use.\n"
+  },
+  {
+    "term-german": "Erwartungskonformit\u00e4t",
+    "term-english": "Conformity with user expectations",
+    "description-german": "\u00dcbereinstimmung mit den aus dem Nutzungskontext heraus vorhersehbaren Benutzerbelangen sowie allgemein anerkannten Konventionen.\n",
+    "description-english": "Correspondence to predictable contextual needs of the user and to commonly accepted conventions.\n"
+  },
+  {
+    "term-german": "Evaluierungsbericht",
+    "term-english": "Evaluation report",
+    "description-german": "Ein Dokument, in dem die Ergebnisse eines Usability-Tests, einer Inspektion oder einer Benutzerbefragung dokumentiert werden.\n",
+    "description-english": "A document reporting the results of a usability test, an inspection or a user survey.\n"
+  },
+  {
+    "term-german": "Fehlertoleranz",
+    "term-english": "Error tolerance",
+    "description-german": "Die Eigenschaft eines Dialogs das beabsichtigte Arbeitsergebnis trotz erkennbar fehlerhafter Eingaben entweder mit keinem oder mit minimalem Korrekturaufwand seitens des Benutzers zu erreichen.\n",
+    "description-english": "The property of a dialogue to achieve the intended result with either no, or minimal, corrective action by the user despite evident errors in input. \n"
+  },
+  {
+    "term-german": "Fokusgruppe",
+    "term-english": "Focus group",
+    "description-german": "Eine gezielte Diskussion, bei der ein Moderator eine Gruppe von Teilnehmern durch eine Menge von Fragen zu einem bestimmten Thema f\u00fchrt. \n",
+    "description-english": "A focused discussion where a moderator leads a group of participants through a set of questions on a particular topic.\n"
+  },
+  {
+    "term-german": "Formative Usability-Evaluierung",
+    "term-english": "Formative usability evaluation",
+    "description-german": "Eine Art der Usability-Evaluierung die hilft, das Design f\u00fcr ein interaktives System zu verbessern, besonders w\u00e4hrend es noch gestaltet wird.\n",
+    "description-english": "A type of usability evaluation designed and used to improve an interactive system, especially when it is still being designed.\n"
+  },
+  {
+    "term-german": "Fragebogen",
+    "term-english": "Questionnaire",
+    "description-german": "Ein Satz von Fragen, der von Benutzern in einer Benutzerbefragung beantwortet wird, um  Daten zu sammeln.\n",
+    "description-english": "A set of questions that is used collect data from users, often in a user survey.\n"
+  },
+  {
+    "term-german": "Geschlossene Frage",
+    "term-english": "Closed question",
+    "description-german": "Eine Interviewfrage die eine Antwort aus einem vordefinierten Satz von Alternativen fordert, oft einfach \u201eja\u201c oder \u201enein\u201c.\n",
+    "description-english": "An interview question that requires an answer from a predetermined set of alternatives, for example yes and no.\n"
+  },
+  {
+    "term-german": "Gestaltungsregel",
+    "term-english": "Guideline",
+    "description-german": "Konkrete, spezifische Instruktion oder Empfehlung, die wenig Interpretationsspielraum l\u00e4sst, so dass verschiedene Designer sie \u00e4hnlich umsetzen.\n",
+    "description-english": "See User interface guideline."
+  },
+  {
+    "term-german": "Heuristik",
+    "term-english": "Heuristic",
+    "description-german": "Eine allgemein anerkannte Daumenregel die hilft Usability zu erreichen.\n",
+    "description-english": "A generally recognized rule of thumb that helps to achieve usability.\n"
+  },
+  {
+    "term-german": "Heuristische Evaluierung",
+    "term-english": "Heuristic evaluation",
+    "description-german": "Eine Methode der Usability-Evaluierung bei der ein oder mehrere Begutachter \u2013 vorzugsweise Experten \u2013 ein interaktives System mit einer Liste von Heuristiken vergleichen und feststellen an welchen Stellen das interaktive System diesen Heuristiken nicht folgt.\n",
+    "description-english": "A usability evaluation method in which one or more evaluators, preferably experts, compare an interactive system to a list of heuristics and identify where the interactive system does not follow those heuristics.\n"
+  },
+  {
+    "term-german": "High-fidelity-Prototyp",
+    "term-english": "High-fidelity prototype",
+    "description-german": "Ein Software Prototyp der Benutzungsschnittstelle des zu designenden interaktiven Systems. Ein high-fidelity-Prototyp \u00e4hnelt dem fertigen interaktiven System und kann interaktiv oder nicht interaktiv sein.\n",
+    "description-english": "A software prototype of the user interface to the interactive system that is being designed. A high-fidelity prototype resembles the finished interactive system and may or may not be interactive.\n"
+  },
+  {
+    "term-german": "ISO 9241",
+    "term-english": "ISO 9241",
+    "description-german": "Eine Reihe von Standards, die die menschzentrierte Gestaltung interaktiver Systeme betrifft.  \n",
+    "description-english": "A family of standards covering human-centred design.\n"
+  },
+  {
+    "term-german": "Indirekter Benutzer",
+    "term-english": "Indirect user",
+    "description-german": "Personen, die direkt die Ergebnisse eines interaktiven Systems nutzen, aber nicht direkt mit dem System interagieren. \nBeispiel f\u00fcr indirekter Benutzer:\n1.\tEin Bankkunde, der ein Dokument oder einen elektronischen Bericht erh\u00e4lt, oder eine Filiale besucht, ist ein indirekter Benutzer eines Arbeitsergebnisses, das mit Hilfe eines Systems erzeugt wurde, das die Mitarbeiter der Bank benutzen.",
+    "description-english": "Person who\u00a0directly\u00a0uses\u00a0the output of the interactive system, but does not interact directly with the system.\nExample of an indirect user:\u00a0\n1.\tA bank customer who receives a paper or electronic statement, or visits a branch is an indirect user of the output produced by the bank computer system."
+  },
+  {
+    "term-german": "Individualisierbarkeit",
+    "term-english": "Suitability for individualization",
+    "description-german": "Die Eigenschaft eines Dialogs die Benutzer erm\u00f6glicht die Interaktion mit dem System und die Darstellung von Informationen an ihre individuellen F\u00e4higkeiten und Bed\u00fcrfnisse anpassen zu k\u00f6nnen.\n",
+    "description-english": "The property of a dialogue that allows users to modify interaction and presentation of information to suit their individual capabilities and needs.\n"
+  },
+  {
+    "term-german": "Informationsarchitekt",
+    "term-english": "Information architect",
+    "description-german": "Eine Person die die Struktur von Information in interaktiven Systemen f\u00fcr das effiziente Auffinden durch jede Benutzergruppe kreiert und organisiert.\n",
+    "description-english": "A person who creates and organizes the structure of information to enable each user group to efficiently locate required information when using interactive systems. \n"
+  },
+  {
+    "term-german": "Informationsarchitektur",
+    "term-english": "Information architecture",
+    "description-german": "Die Benennung und Strukturierung der Informationen die f\u00fcr den Benutzer erreichbar sein m\u00fcssen einschlie\u00dflich der Nutzungsobjekte, Systemobjekte (wie z.B. \u201eDrucker\u201c) und weiterer f\u00fcr den Benutzer erforderlichen Informationen. ",
+    "description-english": "The naming and structuring of the information that must be accessible to the user, including task objects, system objects (such as printers) and additional information that users need."
+  },
+  {
+    "term-german": "Inspektion",
+    "term-english": "Inspection",
+    "description-german": "Siehe inspektionsbasierte Usability-Evaluierung",
+    "description-english": "See Usability evaluation \u2013 xxx based"
+  },
+  {
+    "term-german": "Inspektionsbasierte Usability-Evaluierung",
+    "term-english": "Usability evaluation \u2013 Inspection based",
+    "description-german": "Usability-Evaluierung die auf der Beurteilung ein oder mehrerer Evaluatoren basiert, die ein interaktives System pr\u00fcfen oder benutzen, um potentielle Usability-Probleme und Abweichungen von anerkannten Kriterien zu identifizieren.\n",
+    "description-english": "Usability evaluation based on the judgment of one or more evaluators who examine or use an interactive system to identify potential usability problems and deviations from established criteria.\n"
+  },
+  {
+    "term-german": "Interaktionsdesigner",
+    "term-english": "Interaction designer",
+    "description-german": "Eine Person die die Interaktion zwischen Mensch und System auf Basis der Nutzungs\u00adanforderungen und Nutzungskontext definiert und konzipiert. \n",
+    "description-english": "A person who defines and designs the interaction between humans and system based on user requirements and the context of use.\n"
+  },
+  {
+    "term-german": "Interaktives System",
+    "term-english": "Interactive system",
+    "description-german": "Kombination von Hardware-, Software- und Servicekomponenten, die Eingaben von einem Benutzer empf\u00e4ngt und Ausgaben zu einem Benutzer \u00fcbermittelt.\n",
+    "description-english": "A combination of hardware, software and/or services that receives input from, and communicates output to, users.\n"
+  },
+  {
+    "term-german": "Interessenvertreter",
+    "term-english": "Stakeholder",
+    "description-german": "Individuum oder Organisation, die ein Anrecht, einen Anteil, einen Anspruch oder ein Interesse auf ein interaktives System oder an dessen Merkmalen hat, die ihren Erfordernissen und Erwartungen entsprechen. \n",
+    "description-english": "Individual or organization having a right, share, claim or interest in an interactive system or in its possession of characteristics that meet their needs and expectations.\n"
+  },
+  {
+    "term-german": "Interessenvertreteranforderung",
+    "term-english": "Stakeholder requirement",
+    "description-german": "Was das interaktive System aus Sicht des Interessenvertreters leisten muss.\n",
+    "description-english": "What the interactive system should be capable of from the point of view of the stakeholders."
+  },
+  {
+    "term-german": "Interview",
+    "term-english": "Interview",
+    "description-german": "Eine Methode der Datensammlung, die sorgf\u00e4ltig ausgew\u00e4hlte Individuen untersucht, um ein tiefes Verst\u00e4ndnis der Arbeitst\u00e4tigkeit der Benutzer zu erreichen. Durch die Befragung und Interpretation werden Gemeinsamkeiten und Unterschiede innerhalb der Benutzer  eines interaktiven Systems aufgedeckt.  \n",
+    "description-english": "A data-gathering technique that studies a few carefully selected individuals in depth to arrive at a fuller understanding of the work practice across all users. Through inquiry and interpretation, it reveals commonalities across an interactive system's user base.\n"
+  },
+  {
+    "term-german": "Interviewcheckliste",
+    "term-english": "Interview checklist",
+    "description-german": "Eine schriftliche Liste passender Fragen und Hinweise, die w\u00e4hrend eines Interviews verwendet wird, um sicherzustellen, dass alle relevanten Themen ber\u00fccksichtigt werden.",
+    "description-english": "A written list of suitable questions and cues used by an interviewer during an interview to make sure that all relevant topics are addressed."
+  },
+  {
+    "term-german": "Intuitiv",
+    "term-english": "Intuitive",
+    "description-german": "Die Benutzung des interaktiven Systems ist unmittelbar zu verstehen \u2013 unabh\u00e4ngig von der Erfahrung, vom Wissen, von den Sprachkenntnissen oder vom momentanen Konzentrationsgrad des Benutzers.\n",
+    "description-english": "Use of the interactive system is easy to understand, regardless of the user's experience, knowledge, language skills, or current concentration level. \n"
+  },
+  {
+    "term-german": "Iterativ",
+    "term-english": "Iterative",
+    "description-german": "Wiederholend.\nEin iteratives Vorgehen wiederholt Schritte des Prozesses der menschzentrierten Gestaltung solange, bis eine Usability-Evaluierung der Benutzungsschnittstelle zeigt, dass die Nutzungsanforderungen ausreichend erf\u00fcllt sind.",
+    "description-english": "Repetitive.\nAn iterative process repeats steps in the human-centred design process until a usability evaluation of the user interface shows that the user requirements have been adequately met."
+  },
+  {
+    "term-german": "Konsistenz",
+    "term-english": "Consistency",
+    "description-german": "Die gleiche Information wird in gleicher Weise innerhalb des gesamten interaktiven Systems entsprechend der Benutzererwartung dargestellt.\n",
+    "description-english": "The same information is presented in the same way throughout the interactive system, in accordance with the user\u2019s expectation.\n"
+  },
+  {
+    "term-german": "Kontextuelles Interview",
+    "term-english": "Contextual interview",
+    "description-german": "Ein Interview das dort stattfindet wo die Interaktion des Benutzers mit dem interaktiven System \u00fcblicherweise stattfindet, z.B. am Arbeitsplatz des Benutzers.\n",
+    "description-english": "An interview that takes place at the location where the user's interaction with the interactive system usually takes place, for example the user's workplace.\n"
+  },
+  {
+    "term-german": "Lernf\u00f6rderlichkeit",
+    "term-english": "Suitability for learning",
+    "description-german": "Die Eigenschaft eines Dialogs die Benutzer beim Erlernen der Nutzung des interaktiven Systems zu unterst\u00fctzen und anzuleiten.\n",
+    "description-english": "A dialogue is suitable for learning when it supports and guides the user in learning to use the interactive system.\n"
+  },
+  {
+    "term-german": "Low-fidelity-Prototyp",
+    "term-english": "Low-fidelity prototype",
+    "description-german": "Eine einfache und preiswerte Veranschaulichung eines Designs oder eines Begriffs. Wird benutzt, um Benutzer-Feedback in fr\u00fchen Phasen der Entwicklung einzuholen\n",
+    "description-english": "A low-cost, simple illustration of a design or concept used to gather user feedback at the very early stages of design\n"
+  },
+  {
+    "term-german": "Marktanforderung",
+    "term-english": "Market requirement",
+    "description-german": "Eine Anforderung an ein interaktives System, die aus der Absatzpolitik des Anbieters abgeleitet ist und darauf abzielt, Gesch\u00e4ftschancen, Verk\u00e4ufe und die Nutzung des interaktiven Systems zu maximieren.\n",
+    "description-english": "A requirement for an interactive system based on marketing policy aimed at maximizing business opportunities, purchase and use.\n"
+  },
+  {
+    "term-german": "Meister-Sch\u00fcler-Modell",
+    "term-english": "Master-apprentice model",
+    "description-german": "Ein Verhaltensprinzip f\u00fcr ein erfolgreiches Interview:  Der Interviewer behandelt den Benutzer als den Meister w\u00e4hrend der Interviewer selbst der Sch\u00fcler ist. Der Interviewer demonstriert nicht sein Wissen, sondern stellt seine Fragen mit dem Ziel etwas zu lernen.",
+    "description-english": "A principle for a successful interview: The interviewer treats the user as the Master while the interviewer is the Apprentice. The interviewer asks because they sincerely want to learn \u2013 not to demonstrate their knowledge"
+  },
+  {
+    "term-german": "Menschzentrierte Gestaltung",
+    "term-english": "Human-centred design",
+    "description-german": "Herangehensweise bei der Gestaltung und Entwicklung von interaktiven Systemen, die darauf abzielt, diese gebrauchtauglicher zu machen indem sie sich auf die Verwendung des interaktiven Systems konzentriert und Kenntnisse und Techniken aus den Bereichen der Arbeitswissenschaft, Ergonomie und der Gebrauchstauglichkeit anwendet.\n",
+    "description-english": "An approach to design that aims to make interactive systems more usable by focusing on the use of the interactive system and applying human factors, ergonomics and usability knowledge and techniques.\n"
+  },
+  {
+    "term-german": "Mentales Modell",
+    "term-english": "Mental model",
+    "description-german": "Die Vorstellung, die Menschen von sich, anderen, der Umgebung und den Dingen haben, mit denen sie interagieren. \n",
+    "description-english": "The perception people have of themselves, others, the environment, and the things with which they interact. \n"
+  },
+  {
+    "term-german": "Moderation",
+    "term-english": "Moderation",
+    "description-german": "Die durch einen Moderator w\u00e4hrend eines Usability-Tests oder einer Fokusgruppe ausge\u00fcbte T\u00e4tigkeit.",
+    "description-english": "The activity carried out by a moderator in a usability test or focus group."
+  },
+  {
+    "term-german": "Moderator",
+    "term-english": "Moderator",
+    "description-german": "Eine neutrale Person die eine Usability-Testsitzung oder eine Fokusgruppe leitet.\n",
+    "description-english": "A neutral person who conducts a usability test session or a focus group session.\n"
+  },
+  {
+    "term-german": "Navigationsstruktur",
+    "term-english": "Navigation structure",
+    "description-german": "Die logische Organisation der angezeigten Informationseinheiten der Benutzungsschnittstelle.\n",
+    "description-english": "The logical organization of the units of displayed information that comprise the user interface.\n"
+  },
+  {
+    "term-german": "Neutrale Frage",
+    "term-english": "Neutral question",
+    "description-german": "Eine Frage in einem Interview, die keine impliziten Annahmen beinhaltet und auch keinen Ansatz bietet, einen Aspekt auszuschliessen oder die Antwort in eine bestimmte Richtung zu lenken. \n",
+    "description-english": "A question in an interview that has no built-in assumptions, and no frame that excludes anything or directs the reply in a certain direction. \n"
+  },
+  {
+    "term-german": "Nutzungsanforderung",
+    "term-english": "User requirement",
+    "description-german": "Anforderung an die Nutzung, die die Basis f\u00fcr die Gestaltung und Evaluierung eines interaktiven Systems in Hinblick auf identifizierte Erfordernisse bildet. \n",
+    "description-english": "Requirement for use that provides the basis for design and evaluation of an interactive system to meet identified user needs.\n"
+  },
+  {
+    "term-german": "Nutzungskontext",
+    "term-english": "Context of use",
+    "description-german": "Benutzer, Aufgaben, Ressourcen sowie die physische und soziale Umgebung in der das interaktive System genutzt wird.\n",
+    "description-english": "Users, tasks, resources, and the physical and social environments in which an interactive system is used \n"
+  },
+  {
+    "term-german": "Nutzungsobjekt",
+    "term-english": "Task object",
+    "description-german": "Die wichtigsten Informationseinheiten oder Daten mit denen Benutzer interagieren, um ihre Aufgaben durchzuf\u00fchren.\n",
+    "description-english": "The key units of information, or data, with which users interact in order to carry out their tasks. \nExamples of task objects:\n1.\tFor a customer management system: \n- A letter to a customer;\n\t- A list of the customer's unpaid bills;\n\t- An order from the customer.\n2.\tFor a train ticket vending machine:\n\t- A ticket:\n\t- A receipt for the purchase of a ticket;\n\t- A travel plan."
+  },
+  {
+    "term-german": "Offene Frage",
+    "term-english": "Open question",
+    "description-german": "Eine Frage in einem Interview, die keine Einschr\u00e4nkung der Antwortm\u00f6glichkeiten nach sich zieht\n",
+    "description-english": "A question in an interview that does not give any indication of the expected format or content of the answer.\n"
+  },
+  {
+    "term-german": "Onlinehilfe",
+    "term-english": "Online help",
+    "description-german": "Unterst\u00fctzung die durch ein Computerprogramm bereitgestellt wird. xxx kann themenorientiert, verfahrensorientiert oder ein Hinweis sein.\n",
+    "description-english": "Assistance delivered through computer software that can be topic-oriented, procedural or reference information. \n"
+  },
+  {
+    "term-german": "Organisatorische Anforderung",
+    "term-english": "Organizational requirement",
+    "description-german": "Eine organisatorische Regel die Benutzer befolgen m\u00fcssen w\u00e4hrend sie ihre Aufgaben l\u00f6sen.\n",
+    "description-english": "An organizational rule that users have to follow when conducting their tasks.\n"
+  },
+  {
+    "term-german": "Persona",
+    "term-english": "Persona",
+    "description-german": "Eine Beschreibung eines Benutzers und was dieser bei der Benutzung eines interaktiven Systems beabsichtigt. \n",
+    "description-english": "A description of a user and what he or she intends to do when using an interactive system. \n"
+  },
+  {
+    "term-german": "Post-Session Interview",
+    "term-english": "Post-session interview",
+    "description-german": "Eine Aktivit\u00e4t in einem Usability-Test, bei der ein Usability-Testteilnehmer Fragen bez\u00fcglich seines allgemeinen Eindrucks hinsichtlich der Usability des interaktiven Systems beantwortet. \n",
+    "description-english": "An activity in a usability test session where the usability test participant answers questions about his/her experience and general impression of the usability of the interactive system. \n"
+  },
+  {
+    "term-german": "Pre-Session Interview",
+    "term-english": "Pre-session interview",
+    "description-german": "Eine T\u00e4tigkeit bei einem Usability-Test, bei der Usability-Testteilnehmer Fragen bez\u00fcglich ihres Hintergrundes und vorheriger Erfahrung mit dem interaktiven System oder \u00e4hnlichen interaktiven Systemen beantworten. \n",
+    "description-english": "An activity in a usability test session where the usability test participant answers questions about his/her background and previous experience with the interactive system or related interactive systems. \n"
+  },
+  {
+    "term-german": "Prim\u00e4rer Benutzer",
+    "term-english": "Primary user",
+    "description-german": "Eine Person, die mit einem interaktiven System interagiert, um Ziele zu erreichen, die durch das System unterst\u00fctzt werden.",
+    "description-english": "A person who interacts with an interactive system to achieve goals supported by the system."
+  },
+  {
+    "term-german": "Protokollant",
+    "term-english": "Note-taker",
+    "description-german": "Ein Usabilityspezialist, der Notizen \u00fcber Usability-Befunde w\u00e4hrend einer Usability-Testsitzung, Fokusgruppe oder Interview notiert. \n",
+    "description-english": "A usability specialist who makes notes of usability findings during a usability test session, focus group or interview. \n"
+  },
+  {
+    "term-german": "Prototyp",
+    "term-english": "Prototype",
+    "description-german": "Eine Repr\u00e4sentation von Teilen oder des gesamten interaktiven Systems, die in einem bestimmten Ma\u00df f\u00fcr Analyse, Design und Evaluierung benutzt werden kann.\n",
+    "description-english": "A representation of all or part of an interactive system that, although limited in some way, can be used for analysis, design and evaluation.\n"
+  },
+  {
+    "term-german": "Qualitative Nutzungsanforderung",
+    "term-english": "Qualitative user requirement",
+    "description-german": "Eine Beschreibung, was Benutzer w\u00e4hrend der Durchf\u00fchrung einer Aufgabe mit dem interaktiven System finden, erkennen, verstehen, ausw\u00e4hlen oder eingeben m\u00fcssen.\n",
+    "description-english": "A statement of what users must be able to locate, recognize, understand, select or input as part of conducting a task with the interactive system. \n"
+  },
+  {
+    "term-german": "Qualit\u00e4t",
+    "term-english": "Quality",
+    "description-german": "Grad der Erf\u00fcllung von Anforderungen durch ein interaktives System.\n",
+    "description-english": "The degree to which the interactive system fulfils requirements.\n"
+  },
+  {
+    "term-german": "Quantitative Nutzungsanforderung",
+    "term-english": "Quantitative user requirement",
+    "description-german": "Ben\u00f6tigtes Ma\u00df an Usability um identifizierten Erfordernissen zu gen\u00fcgen im Sinne der Effektivit\u00e4t, Effizienz und Zufriedenstellung in einem festgelegten Nutzungskontext.\n",
+    "description-english": "Required level of usability to meet identified user needs expressed in terms of measures of effectiveness, efficiency and satisfaction in a specified context of use.\n"
+  },
+  {
+    "term-german": "Rekrutierung",
+    "term-english": "Recruiting",
+    "description-german": "Akquise von Benutzern, die die erforderlichen Qualifikationen haben, an einer menschzentrierten Aktivit\u00e4t wie z.B. einem Usability-Test, einem kontextuellen Interview oder einer Fokusgruppe teilzunehmen.\n",
+    "description-english": "A process for selecting candidates that have the required qualifications to participate in a human-centred activity such as a focus group, contextual interview, or usability test.\n"
+  },
+  {
+    "term-german": "Rekrutierungsfragebogen",
+    "term-english": "Recruitment screener",
+    "description-german": "Eine Reihe von Fragen f\u00fcr potenzielle Teilnehmer hinsichtlich ihrer Qualifikationen zur Teilnahme an einer menschzentrierten Aktivit\u00e4t wie z.B. einem Usability-Test oder einer Fokusgruppe.\n",
+    "description-english": "A series of questions for prospective participants to identify whether they represent the intended users and therefore qualify to participate in a human-centred activity, for example a usability test or a focus group.\n"
+  },
+  {
+    "term-german": "Remote Usability-Test",
+    "term-english": "Remote usability test",
+    "description-german": "Ein Usability-Test bei dem sich der Usability-Testteilnehmer und der Moderator an unterschiedlichen Orten befinden \n(\u201eRemote\u201c bedeutet hier \u201eentfernt liegend\u201c). \n",
+    "description-english": "A usability test where the usability test participant and the moderator are in different physical locations. \n"
+  },
+  {
+    "term-german": "Ressourcen",
+    "term-english": "Resources",
+    "description-german": "Alle Mittel die zur Nutzung eines interaktiven Systems notwendig sind. \n",
+    "description-english": "All means required to use an interactive system.\n"
+  },
+  {
+    "term-german": "Richtlinie",
+    "term-english": "Guideline",
+    "description-german": "Siehe Gestaltungsregel",
+    "description-english": "See User interface guideline."
+  },
+  {
+    "term-german": "Rolle",
+    "term-english": "Role",
+    "description-german": "Eine Funktion die eine Person innerhalb der Struktur einer Organisation inne hat.\n",
+    "description-english": "A duty or function that a person carries out within an organization.\n"
+  },
+  {
+    "term-german": "Sekund\u00e4rer Benutzer",
+    "term-english": "Secondary user",
+    "description-german": "Eine Person, die mit einem interaktiven System interagiert, um die Nutzung des Systems zu unterst\u00fctzen oder das System zu warten.\nBeispiele f\u00fcr sekund\u00e4re Benutzer:\n1.\tSicherheitsmanager, Administrator, Trainer und Wartung.",
+    "description-english": "A person who interacts with an interactive system to support\u00a0the use of the system or\u00a0maintain the system.\nExamples of secondary users: \n1.\tSecurity manager, administrator, trainer and maintenance."
+  },
+  {
+    "term-german": "Selbstbeschreibungsf\u00e4higkeit",
+    "term-english": "Self-descriptiveness",
+    "description-german": "Die Eigenschaft eines Dialogs zu jeder Zeit dem Benutzer offensichtlich zu machen, in welchem Dialog, an welcher Stelle im Dialog er sich befindet, welche Handlungen unternommen werden k\u00f6nnen und wie diese ausgef\u00fchrt werden k\u00f6nnen.\n",
+    "description-english": "The property of a dialogue to, at any time, make it obvious to the users which dialogue they are in, where they are within the dialogue, which actions can be taken, and how they can be performed.\n"
+  },
+  {
+    "term-german": "Steuerbarkeit",
+    "term-english": "Controllability",
+    "description-german": "Der Benutzer ist in der Lage einen Dialogablauf zu starten sowie seine Richtung und Geschwindigkeit zu beeinflussen, bis das Ziel erreicht ist.\n",
+    "description-english": "The ability of a user to initiate and control the direction and pace of the interaction until the point at which the goal has been met.\n"
+  },
+  {
+    "term-german": "Storyboard",
+    "term-english": "Storyboard",
+    "description-german": "Eine Folge visueller Bildschirminhalte, die das Zusammenspiel zwischen einem Benutzer und einem vorgestellten interaktiven System darstellt. \n",
+    "description-english": "A sequence of visual frames illustrating the interplay between a user and an envisioned interactive system. \n"
+  },
+  {
+    "term-german": "Styleguide",
+    "term-english": "Styleguide",
+    "description-german": "Eine Sammlung von Gestaltungsregeln die verwendet wird, um die grunds\u00e4tzliche Erscheinung der Benutzungsschnittstelle auf jeglicher Software einer Organisation festzulegen.\n",
+    "description-english": "A collection of user interface guidelines used to ensure consistency in the appearance and behaviour of the user interface of the interactive systems produced by an organization \n"
+  },
+  {
+    "term-german": "Suggestionsfrage",
+    "term-english": "Leading question",
+    "description-german": "Eine Frage in einem Interview, die eine Pr\u00e4ferenz f\u00fcr bestimmte Antwortm\u00f6glichkeiten vorgibt oder versucht, die Antwort in eine bestimmte Richtung zu lenken. \n",
+    "description-english": "A question in an interview that signals a preference for certain possibilities, or attempts to direct the reply in a certain direction. \n"
+  },
+  {
+    "term-german": "Summative Usability-Evaluierung",
+    "term-english": "Summative usability evaluation",
+    "description-german": "Eine Usabilityevaluierung, die darauf ausgerichtet ist, Schlussfolgerungen zur Qualit\u00e4t eines interaktiven Systems aus Sicht der Usability zu ziehen, insbesondere wenn ein wesentlicher Teil der Entwicklung fertig ist.  \n",
+    "description-english": "A type of usability evaluation designed and used to gather conclusions about the merit or worth of an interactive system, especially when a substantial part of it has completed design.\n"
+  },
+  {
+    "term-german": "Systeminitiierte Benutzerf\u00fchrung",
+    "term-english": "System-initiated guidance",
+    "description-german": "Explizite Information \u00fcber ein Ereignis oder einen Zustand vom interaktiven System an den Benutzer. \n",
+    "description-english": "Explicit information about an event or a condition from an interactive system to a user.\n"
+  },
+  {
+    "term-german": "Testaufgabe",
+    "term-english": "Test task",
+    "description-german": "Siehe Usability-xxx.",
+    "description-english": "See Usability test task."
+  },
+  {
+    "term-german": "Testbericht",
+    "term-english": "Test report",
+    "description-german": "Siehe Usability-xxx.",
+    "description-english": "See Usability test report."
+  },
+  {
+    "term-german": "Testskript",
+    "term-english": "Test script",
+    "description-german": "Siehe Usability-xxx.",
+    "description-english": "See Usability test script."
+  },
+  {
+    "term-german": "Testteilnehmer",
+    "term-english": "Test participant",
+    "description-german": "Siehe Usability-xxx",
+    "description-english": "See Usability test participant"
+  },
+  {
+    "term-german": "Umgebung",
+    "term-english": "Environment",
+    "description-german": "Die Gesamtheit der gegebenen Umst\u00e4nde oder Bedingungen, in denen ein Benutzer arbeitet. Diese umfassen die physische, soziale und technische xxx.\n",
+    "description-english": "The physical, social and technical conditions in which a user interacts with an interactive system.\n"
+  },
+  {
+    "term-german": "Unbeaufsichtigter Usability-Test",
+    "term-english": "Unattended usability test",
+    "description-german": "Ein Usability-Test bei dem Usability-Testteilnehmer Usability-Testaufgaben l\u00f6sen ohne dabei beobachtet zu werden. \n",
+    "description-english": "A usability test where usability test participants solve usability test tasks without being observed. \n"
+  },
+  {
+    "term-german": "Usability",
+    "term-english": "Usability",
+    "description-german": "Ausma\u00df, in dem ein interaktives System durch bestimmte Benutzer in einem bestimmten Nutzungskontext genutzt werden kann, um festgelegte Ziele effektiv, effizient und zufriedenstellend zu erreichen.\n",
+    "description-english": "Extent to which an interactive system can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use.\n"
+  },
+  {
+    "term-german": "Usability Engineer",
+    "term-english": "Usability engineer",
+    "description-german": "Eine Person die in einer Querschnittsfunktion verantwortlich einen menschzentrierten Gestaltungsprozess betreut. \n",
+    "description-english": "A person who manages a human-centred design process.\n"
+  },
+  {
+    "term-german": "Usability Professional",
+    "term-english": "Usability professional",
+    "description-german": "Eine Person die eine oder mehrere der folgenden Rollen hat: \n1.\tUsability Engineer, \n2.\tUser Requirements Engineer, \n3.\tUsability-Tester,\n4.\tInformationsarchitect,\n5.\tInteraktionsdesigner,\n6.\tUser Interface Designer.",
+    "description-english": "A professional who has one or more of the following process roles: \n1.\tUsability engineer, \n2.\tUser requirements engineer, \n3.\tUsability tester,\n4.\tInformation architect,\n5.\tInteraction designer,\n6.\tUser interface designer."
+  },
+  {
+    "term-german": "Usability-Evaluierung",
+    "term-english": "Usability evaluation",
+    "description-german": "Ein Prozess der Informationen \u00fcber die Usability eines interaktiven Systems sammelt um das interaktive System zu verbessern (formative xxx) oder um das interaktive System zu bewerten (summative xxx). \n",
+    "description-english": "A process through which information about the usability of an interactive system is gathered in order to improve the interactive system (known as formative usability evaluation) or to assess the merit or worth of an interactive system (known as summative usability evaluation). \n"
+  },
+  {
+    "term-german": "Usability-Labor",
+    "term-english": "Usability lab",
+    "description-german": "Zwei oder mehrere R\u00e4ume, die speziell f\u00fcr die Durchf\u00fchrung von Usabiltytests oder Fokusgruppen ausgestattet sind. \n",
+    "description-english": "Two or more rooms that are specially equipped for usability testing or focus groups. \n"
+  },
+  {
+    "term-german": "Usability-Problem",
+    "term-english": "Usability problem",
+    "description-german": "Ein Problem in der Benutzung der Benutzungsschnittstelle, das sich auf die Zufriedenstellung des Benutzers sowie die Effektivit\u00e4t und Effizienz des interaktiven Systems auswirkt. \n",
+    "description-english": "A difficulty in using the user interface design that affects the ability of the user to achieve their goals effectively, or efficiently, or with satisfaction. \n"
+  },
+  {
+    "term-german": "Usability-Test",
+    "term-english": "Usability test",
+    "description-german": "Eine Usability-Evaluierung bei der repr\u00e4sentative Benutzer bestimmte Aufgaben mit dem interaktiven System ausf\u00fchren, um Usability-Probleme oder die Messwerte f\u00fcr Effektivit\u00e4t, Effizienz und Zufriedenstellung zu erfassen. \n",
+    "description-english": "A usability evaluation that involves representative users performing specific tasks with the interactive system to enable identification of usability problems or the measurement of effectiveness, efficiency, and user satisfaction.\n"
+  },
+  {
+    "term-german": "Usability-Testaufgabe",
+    "term-english": "Usability test task",
+    "description-german": "Eine Beschreibung einer typischen Aufgabe, die ein Moderator einem Usability-Testteilnehmer w\u00e4hrend eines Usability-Tests stellt. ",
+    "description-english": "A description of a task that a moderator asks a usability test participant to carry out during a usability test. "
+  },
+  {
+    "term-german": "Usability-Testbericht",
+    "term-english": "Usability test report",
+    "description-german": "Ein Dokument, das die Ergebnisse eines Usability-Tests beschreibt. \n",
+    "description-english": "A document that describes the results of a usability test. \n"
+  },
+  {
+    "term-german": "Usability-Tester",
+    "term-english": "Usability tester",
+    "description-german": "Eine Person die Benutzungsschnittstellen in verschiedenen Stadien der Realisierung evaluiert. \n",
+    "description-english": "A person who evaluates user interfaces in various stages of realization. \n"
+  },
+  {
+    "term-german": "Usability-Testplan",
+    "term-english": "Usability test plan",
+    "description-german": "Eine kurze Beschreibung des Zwecks und Umfangs eines Usability-Tests. \n",
+    "description-english": "A brief description of the purpose and extent of a usability test. \n"
+  },
+  {
+    "term-german": "Usability-Testsitzung",
+    "term-english": "Usability test session",
+    "description-german": "Der Teil eines Usability-Tests, bei dem ein bestimmter Usability-Testteilnehmer repr\u00e4sentative Usability-Testaufgaben unter Benutzung des interaktiven Systems oder des Prototypen eines interaktiven Systems l\u00f6st.\n",
+    "description-english": "A part of a usability test where one usability test participant carries out representative usability test tasks using the interactive system or a prototype of the interactive system.\n"
+  },
+  {
+    "term-german": "Usability-Testskript",
+    "term-english": "Usability test script",
+    "description-german": "Eine von einem Moderator in einem Usability-Test verwendete Checkliste, um den \u00dcberblick \u00fcber die Fragen des Briefings und des Pre-Session Interviews, die Usability-Testaufgaben und die Fragen des Post-Session Interviews zu behalten.",
+    "description-english": "A checklist used by a moderator in a usability test to keep track of briefing and pre-session interview questions, usability test tasks, and post-session interview questions."
+  },
+  {
+    "term-german": "Usability-Testteilnehmer",
+    "term-english": "Usability test participant",
+    "description-german": "Repr\u00e4sentativer Benutzer, der typische Aufgaben in einem Usability-Test l\u00f6st.",
+    "description-english": "A representative user who solves typical tasks in a usability test."
+  },
+  {
+    "term-german": "User Interface Designer",
+    "term-english": "User interface designer",
+    "description-german": "Eine Person die den Dialog und das Benutzererlebnis basierend auf dem Design des  Interaktions\u00addesigners und den Nutzungsszenarios des User Requirements Engineers implementiert. Der xxx erzeugt ausserdem interaktive Prototypen.\n",
+    "description-english": "A person who creates interactive prototypes and implements the dialogue and user experience based on the design created by the interaction designer and the scenarios created by the user requirements engineer. The user interface designer also creates interactive prototypes.\n"
+  },
+  {
+    "term-german": "User Requirements Engineer",
+    "term-english": "User requirements engineer",
+    "description-german": "Eine Person die den tats\u00e4chlichen oder geplanten Nutzungskontext von Benutzern identifiziert und beschreibt. Daraus leitet der xxx die Nutzungsanforderungen und damit verbundene organisatorische Anforderungen ab, die f\u00fcr ein bestimmtes Projekt umgesetzt werden m\u00fcssen. \n",
+    "description-english": "A person who identifies and describes the actual or intended context of use of users, and derives the user requirements and related organizational requirements, which need to be realized for a specific project. \n"
+  },
+  {
+    "term-german": "Wireframe",
+    "term-english": "Wireframe",
+    "description-german": "Eine Form des Low-fidelity-Prototyps bestehend aus schematischen Diagrammen, typischerweise dargestellt mit Linien, rechteckigen K\u00e4sten und Text der das Interaktionsdesign und den Navigationsfluss repr\u00e4sentiert.\n",
+    "description-english": "A form of low-fidelity prototype consisting of schematic diagrams typically comprised of lines, rectangular boxes and text that represent the intended interaction design and navigational flow.\n"
+  },
+  {
+    "term-german": "Zufriedenstellung",
+    "term-english": "Satisfaction",
+    "description-german": "Freiheit von Beeintr\u00e4chtigung und positive Grundeinstellung zur Nutzung des Produkts\n",
+    "description-english": "Freedom from discomfort, and positive attitudes towards the use of the product\n"
+  }
+]
