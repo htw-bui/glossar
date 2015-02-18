@@ -4,7 +4,7 @@ angular.module("komet.controllers").controller("DashboardController" , ["$scope"
   $scope.selectedTerm = {};
   $scope.progressCounter = {};
 
-  $http.get("/data/terms-en.json")
+  $http.get("/data/terms-international.json")
   .then(function(res){
     $scope.terms = res.data;
     $scope.selectedTerm = res.data[0];
@@ -12,16 +12,19 @@ angular.module("komet.controllers").controller("DashboardController" , ["$scope"
   }).then(loadTermFromHash);
 
   $scope.filter = function(term){
-    return term.term.toLowerCase().contains($scope.searchTerm.toLowerCase());
+	  return true;
+	  try {
+	  	
+    return term["term-english"].toLowerCase().contains($scope.searchTerm.toLowerCase());
+	  } catch (e) {
+		  console.log(e);
+	  	/* handle error */
+	  }
   };
 
   $scope.changeLang = function () {
-  var key = $translate.use() == "de"? "en" : "de";
-    $translate.use(key).then(function (key) {
-      console.log("Sprache zu " + key + " gewechselt.");
-    }, function (key) {
-      console.log("Irgendwas lief schief.");
-    });
+    var key = $translate.use() == "de"? "en" : "de";
+    $translate.use(key);
   };
 
   $scope.setSelectedItem = function(term){
@@ -43,7 +46,7 @@ angular.module("komet.controllers").controller("DashboardController" , ["$scope"
   function setSelectedTerm(term){
     $scope.progressCounter.registerTerm(term.term);
     $scope.selectedTerm = term;
-    $location.search("term", term.term);
+    $location.search("term", term["term-english"]);
   }
 
 
@@ -58,24 +61,24 @@ angular.module("komet.controllers").controller("DashboardController" , ["$scope"
   };
 
   $scope.selectedTermIsFirstTerm = function(){
-    return $scope.terms[0].term === $scope.selectedTerm.term;
+    return $scope.terms[0] === $scope.selectedTerm;
   };
 
   $scope.selectedTermIsLastTerm = function(){
-    return _.last($scope.terms).term === $scope.selectedTerm.term;
+    return _.last($scope.terms) === $scope.selectedTerm;
   };
 
 
   function getIndexOfSelectedTerm(){
     return _.findIndex($scope.terms, function(term){
-      return $scope.selectedTerm.term === term.term;
+      return $scope.selectedTerm === term;
     });
   }
 
   function loadTermFromHash(){
-    if($location.hash()){
+    if($location.search().term){
       $scope.selectedTerm = _.find($scope.terms, function(term){
-        return term.term === $location.hash();
+        return term["term-english"] === $location.search().term;
       });
     }
   }

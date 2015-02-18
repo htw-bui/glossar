@@ -3,27 +3,27 @@
 
   moment.locale("de");
 
-
   angular.module("kometFilters", ["pascalprecht.translate"]).filter("formatedTime", function() {
     return function(totalSeconds) {
+      function pad(n){
+        return n < 10 ? "0" + n : n;
+      }
+      
       var minutes = pad(Math.floor(totalSeconds / 60));
       var seconds = pad(totalSeconds % 60);
       return minutes +  ":" + seconds;
 
-      function pad(n){
-        return n < 10 ? "0" + n : n;
-      }
     };
   }).filter("localDefinition", function($translate){
     return function(termObject){
-      var property = $translate.use() == "en"? "description-english": "description-german";
+      var property = $translate.use() === "en"? "description-english": "description-german";
       return termObject[property];
-    }
+    };
   }).filter("localTerm", function($translate){
     return function(termObject){
-      var property = $translate.use() == "en"? "term-english": "term-german";
+      var property = $translate.use() === "en"? "term-english": "term-german";
       return termObject[property];
-    }
+    };
   });
 
   var app = angular.module("dashboard", [
@@ -99,7 +99,4 @@ app.directive("topNavigation", function(){
     templateUrl: "top-navigation.html"
   };
 });
-
-
-
-})();
+}());

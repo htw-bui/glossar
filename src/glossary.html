@@ -8,8 +8,8 @@
     <a id='reset' ng-click='resetProgress()'><i class="fa fa-history"></i></a>
   </div>
   <div id="main"> 
-    <h1 class='hyphenate'> {{selectedTerm.term}} </h1>
-    <p  class='hyphenate'> {{selectedTerm.description}} <p>
+    <h1 class='hyphenate'> {{selectedTerm | localTerm}} </h1>
+    <p  class='hyphenate'> {{selectedTerm | localDefinition}} <p>
   </div>
   <div id="paging">
     <button type=button class='btn btn-default' id="previousTerm" ng-hide='selectedTermIsFirstTerm()' ng-click='prevTerm()'>{{ 'PREV' | translate}}</button>
