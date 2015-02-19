@@ -23,9 +23,13 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
     var choices = [];
     $scope.activeTerm = $scope.unusedTerms.popRandomElement();
     choices.push($scope.activeTerm);
+    var category = $scope.activeTerm.categories.randomElement();
+    var termsForThisCategory = _.filter($scope.terms, function(term){
+	    return term.categories.indexOf(category) !== -1;
+    });
     var randomTerm;
     while(choices.length < 4){
-      randomTerm = $scope.terms.randomElement();
+      randomTerm = termsForThisCategory.randomElement();
       if (choices.indexOf(randomTerm) === -1){
         choices.push(randomTerm);
       }

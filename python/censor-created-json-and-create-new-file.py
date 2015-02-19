@@ -1,6 +1,6 @@
 import json
 
-with open("/home/knut/glossar/src/data/terms-international.json") as infile:
+with open("/home/knut/glossar/src/data/terms-international-with-categories.json") as infile:
     content = json.load(infile)
     for term in content:
         descEnglish = term["description-english"]
