@@ -1,0 +1,547 @@
+{"Affordance" : [
+"Prinzipien"
+],
+  "Benutzerbefragung" : [
+"Evaluierung",
+"Test"
+],
+"Benutzerzentrierte Gestaltung" : [
+"Gestaltung",
+"Implementierung",
+"Planung"
+],
+"Briefing" : [
+"Test"
+],
+"Direkter Benutzer" : [
+"Rollen"
+],
+"Evaluierungsbericht" : [
+"Test",
+"Evaluierung"
+],
+"Facilitator" : [
+    "Rollen"
+],
+"Indirekter Benutzer" : [
+"Rollen"
+],
+"Inspektion" : [
+    "Evaluierung",
+    "Test"
+],
+"Interview" : [
+"Test",
+"Evaluierung"
+],
+"Moderation" : [
+"Test"
+],
+"Nachbesprechung" : [
+    "Evaluierung"
+],
+"Positiver Usability-Befund" : [
+"Evaluierung"
+],
+"Primärer Benutzer" : [
+"Rollen"
+],
+"Richtlinie" : [
+    "Prinzipien",
+    "Gestaltung"
+],
+"Systeminitiierte Benutzerführung" : [
+"Prinzipien",
+"Implementierung"
+],
+"Szenario" : [
+"Test",
+"Planung"
+],
+"Szenario des Ist-Zustands" : [
+"Test",
+"Planung"
+],
+"Testbericht" : [
+"Evaluierung",
+"Test"
+],
+"Usability-Befund" : [
+"Evaluierung"
+],
+"Usability-Evaluierung" : [
+    "Test",
+    "Evaluierung",
+    "Prinzipien"
+],
+"Usability-Problem" : [
+"Evaluierung"
+],
+"Usability-Testaufgabe" : [
+"Test"
+],
+"Usability-Testbericht" : [
+"Evaluierung",
+"Test"
+],
+"Usability-Testskript" : [
+    "Test",
+    "Evaluierung"
+],
+"Usability-Testteilnehmer" : [
+"Rollen",
+"Test"
+],
+  "Anforderung": [
+    "Planung",
+    "Gestaltung",
+    "Anforderungen"
+  ],
+  "Arbeitsmittel": [
+    "Anforderungen",
+    "Planung"
+  ],
+  "Aufgabe": [
+    "Anforderungen",
+    "Prinzipien",
+    "Gestaltung"
+  ],
+  "Aufgabenangemessenheit": [
+    "Prinzipien",
+    "Evaluierung"
+  ],
+  "Aufgabenmodell": [
+    "Implementierung"
+  ],
+  "Barrierefreiheit": [
+    "Prinzipien"
+  ],
+  "Befund": [
+    "Test",
+    "Evaluierung"
+  ],
+  "Benutzer": [
+    "Rollen",
+    "Anforderungen"
+  ],
+  "Benutzerdokumentation": [
+    "Planung",
+    "Gestaltung",
+    "System"
+  ],
+  "Benutzererlebnis": [
+    "Planung",
+    "Evaluierung"
+  ],
+  "Benutzerfragebogen": [
+    "Evaluierung"
+  ],
+  "Benutzergruppe": [
+    "Rollen",
+    "Planung",
+    "Gestaltung",
+    "Evaluierung"
+  ],
+  "Benutzergruppenprofil": [
+    "Rollen",
+    "Evaluierung"
+  ],
+  "Benutzerunterst\u00fctzung": [
+    "Planung",
+    "Gestaltung",
+    "System"
+  ],
+  "Benutzerzentrierte Usability-Evaluierung": [
+    "Planung",
+    "Test",
+    "Evaluierung"
+  ],
+  "Benutzungsschnittstelle": [
+    "System",
+    "Gestaltung",
+    "Implementierung"
+  ],
+  "Benutzungsschnittstellenstandard": [
+    "System",
+    "Implementierung",
+    "Prinzipien"
+  ],
+  "Beobachter": [
+    "Rollen",
+    "System"
+  ],
+  "Beobachtung": [
+    "Prinzipien",
+    "Anforderungen"
+  ],
+  "Design Pattern": [
+    "Gestaltung",
+    "Test",
+    "Evaluierung"
+  ],
+  "Dialog": [
+    "Gestaltung",
+    "System",
+    "Prinzipien"
+  ],
+  "Dialogprinzipien": [
+    "Prinzipien",
+    "Gestaltung"
+  ],
+  "Dringlichkeitsstufe": [
+    "Test"
+  ],
+  "Effektivit\u00e4t": [
+    "Prinzipien",
+    "Evaluierung"
+  ],
+  "Effizienz": [
+    "Prinzipien",
+    "Evaluierung"
+  ],
+  "Erfordernis": [
+    "Anforderungen",
+    "Gestaltung"
+  ],
+  "Erwartungskonformit\u00e4t": [
+    "Prinzipien",
+    "Evaluierung"
+  ],
+  "Evaluierung": [
+    "Test",
+    "Evaluierung",
+    "Prinzipien"
+  ],
+  "Expertenreview": [
+    "Test",
+    "Evaluierung",
+    "Prinzipien"
+  ],
+  "Face-to-face Usabilitytest": [
+    "Evaluierung",
+    "Test"
+  ],
+  "Fehlermanagement": [
+    "Gestaltung",
+    "Test",
+    "Evaluierung"
+  ],
+  "Fehlertoleranz": [
+    "Anforderungen",
+    "Evaluierung"
+  ],
+  "Fokusgruppe": [
+    "Anforderungen",
+    "Gestaltung",
+    "Rollen"
+  ],
+  "Formative Usability-Evaluierung": [
+    "Evaluierung",
+    "Test",
+    "Prinzipien"
+  ],
+  "Fragebogen": [
+    "Evaluierung",
+    "Test"
+  ],
+  "Geschlossene Frage": [
+    "Evaluierung",
+    "Test"
+  ],
+  "Gestaltungsregel": [
+    "Prinzipien",
+    "Gestaltung"
+  ],
+  "Handlungsleitung": [
+    "Gestaltung",
+    "Prinzipien"
+  ],
+  "Heuristik": [
+    "Prinzipien",
+    "Evaluierung"
+  ],
+  "Heuristische Evaluierung": [
+    "Evaluierung",
+    "Prinzipien"
+  ],
+  "High-fidelity-Prototyp": [
+    "Test",
+    "System"
+  ],
+  "ISO 9241": [
+    "Anforderungen",
+    "Prinzipien"
+  ],
+  "Individualisierbarkeit": [
+    "Gestaltung",
+    "Prinzipien"
+  ],
+  "Informationsarchitekt": [
+    "Rollen",
+    "Gestaltung"
+  ],
+  "Informationsarchitektur": [
+    "Gestaltung",
+    "Anforderungen"
+  ],
+  "Inspektionsbasierte Usability-Evaluierung": [
+    "Evaluierung",
+    "Test"
+  ],
+  "Interaktionsdesigner": [
+    "Rollen"
+  ],
+  "Interaktives System": [
+    "System",
+    "Anforderungen"
+  ],
+  "Interessenvertreter": [
+    "Rollen"
+  ],
+  "Interessenvertreteranforderung": [
+    "Anforderungen",
+    "Gestaltung"
+  ],
+  "Interviewcheckliste": [
+    "Evaluierung"
+  ],
+  "Intuitiv": [
+    "Anforderungen",
+    "Planung"
+  ],
+  "Iterativ": [
+    "Planung",
+    "Evaluierung"
+  ],
+  "Konsistenz": [
+    "Prinzipien",
+    "Evaluierung"
+  ],
+  "Kontextuelles Interview": [
+    "Evaluierung"
+  ],
+  "Lernf\u00f6rderlichkeit": [
+    "Prinzipien",
+    "Gestaltung"
+  ],
+  "Low-fidelity-Prototyp": [
+    "Test",
+    "System"
+  ],
+  "Marktanforderung": [
+    "Anforderungen",
+    "Gestaltung"
+  ],
+  "Meister-Sch\u00fcler-Modell": [
+    "Evaluierung",
+    "Prinzipien"
+  ],
+  "Menschzentrierte Gestaltung": [
+    "Planung",
+    "Gestaltung"
+  ],
+  "Mentales Modell": [
+    "Planung"
+  ],
+  "Modell": [
+    "System",
+    "Gestaltung",
+    "Implementierung"
+  ],
+  "Moderator": [
+    "Rollen"
+  ],
+  "Navigationsstruktur": [
+    "System",
+    "Planung"
+  ],
+  "Neutrale Frage": [
+    "Evaluierung",
+    "Test"
+  ],
+  "Nutzungsanforderung": [
+    "Anforderungen",
+    "Gestaltung"
+  ],
+  "Nutzungskontext": [
+    "System",
+    "Planung"
+  ],
+  "Nutzungsobjekt": [
+    "System",
+    "Planung"
+  ],
+  "Nutzungsproblem": [
+    "Gestaltung",
+    "Evaluierung"
+  ],
+  "Nutzungsszenario": [
+    "Test",
+    "Planung"
+  ],
+  "Offene Frage": [
+    "Evaluierung",
+    "Test"
+  ],
+  "Onlinehilfe": [
+    "System",
+    "Gestaltung"
+  ],
+  "Organisatorische Anforderung": [
+    "Anforderungen",
+    "Gestaltung",
+    "Planung"
+  ],
+  "Persona": [
+    "Rollen",
+    "Planung"
+  ],
+  "Post-Session Interview": [
+    "Evaluierung"
+  ],
+  "Pre-Session Interview": [
+    "Evaluierung"
+  ],
+  "Protokollant": [
+    "Rollen",
+    "Test"
+  ],
+  "Prototyp": [
+    "Test",
+    "System"
+  ],
+  "Qualitative Nutzungsanforderung": [
+    "Anforderungen",
+    "Gestaltung"
+  ],
+  "Qualit\u00e4t": [
+    "Planung",
+    "Anforderungen",
+    "Evaluierung"
+  ],
+  "Quantitative Nutzungsanforderung": [
+    "Anforderungen",
+    "Gestaltung"
+  ],
+  "Rekrutierung": [
+    "Planung",
+    "Test"
+  ],
+  "Rekrutierungsfragebogen": [
+    "Evaluierung",
+    "Test"
+  ],
+  "Remote Usability-Test": [
+    "Test",
+    "Evaluierung"
+  ],
+  "Ressourcen": [
+    "System"
+  ],
+  "Review": [
+    "Evaluierung"
+  ],
+  "Rolle": [
+    "Anforderungen",
+    "Rollen"
+  ],
+  "Sekund\u00e4rer Benutzer": [
+    "Rollen",
+    "Planung"
+  ],
+  "Selbstbeschreibungsf\u00e4higkeit": [
+    "Gestaltung",
+    "Prinzipien"
+  ],
+  "Steuerbarkeit": [
+    "Gestaltung",
+    "Prinzipien"
+  ],
+  "Storyboard": [
+    "Planung"
+  ],
+  "Styleguide": [
+    "Gestaltung",
+    "Prinzipien"
+  ],
+  "Suche": [
+    "Prinzipien",
+    "System"
+  ],
+  "Suggestionsfrage": [
+    "Evaluierung",
+    "Test"
+  ],
+  "Summative Usability-Evaluierung": [
+    "Evaluierung"
+  ],
+  "Testaufgabe": [
+    "Planung",
+    "Test"
+  ],
+  "Testskript": [
+    "Test",
+    "Evaluierung"
+  ],
+  "Testteilnehmer": [
+    "Rollen"
+  ],
+  "Umgebung": [
+    "Planung",
+    "System"
+  ],
+  "Unbeaufsichtigter Usability-Test": [
+    "Test"
+  ],
+  "Usability": [
+    "Test",
+    "Anforderungen",
+    "Prinzipien"
+  ],
+  "Usability Engineer": [
+    "Rollen"
+  ],
+  "Usability Professional": [
+    "Rollen"
+  ],
+  "Usability-Tester": [
+    "Rollen"
+  ],
+  "Usability-Labor": [
+    "System",
+    "Planung"
+  ],
+  "Usability-Test": [
+    "Test",
+    "Evaluierung"
+  ],
+  "Usability-Testergebnis": [
+    "Test",
+    "Evaluierung"
+  ],
+  "Usability-Testplan": [
+    "Planung",
+    "Evaluierung"
+  ],
+  "Usability-Testsitzung": [
+    "Gestaltung",
+    "Test"
+  ],
+  "User Interface Designer": [
+    "Rollen"
+  ],
+  "User Requirements Engineer": [
+    "Rollen"
+  ],
+  "Wireframe": [
+    "Planung"
+  ],
+  "Ziel": [
+    "Anforderungen",
+    "Prinzipien"
+  ],
+  "Zufriedenstellung": [
+    "Evaluierung",
+    "Prinzipien"
+  ]
+}
