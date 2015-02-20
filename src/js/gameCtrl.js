@@ -5,6 +5,7 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
   $scope.unusedTerms = {};
   $scope.progressCounter = {};
   $scope.timer = new Stopwatch();
+  $scope.visible = true;
 
   $http.get("/data/terms-international-censored.json")
   .then(function(res){
@@ -25,7 +26,7 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
     choices.push($scope.activeTerm);
     var category = $scope.activeTerm.categories.randomElement();
     var termsForThisCategory = _.filter($scope.terms, function(term){
-	    return term.categories.indexOf(category) !== -1;
+      return term.categories.indexOf(category) !== -1;
     });
     var randomTerm;
     while(choices.length < 4){
@@ -43,6 +44,8 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
     if (answerIsCorrect){
       $scope.progressCounter.registerTerm(term);
       $scope.unusedTerms.remove(term);
+      $scope.visible = false;
+      $timeout(function(){$scope.visible = true;});
       $($event.target).removeClass("btn-info").addClass("btn-success");
       $timeout(pickTerm, 250);
     }

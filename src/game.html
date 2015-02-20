@@ -1,6 +1,6 @@
 <content>
 <div id=topright>
-  <div id="pc" style="display: inline-block">
+  <div id="pc" style="display: inline-block" ui-fade-toggle="progressCounter.numberOfTermsRead()">
     <span id="progressCounter"> {{progressCounter.numberOfTermsRead() }}  | {{ progressCounter.numberOfTerms }} </span>
   </div>
   <span id="timer">{{timer.getTime() | formatedTime}}</span>
