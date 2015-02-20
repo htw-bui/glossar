@@ -30,7 +30,8 @@
     "ngRoute",
     "komet.controllers",
     "pascalprecht.translate",
-    "kometFilters"
+    "kometFilters",
+    "ngSanitize"
   ]);
 
   app.config(function($translateProvider){

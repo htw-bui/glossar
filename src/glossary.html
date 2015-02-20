@@ -9,7 +9,7 @@
   </div>
   <div id="main"> 
     <h1 class='hyphenate'> {{selectedTerm | localTerm}} </h1>
-    <p  class='hyphenate'> {{selectedTerm | localDefinition}} <p>
+    <p  class='hyphenate' ng-bind-html="selectedTerm | localDefinition"> <p>
   </div>
   <div id="paging">
     <button type=button class='btn btn-default' id="previousTerm" ng-hide='selectedTermIsFirstTerm()' ng-click='prevTerm()'>{{ 'PREV' | translate}}</button>

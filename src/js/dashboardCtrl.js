@@ -5,7 +5,12 @@ angular.module("komet.controllers").controller("DashboardController", ["$scope",
   $scope.selectedTerm = {};
   $scope.progressCounter = {};
 
-  $http.get("/data/terms-international.json")
+  $scope.$on('$routeUpdate', function(){
+	  loadTermFromHash();
+  });
+ 
+
+  $http.get("../data/terms-international-with-categories-linked.json")
   .then(function(res){
     $scope.terms = res.data;
     $scope.selectedTerm = res.data[0];
@@ -75,7 +80,7 @@ angular.module("komet.controllers").controller("DashboardController", ["$scope",
   function loadTermFromHash(){
     if($location.search().term){
       $scope.selectedTerm = _.find($scope.terms, function(term){
-        return term["term-english"] === $location.search().term;
+        return term["term-english"] === $location.search().term || term["term-german"] === $location.search().term;
       });
     }
   }
