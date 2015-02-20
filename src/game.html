@@ -7,6 +7,6 @@
 </div>
 <div id=definition class='row hyphenate'> {{activeTerm | localDefinition}}</div>
 <div id=choices class='row'>
-  <button class="btn btn-info" ng-repeat="choice in choices" ng-click="checkAnswer(this, $event)"> {{choice | localTerm}} </button>
+  <button class="btn btn-info" ng-repeat="choice in choices" ng-click="checkAnswer(this, $event)" ng-disabled="$parent.buttonsDisabled"> {{choice | localTerm}} </button>
 </div>
 </content>
