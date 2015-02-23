@@ -104,7 +104,7 @@
     controller: "GameCtrl"
   }).
   otherwise({
-    redirectTo: "/highscore"
+    redirectTo: "/game"
   });
   }]);
 
