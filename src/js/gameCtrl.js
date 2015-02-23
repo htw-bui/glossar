@@ -10,9 +10,14 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
   $http.get("/data/terms-international-censored.json")
   .then(function(res){
     $scope.terms = res.data;
-    $scope.unusedTerms = res.data;
     $scope.progressCounter = new ProgressCounter("game", res.data.length);
     $scope.timer.start("game");
+    var readTerms = _.map($scope.progressCounter.getReadTerms(), function(term){
+      return term["term-english"];
+    });
+    $scope.unusedTerms = _.filter(res.data, function(term){
+      return readTerms.indexOf(term["term-english"]) === -1;
+    });
   }).then(pickTerm);
 
   $scope.$on("$destroy", function() {
