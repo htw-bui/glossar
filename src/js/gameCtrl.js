@@ -59,6 +59,7 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
       $scope.buttonsDisabled = true;
       button.choice.buttonState = "btn-danger";
       $scope.activeTerm.buttonState = "btn-success";
+      $timeout(function(){
       $http.post("http://localhost:5000/highscore/check", {
         score: $scope.progressCounter.numberOfTermsRead(),
         time: $scope.timer.getTime()
@@ -66,6 +67,7 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
         $scope.progressCounter.clear();
         $scope.timer.clearTimer();
       });
+      }, 500);
     }
   };
 
