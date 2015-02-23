@@ -1,13 +1,11 @@
 /*jslint browser: true*/
 /*global define: false */
 
-var ProgressCounter = function(numberOfTerms){
+var ProgressCounter = function(counterName, numberOfTerms){
   this.numberOfTerms = numberOfTerms;
+  var localStorageName = counterName + ".progressCounter.readTerms";
 
-  var readTerms = JSON.parse(localStorage.getItem(window.location.pathname  + "progressCounter.readTerms"));
-  if (readTerms === null){
-    readTerms = [];
-  }
+  var readTerms = JSON.parse(localStorage.getItem(localStorageName)) || [];
 
   this.getReadTerms = function(){
     return readTerms;
@@ -17,8 +15,7 @@ var ProgressCounter = function(numberOfTerms){
     if (readTerms.indexOf(term) === -1){
       readTerms.push(term);
     }
-    localStorage.setItem(window.location.pathname  + "progressCounter.readTerms", JSON.stringify(readTerms));
-    this.onChange();
+    localStorage.setItem(localStorageName, JSON.stringify(readTerms));
   };
 
   this.numberOfTermsRead = function() {
@@ -26,12 +23,7 @@ var ProgressCounter = function(numberOfTerms){
   };
 
   this.clear = function() {
-    localStorage.removeItem(window.location.pathname  + "progressCounter.readTerms");
+    localStorage.removeItem(localStorageName);
     readTerms = [];
-    this.onChange();
-  };
-
-  this.onChange = function(){
-    /* needs to be implemented by user */
   };
 };

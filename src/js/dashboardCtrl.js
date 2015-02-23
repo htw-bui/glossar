@@ -19,7 +19,7 @@ angular.module("komet.controllers").controller("DashboardController", ["$scope",
   .then(function(res){
     $scope.terms = res.data;
     $scope.selectedTerm = res.data[0];
-    $scope.progressCounter = new ProgressCounter(res.data.length);
+    $scope.progressCounter = new ProgressCounter("glossary", res.data.length);
   }).then(loadTermFromHash);
 
 $scope.filter = function(term){
@@ -52,7 +52,7 @@ $scope.resetProgress = function(){
 };
 
 function setSelectedTerm(term){
-  $scope.progressCounter.registerTerm(term.term);
+  $scope.progressCounter.registerTerm(term);
   $scope.selectedTerm = term;
   $location.search("term", term["term-english"]);
 }

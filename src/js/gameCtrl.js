@@ -11,7 +11,7 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
   .then(function(res){
     $scope.terms = res.data;
     $scope.unusedTerms = res.data;
-    $scope.progressCounter = new ProgressCounter(res.data.length);
+    $scope.progressCounter = new ProgressCounter("game", res.data.length);
     $scope.timer.start("game");
   }).then(pickTerm);
 
