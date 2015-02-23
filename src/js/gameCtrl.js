@@ -40,21 +40,25 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
         choices.push(randomTerm);
       }
     }
-    $scope.choices = choices.shuffle();
+    $scope.choices = _.map(choices.shuffle(), function(choice){
+      choice.buttonState = "btn-info";
+      return choice;
+    });
   }
 
-  $scope.checkAnswer = function(button, $event){
+  $scope.checkAnswer = function(button){
     var term = button.choice;
     var answerIsCorrect = (term === $scope.activeTerm);
     if (answerIsCorrect){
       $scope.progressCounter.registerTerm(term);
       $scope.unusedTerms.remove(term);
-      $($event.target).removeClass("btn-info").addClass("btn-success");
+      button.choice.buttonState = "btn-success";
       $timeout(pickTerm, 250);
     }
     else{
       $scope.buttonsDisabled = true;
-      $($event.target).removeClass("btn-info").addClass("btn-danger");
+      button.choice.buttonState = "btn-danger";
+      $scope.activeTerm.buttonState = "btn-success";
       $http.post("http://localhost:5000/highscore/check", {
         score: $scope.progressCounter.numberOfTermsRead(),
         time: $scope.timer.getTime()
