@@ -219,7 +219,8 @@
     "categories": [
       "Gestaltung",
       "System",
-      "Prinzipien"
+      "Prinzipien",
+      "Implementierung"
     ],
     "description-english": "Interaction between a user and an interactive system that consists of user actions (input) and responses from the interactive system (output) in order to achieve a goal.",
     "description-german": "Interaktion zwischen einem Benutzer und einem interaktiven System in Form einer Folge von Handlungen des Benutzers (Eingaben) und Antworten des interaktiven Systems (Ausgaben), um ein Ziel zu erreichen.",
