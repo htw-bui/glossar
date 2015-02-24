@@ -4,6 +4,7 @@ angular.module("komet.controllers").controller("DashboardController", ["$scope",
   $scope.terms = [{"term": "dummy"}];
   $scope.selectedTerm = {};
   $scope.progressCounter = {};
+  $scope.selectedLang = $translate.use();
   var savedLanguage = localStorage.getItem("language");
   if (savedLanguage ){
     $translate.use(savedLanguage);
@@ -28,10 +29,18 @@ $scope.filter = function(term){
   return term[property].toLowerCase().contains($scope.searchTerm.toLowerCase());
 };
 
-$scope.changeLang = function () {
-  var key = $translate.use() === "de" ? "en" : "de";
+
+$scope.changeLang = function (newKey) {
+  var key;
+  if (newKey){
+    key = newKey;
+  }
+  else{
+  key = $translate.use() === "de" ? "en" : "de";
+  }
   localStorage.setItem("language", key);
   $translate.use(key);
+  $scope.selectedLang = key;
   moment.locale(key);
 };
 

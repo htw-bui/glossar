@@ -1,3 +1,9 @@
+<style type="text/css" media="screen">
+.selected{
+  background: #E6E6E6;
+}
+</style>
+
 <div class='container-fluid'>
   <div class='navbar-header'>
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sitenav">
@@ -7,9 +13,13 @@
     <button id='showNav' type="button" class="navbar-toggle" ng-show="isActive('/glossary')" ng-click="toggleNavigation()">
       <i class="fa fa-book"></i>
     </button>
-    <button type="button" class='navbar-toggle-like' ng-click="changeLang()">
-      <i class="fa fa-flag"></i>
-    </button>
+
+    <div class="btn-group pull-right visible-xs" role="group" aria-label="...">
+      <button type="button" ng-class="{selected: selectedLang == 'de'}"  ng-click="changeLang('de')" class="btn btn-default">{{ 'GERMAN' | translate }} </button>
+      <button type="button" ng-class="{selected: selectedLang == 'en'}"  ng-click="changeLang('en')"class="btn btn-default">{{ 'ENGLISH' | translate }} </button>
+    </div>
+
+
     <a class='navbar-brand' href='/'>KOMET</a>
   </div>
   <div class='collapse navbar-collapse' id='sitenav'>
@@ -25,5 +35,9 @@
 
       <li><a href="http://komet.f2.htw-berlin.de/impressum"  class="visible-xs"target="_blank">{{ 'IMPRINT' | translate }}</a></li>
     </ul>
+    <div class="btn-group pull-right hidden-xs" role="group" aria-label="...">
+      <button type="button" ng-class="{selected: selectedLang == 'de'}"  ng-click="changeLang('de')" class="btn btn-default">{{ 'GERMAN' | translate }} </button>
+      <button type="button" ng-class="{selected: selectedLang == 'en'}"  ng-click="changeLang('en')"class="btn btn-default">{{ 'ENGLISH' | translate }} </button>
+    </div>
   </div>
 </div>
