@@ -14,10 +14,16 @@
   </div>
   <div class='collapse navbar-collapse' id='sitenav'>
     <ul class='nav navbar-nav'>
-      <li ng-class="{active: isActive('/glossary')}"><a href="#/glossary">{{ 'GLOSSARY' | translate }}</a></li>
-      <li ng-class="{active: isActive('/game')}"><a href="#/game">Quiz</a></li>
-      <li ng-class="{active: isActive('/highscore')}"><a href="#/highscore">Hall of Fame</a></li>
-      <li><a href="http://komet.f2.htw-berlin.de/impressum" target="_blank">{{ 'IMPRINT' | translate }}</a></li>
+      <li ng-class="{active: isActive('/glossary')}" class="visible-xs" data-toggle="collapse" data-target="#sitenav"><a href="#/glossary">{{ 'GLOSSARY' | translate }}</a></li>
+      <li ng-class="{active: isActive('/glossary')}" class="hidden-xs"><a href="#/glossary">{{ 'GLOSSARY' | translate }}</a></li>
+
+      <li ng-class="{active: isActive('/game')}"  class="visible-xs"data-toggle="collapse" data-target="#sitenav"><a href="#/game">Quiz</a></li>
+      <li ng-class="{active: isActive('/game')}" class="hidden-xs"><a href="#/game">Quiz</a></li>
+
+      <li ng-class="{active: isActive('/highscore')}"  class="visible-xs"data-toggle="collapse" data-target="#sitenav"><a href="#/highscore">Hall of Fame</a></li>
+      <li ng-class="{active: isActive('/highscore')}" class="hidden-xs"><a href="#/highscore">Hall of Fame</a></li>
+
+      <li><a href="http://komet.f2.htw-berlin.de/impressum"  class="visible-xs"target="_blank">{{ 'IMPRINT' | translate }}</a></li>
     </ul>
   </div>
 </div>
