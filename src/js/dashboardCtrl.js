@@ -4,16 +4,18 @@ angular.module("komet.controllers").controller("DashboardController", ["$scope",
   $scope.terms = [{"term": "dummy"}];
   $scope.selectedTerm = {};
   $scope.progressCounter = {};
-  $scope.selectedLang = $translate.use();
-  var savedLanguage = localStorage.getItem("language");
-  if (savedLanguage ){
-    $translate.use(savedLanguage);
-  }
+  $scope.selectedLang = "";
 
+  $scope.changeLang = function (key) {
+    localStorage.setItem("language", key);
+    $translate.use(key);
+    $scope.selectedLang = key;
+    bootbox.setLocale(key);
+    moment.locale(key);
+  };
 
-  $scope.$on("$routeUpdate", function(){
-    loadTermFromHash();
-  });
+  var savedLanguage = localStorage.getItem("language") || "en";
+  $scope.changeLang(savedLanguage);
 
 
   $http.get("../data/terms-international-with-categories-linked.json")
@@ -29,21 +31,9 @@ angular.module("komet.controllers").controller("DashboardController", ["$scope",
     return term[property].toLowerCase().contains($scope.searchTerm.toLowerCase());
   };
 
-
-  $scope.changeLang = function (newKey) {
-    var key;
-    if (newKey){
-      key = newKey;
-    }
-    else{
-      key = $translate.use() === "de" ? "en" : "de";
-    }
-    localStorage.setItem("language", key);
-    $translate.use(key);
-    $scope.selectedLang = key;
-    bootbox.setLocale(key);
-    moment.locale(key);
-  };
+  $scope.$on("$routeUpdate", function(){
+    loadTermFromHash();
+  });
 
   $scope.setSelectedItem = function(term){
     setSelectedTerm(term.term);
