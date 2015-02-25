@@ -95,16 +95,16 @@
   app.config(["$routeProvider", function($routeProvider){
     $routeProvider.
     when("/glossary", {
-      templateUrl: "glossary.html",
+      templateUrl: "templates/glossary.html",
       controller: "DashboardController",
       reloadOnSearch: false
     }).
   when("/highscore", {
-    templateUrl: "highscore.html",
+    templateUrl: "templates/highscore.html",
     controller: "HighscoreCtrl"
   }).
   when("/game", {
-    templateUrl: "game.html",
+    templateUrl: "templates/game.html",
     controller: "GameCtrl"
   }).
   otherwise({
@@ -116,14 +116,14 @@
   app.directive("navigationList", function(){
     return {
       restrict: "A",
-    templateUrl: "navigation-list.html"
+    templateUrl: "templates/navigation-list.html"
     };
   });
 
   app.directive("topNavigation", function(){
     return {
       restrict: "A",
-    templateUrl: "top-navigation.html"
+    templateUrl: "templates/top-navigation.html"
     };
   });
 }());
