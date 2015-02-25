@@ -41,6 +41,7 @@ $scope.changeLang = function (newKey) {
   localStorage.setItem("language", key);
   $translate.use(key);
   $scope.selectedLang = key;
+  bootbox.setLocale(key);
   moment.locale(key);
 };
 
