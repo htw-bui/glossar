@@ -2,7 +2,7 @@ angular.module("komet.controllers").controller("HighscoreCtrl", ["$scope", "$htt
   function($scope, $http){
     "use strict";
     $scope.highscores = {};
-    $http.get("http://localhost:5000/highscore")
+    $http.get("http://highscore-angular.k-nut.eu/highscore")
       .then(function(res){
         $scope.highscores = res.data;
       });

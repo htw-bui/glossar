@@ -60,7 +60,7 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
       button.choice.buttonState = "btn-danger";
       $scope.activeTerm.buttonState = "btn-success";
       $timeout(function(){
-      $http.post("http://localhost:5000/highscore/check", {
+      $http.post("http://highscore-angular.k-nut.eu/highscore/check", {
         score: $scope.progressCounter.numberOfTermsRead(),
         time: $scope.timer.getTime()
       }).then(checkIfScoreIsHighEnough).then(function(){
@@ -92,7 +92,7 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
         value: localStorage.getItem("lastUsername") || "",
         callback: function(userName){
           if (userName){
-            $http.post("http://localhost:5000/highscore", { score: score, time: time, name: userName}).success(function(){
+            $http.post("http://highscore-angular.k-nut.eu/highscore", { score: score, time: time, name: userName}).success(function(){
               localStorage.setItem("lastUsername", userName);
               $location.path("/highscore");});
           }
