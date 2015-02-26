@@ -189,7 +189,7 @@
       "Test",
       "Evaluierung"
     ],
-    "description-english": "A general reusable solution to a commonly occurring problem within a given context in software design that describes a design problem, a solution, and where this solution has been found to work.\nCourse note:\n1.\tSeveral websites offer free access to a large selection of design patterns, for example www.welie.com",
+    "description-english": "A general reusable solution to a commonly occurring problem within a given context in software design that describes a design problem, a solution, and where this solution has been found to work.\nCourse note:\n1.\tSeveral websites offer free access to a large selection of xxxs, for example www.welie.com",
     "description-german": "Eine wiederverwendbare L\u00f6sung f\u00fcr ein Gestaltungsproblem innerhalb eines Kontexts. Ein\u00a0xxx beschreibt ein Gestaltungsproblem, eine L\u00f6sung und wo sich diese L\u00f6sung als funktionierend herausgestellt hat.\n",
     "term-english": "Design pattern",
     "term-german": "Design Pattern"
@@ -361,8 +361,8 @@
       "Test",
       "System"
     ],
-    "description-english": "A software prototype of the user interface to the interactive system that is being designed. A high-fidelity prototype resembles the finished interactive system and may or may not be interactive.\n",
-    "description-german": "Ein Software Prototyp der Benutzungsschnittstelle des zu designenden interaktiven Systems. Ein high-fidelity-Prototyp \u00e4hnelt dem fertigen interaktiven System und kann interaktiv oder nicht interaktiv sein.\n",
+    "description-english": "A software prototype of the user interface to the interactive system that is being designed. A xxx resembles the finished interactive system and may or may not be interactive.\n",
+    "description-german": "Ein Software Prototyp der Benutzungsschnittstelle des zu designenden interaktiven Systems. Ein xxx \u00e4hnelt dem fertigen interaktiven System und kann interaktiv oder nicht interaktiv sein.\n",
     "term-english": "High-fidelity prototype",
     "term-german": "High-fidelity-Prototyp"
   },
@@ -380,8 +380,8 @@
     "categories": [
       "Rollen"
     ],
-    "description-english": "Person who\u00a0directly\u00a0uses\u00a0the output of the interactive system, but does not interact directly with the system.\nExample of an indirect user:\u00a0\n1.\tA bank customer who receives a paper or electronic statement, or visits a branch is an indirect user of the output produced by the bank computer system.",
-    "description-german": "Personen, die direkt die Ergebnisse eines interaktiven Systems nutzen, aber nicht direkt mit dem System interagieren. \nBeispiel f\u00fcr indirekter Benutzer:\n1.\tEin Bankkunde, der ein Dokument oder einen elektronischen Bericht erh\u00e4lt, oder eine Filiale besucht, ist ein indirekter Benutzer eines Arbeitsergebnisses, das mit Hilfe eines Systems erzeugt wurde, das die Mitarbeiter der Bank benutzen.",
+    "description-english": "Person who\u00a0directly\u00a0uses\u00a0the output of the interactive system, but does not interact directly with the system.\nExample of an xxx:\u00a0\n1.\tA bank customer who receives a paper or electronic statement, or visits a branch is an xxx of the output produced by the bank computer system.",
+    "description-german": "Personen, die direkt die Ergebnisse eines interaktiven Systems nutzen, aber nicht direkt mit dem System interagieren. \nBeispiel f\u00fcr xxx:\n1.\tEin Bankkunde, der ein Dokument oder einen elektronischen Bericht erh\u00e4lt, oder eine Filiale besucht, ist ein xxx eines Arbeitsergebnisses, das mit Hilfe eines Systems erzeugt wurde, das die Mitarbeiter der Bank benutzen.",
     "term-english": "Indirect user",
     "term-german": "Indirekter Benutzer"
   },
@@ -497,8 +497,8 @@
       "Planung",
       "Evaluierung"
     ],
-    "description-english": "Repetitive.\nAn iterative process repeats steps in the human-centred design process until a usability evaluation of the user interface shows that the user requirements have been adequately met.",
-    "description-german": "Wiederholend.\nEin iteratives Vorgehen wiederholt Schritte des Prozesses der menschzentrierten Gestaltung solange, bis eine Usability-Evaluierung der Benutzungsschnittstelle zeigt, dass die Nutzungsanforderungen ausreichend erf\u00fcllt sind.",
+    "description-english": "Repetitive.\nAn xxx process repeats steps in the human-centred design process until a usability evaluation of the user interface shows that the user requirements have been adequately met.",
+    "description-german": "Wiederholend.\nEin xxxes Vorgehen wiederholt Schritte des Prozesses der menschzentrierten Gestaltung solange, bis eine Usability-Evaluierung der Benutzungsschnittstelle zeigt, dass die Nutzungsanforderungen ausreichend erf\u00fcllt sind.",
     "term-english": "Iterative",
     "term-german": "Iterativ"
   },
@@ -948,7 +948,7 @@
       "Evaluierung",
       "Prinzipien"
     ],
-    "description-english": "A process through which information about the usability of an interactive system is gathered in order to improve the interactive system (known as formative usability evaluation) or to assess the merit or worth of an interactive system (known as summative usability evaluation). \n",
+    "description-english": "A process through which information about the usability of an interactive system is gathered in order to improve the interactive system (known as formative xxx) or to assess the merit or worth of an interactive system (known as summative xxx). \n",
     "description-german": "Ein Prozess der Informationen \u00fcber die Usability eines interaktiven Systems sammelt um das interaktive System zu verbessern (formative xxx) oder um das interaktive System zu bewerten (summative xxx). \n",
     "term-english": "Usability evaluation",
     "term-german": "Usability-Evaluierung"
@@ -1054,7 +1054,7 @@
     "categories": [
       "Rollen"
     ],
-    "description-english": "A person who creates interactive prototypes and implements the dialogue and user experience based on the design created by the interaction designer and the scenarios created by the user requirements engineer. The user interface designer also creates interactive prototypes.\n",
+    "description-english": "A person who creates interactive prototypes and implements the dialogue and user experience based on the design created by the interaction designer and the scenarios created by the user requirements engineer. The xxx also creates interactive prototypes.\n",
     "description-german": "Eine Person die den Dialog und das Benutzererlebnis basierend auf dem Design des  Interaktions\u00addesigners und den Nutzungsszenarios des User Requirements Engineers implementiert. Der xxx erzeugt ausserdem interaktive Prototypen.\n",
     "term-english": "User interface designer",
     "term-german": "User Interface Designer"
