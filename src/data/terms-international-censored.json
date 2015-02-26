@@ -189,7 +189,7 @@
       "Test",
       "Evaluierung"
     ],
-    "description-english": "A general reusable solution to a commonly occurring problem within a given context in software design that describes a design problem, a solution, and where this solution has been found to work.\nCourse note:\n1.\tSeveral websites offer free access to a large selection of xxx, for example www.welie.com",
+    "description-english": "A general reusable solution to a commonly occurring problem within a given context in software design that describes a design problem, a solution, and where this solution has been found to work.\n",
     "description-german": "Eine wiederverwendbare L\u00f6sung f\u00fcr ein Gestaltungsproblem innerhalb eines Kontexts. Ein\u00a0xxx beschreibt ein Gestaltungsproblem, eine L\u00f6sung und wo sich diese L\u00f6sung als funktionierend herausgestellt hat.\n",
     "term-english": "Design pattern",
     "term-german": "Design Pattern"

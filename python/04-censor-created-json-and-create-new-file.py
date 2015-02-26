@@ -14,7 +14,8 @@ def main():
 
             censored_desc_english = description_english.split("Notes")[0]\
                                                        .split("Note")[0]\
-                                                       .split("Examples")[0]
+                                                       .split("Examples")[0]\
+                                                       .split("Course note:")[0]
 
             pattern = re.compile("[\w]*%s[\w]*" % term_english, re.IGNORECASE)
             censored_desc_english = pattern.sub("xxx", censored_desc_english)
