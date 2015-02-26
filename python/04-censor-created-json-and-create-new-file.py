@@ -16,14 +16,14 @@ def main():
                                                        .split("Note")[0]\
                                                        .split("Examples")[0]
 
-            pattern = re.compile(term_english, re.IGNORECASE)
+            pattern = re.compile("[\w]*%s[\w]*" % term_english, re.IGNORECASE)
             censored_desc_english = pattern.sub("xxx", censored_desc_english)
 
             censored_desc_german = description_german.split("Anmerkung")[0]\
                                                      .split("Anmerkungen")[0]\
                                                      .split("Beispiele")[0]
 
-            pattern = re.compile(term_german, re.IGNORECASE)
+            pattern = re.compile("[\w]*%s[\w]*" % term_german, re.IGNORECASE)
             censored_desc_german = pattern.sub("xxx", censored_desc_german)
 
             term["description-english"] = censored_desc_english
