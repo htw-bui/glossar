@@ -643,7 +643,7 @@
       "System",
       "Planung"
     ],
-    "description-english": "The key units of information, or data, with which users interact in order to carry out their tasks. \nExamples of task objects:\n1.\tFor a customer management system: \n- A letter to a customer;\n\t- A list of the customer's unpaid bills;\n\t- An order from the customer.\n2.\tFor a train ticket vending machine:\n\t- A ticket:\n\t- A receipt for the purchase of a ticket;\n\t- A travel plan.",
+    "description-english": "The key units of information, or data, with which users interact in order to carry out their tasks. \n",
     "description-german": "Die wichtigsten Informationseinheiten oder Daten mit denen Benutzer interagieren, um ihre Aufgaben durchzuf\u00fchren.\n",
     "term-english": "Task object",
     "term-german": "Nutzungsobjekt"
@@ -821,8 +821,8 @@
       "Rollen",
       "Planung"
     ],
-    "description-english": "A person who interacts with an interactive system to support\u00a0the use of the system or\u00a0maintain the system.\nExamples of secondary users: \n1.\tSecurity manager, administrator, trainer and maintenance.",
-    "description-german": "Eine Person, die mit einem interaktiven System interagiert, um die Nutzung des Systems zu unterst\u00fctzen oder das System zu warten.\nBeispiele f\u00fcr sekund\u00e4re Benutzer:\n1.\tSicherheitsmanager, Administrator, Trainer und Wartung.",
+    "description-english": "A person who interacts with an interactive system to support\u00a0the use of the system or\u00a0maintain the system.\n",
+    "description-german": "Eine Person, die mit einem interaktiven System interagiert, um die Nutzung des Systems zu unterst\u00fctzen oder das System zu warten.\n",
     "term-english": "Secondary user",
     "term-german": "Sekund\u00e4rer Benutzer"
   },

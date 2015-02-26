@@ -13,10 +13,12 @@ def main():
 
             censored_desc_english = description_english.split("Notes")[0]\
                                                        .split("Note")[0]\
+                                                       .split("Examples")[0]\
                                                        .replace(term_english, "xxx")
 
             censored_desc_german = description_german.split("Anmerkung")[0]\
                                                      .split("Anmerkungen")[0]\
+                                                     .split("Beispiele")[0]\
                                                      .replace(term_german, "xxx")
 
             term["description-english"] = censored_desc_english
