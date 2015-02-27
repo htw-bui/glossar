@@ -51,7 +51,11 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
     var answerIsCorrect = (term === $scope.activeTerm);
     if (answerIsCorrect){
       $scope.progressCounter.registerTerm(term);
-      $scope.unusedTerms.remove(term);
+
+      _.remove($scope.unusedTerms, function(unusedTerm){
+        return unusedTerm === term["term-english"];
+      });
+
       button.choice.buttonState = "btn-success";
       $timeout(pickTerm, 250);
     }
