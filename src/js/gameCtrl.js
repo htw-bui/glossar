@@ -57,20 +57,36 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
       });
 
       button.choice.buttonState = "btn-success";
-      $timeout(pickTerm, 250);
+
+      var thereStillAreQuestions = ($scope.unusedTerms.length !== 0);
+
+      if (thereStillAreQuestions){
+        $timeout(pickTerm, 250);
+      }
+      else{
+        $timeout(function(){
+          $http.post("http://highscore-angular.k-nut.eu/highscore/check", {
+            score: $scope.progressCounter.numberOfTermsRead(),
+            time: $scope.timer.getTime()
+          }).then(checkIfScoreIsHighEnough).then(function(){
+            $scope.progressCounter.clear();
+            $scope.timer.clearTimer();
+          });
+        }, 500);
+      }
     }
     else{
       $scope.buttonsDisabled = true;
       button.choice.buttonState = "btn-danger";
       $scope.activeTerm.buttonState = "btn-success";
       $timeout(function(){
-      $http.post("http://highscore-angular.k-nut.eu/highscore/check", {
-        score: $scope.progressCounter.numberOfTermsRead(),
-        time: $scope.timer.getTime()
-      }).then(checkIfScoreIsHighEnough).then(function(){
-        $scope.progressCounter.clear();
-        $scope.timer.clearTimer();
-      });
+        $http.post("http://highscore-angular.k-nut.eu/highscore/check", {
+          score: $scope.progressCounter.numberOfTermsRead(),
+          time: $scope.timer.getTime()
+        }).then(checkIfScoreIsHighEnough).then(function(){
+          $scope.progressCounter.clear();
+          $scope.timer.clearTimer();
+        });
       }, 500);
     }
   };
@@ -81,10 +97,10 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
       promptUserForName();
     }
     else{
-    $translate("FAIL_MESSAGE").then(function(message){
-      bootbox.alert(message);
-      $route.reload();
-    });
+      $translate("FAIL_MESSAGE").then(function(message){
+        bootbox.alert(message);
+        $route.reload();
+      });
     }
   }
 
