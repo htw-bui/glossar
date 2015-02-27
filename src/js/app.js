@@ -64,8 +64,8 @@
         TOP10_MESSAGE: "Sie haben es in die Top 10 geschaft! Bitte geben Sie Ihren Namen für den Highscore an",
         FAIL_MESSAGE: "Sie haben es leider nicht in die Top10 geschafft. <br /> Probieren Sie es doch noch einmal!",
         GLOSSARY: "Glossar",
-        GERMAN: "DE",
-        ENGLISH: "EN"
+        GERMAN: "Deutsch",
+        ENGLISH: "Englisch"
       });
     $translateProvider.translations("en",
       {
@@ -80,8 +80,8 @@
         TOP10_MESSAGE: "You made it into the top10! <br /> Please enter your name for the highscore.",
         FAIL_MESSAGE: "You did not make it into the top 10. <br /> Why don't you try again?!",
         GLOSSARY: "Glossary",
-        GERMAN: "DE",
-        ENGLISH: "EN"
+        GERMAN: "German",
+        ENGLISH: "English"
       });
     $translateProvider.preferredLanguage("en");
   });
