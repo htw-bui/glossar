@@ -199,10 +199,15 @@ aside {
   #paging button {
     text-align: center;
     display: block;
-    width: 50%;
+    width: 45%;
     float: left;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  #paging button:focus{
+    background: white;
+    outline: none;
   }
 }
 
