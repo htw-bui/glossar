@@ -40,7 +40,7 @@ function pickTerm(){
       choices.push(randomTerm);
     }
   }
-  $scope.choices = _.map(choices.shuffle(), function(choice){
+  $scope.choices = _.map(_.shuffle(choices), function(choice){
     choice.buttonState = "btn-info";
     return choice;
   });
