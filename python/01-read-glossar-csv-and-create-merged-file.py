@@ -1,10 +1,14 @@
 import csv
 import json
 import collections
+import os
+
+PATH_TO_DATA_FOLDER = os.path.join(os.path.dirname(__file__), '../data/')
+PATH_TO_SRC_DATA_FOLDER = os.path.join(os.path.dirname(__file__), '../src/data/')
 
 
-def readCsv(lang="de"):
-    with open("/home/knut/glossar/data/glossar-%s.csv" % lang) as infile:
+def read_csv(lang="de"):
+    with open(PATH_TO_DATA_FOLDER + "glossar-%s.csv" % lang) as infile:
         content = infile.readlines()[1:]
         reader = csv.reader(content, delimiter=",")
         terms = {}
@@ -13,8 +17,9 @@ def readCsv(lang="de"):
         od = collections.OrderedDict(sorted(terms.items()))
     return od
 
+
 def readTranslations():
-    with open("/home/knut/glossar/data/translations.csv") as infile:
+    with open(PATH_TO_DATA_FOLDER + "translations.csv") as infile:
         content = infile.readlines()
         dict_reader = csv.DictReader(content)
     translations = {}
@@ -26,14 +31,14 @@ def readTranslations():
             term, synonym = [part.strip() for part in key.split(">")]
             translations[term] = line["english"]
             translations[synonym] = line["english"]
-    return translations        
+    return translations
 
     return {line["german"]: line["english"] for line in dict_reader}
 
 
 def createInternationalMergedFile():
-    german_terms = readCsv("de")
-    english_terms = readCsv("en")
+    german_terms = read_csv("de")
+    english_terms = read_csv("en")
     translations = readTranslations()
 
     output = []
@@ -50,7 +55,7 @@ def createInternationalMergedFile():
                        "term-english": english_term
                        })
 
-    with open("/home/knut/glossar/src/data/terms-international.json", "w") as outfile:
+    with open(PATH_TO_SRC_DATA_FOLDER + "terms-international.json", "w") as outfile:
         json.dump(output, outfile, indent=2, sort_keys=True)
 
 
@@ -65,4 +70,4 @@ def cleanupTerm(term):
 
 if __name__ == "__main__":
     createInternationalMergedFile()
-    print('done')
+    print('Reading csvs and merging done')
