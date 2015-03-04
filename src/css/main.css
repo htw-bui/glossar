@@ -110,6 +110,8 @@ aside {
   border-color: #DDD;
 }
 
+
+
 @media only screen and (max-width: 767px) {
   .navbar-brand {
     font-size: 2em;
@@ -208,6 +210,12 @@ aside {
   #paging button:focus{
     background: white;
     outline: none;
+  }
+
+  .btn-info:hover, .btn-info:active, .btn-info:focus {
+    color: #FFF;
+    background-color: #5BC0DE;
+    border-color: #46B8DA;
   }
 }
 
