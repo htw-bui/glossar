@@ -331,7 +331,7 @@
       "Evaluierung"
     ],
     "description-english": "The property of a dialogue to achieve the intended result with either no, or minimal, corrective action by the user despite evident errors in input. \nNote:\n1.\tError tolerance is a dialogue principle.\nExamples of error tolerance:\n1.\tWhen an error occurs, the interactive system should provide a precise and comprehensible explanation. The explanation must also be constructive \u2013 that is, it must suggest a solution to the problem.\n2.\tIf severe consequences could result from a user action, the interactive system should provide explanation and request confirmation before carrying out the action.",
-    "description-german": "Die Eigenschaft eines Dialogs das beabsichtigte Arbeitsergebnis trotz erkennbar fehlerhafter Eingaben entweder mit keinem oder mit minimalem Korrekturaufwand seitens des Benutzers zu erreichen.\nAnmerkung:\n1.\tFehlertoleranz ist ein Dialogprinzip.\nBeispiele f\u00fcr Fehlertoleranz:\n1.\tWenn ein Fehler auftritt, sollte das interaktive System eine genaue und verst\u00e4ndliche Erkl\u00e4rung anbieten und konstruktiv eine L\u00f6sung vorschlagen, also was als n\u00e4chstes zu tun ist.\n2.\tWenn aus einer Benutzeraktion schwerwiegende Folgen entstehen k\u00f6nnen, dann sollte das interaktive System eine Erkl\u00e4rung anbieten und eine Best\u00e4tigung vor der Durchf\u00fchrung der Aktion durch den Benutzer einholen.",
+    "description-german": "Die Eigenschaft eines Dialogs, das beabsichtigte Arbeitsergebnis trotz erkennbar fehlerhafter Eingaben entweder mit keinem oder mit minimalem Korrekturaufwand seitens des Benutzers zu erreichen.\nAnmerkung:\n1.\tFehlertoleranz ist ein Dialogprinzip.\nBeispiele f\u00fcr Fehlertoleranz:\n1.\tWenn ein Fehler auftritt, sollte das interaktive System eine genaue und verst\u00e4ndliche Erkl\u00e4rung anbieten und konstruktiv eine L\u00f6sung vorschlagen, also was als n\u00e4chstes zu tun ist.\n2.\tWenn aus einer Benutzeraktion schwerwiegende Folgen entstehen k\u00f6nnen, dann sollte das interaktive System eine Erkl\u00e4rung anbieten und eine Best\u00e4tigung vor der Durchf\u00fchrung der Aktion durch den Benutzer einholen.",
     "term-english": "Error tolerance",
     "term-german": "Fehlertoleranz"
   },
@@ -462,7 +462,7 @@
       "Anforderungen"
     ],
     "description-english": "The naming and structuring of the information that must be accessible to the user, including task objects, system objects (such as printers) and additional information that users need.",
-    "description-german": "Die Benennung und Strukturierung der Informationen die f\u00fcr den Benutzer erreichbar sein m\u00fcssen einschlie\u00dflich der Nutzungsobjekte, Systemobjekte (wie z.B. \u201eDrucker\u201c) und weiterer f\u00fcr den Benutzer erforderlichen Informationen. ",
+    "description-german": "Die Benennung und Strukturierung der Informationen, die f\u00fcr den Benutzer erreichbar sein m\u00fcssen, einschlie\u00dflich der Nutzungsobjekte, Systemobjekte (wie z.B. \u201eDrucker\u201c) und weiterer f\u00fcr den Benutzer erforderlichen Informationen. ",
     "term-english": "Information architecture",
     "term-german": "Informationsarchitektur"
   },

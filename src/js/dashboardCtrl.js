@@ -28,7 +28,7 @@ angular.module("komet.controllers").controller("DashboardController", ["$scope",
   $scope.filter = function(term){
     var selectedLanguage = $translate.use();
     var property = selectedLanguage === "en" ? "term-english" : "term-german";
-    return term[property].toLowerCase().contains($scope.searchTerm.toLowerCase());
+    return _.includes(term[property].toLowerCase(), $scope.searchTerm.toLowerCase());
   };
 
   $scope.$on("$routeUpdate", function(){

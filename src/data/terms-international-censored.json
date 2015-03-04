@@ -290,7 +290,7 @@
       "Evaluierung"
     ],
     "description-english": "The property of a dialogue to achieve the intended result with either no, or minimal, corrective action by the user despite evident errors in input. \n",
-    "description-german": "Die Eigenschaft eines Dialogs das beabsichtigte Arbeitsergebnis trotz erkennbar fehlerhafter Eingaben entweder mit keinem oder mit minimalem Korrekturaufwand seitens des Benutzers zu erreichen.\n",
+    "description-german": "Die Eigenschaft eines Dialogs, das beabsichtigte Arbeitsergebnis trotz erkennbar fehlerhafter Eingaben entweder mit keinem oder mit minimalem Korrekturaufwand seitens des Benutzers zu erreichen.\n",
     "term-english": "Error tolerance",
     "term-german": "Fehlertoleranz"
   },
@@ -411,7 +411,7 @@
       "Anforderungen"
     ],
     "description-english": "The naming and structuring of the information that must be accessible to the user, including task objects, system objects (such as printers) and additional information that users need.",
-    "description-german": "Die Benennung und Strukturierung der Informationen die f\u00fcr den Benutzer erreichbar sein m\u00fcssen einschlie\u00dflich der Nutzungsobjekte, Systemobjekte (wie z.B. \u201eDrucker\u201c) und weiterer f\u00fcr den Benutzer erforderlichen Informationen. ",
+    "description-german": "Die Benennung und Strukturierung der Informationen, die f\u00fcr den Benutzer erreichbar sein m\u00fcssen, einschlie\u00dflich der Nutzungsobjekte, Systemobjekte (wie z.B. \u201eDrucker\u201c) und weiterer f\u00fcr den Benutzer erforderlichen Informationen. ",
     "term-english": "Information architecture",
     "term-german": "Informationsarchitektur"
   },

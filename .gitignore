@@ -160,3 +160,4 @@ $RECYCLE.BIN/
 *.swp
 .sass-cache
 node_modules/
+src/bower_components/
