@@ -77,7 +77,7 @@ $scope.checkAnswer = function(button){
 
 
 function postScoreToServer(){
-  $http.post("http://highscore-angular.k-nut.eu/highscore/check", {
+  $http.post("http://komet.f2.htw-berlin.de/lernspiel/hi/highscore/check", {
     score: $scope.progressCounter.numberOfTermsRead(),
     time: $scope.timer.getTime()
   }).then(checkIfScoreIsHighEnough).then(function(){
@@ -107,7 +107,7 @@ function promptUserForName(){
       value: localStorage.getItem("lastUsername") || "",
       callback: function(userName){
         if (userName){
-          $http.post("http://highscore-angular.k-nut.eu/highscore", { score: score, time: time, name: userName}).success(function(){
+          $http.post("http://komet.f2.htw-berlin.de/lernspiel/hi/highscore", { score: score, time: time, name: userName}).success(function(){
             localStorage.setItem("lastUsername", userName);
             $location.path("/highscore");});
         }
