@@ -15,6 +15,8 @@
     "moment": "~2.9.0",
     "bootbox": "~4.4.0",
     "angular-translate": "~2.5.2",
-    "angular-sanitize": "~1.3.14"
+    "angular-sanitize": "~1.3.14",
+    "font-awesome": "~4.3.0",
+    "web-animations-js": "git@github.com:web-animations/web-animations-js.git#~1.0.6"
   }
 }
