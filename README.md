@@ -40,3 +40,7 @@ Run tests with intern
 http://localhost:8000/node_modules/intern/client.html?config=test/intern
 
 Errata: The python script that creates the .json files does not work right now due to changed pathes but could be easily fixed.
+
+Including new terms and definitions
+---------------------------------
+Refer to the `HOW-TO-INCLUDE-NEW-DATA.md` for information on how to update the data.
