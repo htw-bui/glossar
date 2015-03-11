@@ -36,11 +36,6 @@ Make sure to run ```npm install -g grunt-cli``` if you get an error.
 Create a build
 ``` grunt build ```. This compiles, and shortens the files and moves them to the ```dist``` folder that can be uploaded and will just work.
 
-Run tests with intern
-http://localhost:8000/node_modules/intern/client.html?config=test/intern
-
-Errata: The python script that creates the .json files does not work right now due to changed pathes but could be easily fixed.
-
 Including new terms and definitions
 ---------------------------------
 Refer to the `HOW-TO-INCLUDE-NEW-DATA.md` for information on how to update the data.
