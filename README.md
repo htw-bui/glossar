@@ -1,3 +1,4 @@
+[![Dependency Status](https://www.versioneye.com/user/projects/54f42894dd0a36d180000061/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54f42894dd0a36d180000061)
 Usability Glossar
 =======
 
