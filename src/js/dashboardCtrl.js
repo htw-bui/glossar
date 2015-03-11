@@ -18,7 +18,7 @@ angular.module("komet.controllers").controller("DashboardController", ["$scope",
   $scope.changeLang(savedLanguage);
 
 
-  $http.get("../data/terms-international-with-categories-linked.json")
+  $http.get("./data/terms-international-with-categories-linked.json")
   .then(function(res){
     $scope.terms = res.data;
     $scope.selectedTerm = res.data[0];
