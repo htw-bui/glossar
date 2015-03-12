@@ -18,6 +18,9 @@ angular.module("komet.controllers").controller("GameCtrl", ["$scope", "$http", "
     $scope.unusedTerms = _.filter(res.data, function(term){
       return readTerms.indexOf(term["term-english"]) === -1;
     });
+    $scope.unusedTerms.popRandomElement = function(){
+       return this.splice(Math.floor(Math.random() * this.length), 1)[0];
+    };
   }).then(pickTerm);
 
 $scope.$on("$destroy", function() {
@@ -29,13 +32,13 @@ function pickTerm(){
   var choices = [];
   $scope.activeTerm = $scope.unusedTerms.popRandomElement();
   choices.push($scope.activeTerm);
-  var category = $scope.activeTerm.categories.randomElement();
+  var category = _.sample($scope.activeTerm.categories);
   var termsForThisCategory = _.filter($scope.terms, function(term){
     return term.categories.indexOf(category) !== -1;
   });
   var randomTerm;
   while(choices.length < 4){
-    randomTerm = termsForThisCategory.randomElement();
+    randomTerm = _.sample(termsForThisCategory);
     if (choices.indexOf(randomTerm) === -1){
       choices.push(randomTerm);
     }
