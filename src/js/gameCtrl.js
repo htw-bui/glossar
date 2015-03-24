@@ -112,7 +112,8 @@ function promptUserForName(){
         if (userName){
           $http.post("http://komet.f2.htw-berlin.de/lernspiel/hi/highscore", { score: score, time: time, name: userName}).success(function(){
             localStorage.setItem("lastUsername", userName);
-            $location.path("/highscore");});
+            $location.path("/highscore");
+          });
         }
         else {
           $route.reload();

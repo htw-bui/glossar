@@ -1,3 +1,5 @@
+/*eslint no-unused-vars:0, no-shadow:0*/
+
 var ProgressCounter = (function(){
   "use strict";
   function ProgressCounter(counterName, numberOfTerms){
