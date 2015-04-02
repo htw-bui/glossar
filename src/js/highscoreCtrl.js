@@ -2,6 +2,7 @@ angular.module("komet.controllers").controller("HighscoreCtrl", ["$scope", "$htt
   function($scope, $http){
     "use strict";
     $scope.highscores = {};
+    $scope.$parent.selectedTerm = {"term-english": "Hall of Fame", "term-german": "Hall of Fame"};
     $http.get("http://komet.f2.htw-berlin.de/lernspiel/hi/highscore")
       .then(function(res){
         $scope.highscores = res.data;
