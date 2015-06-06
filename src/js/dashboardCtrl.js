@@ -1,7 +1,7 @@
 angular.module("komet.controllers").controller("DashboardController", ["$scope", "$http", "$location", "$translate", function($scope, $http, $location, $translate){
   "use strict";
   $scope.searchTerm = "";
-  $scope.terms = [{"term": "dummy"}];
+  $scope.terms = [{"term-english": "dummy", "term-german": "dummy"}];
   $scope.selectedTerm = {};
   $scope.progressCounter = {};
   $scope.selectedLang = "";
