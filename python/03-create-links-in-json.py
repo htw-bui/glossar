@@ -23,7 +23,7 @@ for term in content:
     allowed.remove(term["term-english"])
 
     for english_term in allowed:
-        english_linked = re.sub(r"(?<![>=])(%s)" % english_term, r"<a href='#/glossary?term=%s'>\1</a>" % english_term, english_linked, flags=re.IGNORECASE, count=1)
+        english_linked = re.sub(r"(?<![>=])\b(%s)" % english_term, r"<a href='#/glossary?term=%s'>\1</a>" % english_term, english_linked, flags=re.IGNORECASE, count=1)
     english_linked = english_linked.replace("\n", "<br />")
 
     # We do not want self referncing links
@@ -32,7 +32,7 @@ for term in content:
     allowed_german = sorted(allowed_german, key=len, reverse=True)
 
     for german_term in allowed_german:
-        german_linked = re.sub(r"(?<![>=])(%s)" % german_term, r"<a href='#/glossary?term=%s'>\1</a>" % german_term, german_linked, flags=re.IGNORECASE, count=1)
+        german_linked = re.sub(r"(?<![>=])\b(%s)" % german_term, r"<a href='#/glossary?term=%s'>\1</a>" % german_term, german_linked, flags=re.IGNORECASE, count=1)
     german_linked = german_linked.replace("\n", "<br />")
 
     term["description-german"] = german_linked
