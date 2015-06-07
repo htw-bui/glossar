@@ -1,6 +1,7 @@
 import json
 import re
 import os
+import urllib.parse
 from bs4 import BeautifulSoup
 
 PATH_TO_DATA_FOLDER = os.path.join(os.path.dirname(__file__), '../data/')
@@ -13,8 +14,9 @@ def tagify(html, pattern):
     pattern = r'\b%s\b' % pattern
     for txt in soup.find_all(text=True):
         if re.search(pattern, txt, re.I) and txt.parent.name != 'a':
+            encoded_url = urllib.parse.urlencode({'term': replace})
             newtag = soup.new_tag('a')
-            newtag.attrs['href'] = "#/glossary?term={}".format(replace)
+            newtag.attrs['href'] = "#/glossary?{}".format(encoded_url)
             newtag.string = replace
             txt.replace_with(newtag)
             split_location = re.search(pattern, txt, re.IGNORECASE)
