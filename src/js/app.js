@@ -65,7 +65,8 @@
         FAIL_MESSAGE: "Sie haben es leider nicht in die Top10 geschafft. <br /> Probieren Sie es doch noch einmal!",
         GLOSSARY: "Glossar",
         GERMAN: "Deutsch",
-        ENGLISH: "Englisch"
+        ENGLISH: "Englisch",
+        INFO: "Glossar Version 2.10, April 2014"
       });
     $translateProvider.translations("en",
       {
@@ -81,7 +82,8 @@
         FAIL_MESSAGE: "You did not make it into the top 10. <br /> Why don't you try again?!",
         GLOSSARY: "Glossary",
         GERMAN: "German",
-        ENGLISH: "English"
+        ENGLISH: "English",
+        INFO: "Glossary version 2.10, April 2014"
       });
     $translateProvider.preferredLanguage("en");
   });

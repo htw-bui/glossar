@@ -3,9 +3,7 @@
 
 <div id="content">
   <div id='stats'>
-    <span id="time"> {{timer.getTime()}}</span>
-    <span id="progress"> {{progressCounter.numberOfTermsRead() }}  | {{ progressCounter.numberOfTerms }} </span>
-    <a id='reset' ng-click='resetProgress()'><i class="fa fa-history"></i></a>
+    <span id='progress'> {{ 'INFO' | translate }} </span>
   </div>
   <div id="main"> 
     <h1 class='hyphenate'> {{selectedTerm | localTerm}} </h1>
