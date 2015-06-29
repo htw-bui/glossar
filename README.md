@@ -9,6 +9,7 @@ Refer to [http://chocolatey.org/] (http://chocolatey.org/) for installation.
 Then run
 ```
 cinst nodejs
+cinst openssl.light
 cinst ruby
 cinst rubygems
 cinst python
@@ -20,22 +21,28 @@ General
 
 Clone the repo. Then change to it and run
 ```
-gem install sass 
 npm install
 ```
 in order to install the node dependencies
 Your of course need to have node installed for that.
 
+Change to the src folder and run ``` bower install ```
+
 Start a server to test the page
-``` python -m SimpleHTTPServer ```
-And check [http://localhost:8000](http://localhost:8000) or [http://localhost:8000/quiz.html](http://localhost:8000/quiz.html)
+-------
+Change to the src folder and run
 
-Use Grunt to watch for changes. This gives you autoreload, sass compilation etc.
-``` grunt ```
-Make sure to run ```npm install -g grunt-cli``` if you get an error.
+Python 2.x
+```
+python -m SimpleHTTPServer
+```
+Python 3.x
+```
+python -m http.server
+```
 
-Create a build
-``` grunt build ```. This compiles, and shortens the files and moves them to the ```dist``` folder that can be uploaded and will just work.
+And check [http://localhost:8000](http://localhost:8000)
+
 
 Including new terms and definitions
 ---------------------------------

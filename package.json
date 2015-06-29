@@ -2,7 +2,7 @@
   "name": "glossar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/k-nut/glossar"
+    "url": "https://github.com/htw-bui/glossar"
   },
   "version": "0.1.0",
   "devDependencies": {
