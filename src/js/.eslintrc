@@ -4,6 +4,6 @@
       "amd": true
   },
   "rules": {
-    "no-use-before-define": "nofunc"
+    "no-use-before-define": [2, "nofunc"]
   }
 }
